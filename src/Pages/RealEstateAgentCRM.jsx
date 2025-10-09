@@ -115,7 +115,7 @@ export default function RealEstateAgentCRM() {
         </div>
       </div>
 
-      {/* ✅ Counter Section */}
+      {/* ✅ Counter Section */}  
       <section className="counter-section" ref={sectionRef}>
         <div className="container">
           <div className="content">
