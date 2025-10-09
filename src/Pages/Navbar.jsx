@@ -10,7 +10,7 @@ export default function Navbar() {
 	<nav class="header__nav">
 		<ul class="header__ul">
 			<li class="header__li"><a href="https://css-weekly.com" target="_blank" class="header__a">Newsletter</a></li>
-			<li class="header__li"><a href="https://youtube.com/@cssweekly" class="header__a" target="_blank">YouTube</a></li>
+			<li class="header__li"><a href="RealEstateAgentCRM" class="header__a" target="_blank">Real Estate Agent CRM</a></li>
 			<li class="header__li"><a href="https://twitter.com/cssweekly" target="_blank" class="header__a">Twitter</a></li>
 			<li class="header__li"><a href="https://stickers.css-weekly.com" target="_blank" class="header__a">Stickers</a></li>
 		</ul>
