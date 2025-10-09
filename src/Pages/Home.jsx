@@ -6,7 +6,8 @@ const Home = () => {
   return (
     <>
       <Navbar />
-       <section className="hero-section">
+      <div className="Home-style">
+         <section className="hero-section">
       <div className="hero-wrapper">
         
         {/* === Hero Banner === */}
@@ -119,6 +120,7 @@ const Home = () => {
         </div>
       </div>
     </section>
+      </div>
       <Footer />
     </>
   )

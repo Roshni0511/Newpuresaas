@@ -102,7 +102,8 @@ export default function RealEstateAgentCRM() {
   return (
     <div>
       <Navbar />
-      <div className="hero-banner">
+      <div className="real-style">
+        <div className="hero-banner">
         <img src="/Image/hero-banner.png" alt="Hero Banner" />
         <div className="banner-content">
           <div className="subtitle">Smart property management software</div>
@@ -113,6 +114,7 @@ export default function RealEstateAgentCRM() {
           <p>Manage your properties efficiently and increase revenue with ease.</p>
           <button className="demo-btn">Get Started</button>
         </div>
+      </div>
       </div>
 
       {/* ✅ Counter Section */}
