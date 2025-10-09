@@ -154,7 +154,7 @@ export default function RealEstateAgentCRM() {
         </p>
         <ul className="reasons-features">
           <li className="reasons-feature-item">
-            <FontAwesomeIcon icon={faTachometerAlt} /> Unified dashboard for all properties & tenants
+            <FontAwesomeIcon icon={faTachometerAlt} /> Unified dashboard for all properties
           </li>
           <li className="reasons-feature-item">
             <FontAwesomeIcon icon={faHandHoldingUsd} /> Automated rent collection & reminders
