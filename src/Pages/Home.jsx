@@ -4,6 +4,14 @@ import 'animate.css';
 import Navbar from './Navbar'
 import Footer from './Footer'
 import '../assets/css/Home.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTachometerAlt,
+  faHandHoldingUsd,
+  faTools,
+  faUserCheck,
+  faChartLine,
+} from "@fortawesome/free-solid-svg-icons";
 const Home = () => {
   useEffect(() => {
   new WOW.WOW({ live: false }).init();
@@ -11,6 +19,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
+      {/* hero section start  */}
       <div className="Home-style wow">
          <section className="hero-section">
       <div className="hero-wrapper">
@@ -126,6 +135,53 @@ const Home = () => {
       </div>
     </section>
       </div>
+      {/* hero section end  */}
+
+      {/* property section start */}
+      <div className="reasons-section wow">
+        <div className="reasons-container container">
+          <span className="reasons-badge">Reasons to select us</span>
+          <h1 className="reasons-title mt-5">Modern tools built for today’s property teams.</h1>
+          <p className="reasons-subtitle pt-3">
+            Streamline operations, reduce manual tasks, and maximize revenue.
+          </p>
+          <ul className="reasons-features wow animate__animated animate__fadeInUp">
+            <li className="reasons-feature-item">
+              <FontAwesomeIcon icon={faTachometerAlt} /> Unified dashboard for all properties
+            </li>
+            <li className="reasons-feature-item">
+              <FontAwesomeIcon icon={faHandHoldingUsd} /> Automated rent collection & reminders
+            </li>
+            <li className="reasons-feature-item">
+              <FontAwesomeIcon icon={faTools} /> Online maintenance requests & work orders
+            </li>
+            <li className="reasons-feature-item">
+              <FontAwesomeIcon icon={faUserCheck} /> AI-powered tenant screening
+            </li>
+            <li className="reasons-feature-item">
+              <FontAwesomeIcon icon={faChartLine} /> Real-time financial insights
+            </li>
+          </ul>
+        </div>
+        
+        {/* === IMAGE STRUCTURE WITH OVERLAYS === */}
+        <div className="reasons-image-wrapper wow animate__animated animate__fadeInUp">
+          {/* Main background image (the building) */}
+          <img src="/Image/Demo_Img" alt="Reasons Illustration" className="main-img" />
+          
+          {/* Overlay images (the 'Square' and 'Rectangle' data cards) */}
+          {/* Ensure these paths are correct for your uploaded images */}
+          <img src="/Image/transaction.jpg" alt="Transaction statistics card" className="overlay-img square-overlay" />
+          <img src="/Image/profit.jpg" alt="Profit chart card" className="overlay-img rectangle-overlay" />
+        </div>
+        {/* =========================================== */}
+
+      </div>
+      {/* property section end */}
+
+      {/* Features section start */}
+
+      {/* Features section end */}
       <Footer />
     </>
   )
