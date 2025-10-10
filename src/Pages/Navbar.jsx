@@ -1,21 +1,182 @@
-import React from 'react'
+import React, { useState } from 'react';
 import '../assets/css/Navbar.css';
-
+import { FaAngleDown, FaBars, FaTimes } from 'react-icons/fa';
 
 export default function Navbar() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false); // for mobile dropdown
+  const [iscompanyOpen, setIscompanyOpen] = useState(false); // for mobile dropdown
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  // Toggle the Services dropdown in mobile view
+  const toggleServicesMenu = (e) => {
+    e.preventDefault();
+    setIsServicesOpen(!isServicesOpen);
+  };
+  const togglecompanyMenu = (e) => {
+    e.preventDefault();
+    setIscompanyOpen(!iscompanyOpen);
+  };
+
   return (
-    <div>
+    <div className="navbar-container">
       <header className="header">
-	<h1 className="header__logo"><a href="https://css-weekly.com"><img src="https://assets.codepen.io/47791/cssweekly-logo-full-white.svg" className="header__img" alt="CSS Weekly logo" width="300" height="43" /></a></h1>
-	<nav class="header__nav">
-		<ul class="header__ul">
-			<li class="header__li"><a href="https://css-weekly.com" target="_blank" class="header__a">Newsletter</a></li>
-			<li class="header__li"><a href="RealEstateAgentCRM" class="header__a" target="_blank">Real Estate Agent CRM</a></li>
-			<li class="header__li"><a href="https://twitter.com/cssweekly" target="_blank" class="header__a">Twitter</a></li>
-			<li class="header__li"><a href="https://stickers.css-weekly.com" target="_blank" class="header__a">Stickers</a></li>
-		</ul>
-	</nav>
-</header>
+        <div className="header__logo">
+          <a href="/">
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              width="24"
+              height="24"
+              className="logo__icon"
+            >
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-6h-2v6zm0-8h2V7h-2v2z" />
+            </svg>
+            <span className="logo__text">PureSaaS</span>
+          </a>
+        </div>
+
+        {/* Mobile Toggle Button */}
+        <button
+          className="menu-toggle"
+          onClick={toggleMobileMenu}
+          aria-expanded={isMobileMenuOpen}
+        >
+          {isMobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+        </button>
+
+        {/* Navigation */}
+        <nav className={`header__nav ${isMobileMenuOpen ? 'open' : ''}`}>
+          <ul className="header__ul">
+            <li className="header__li">
+              <a href="/" className="header__a ">
+                Home
+              </a>
+            </li>
+             {/* --- SERVICES DROPDOWN --- */}
+            <li
+              className={`header__li dropdown services-menu-item ${
+                isServicesOpen ? 'mobile-open' : ''
+              }`}
+            >
+              <a
+                href="#"
+                className="header__a dropdown__link"
+                onClick={toggleServicesMenu}
+              >
+                Product <FaAngleDown size={10} />
+              </a>
+
+              <div
+                className={`services-dropdown ${
+                  isServicesOpen ? 'mobile-open-menu' : ''
+                }`}
+              >
+                <div className="services-dropdown__inner">
+                  {/* Column 1 */}
+                  <ul className="services-dropdown__column">
+                    <li>
+                      <a href="/RealEstateAgentCRM"><span className="service__number">01.</span> Real Estate Agent CRM</a>
+                       <p>Quickly create, manage, and offload sites to clients with ease.</p>
+                    </li>
+                    <li>
+                      <a href="#"><span className="service__number">04.</span> Real Estate CRM</a>
+                      <p>Early Create sites & offload them to clients</p>
+                    </li>
+                    <li>
+                      <a href="#"><span className="service__number">07.</span> ATS (Application Tracking System)</a>
+                      <p>Simplify recruitment, track candidates, and streamline your hiring process.</p>
+                    </li>
+                    
+                  </ul>
+
+                  {/* Column 2 */}
+                  <ul className="services-dropdown__column">
+                    <li>
+                      <a href="#"><span className="service__number">02.</span> B2B Textile ERP</a>
+                      <p>Simplify operations, manage inventory, and streamline production.</p>
+                    </li>
+                    <li>
+                      <a href="#"><span className="service__number">05.</span> Telecaller CRM</a>
+                      <p>Boost productivity, manage calls, and track leads effortlessly.</p>
+                    </li>
+                    <li>
+                      <a href="#"><span className="service__number">08.</span> Service CRM</a>
+                      <p>Streamline support and boost customer satisfaction.</p>
+                    </li>
+                   
+                  </ul>
+
+                  {/* Column 3 */}
+                  <ul className="services-dropdown__column">
+                   <li>
+                    <a href="#"><span className="service__number">03.</span> Office ERP</a>
+                    <p>Integrate business operations, streamline workflows, and boost productivity.</p>
+                  </li>
+                   <li>
+                    <a href="#"><span className="service__number">06.</span> Sales CRM</a>
+                    <p>Streamline your sales process, manage leads, and close deals faster.</p>
+                  </li>
+                    <li>
+                      <a href="#"><span className="service__number">09.</span> payroll System</a>
+                      <p>Streamline payroll processing, ensure accuracy, and simplify compliance.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li className="header__li ">
+              <a href="#" className="header__a ">
+                Enterprise 
+              </a>
+            </li>
+
+            <li className="header__li dropdown">
+              <a href="#" className="header__a dropdown__link"  onClick={togglecompanyMenu}>
+                Company <FaAngleDown size={10} />
+              </a>
+              <div
+                className={`company-dropdown ${
+                  iscompanyOpen ? 'mobile-open-menu' : ''
+                }`}
+              >
+                <div className="company-dropdown__inner">
+                  {/* Column 1 */}
+                  <ul className="company-dropdown__column">
+                    <li><a href="/Mission"> Mission</a>  </li>
+                    <li><a href="/Vision">Vision</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+           
+
+            <li className="header__li ">
+              <a href="#" className="header__a ">
+                Blogs 
+              </a>
+              
+            </li>
+
+            <li className="header__li">
+              <a href="/ContactUs" className="header__a">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div className="header__cta-wrapper">
+          <a href="/ContactUs" className="header__cta-btn">
+            Get Started
+          </a>
+        </div>
+      </header>
     </div>
-  )
+  );
 }
