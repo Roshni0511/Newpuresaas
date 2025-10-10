@@ -123,18 +123,15 @@ export default function RealEstateAgentCRM() {
             <p className="description">
               Deliver fast, seamless interactions with our AI-powered messaging platform—instant support, automated responses, and reduced wait times for meaningful engagement.
             </p>
-
             <div className="grid">
               <div className="item">
                 <div className="number">{counters.counties}</div>
                 <div className="label">Counties</div>
               </div>
-
               <div className="item">
                 <div className="number">{counters.peoples}</div>
                 <div className="label">Peoples</div>
               </div>
-
               <div className="item">
                 <div className="number">{counters.orders}</div>
                 <div className="label">Orders Processed</div>
