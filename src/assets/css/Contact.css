@@ -22,7 +22,7 @@
   background-color: #f4f4f4;
   padding: 2rem 0;
 }
-.contact-card {
+.contact .contact-card {
   position: relative;
   margin-bottom: 10px;
   width: 330px;
@@ -36,7 +36,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact-card:hover {
+.contact .contact-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 0 25px rgba(255, 100, 200, 0.3);
 }

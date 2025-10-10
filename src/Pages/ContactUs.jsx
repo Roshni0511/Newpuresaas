@@ -100,7 +100,10 @@ const ContactUs = () => {
   };
   return (
     <>
-    <section className="contact section-padding">
+    <div >
+
+    </div>
+    <section className=" section-padding">
   <div className="container">
    <h3>Reach out to our support team for help.</h3>
    <p>Whether you have a question, need technical assistance, or just want some guidance, our support team is here to help. We're available around the clock to provide quick and friendly support.
