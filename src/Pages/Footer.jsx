@@ -73,16 +73,16 @@ const Footer = () => {
               </div>
 
               <div className="newsletter">
-                <p>Abonnez-vous à notre newsletter :</p>
+                <p>newsletter :</p>
                 <form className="newsletter-form" onSubmit={(e) => e.preventDefault()}>
                   <input
                     type="email"
                     className="newsletter-input"
-                    placeholder="Votre email"
+                    placeholder=" email"
                     aria-label="Votre adresse email"
                     required
                   />
-                  <button type="submit" className="newsletter-btn">S'abonner</button>
+                  <button type="submit" className="newsletter-btn">Submit</button>
                 </form>
               </div>
             </div>
@@ -90,8 +90,11 @@ const Footer = () => {
 
           <div className="copyright">
             <p>
-              &copy; {new Date().getFullYear()} Harmonie. Tous droits réservés. |{" "}
-              <a href="#">Mentions légales</a> | <a href="#">Politique des cookies</a>
+              &copy; {new Date().getFullYear()} All Rights Reserved Puresaas
+            </p>
+            <p>
+{" "}
+              <a href="/Termsandcondition">Terms of Service</a> | <a href="#">Privacy Policy</a>| <a href="#">Refund Policy</a>
             </p>
           </div>
         </div>
