@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
 import RealEstateAgentCRM from './Pages/RealEstateAgentCRM';
 import ContactUs from './Pages/ContactUs';
+import Termsandcondition from './Pages/Termsandcondition';
 const BackToTopButton = () => {
     const [isVisible, setIsVisible] = useState(false);
     const scrollThreshold = 300; // Distance to scroll before showing the button
@@ -58,6 +59,7 @@ function App() {
     <Route path='/' element={<Home/>}/>
     <Route path='/RealEstateAgentCRM' element={<RealEstateAgentCRM/>}/>
     <Route path='/ContactUs'  element={<ContactUs/>}/>
+    <Route path='/Termsandcondition' element={<Termsandcondition/>}/>
   </Routes>
   <BackToTopButton />
   </>
