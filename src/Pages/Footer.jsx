@@ -2,32 +2,7 @@ import React, { useEffect } from "react";
 import "../assets/css/Footer.css"; // Assuming your CSS is in this path
 
 const Footer = () => {
-  useEffect(() => {
-    const backToTop = document.getElementById("backToTop");
 
-    const handleScroll = () => {
-      if (window.pageYOffset > 300) {
-        backToTop.classList.add("visible");
-      } else {
-        backToTop.classList.remove("visible");
-      }
-    };
-
-    const handleClick = () => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    };
-
-    backToTop.addEventListener("click", handleClick);
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      backToTop.removeEventListener("click", handleClick);
-    };
-  }, []);
 
   return (
     <>
