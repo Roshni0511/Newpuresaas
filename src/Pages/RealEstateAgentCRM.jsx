@@ -11,18 +11,6 @@ import {
   faChartLine,
 } from "@fortawesome/free-solid-svg-icons";
 
-
-
-
-
-
-
-
-
-
-
-
-
 export default function RealEstateAgentCRM() {
   // ✅ Counter States
   const [counters, setCounters] = useState({
@@ -104,20 +92,20 @@ export default function RealEstateAgentCRM() {
       <Navbar />
       <div className="real-style">
         <div className="hero-banner">
-        <img src="/Image/hero-banner.png" alt="Hero Banner" />
-        <div className="banner-content">
-          <div className="subtitle">Smart property management software</div>
-          <h1>
-            Simplify property management.<br />
-            Boost occupancy.
-          </h1>
-          <p>Manage your properties efficiently and increase revenue with ease.</p>
-          <button className="demo-btn">Get Started</button>
+          <img src="/Image/hero-banner.png" alt="Hero Banner" />
+          <div className="banner-content">
+            <div className="subtitle">Smart property management software</div>
+            <h1>
+              Simplify property management.<br />
+              Boost occupancy.
+            </h1>
+            <p>Manage your properties efficiently and increase revenue with ease.</p>
+            <button className="demo-btn">Get Started</button>
+          </div>
         </div>
       </div>
-      </div>
 
-      {/* ✅ Counter Section */}
+      {/* ✅ Counter Section */} 	
       <section className="counter-section" ref={sectionRef}>
         <div className="container">
           <div className="content">
@@ -125,18 +113,15 @@ export default function RealEstateAgentCRM() {
             <p className="description">
               Deliver fast, seamless interactions with our AI-powered messaging platform—instant support, automated responses, and reduced wait times for meaningful engagement.
             </p>
-
             <div className="grid">
               <div className="item">
                 <div className="number">{counters.counties}</div>
                 <div className="label">Counties</div>
               </div>
-
               <div className="item">
                 <div className="number">{counters.peoples}</div>
                 <div className="label">Peoples</div>
               </div>
-
               <div className="item">
                 <div className="number">{counters.orders}</div>
                 <div className="label">Orders Processed</div>
@@ -148,37 +133,44 @@ export default function RealEstateAgentCRM() {
 
 
       <div className="reasons-section">
-      <div className="reasons-container">
-        <span className="reasons-badge">Reasons to select us</span>
-        <h1 className="reasons-title">Modern tools built for today’s property teams.</h1>
-        <p className="reasons-subtitle">
-          Streamline operations, reduce manual tasks, and maximize revenue.
-        </p>
-        <ul className="reasons-features">
-          <li className="reasons-feature-item">
-            <FontAwesomeIcon icon={faTachometerAlt} /> Unified dashboard for all properties & tenants
-          </li>
-          <li className="reasons-feature-item">
-            <FontAwesomeIcon icon={faHandHoldingUsd} /> Automated rent collection & reminders
-          </li>
-          <li className="reasons-feature-item">
-            <FontAwesomeIcon icon={faTools} /> Online maintenance requests & work orders
-          </li>
-          <li className="reasons-feature-item">
-            <FontAwesomeIcon icon={faUserCheck} /> AI-powered tenant screening
-          </li>
-          <li className="reasons-feature-item">
-            <FontAwesomeIcon icon={faChartLine} /> Real-time financial insights
-          </li>
-        </ul>
-      </div>
-        <div className="reasons-image">
-          <img src="/Image/Demo_Img" alt="Reasons Illustration" className="main-img" />
-          <img src="/Image/Square" alt="Square" className="square-img" />
-          <img src="/Image/Rectangle" alt="Rectangle" className="rect-img" />
+        <div className="reasons-container">
+          <span className="reasons-badge">Reasons to select us</span>
+          <h1 className="reasons-title">Modern tools built for today’s property teams.</h1>
+          <p className="reasons-subtitle">
+            Streamline operations, reduce manual tasks, and maximize revenue.
+          </p>
+          <ul className="reasons-features">
+            <li className="reasons-feature-item">
+              <FontAwesomeIcon icon={faTachometerAlt} /> Unified dashboard for all properties
+            </li>
+            <li className="reasons-feature-item">
+              <FontAwesomeIcon icon={faHandHoldingUsd} /> Automated rent collection & reminders
+            </li>
+            <li className="reasons-feature-item">
+              <FontAwesomeIcon icon={faTools} /> Online maintenance requests & work orders
+            </li>
+            <li className="reasons-feature-item">
+              <FontAwesomeIcon icon={faUserCheck} /> AI-powered tenant screening
+            </li>
+            <li className="reasons-feature-item">
+              <FontAwesomeIcon icon={faChartLine} /> Real-time financial insights
+            </li>
+          </ul>
         </div>
+        
+        {/* === IMAGE STRUCTURE WITH OVERLAYS === */}
+        <div className="reasons-image-wrapper">
+          {/* Main background image (the building) */}
+          <img src="/Image/Demo_Img" alt="Reasons Illustration" className="main-img" />
+          
+          {/* Overlay images (the 'Square' and 'Rectangle' data cards) */}
+          {/* Ensure these paths are correct for your uploaded images */}
+          <img src="/Image/transaction.jpg" alt="Transaction statistics card" className="overlay-img square-overlay" />
+          <img src="/Image/profit.jpg" alt="Profit chart card" className="overlay-img rectangle-overlay" />
+        </div>
+        {/* =========================================== */}
 
-    </div>
+      </div>
 
       <Footer />
     </div>
