@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import WOW from 'wowjs';
+import 'animate.css';
 import Navbar from './Navbar'
 import Footer from './Footer'
 import '../assets/css/Home.css'
 const Home = () => {
+  useEffect(() => {
+  new WOW.WOW({ live: false }).init();
+}, []);
   return (
     <>
       <Navbar />
-      <div className="Home-style">
+      <div className="Home-style wow">
          <section className="hero-section">
       <div className="hero-wrapper">
         
@@ -24,17 +29,17 @@ const Home = () => {
               <span className="badge-crm" id="badge-crm">Modern CRM</span>
               
               {/* --- Heading Group --- */}
-              <div className="heading-group">
+              <div className="heading-group wow animate__animated animate__fadeInUp">
                 <h1>AI-powered CRM for businesses</h1>
                 <p>Automate sales, streamline customer relationships, and scale your business—all in one intuitive platform.</p>
               </div>
             </div>
             
             {/* --- Form and Trust Badges --- */}
-            <div className="form-trust-group">
+            <div className="form-trust-group wow">
               
               {/* Form */}
-              <form action="#" method="post" className="email-form">
+              <form   className="email-form">
                 <input 
                   id="userEmail" 
                   placeholder="Enter your email" 
@@ -75,45 +80,45 @@ const Home = () => {
           </div>
 
           {/* === Right Image Column (Visualizations) === */}
-          <div className="hero-image-column">
+          <div className="hero-image-column wow animate__animated animate__fadeInRight">
             {/* Figure 1 */}
-            <figure className="figure-1">
-              <img alt="CRM dashboard visualization" src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" />
+            <figure className="figure-1 ">
+              <img alt="CRM dashboard visualization" src="/Image/hero-img-01.webp" />
             </figure>
             
             {/* Figure 2 */}
             <figure className="figure-2">
-              <img alt="CRM feature card" src="YOUR_IMAGE_PATH_2" />
+              <img alt="CRM feature card" src="/Image/hero-img-03.svg" />
             </figure>
             
             {/* Figure 3 */}
             <figure className="figure-3">
-              <img alt="CRM analytics view" src="YOUR_IMAGE_PATH_3" />
+              <img alt="CRM analytics view" src="/Image/hero-img-04.webp" />
             </figure>
             
             {/* Figure 4 */}
             <figure className="figure-4">
-              <img alt="CRM customer profile" src="YOUR_IMAGE_PATH_4" />
+              <img alt="CRM customer profile" src="/Image/hero-img-02.webp" />
             </figure>
             
             {/* Figure 5 */}
             <figure className="figure-5">
-              <img alt="CRM data visualization" src="YOUR_IMAGE_PATH_5" />
+              <img alt="CRM data visualization" src="/Image/hero-img-05.webp" />
             </figure>
             
             {/* Figure 6 */}
             <figure className="figure-6">
-              <img alt="CRM sales pipeline view" src="YOUR_IMAGE_PATH_6" />
+              <img alt="CRM sales pipeline view" src="/Image/hero-img-06.webp" />
             </figure>
             
             {/* Figure 7 */}
             <figure className="figure-7">
-              <img alt="CRM activity feed" src="YOUR_IMAGE_PATH_7" />
+              <img alt="CRM activity feed" src="/Image/hero-img-07.webp" />
             </figure>
             
             {/* Figure 8 */}
             <figure className="figure-8">
-              <img alt="CRM reporting interface" src="YOUR_IMAGE_PATH_8" />
+              <img alt="CRM reporting interface" src="/Image/hero-img-08.webp" />
             </figure>
             
           </div>
