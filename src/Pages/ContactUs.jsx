@@ -5,6 +5,8 @@ import "../assets/css/Contact.css"
 import { MdOutlineDriveFileRenameOutline, MdPhone } from "react-icons/md";
 import { MdOutlineMail, MdOutlineMessage  } from "react-icons/md";
 import { FaHome, FaEnvelope, FaPhone } from "react-icons/fa";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const ContactUs = () => {
 
@@ -100,15 +102,14 @@ const ContactUs = () => {
   };
   return (
     <>
-    <div >
+  <Navbar />
+    <div className="contact">
 
-    </div>
     <section className=" section-padding">
   <div className="container">
-   <h3>Reach out to our support team for help.</h3>
-   <p>Whether you have a question, need technical assistance, or just want some guidance, our support team is here to help. We're available around the clock to provide quick and friendly support.
-
-</p>
+   <h1 style={{color:'#3f3737'}}>Reach out to our support team for help.</h1>
+   {/* <p style={{color:'#696666',width:"770px",textAlign:'center'}}>Whether you have a question, need technical assistance, or just want some guidance, our support team is here to help. We're available around the clock to provide quick and friendly support.
+</p> */}
 
     <div className="row">
 
@@ -192,7 +193,7 @@ const ContactUs = () => {
               ></textarea>
             </div>
             <div className="col-12">
-              <button type="submit" className="btn btn-dark rounded-pill px-4 py-2 " style={{width:'100%'}}>
+              <button type="submit" className="btn btn-dark rounded-pill px-4 py-2 " style={{width:'100%',background:"#000"}}>
             Submit
               </button>
             </div>
@@ -203,8 +204,9 @@ const ContactUs = () => {
     </div>
   </div>
 </section>
+    </div>
 
-
+<Footer />
 
     </>
   )
