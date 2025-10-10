@@ -1,0 +1,240 @@
+
+/* General layout */
+.homeprice .min-h-screen {
+  min-height: 100vh;
+  padding: 1.5rem; /* p-6 */
+}
+
+@media (min-width: 768px) {
+  .homeprice .min-h-screen {
+    padding: 3rem; /* md:p-12 */
+  }
+}
+.homeprice .pricing-header{
+ 
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* Pricing header */
+
+
+.homeprice .select-plan-title {
+  font-size: 2.5rem; /* 4xl */
+  font-weight: 800;
+  color: #111827; /* gray-900 */
+  margin-top: 0.5rem;
+  max-width: 48rem;
+  margin: 40px auto;
+  /* margin-left: auto;
+  margin-right: auto; */
+  text-align: center;
+}
+
+
+.homeprice .plan-button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+/* Toggle button */
+.homeprice .toggle-wrapper {
+  display: flex;
+  background-color: #e5e7eb; /* gray-200 */
+  padding: 0.25rem;
+  border-radius: 9999px; /* rounded-full */
+  position: relative;
+}
+
+.homeprice .toggle-wrapper button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: none;
+}
+
+.homeprice .toggle-wrapper button.active {
+  background-color: #ffffff;
+  color: #111827; /* text-gray-900 */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.homeprice .toggle-wrapper button:not(.active) {
+  color: #4b5563; /* gray-600 */
+}
+
+.homeprice .save-tag {
+  position: absolute;
+  top: -7px;
+  right: -15px;
+  transform: rotate(24deg);
+  background-color: #000;
+  color: #fff;
+  font-size: 0.625rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* Plan Cards Container */
+.homeprice .plan-cards-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+/* Base card */
+.homeprice .pricing-card-base {
+  background-color: #f4f5f8;
+  color: #111827;
+  padding: 2rem;
+  width: 350px;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+  transition: all 0.3s;
+  min-width: 300px;
+  max-width: 400px;
+}
+.homeprice .pricing-card-base h2,
+.homeprice .highlight-card h2 {
+    font-size: 20px;
+}
+.homeprice .pricing-card-base p,
+.homeprice .highlight-card p {
+    font-size: 14px;
+}
+.homeprice .highlight-card {
+  background-color: #8c60f7;
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 350px;
+  border: 6px solid #dcdddf;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+  transition: all 0.3s;
+  transform: scale(1.03);
+  position: relative;
+}
+
+.homeprice .highlight-card .highlight-card-border {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.homeprice .pricing-card-base .highlight-card-border {
+  border-color: #e5e7eb;
+}
+
+/* Pricing */
+.pricing-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+/* Price number (was inline) */
+.homeprice .pricing-price-number {
+  font-size: 2.5rem; /* 4xl */
+  font-weight: 800;
+}
+
+.homeprice .highlight-period-text {
+  color: #6b7280; /* gray-500 */
+}
+
+.homeprice .highlight-per-month-text {
+  color: #9ca3af; /* gray-400 */
+}
+.homeprice .pricing-badge {
+  background: #f2efff;
+  color: #7856ff;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.homeprice .highlight-card .highlight-period-text,
+.homeprice .highlight-card .highlight-per-month-text {
+  color: rgba(255,255,255,0.85);
+}
+
+.homeprice .highlight-card .text-white {
+  color: white;
+}
+
+/* Button */
+.homeprice .button-base {
+  width: 100%;
+  padding: 0.75rem 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+      background: #8c60f7;
+    color: white;
+  border-radius: 30px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  border: none;
+}
+
+.homeprice .button-highlight {
+  background-color: #fff;
+  color: #8c60f7;
+}
+
+.homeprice .button-base:hover {
+  background-color: #896fc9;
+}
+
+.homeprice .button-highlight:hover {
+  background-color: #f4f5f8;
+}
+
+/* Features */
+.homeprice .feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.9375rem; /* 15px */
+}
+
+.homeprice .feature-item span {
+  font-weight: 500;
+}
+
+.homeprice .feature-item .included {
+  color: #22c55e; /* green-500 */
+}
+
+.homeprice .feature-item .excluded {
+  color: #9ca3af; /* gray-400 */
+}
+
+.homeprice .feature-item .highlight-included {
+  color: #72f760;
+}
+
+.homeprice .feature-item .highlight-excluded {
+  color: rgba(255,255,255,0.5);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .homeprice .plan-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .homeprice .pricing-card-base, .homeprice .highlight-card {
+    max-width: 400px;
+  }
+  .homeprice .select-plan-title {
+    font-size: 1.75rem;
+  }
+}

@@ -92,7 +92,7 @@ export default function RealEstateAgentCRM() {
   return (
     <div>
       <Navbar />
-      <div className="real-style">
+      <div className="real-style wow animate__animated animate__fadeInUp">
         <div className="hero-banner">
           <img src="/Image/hero-banner.png" alt="Hero Banner" />
           <div className="banner-content">
@@ -108,7 +108,7 @@ export default function RealEstateAgentCRM() {
       </div>
 
       {/* ✅ Counter Section */} 	
-      <section className="counter-section" ref={sectionRef}>
+      <section className="counter-section wow animate__animated animate__fadeInUp" ref={sectionRef}>
         <div className="container">
           <div className="content">
             <h2>Powering the most successful businesses</h2>
@@ -134,50 +134,50 @@ export default function RealEstateAgentCRM() {
       </section>
 
 
-      <div className="reasons-section">
-        <div className="reasons-container">
-          <span className="reasons-badge">Reasons to select us</span>
-          <h1 className="reasons-title">Modern tools built for today’s property teams.</h1>
-          <p className="reasons-subtitle">
-            Streamline operations, reduce manual tasks, and maximize revenue.
-          </p>
-          <ul className="reasons-features">
-            <li className="reasons-feature-item">
-              <FontAwesomeIcon icon={faTachometerAlt} /> Unif ied dashboard for all properties
-            </li>
-            <li className="reasons-feature-item">
-              <FontAwesomeIcon icon={faHandHoldingUsd} /> Automated rent collection & reminders
-            </li>
-            <li className="reasons-feature-item">
-              <FontAwesomeIcon icon={faTools} /> Online maintenance requests & work orders
-            </li>
-            <li className="reasons-feature-item">
-              <FontAwesomeIcon icon={faUserCheck} /> AI-powered tenant screening
-            </li>
-            <li className="reasons-feature-item">
-              <FontAwesomeIcon icon={faChartLine} /> Real-time financial insights
-            </li>
-          </ul>
-        </div>
-        
-        {/* === IMAGE STRUCTURE WITH OVERLAYS === */}
-        <div className="reasons-image-wrapper">
-          {/* Main background image (the building) */}
-          <img src="/Image/Demo_Img" alt="Reasons Illustration" className="main-img" />
-          
-          {/* Overlay images (the 'Square' and 'Rectangle' data cards) */}
-          {/* Ensure these paths are correct for your uploaded images */}
-          <img src="/Image/transaction.jpg" alt="Transaction statistics card" className="overlay-img square-overlay" />
-          <img src="/Image/profit.jpg" alt="Profit chart card" className="overlay-img rectangle-overlay" />
-        </div>
-        {/* =========================================== */}
+       <div className="reasons-section wow">
+              <div className="reasons-container container">
+                <span className="reasons-badge">Reasons to select us</span>
+                <h1 className="reasons-title mt-5">Modern tools built for today’s property teams.</h1>
+                <p className="reasons-subtitle pt-3">
+                  Streamline operations, reduce manual tasks, and maximize revenue.
+                </p>
+                <ul className="reasons-features wow animate__animated animate__fadeInUp">
+                  <li className="reasons-feature-item">
+                    <FontAwesomeIcon icon={faTachometerAlt} /> Unified dashboard for all properties
+                  </li>
+                  <li className="reasons-feature-item">
+                    <FontAwesomeIcon icon={faHandHoldingUsd} /> Automated rent collection & reminders
+                  </li>
+                  <li className="reasons-feature-item">
+                    <FontAwesomeIcon icon={faTools} /> Online maintenance requests & work orders
+                  </li>
+                  <li className="reasons-feature-item">
+                    <FontAwesomeIcon icon={faUserCheck} /> AI-powered tenant screening
+                  </li>
+                  <li className="reasons-feature-item">
+                    <FontAwesomeIcon icon={faChartLine} /> Real-time financial insights
+                  </li>
+                </ul>
+              </div>
+              
+              {/* === IMAGE STRUCTURE WITH OVERLAYS === */}
+              <div className="reasons-image-wrapper wow animate__animated animate__fadeInUp">
+                {/* Main background image (the building) */}
+                <img src="/Image/Demo_Img" alt="Reasons Illustration" className="main-img" />
+                
+                {/* Overlay images (the 'Square' and 'Rectangle' data cards) */}
+                {/* Ensure these paths are correct for your uploaded images */}
+                <img src="/Image/transaction.jpg" alt="Transaction statistics card" className="overlay-img square-overlay" />
+                <img src="/Image/profit.jpg" alt="Profit chart card" className="overlay-img rectangle-overlay" />
+              </div>
+              {/* =========================================== */}
+      
+            </div>
 
-      </div>
-
-<div className="property-section">
+<div className="property-section wow">
       <div className="content">
         <span className="tag">Features</span>
-        <h2>Robust tools to enhance your property management business.</h2>
+        <h2 className='wow animate__animated animate__fadeInUp'>Robust tools to enhance your property management business.</h2>
       </div>
       <div className="container">
         <div className="image-container">

@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
-import WOW from 'wowjs';
-import 'animate.css';
+
 import Navbar from './Navbar'
 import Footer from './Footer'
 import '../assets/css/Home.css'
@@ -12,10 +11,40 @@ import {
   faUserCheck,
   faChartLine,
 } from "@fortawesome/free-solid-svg-icons";
+import HomePricing from '../component/HomePricing';
 const Home = () => {
-  useEffect(() => {
-  new WOW.WOW({ live: false }).init();
-}, []);
+const features = [
+    {
+      id: 1,
+      title: "Sales & pipeline management",
+      description: [
+        "Visual sales pipelines for complete deal visibility.",
+        "One-click proposal and contract generation.",
+        "AI-powered lead scoring to prioritize high-value prospects.",
+      ],
+      image: "/Image/feature-img-01.webp", // Replace with your real image
+    },
+    {
+      id: 2,
+      title: "Omnichannel customer support",
+      description: [
+        "Handle tickets, chat, and calls in one place.",
+        "Chatbots for quick customer replies.",
+        "Customer portal to lower ticket requests.",
+      ],
+      image: "/Image/feature-img-02.webp",
+    },
+    {
+      id: 3,
+      title: "AI-driven marketing automation",
+      description: [
+        "AI-powered email & SMS campaigns.",
+        "Smart customer segmentation & personalized outreach.",
+        "Performance tracking & analytics for marketing ROI.",
+      ],
+      image: "/Image/feature-img-03.webp",
+    },
+  ];
   return (
     <>
       <Navbar />
@@ -180,8 +209,48 @@ const Home = () => {
       {/* property section end */}
 
       {/* Features section start */}
+ <section className="features-section">
+      <div className="features-container">
+        <div className="features-header">
+          <span className="features-badge">Features</span>
+          <h2 className='wow animate__animated animate__fadeInUp'>Key features of PureSaas CRM</h2>
+          <p>
+            PureSaas CRM is designed to simplify and supercharge your customer
+            relationship management. With a clean, user-friendly interface and
+            powerful automation tools.
+          </p>
+        </div>
 
+        <div className="features-grid">
+          {features.map((feature) => (
+            <div key={feature.id} className="feature-card wow animate__animated animate__fadeInUp">
+              <div className="feature-top">
+              
+                <img
+                  src={feature.image}
+                  alt={feature.title}
+                  className="feature-image"
+                />
+              </div>
+
+              <div className="feature-content">
+                <h3>{feature.title}</h3>
+                <ul>
+                  {feature.description.map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
       {/* Features section end */}
+
+      {/* pricing section start  */}
+      <HomePricing />
+      {/* pricing section end  */}
       <Footer />
     </>
   )

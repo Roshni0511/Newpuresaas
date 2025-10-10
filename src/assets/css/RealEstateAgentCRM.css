@@ -5,7 +5,7 @@
   height: 100vh;
   min-height: 600px;
   overflow: hidden;
-  top: -103px;
+  top: -106px;
   border-radius: 0px;
   z-index: 0;
 }
@@ -615,6 +615,7 @@
 }
 
 
+/* ======================================= */
 
 .property-section {
   padding: 40px 20px;
@@ -623,11 +624,11 @@
   font-family: Arial, sans-serif;
 }
 
-.content {
+.property-section .content {
   margin-bottom: 20px;
 }
 
-.tag {
+.property-section .tag {
   display: inline-block;
   padding: 5px 15px;
   background-color: #e0f7e0;
@@ -637,31 +638,31 @@
   margin-bottom: 10px;
 }
 
-h2 {
+.property-section h2 {
   font-size: 2.5em;
   color: #333;
   margin-bottom: 45px;
 }
 
-.container {
+.property-section .container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
 
-.image-container {
+.property-section .image-container {
   flex: 1;
   max-width: 50%;
 }
 
-.image-container img {
+.property-section .image-container img {
   width: 100%;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.info-grid {
+.property-section .info-grid {
   flex: 1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -669,7 +670,7 @@ h2 {
   max-width: 50%;
 }
 
-.info-card {
+.property-section .info-card {
   background: linear-gradient(135deg, #1e3c72, #2a5298);
   color: white;
   padding: 20px;
@@ -680,25 +681,25 @@ h2 {
   height: 183px;
 }
 
-.info-card h3 {
+.property-section .info-card h3 {
   font-size: 20px;
   margin: 0 0 10px;
   color: #d3d3d3;
   font-weight: bold;
 }
 
-.info-card p {
+.property-section .info-card p {
   font-size: 1.5em;
   margin: 0;
   font-weight: bold;
 }
 
 @media (max-width: 768px) {
-  .container {
+  .property-section .container {
     flex-direction: column;
   }
 
-  .image-container, .info-grid {
+  .property-section .image-container, .info-grid {
     max-width: 100%;
   }
 }
