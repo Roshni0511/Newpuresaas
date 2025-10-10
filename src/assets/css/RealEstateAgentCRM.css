@@ -1,5 +1,5 @@
 /* ==================== HERO BANNER ==================== */
-.hero-banner {
+.real-style .hero-banner {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -9,7 +9,7 @@
   border-radius: 0px;
 }
 
-.hero-banner::after {
+.real-style .hero-banner::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -20,7 +20,7 @@
   z-index: 1;
 }
 
-.hero-banner img {
+.real-style .hero-banner img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -28,9 +28,9 @@
 }
 
 /* ==================== OVERLAY CONTENT ==================== */
-.banner-content {
-position: absolute;
-  top: 40%; /* move content slightly upward (50% -> 45%) */
+.real-style .banner-content {
+  position: absolute;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -41,7 +41,7 @@ position: absolute;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
-.banner-content .subtitle {
+.real-style .banner-content .subtitle {
   background: rgba(255,255,255,0.25);
   padding: 8px 20px;
   border-radius: 25px;
@@ -52,8 +52,8 @@ position: absolute;
   letter-spacing: 0.5px;
 }
 
-.banner-content h1 {
-   font-size: clamp(1.8rem, 4vw, 3.5rem);
+.real-style .banner-content h1 {
+  font-size: clamp(1.8rem, 4vw, 3.5rem);
   margin: 20px 0;
   font-weight: 700;
   line-height: 1.2;
@@ -61,7 +61,7 @@ position: absolute;
   white-space: nowrap; 
 }
 
-.banner-content p {
+.real-style .banner-content p {
   font-size: clamp(1rem, 1.8vw, 1.3rem);
   margin-bottom: 30px;
   font-weight: 400;
@@ -70,7 +70,7 @@ position: absolute;
   word-wrap: break-word;
 }
 
-.demo-btn {
+.real-style .demo-btn {
   background: black;
   color: white;
   border: none;
@@ -82,9 +82,55 @@ position: absolute;
   transition: all 0.3s ease;
 }
 
-.demo-btn:hover {
+.real-style .demo-btn:hover {
   background: #333;
   transform: translateY(-2px);
+}
+
+/* ==================== RESPONSIVE BREAKPOINTS ==================== */
+@media (max-width: 992px) {
+  .real-style .banner-content h1 {
+    white-space: normal;
+  }
+  .real-style .banner-content p {
+    white-space: normal;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .real-style .hero-banner {
+    height: 80vh;
+  }
+  .real-style .banner-content h1 {
+    line-height: 1.3;
+  }
+  .real-style .banner-content p {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .real-style .hero-banner {
+    height: 70vh;
+  }
+  .real-style .banner-content h1 {
+    font-size: 1.6rem;
+  }
+  .real-style .banner-content p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  .real-style .banner-content .subtitle {
+    font-size: 0.85rem;
+    padding: 6px 15px;
+  }
+  .real-style .demo-btn {
+    padding: 12px 28px;
+    font-size: 0.95rem;
+  }
 }
 
 /* ==================== COUNTER SECTION ==================== */
