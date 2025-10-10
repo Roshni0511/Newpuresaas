@@ -11,6 +11,8 @@ import {
   faChartLine,
 } from "@fortawesome/free-solid-svg-icons";
 
+
+
 export default function RealEstateAgentCRM() {
   // ✅ Counter States
   const [counters, setCounters] = useState({
@@ -141,7 +143,7 @@ export default function RealEstateAgentCRM() {
           </p>
           <ul className="reasons-features">
             <li className="reasons-feature-item">
-              <FontAwesomeIcon icon={faTachometerAlt} /> Unified dashboard for all properties
+              <FontAwesomeIcon icon={faTachometerAlt} /> Unif ied dashboard for all properties
             </li>
             <li className="reasons-feature-item">
               <FontAwesomeIcon icon={faHandHoldingUsd} /> Automated rent collection & reminders
@@ -171,6 +173,37 @@ export default function RealEstateAgentCRM() {
         {/* =========================================== */}
 
       </div>
+
+<div className="property-section">
+      <div className="content">
+        <span className="tag">Features</span>
+        <h2>Robust tools to enhance your property management business.</h2>
+      </div>
+      <div className="container">
+        <div className="image-container">
+          <img src="/Image/hero-banner.png" alt="Property" />
+        </div>
+        <div className="info-grid">
+          <div className="info-card">
+            <h3>Building age</h3>
+            <p>10Y</p>
+          </div>
+          <div className="info-card">
+            <h3>Daily visitors</h3>
+            <p>8950</p>
+          </div>
+          <div className="info-card">
+            <h3>Temperature</h3>
+            <p>34°F</p>
+          </div>
+          <div className="info-card">
+            <h3>Occupancy rate</h3>
+            <p>85%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+        
 
       <Footer />
     </div>
