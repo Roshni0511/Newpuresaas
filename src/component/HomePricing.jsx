@@ -122,8 +122,11 @@ const HomePricing = () => {
               <ul >
                 {plan.features.map((feature,index)=>(
                   <li key={index} className="feature-item">
-                    {feature.included ? <CheckIcon className={plan.highlight ? 'highlight-included' : 'included'} /> 
-                                      : <MinusIcon className={plan.highlight ? 'highlight-excluded' : 'excluded'} />}
+                   {feature.included ? (
+                <i className={`fa-solid fa-circle-check ${plan.highlight ? 'highlight-included' : 'included'}`}></i>
+                ) : (
+                     <i className={`fa-solid fa-circle-minus ${plan.highlight ? 'highlight-excluded' : 'excluded'}`}></i>
+                )}
                     <span className={feature.included ? (plan.highlight?'text-white':'text-gray-700') : (plan.highlight?'text-white/60':'text-gray-500')}>
                       {feature.text}
                     </span>

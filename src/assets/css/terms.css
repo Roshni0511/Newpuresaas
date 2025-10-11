@@ -14,16 +14,16 @@
   font-weight: 500;
 }
 .serviceLeadingSection{
-  width: 80%;
-  margin-top: 15px;
+  /* width: 80%; */
+  margin-top: 30px;
   margin-bottom:15px;
 }
 .sn{
-  font-size: 32px;
+  font-size: 25px;
   padding-right: 5px;
 }
 .st{
-  font-size: 32px;
+  font-size: 25px;
 }
 .spl{
   margin-top: 15px;
@@ -43,6 +43,7 @@
 }
 .serviceDetails{
   margin-left: 15px;
+  text-align: justify;
 }
 
 .displayNone{

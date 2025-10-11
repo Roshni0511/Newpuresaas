@@ -509,7 +509,7 @@
 
 .features-section {
   background: #fafafa;
-  padding: 80px 0;
+  padding: 0px 80px 40px;
   text-align: center;
 }
 
@@ -658,3 +658,445 @@
   }
 }
 
+/* ==================================================================================
+===================================================================================== */
+.IntegrationHome{
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.IntegrationHome .integration-section {
+  background-color: #111; /* black */
+  background-image: url('/public/Image/gradient-22.webp');
+  background-size: cover;
+  background-position: -277px -479px;
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+  padding: 100px 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.IntegrationHome .integration-overlay {
+  position: relative;
+  z-index: 2;
+}
+
+.IntegrationHome .integration-content {
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.IntegrationHome .integration-tag {
+  color: #a8ff60;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.IntegrationHome .integration-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.IntegrationHome .integration-text {
+  color: #d1d5db;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.IntegrationHome .integration-btn {
+  background: linear-gradient(90deg, #9b8cff, #b79cff);
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.IntegrationHome .integration-btn:hover {
+  background: linear-gradient(90deg, #b79cff, #9b8cff);
+  transform: scale(1.05);
+}
+
+/* bottom image */
+.IntegrationHome .integration-image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.IntegrationHome .integration-icons {
+  max-width: 100%;
+  width: 630px;
+  height: auto;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .IntegrationHome .integration-title {
+    font-size: 2rem;
+  }
+  .IntegrationHome .integration-icons {
+    width: 90%;
+  }
+}
+
+/* =============================================================================
+================================================================================ */
+
+.whoHome {
+  background: #f8f8f8;
+  padding: 100px 0;
+}
+
+.whoHome .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.whoHome .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.whoHome .left-section {
+  position: relative;
+  display: flex;
+  justify-content: start;
+}
+
+.whoHome .image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.whoHome .main-person {
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.whoHome .revenue-card {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(20%);
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px 16px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  width: 220px;
+}
+
+.whoHome .revenue-title {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.whoHome .revenue-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 15px;
+  color: #000;
+}
+
+.whoHome .revenue-bar {
+  background: #eee;
+  height: 4px;
+  border-radius: 3px;
+  margin-top: 6px;
+  overflow: hidden;
+}
+
+.whoHome .revenue-progress {
+  height: 100%;
+  background: #7856ff;
+  transition: width 0.6s ease-in-out;
+  border-radius: 3px;
+}
+
+.whoHome .who-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.whoHome .who-desc {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  max-width: 480px;
+}
+
+.whoHome .who-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.whoHome .who-list li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #222;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.whoHome .who-list li i {
+  color: #000;
+  font-size: 15px;
+}
+
+.whoHome .who-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 28px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.whoHome .who-btn:hover {
+  background: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .whoHome .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .whoHome .col-6 {
+    width: 100%;
+  }
+
+  .whoHome .right-section {
+    margin-top: 40px;
+  }
+
+  .whoHome .main-person {
+    width: 300px;
+    height: 300px;
+  }
+
+  .whoHome .revenue-card {
+    transform: translateX(-50%);
+    left: 50%;
+  }
+}
+/* ===================================================================================
+====================================================================================== */
+
+.cta-section {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 100px 30px; /* Adjust padding as needed */
+    background-color: #f8f8fa; /* Light background color from image */
+    min-height: 450px; /* Ensure sufficient height */
+    gap: 80px; /* Space between the left and right columns */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.cta-section .cta-content-left {
+    flex: 1; /* Allow left content to grow */
+    max-width: 550px; /* Max width to control text length */
+    text-align: left;
+}
+
+.cta-section .cta-tag {
+    display: inline-block;
+    background-color: #e0e0ff; /* Light purple tag */
+    color: #6a0dad; /* Darker purple text */
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.cta-section .cta-title {
+    font-size: 40px; /* Large, bold title */
+    font-weight: 700;
+    color: #2c3e50;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.cta-section .cta-description {
+    font-size: 1.1rem;
+    color: #667085;
+    line-height: 1.6;
+    max-width: 450px; /* Constrain description width */
+}
+
+.cta-section .cta-form-right {
+    flex: 1; /* Allow right content to grow */
+    max-width: 450px; /* Max width for the form area */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left within this flex container */
+}
+
+.cta-section .cta-form {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    gap: 10px; /* Space between input and button */
+    flex-wrap: wrap; /* Allow input/button to wrap on very small screens */
+}
+
+.cta-section .cta-email-input {
+    flex-grow: 1; /* Allow input to take available space */
+    padding: 14px 20px;
+    border: 1px solid #d0d5dd;
+    border-radius: 30px;
+    font-size: 1rem;
+    color: #344054;
+    outline: none; /* Remove default outline */
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    min-width: 200px; /* Ensure input is not too small */
+}
+
+.cta-section .cta-email-input:focus {
+    border-color: #8a2be2; /* Purple border on focus */
+    box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.2); /* Light purple glow */
+}
+
+.cta-section .cta-button {
+    padding: 14px 25px;
+    background-color: #8a2be2; /* Purple button */
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+    white-space: nowrap; /* Prevent text wrap on button */
+}
+
+.cta-section .cta-button:hover {
+    background-color: #7a1ee0; /* Slightly darker purple on hover */
+    transform: translateY(-1px);
+}
+
+.cta-section .cta-button:active {
+    transform: translateY(0);
+}
+
+.cta-section .cta-features {
+    display: flex;
+    gap: 30px; /* Space between feature items */
+    flex-wrap: wrap; /* Allow features to wrap */
+}
+
+.cta-section .feature-item {
+    display: flex;
+    align-items: center;
+    color: #475467;
+    font-size: 1rem;
+}
+
+.cta-section .feature-item i {
+    margin-right: 8px;
+    stroke: #333; /* Color of the checkmark */
+    stroke-width: 2;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .cta-section .cta-section {
+        flex-direction: column; /* Stack columns vertically */
+        text-align: center;
+        padding: 80px 30px;
+        gap: 50px;
+    }
+
+    .cta-section .cta-content-left {
+        max-width: 100%; /* Take full width */
+        margin-bottom: 30px;
+    }
+
+    .cta-section .cta-title {
+        font-size: 2.8rem;
+    }
+
+    .cta-section .cta-description {
+        max-width: 80%; /* Keep description readable */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cta-section .cta-form-right {
+        max-width: 100%; /* Take full width */
+        align-items: center; /* Center form and features */
+    }
+
+    .cta-section .cta-form {
+        flex-direction: column; /* Stack input and button */
+        width: 80%; /* Constrain form width */
+        max-width: 400px;
+    }
+
+    .cta-section .cta-email-input,
+    .cta-section .cta-button {
+        width: 100%; /* Full width for stacked items */
+    }
+    
+    .cta-section .cta-features {
+        justify-content: center; /* Center feature items */
+    }
+}
+
+@media (max-width: 768px) {
+    .cta-section .cta-title {
+        font-size:30px;
+    }
+        .cta-section .cta-description {
+        font-size: 15px;
+        margin: 0;
+        max-width: 100%;
+    }
+    .cta-section .cta-section {
+        padding: 60px 20px;
+    }
+    .cta-section .cta-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+ 
+    .cta-section .cta-title {
+        font-size: 24px;
+    }
+    .cta-section .cta-tag {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+    .cta-section .feature-item {
+        font-size: 0.9rem;
+    }
+    .cta-section .cta-features {
+        flex-direction: column; /* Stack features vertically */
+        gap: 10px;
+    }
+}

@@ -2,7 +2,7 @@
 /* General layout */
 .homeprice .min-h-screen {
   min-height: 100vh;
-  padding: 1.5rem; /* p-6 */
+  padding: 10px; /* p-6 */
 }
 
 @media (min-width: 768px) {
@@ -204,13 +204,17 @@
   margin-bottom: 0.75rem;
   font-size: 0.9375rem; /* 15px */
 }
+.homeprice .feature-item i {
+  font-size: 18px;
+  margin-right: 8px;
+}
 
 .homeprice .feature-item span {
   font-weight: 500;
 }
 
 .homeprice .feature-item .included {
-  color: #22c55e; /* green-500 */
+  color: #000000; /* green-500 */
 }
 
 .homeprice .feature-item .excluded {
@@ -218,7 +222,7 @@
 }
 
 .homeprice .feature-item .highlight-included {
-  color: #72f760;
+  color: #ffffff;
 }
 
 .homeprice .feature-item .highlight-excluded {
@@ -236,5 +240,43 @@
   }
   .homeprice .select-plan-title {
     font-size: 1.75rem;
+  }
+}
+/* Responsive card width adjustments */
+@media (max-width: 1200px) {
+  .homeprice .pricing-card-base,
+  .homeprice .highlight-card {
+    width: 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .homeprice .pricing-card-base,
+  .homeprice .highlight-card {
+    width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .homeprice .plan-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .homeprice .pricing-card-base,
+  .homeprice .highlight-card {
+    width: 90%;
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 480px) {
+  .homeprice .pricing-card-base,
+  .homeprice .highlight-card {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .homeprice .select-plan-title {
+    font-size: 1.5rem;
   }
 }

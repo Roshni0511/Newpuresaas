@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect ,useState } from 'react';
 
 import Navbar from './Navbar'
 import Footer from './Footer'
@@ -12,7 +12,29 @@ import {
   faChartLine,
 } from "@fortawesome/free-solid-svg-icons";
 import HomePricing from '../component/HomePricing';
+import Review from '../component/Review';
+import HomeFaq from '../component/HomeFaq';
+// import bgImage from '../../public/Image/gradient-22.webp'; // your gradient background image
+// import iconsImage from '../../public/Image/intregration-img.webp';
 const Home = () => {
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    // Animate progress bar filling up
+    let start = 0;
+    const end = 80; // Final percentage
+    const duration = 1500; // in ms
+    const increment = end / (duration / 20);
+
+    const interval = setInterval(() => {
+      start += increment;
+      if (start >= end) {
+        start = end;
+        clearInterval(interval);
+      }
+      setProgress(Math.floor(start));
+    }, 20);
+  }, []);
 const features = [
     {
       id: 1,
@@ -45,6 +67,16 @@ const features = [
       image: "/Image/feature-img-03.webp",
     },
   ];
+   const [email, setEmail] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Here you would typically handle the form submission,
+        // e.g., send the email to an API, log it, etc.
+        console.log('Email submitted:', email);
+        alert(`Starting your trial for: ${email}`);
+        setEmail(''); // Clear the input after submission
+    };
   return (
     <>
       <Navbar />
@@ -209,7 +241,7 @@ const features = [
       {/* property section end */}
 
       {/* Features section start */}
- <section className="features-section">
+    <section className="features-section">
       <div className="features-container">
         <div className="features-header">
           <span className="features-badge">Features</span>
@@ -251,6 +283,129 @@ const features = [
       {/* pricing section start  */}
       <HomePricing />
       {/* pricing section end  */}
+
+      {/* Integration section start  */}
+      <div className="IntegrationHome">
+         <div className="container">
+         <section className="integration-section">
+      <div className="integration-overlay">
+        <div className="integration-content">
+          <p className="integration-tag">Integration</p>
+          <h2 className="integration-title  wow animate__animated animate__fadeInUp">
+            Boost productivity with <br /> 50+ integrations.
+          </h2>
+          <p className="integration-text wow">
+            Seamlessly connect your favorite tools and platforms without the usual hassle.
+            Our solution is designed to make it easier.
+          </p>
+          <button className="integration-btn">See it in action</button>
+        </div>
+
+        <div className="integration-image-wrapper wow animate__animated animate__fadeInUp">
+          <img src="/Image/intregration-img.webp" alt="Integration icons" className="integration-icons" />
+        </div>
+      </div>
+    </section>
+       </div>
+      </div>
+      {/* Integration section end  */}
+
+      {/* Who uses section start  */}
+        <div className="whoHome wow animate__animated animate__fadeInUp">
+      <div className="container">
+        <div className="row align-items-center">
+          {/* === Left Side === */}
+          <div className="col-6 left-section">
+            <div className="image-wrapper">
+              <img
+                src="/Image/round-image.webp"
+                alt="person"
+                className="main-person"
+              />
+              <div className="revenue-card">
+                <p className="revenue-title">Today's Revenue</p>
+                <div className="revenue-amount">
+                  <span>$ 53,224</span>
+                  <span className="revenue-percent">{progress}%</span>
+                </div>
+                <div className="revenue-bar">
+                  <div
+                    className="revenue-progress"
+                    style={{ width: `${progress}%` }}
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* === Right Side === */}
+          <div className="col-6 right-section">
+            <h1 className="who-title wow animate__animated animate__fadeInUp">
+              Who uses PureSaas CRM?
+            </h1>
+            <p className="who-desc">
+              Take control of your finances with us and experience the confidence
+              that comes with smart money management. Whether you're looking to
+              budget better
+            </p>
+            <ul className="who-list">
+              <li><i className="fa-solid fa-circle-check"></i> Sales Teams</li>
+              <li><i className="fa-solid fa-circle-check"></i> Marketing Teams</li>
+              <li><i className="fa-solid fa-circle-check"></i> Customer Support Teams</li>
+              <li><i className="fa-solid fa-circle-check"></i> Small Businesses & Enterprises</li>
+            </ul>
+            <button className="who-btn">How it works</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      {/* Who uses section end  */}
+      
+      {/* review section start  */}
+      <Review />
+      {/* review section end  */}
+
+      {/* faq section start  */}
+      <HomeFaq />
+      {/* faq section end  */}
+
+
+      {/* email section start  */}
+
+       <section className="cta-section wow animate__animated animate__fadeInUp">
+            <div className="cta-content-left">
+                <span className="cta-tag">Finance</span>
+                <h1 className="cta-title">Ready to transform your business with PureSaas CRM</h1>
+                <p className="cta-description">
+                    Start your free trial today and see your ideas come to life easily and creatively.
+                </p>
+            </div>
+
+            <div className="cta-form-right">
+                <form onSubmit={handleSubmit} className="cta-form">
+                    <input
+                        type="email"
+                        placeholder="Enter your email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                        className="cta-email-input"
+                    />
+                    <button type="submit" className="cta-button">Get started!</button>
+                </form>
+                <div className="cta-features">
+                    <div className="feature-item">
+                        <i className="fa-solid fa-circle-check "></i>
+                        <span>No credit card required</span>
+                    </div>
+                    <div className="feature-item">
+                        <i className="fa-solid fa-circle-check "></i>
+                        <span>14-Day free trial</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+      {/* email section end   */}
       <Footer />
     </>
   )
