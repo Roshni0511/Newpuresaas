@@ -225,7 +225,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 50px 5%;
+  padding: 60px 13%;
   background-color: #f9f9f9;
   gap: 40px;
 }
@@ -647,7 +647,7 @@
     grid-row: 3;
 }
 
-.div3 {
+.property-div3 {
     grid-column: 2;
     grid-row: 3 / span 2;
 }
@@ -689,7 +689,7 @@
     border-radius: 10px;
 }
 
-.card {
+.property-card {
     padding: 20px; /* Updated from 15px */
     border-radius: 15px; /* Updated from 10px */
     text-align: center;
@@ -723,6 +723,21 @@
 .card p {
     margin: 0;
     color: #666 !important;
+}
+
+.metric-card {
+  background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+  backdrop-filter: blur(50px); /* Maximum possible blur effect for frosted glass look */
+  -webkit-backdrop-filter: blur(50px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for definition */
+  border-radius: 12px; /* Rounded corners */
+  padding: 20px;
+  text-align: center;
+  color: #ffffff; /* Light text for contrast */
+}
+
+.metric-card:hover {
+  transform: translateY(-5px); /* Lift on hover */
 }
 
 .progress-card {
@@ -793,6 +808,8 @@
   flex-direction: column;
   /* gap: 20px; */
   align-items: center; /* center rows horizontally */
+  padding-bottom: 150px;
+
 }
 
 .bus-card-row {
@@ -971,7 +988,8 @@
 
 .industry-card-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
   padding: 20px;
   background: #f9f9f9;
 }

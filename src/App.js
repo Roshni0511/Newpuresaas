@@ -9,6 +9,8 @@ import ContactUs from './Pages/ContactUs';
 import Termsandcondition from './Pages/Termsandcondition';
 import "material-icons/iconfont/material-icons.css";
 import Mission from './Pages/Mission';
+import Privacypolicy from './Pages/Privacypolicy';
+import Refundpolicy from './Pages/Refundpolicy';
 
 const FabButton = ({ id, label, iconClass, link, show, positionClass }) => {
     return (
@@ -143,6 +145,8 @@ function App() {
     <Route path='/RealEstateAgentCRM' element={<RealEstateAgentCRM/>}/>
     <Route path='/ContactUs'  element={<ContactUs/>}/>
     <Route path='/Termsandcondition' element={<Termsandcondition/>}/>
+    <Route path='/Privacypolicy' element={<Privacypolicy/>}/>
+    <Route path='/Refundpolicy' element={<Refundpolicy/>}/>
     <Route path='/Mission' element={<Mission/>}/>
   </Routes>
   <BackToTopButton />
