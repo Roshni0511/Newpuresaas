@@ -225,7 +225,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 50px 5%;
+  padding: 60px 13%;
   background-color: #f9f9f9;
   gap: 40px;
 }
@@ -793,6 +793,8 @@
   flex-direction: column;
   /* gap: 20px; */
   align-items: center; /* center rows horizontally */
+  padding-bottom: 150px;
+
 }
 
 .bus-card-row {
@@ -971,7 +973,8 @@
 
 .industry-card-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
   padding: 20px;
   background: #f9f9f9;
 }

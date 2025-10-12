@@ -182,7 +182,7 @@ export default function RealEstateAgentCRM() {
 {/* Property Section */}
 {/* ============================= */}
 
-<div style={{background:'#f9f9f9'}}>
+<div style={{background:'#f9f9f9'}} className=' wow animate__animated animate__fadeInUp'>
 <div className="opacity-100 filter-none rotate-0 scale-100 text-center">
   {/* Badge */}
   <span 
@@ -198,7 +198,7 @@ export default function RealEstateAgentCRM() {
 </div>
 
 
-<section style={{marginTop:'60px', paddingBottom:'100px'}}>
+<section style={{marginTop:'60px', paddingBottom:'190px'}}>
 <div class="parent">
     <div class="div1">
       <img src="/Image/hero-banner.png" alt="Building" />
@@ -277,7 +277,7 @@ export default function RealEstateAgentCRM() {
 
 
 
-<div className="opacity-100 filter-none rotate-0 scale-100 text-center" style={{background:'#f9f9f9'}}>
+<div className="opacity-100 filter-none rotate-0 scale-100 text-center  wow animate__animated animate__fadeInUp" style={{background:'#f9f9f9'}}>
   {/* Badge */}
   <span 
     className="badge text-dark mb-3" 
@@ -286,7 +286,7 @@ export default function RealEstateAgentCRM() {
   </span>
 
   {/* Heading */}
-  <h2 style={{ fontSize: '2rem', opacity: 1, filter: 'blur(0px)', marginBottom:'0', fontWeight:'700', color:'#2c3e50'}}>
+  <h2 style={{ fontSize: '2rem', opacity: 1, filter: 'blur(0px)', marginBottom:'0', fontWeight:'700', color:'#2c3e50', paddingBottom:'50px'}}>
     Powerful features to elevate<br></br> your business
   </h2>
 </div>
@@ -297,7 +297,7 @@ export default function RealEstateAgentCRM() {
         <div>
         <div className="bus-card">
           <img
-            src="/Image/hero-banner.png"
+            src="/Image/feature1.jpg"
             alt="Card 1"
             className="bus-card-image"
           />
@@ -309,7 +309,7 @@ export default function RealEstateAgentCRM() {
         <div>
         <div className="bus-card">
           <img
-            src="/Image/hero-banner.png"
+            src="/Image/feature2.jpg"
             alt="Card 2"
             className="bus-card-image"
           />
@@ -322,7 +322,7 @@ export default function RealEstateAgentCRM() {
         <div>
         <div className="bus-card">
           <img
-            src="/Image/hero-banner.png"
+            src="/Image/feature3.jpg"
             alt="Card 3"
             className="bus-card-image"
           />
@@ -338,7 +338,7 @@ export default function RealEstateAgentCRM() {
         <div>
         <div className="bus-card">
           <img
-            src="/Image/hero-banner.png"
+            src="/Image/feature4.jpg"
             alt="Card 4"
             className="bus-card-image"
           />
@@ -350,7 +350,7 @@ export default function RealEstateAgentCRM() {
         <div>
         <div className="bus-card">
           <img
-            src="/Image/hero-banner.png"
+            src="/Image/feature5.jpg"
             alt="Card 5"
             className="bus-card-image"
           />
@@ -365,7 +365,7 @@ export default function RealEstateAgentCRM() {
 
 
 
-<section style={{background:'#f9f9f9', paddingTop:'60px', paddingBottom:'90px'}}>
+<section style={{background:'#f9f9f9', paddingTop:'60px', paddingBottom:'90px'}} className=' wow animate__animated animate__fadeInUp'>
 <div className="opacity-100 filter-none rotate-0 scale-100 text-center" style={{marginTop:'60px'}}>
   {/* Badge */}
   <span 
@@ -390,8 +390,8 @@ export default function RealEstateAgentCRM() {
 
 
 
-<section>
-  <div className="opacity-100 filter-none rotate-0 scale-100 text-center" style={{background:'#f9f9f9' , paddingBottom:'40px'}}>
+<section className=' wow animate__animated animate__fadeInUp'> 
+  <div className="opacity-100 filter-none rotate-0 scale-100 text-center" style={{background:'#f9f9f9' , paddingBottom:'40px', paddingTop:'60px'}}>
   {/* Badge */}
   <span 
     className="badge text-dark mb-3" 
@@ -400,7 +400,7 @@ export default function RealEstateAgentCRM() {
   </span>
 
   {/* Heading */}
-  <h2 style={{ fontSize: '2rem', opacity: 1, filter: 'blur(0px)', marginBottom:'20', fontWeight:'700', color:'#2c3e50'}}>
+  <h2 style={{ fontSize: '2rem', opacity: 1, filter: 'blur(0px)', marginBottom:'20', fontWeight:'700', color:'#2c3e50', paddingTop:'20px'}}>
    Industries we serve
   </h2>
   <span>we deliver tailored solutions that meet the unique needs of each sector. Our cross- <br></br>industry expertise allows us to innovate, adapt, and drive results</span>
@@ -435,8 +435,8 @@ export default function RealEstateAgentCRM() {
 
 
 
-<section style={{background:'#f9f9f9'}}>
-  <div className="opacity-100 filter-none rotate-0 scale-100 text-center" style={{background:'#f9f9f9'}}>
+<section style={{background:'#f9f9f9'}} className=' wow animate__animated animate__fadeInUp'>
+  <div className="opacity-100 filter-none rotate-0 scale-100 text-center" style={{background:'#f9f9f9', paddingTop:'120px'}}>
   {/* Badge */}
   <span 
     className="badge text-dark mb-3" 
@@ -457,7 +457,7 @@ export default function RealEstateAgentCRM() {
 
 
 
-<section style={{background:'#f9f9f9'}}>
+<section style={{background:'#f9f9f9'}} className=' wow animate__animated animate__fadeInUp'>
 <RealEstateAgentCRMfaq/>
 </section>
 

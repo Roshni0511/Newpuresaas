@@ -7,25 +7,25 @@ const testimonials = [
   {
     name: "John Doe",
     designation: "CEO, Company A",
-    image: "https://via.placeholder.com/80",
+    image: "/Image/profile1.jpeg",
     message: "This service is amazing! Highly recommend to everyone.",
   },
   {
     name: "Jane Smith",
     designation: "Marketing Head, Company B",
-    image: "https://via.placeholder.com/80",
+    image: "/Image/profile2.jpeg", 
     message: "Truly exceptional experience. The team is very professional.",
   },
   {
     name: "Michael Lee",
     designation: "Product Manager, Company C",
-    image: "https://via.placeholder.com/80",
+    image: "/Image/profile3.jpeg", 
     message: "Quality and dedication at its best. I am impressed!",
   },
   {
     name: "Sara Khan",
     designation: "Designer, Company D",
-    image: "https://via.placeholder.com/80",
+    image: "/Image/profile2.jpeg", 
     message: "Highly creative solutions and excellent support!",
   },
 ];
@@ -42,8 +42,8 @@ const TestimonialSlider = () => {
     >
       <Swiper
         modules={[Autoplay]}
-        spaceBetween={40} // Increased spacing between cards
-        slidesPerView={1} // Default view for mobile
+        spaceBetween={40}
+        slidesPerView={1}
         loop={true}
         autoplay={{
           delay: 2000,
@@ -52,9 +52,9 @@ const TestimonialSlider = () => {
         }}
         breakpoints={{
           640: { slidesPerView: 1 },
-          768: { slidesPerView: 1.5 }, // Wider cards
-          1024: { slidesPerView: 2 },   // Only 2 cards, bigger width
-          1280: { slidesPerView: 2.5 }, // Adjust as needed
+          768: { slidesPerView: 1.5 },
+          1024: { slidesPerView: 2 },
+          1280: { slidesPerView: 2.5 },
         }}
       >
         {testimonials.map((t, index) => (
@@ -63,9 +63,9 @@ const TestimonialSlider = () => {
               style={{
                 background: "#fff",
                 borderRadius: "15px",
-                padding: "30px", // More padding makes it visually bigger
+                padding: "30px",
                 textAlign: "center",
-                width: "100%", // Ensure card fills SwiperSlide width
+                width: "100%",
               }}
             >
               <img
@@ -76,15 +76,12 @@ const TestimonialSlider = () => {
                   height: "80px",
                   borderRadius: "50%",
                   marginBottom: "15px",
+                  objectFit: "cover",
                 }}
               />
               <h3 style={{ margin: "10px 0", fontSize: "1.2rem" }}>{t.name}</h3>
-              <p style={{ fontStyle: "italic", color: "#555" }}>
-                {t.designation}
-              </p>
-              <p style={{ marginTop: "15px", fontSize: "1rem" }}>
-                "{t.message}"
-              </p>
+              <p style={{ fontStyle: "italic", color: "#555" }}>{t.designation}</p>
+              <p style={{ marginTop: "15px", fontSize: "1rem" }}>"{t.message}"</p>
             </div>
           </SwiperSlide>
         ))}
