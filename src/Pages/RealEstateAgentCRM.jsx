@@ -205,7 +205,7 @@ export default function RealEstateAgentCRM() {
     </div>
 
     <div class="div2">
-  <div class="card" style={{background:'#f9eb57'}}>
+  <div class="property-card" style={{background:'#f9eb57'}}>
     <div class="profile-row">
       <img src="path-to-profile1.jpg" alt="Profile 1" class="profile-img" />
       <img src="path-to-profile2.jpg" alt="Profile 2" class="profile-img" />
@@ -219,8 +219,8 @@ export default function RealEstateAgentCRM() {
   </div>
 </div>
 
-    <div class="div3">
-      <div class="card">
+    <div class="property-div3">
+      <div class="property-card">
         <h3>Tenants</h3>
         <p>Join over 800 active tenants enjoying the perks of being part of our vibrant community, where you can connect with neighbors.</p>
       </div>
