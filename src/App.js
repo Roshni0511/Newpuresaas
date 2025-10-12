@@ -11,6 +11,8 @@ import "material-icons/iconfont/material-icons.css";
 import Mission from './Pages/Mission';
 import Privacypolicy from './Pages/Privacypolicy';
 import Refundpolicy from './Pages/Refundpolicy';
+import Vision from './Pages/Vision';
+import Enterprise from './Pages/Enterprise';
 
 const FabButton = ({ id, label, iconClass, link, show, positionClass }) => {
     return (
@@ -148,6 +150,8 @@ function App() {
     <Route path='/Privacypolicy' element={<Privacypolicy/>}/>
     <Route path='/Refundpolicy' element={<Refundpolicy/>}/>
     <Route path='/Mission' element={<Mission/>}/>
+    <Route path='/Vision' element={<Vision/>}/>
+    <Route path='/Enterprise' element={<Enterprise/>}/>
   </Routes>
   <BackToTopButton />
    <div class="wh-api">

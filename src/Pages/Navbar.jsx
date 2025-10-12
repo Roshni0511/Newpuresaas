@@ -130,7 +130,7 @@ export default function Navbar() {
             </li>
 
             <li className="header__li ">
-              <a href="#" className="header__a ">
+              <a href="/Enterprise" className="header__a ">
                 Enterprise 
               </a>
             </li>

@@ -101,6 +101,7 @@
 .missionslide .card {
   position: sticky;
   top: 0;
+  border: 0px;
 }
 
 .missionslide .card__inner {

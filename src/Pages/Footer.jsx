@@ -45,9 +45,9 @@ const Footer = () => {
             <div className="footer-column">
               <h3>Company</h3>
               <ul className="footer-links">
-                <li><a href="#">Enterprise</a></li>
-                <li><a href="#">Mission</a></li>
-                <li><a href="#">Vision</a></li>
+                <li><a href="/Enterprise">Enterprise</a></li>
+                <li><a href="/Mission">Mission</a></li>
+                <li><a href="/Vision">Vision</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="/ContactUs">Contact US</a></li>
