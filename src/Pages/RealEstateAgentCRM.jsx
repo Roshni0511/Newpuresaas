@@ -62,7 +62,7 @@ export default function RealEstateAgentCRM() {
       orders: 50,
     };
 
-    const duration = 2000; // 2 seconds
+    const duration = 2000; 
     const steps = 60;
     const stepDuration = duration / steps;
 
