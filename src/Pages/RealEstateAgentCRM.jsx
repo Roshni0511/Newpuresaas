@@ -226,36 +226,28 @@ export default function RealEstateAgentCRM() {
       </div>
     </div>
 
-<div class="div4">
-  <div class="card glass-card-1">
+<div class="div4 metric-card">
     <i class="fas fa-building card-icon"></i>
     <h3>Building Age</h3>
     <p>10Y</p>
-  </div>
 </div>
 
-<div class="div5">
-  <div class="card glass-card-2">
+<div class="div5 metric-card">
     <i class="fas fa-users card-icon"></i>
     <h3>Daily Visitors</h3>
     <p>8950</p>
-  </div>
 </div>
 
-<div class="div6">
-  <div class="card glass-card-3">
+<div class="div6 metric-card">
     <i class="fas fa-thermometer-half card-icon"></i>
     <h3>Temperature</h3>
     <p>34°F</p>
-  </div>
 </div>
 
-<div class="div7">
-  <div class="card glass-card-4">
+<div class="div7 metric-card">
     <i class="fas fa-home card-icon"></i>
     <h3>Occupancy Rate</h3>
     <p>85%</p>
-  </div>
 </div>
 
 

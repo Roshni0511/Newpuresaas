@@ -725,6 +725,21 @@
     color: #666 !important;
 }
 
+.metric-card {
+  background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+  backdrop-filter: blur(50px); /* Maximum possible blur effect for frosted glass look */
+  -webkit-backdrop-filter: blur(50px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for definition */
+  border-radius: 12px; /* Rounded corners */
+  padding: 20px;
+  text-align: center;
+  color: #ffffff; /* Light text for contrast */
+}
+
+.metric-card:hover {
+  transform: translateY(-5px); /* Lift on hover */
+}
+
 .progress-card {
     background: #000;
     padding: 15px;
