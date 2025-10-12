@@ -3,28 +3,28 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import '../assets/css/Mission.css'
 
-export default function Mission() {
+export default function Vision() {
  const containerRef = useRef(null);
 
   const data = [
     {
-      title: "Empowering Growth and Innovation",
-      desc: `our mission is to empower businesses of all sizes with innovative software solutions that drive growth, efficiency, and success. We are dedicated to developing cutting-edge technology that addresses the unique needs of our clients, helping them to navigate the complexities of their industries with ease and confidence.`,
+      title: "Pioneering the Future of Software Solutions",
+      desc: `our vision is to pioneer the future of software solutions by continually innovating and setting new standards in the industry. We aspire to be the go-to provider for businesses seeking reliable, cutting-edge software that transforms how they operate and grow.`,
       img: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=100",
     },
     {
-      title: "Commitment to Excellence",
-      desc: `We believe in setting the highest standards for our products and services. Our commitment to excellence is reflected in every aspect of our operations, from the initial design and development of our software to the ongoing support and updates we provide. We strive to deliver solutions that not only meet but exceed the expectations of our clients.`,
+      title: "Empowering Businesses Worldwide",
+      desc: `We envision a world where businesses, regardless of their size or location, have access to the best software tools to drive their success. By breaking down barriers and providing scalable solutions, we aim to empower businesses worldwide to achieve their full potential.`,
       img: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=100",
     },
     {
-      title: "Building Long-Term Partnerships",
-      desc: `We value long-term relationships with our clients and partners. Our goal is to build lasting partnerships based on trust, reliability, and mutual success. By delivering consistent value and exceptional service, we foster relationships that go beyond transactional interactions, contributing to the sustained growth and success of our clients.`,
+      title: "Building a Connected Ecosystem",
+      desc: `Our vision extends to building a connected ecosystem where our software solutions seamlessly integrate with other technologies and platforms. By fostering interoperability, we enable businesses to create cohesive and efficient workflows that enhance productivity and innovation.`,
       img: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=100",
     },
     {
-      title: "Relentless Innovation",
-      desc: `In the ever-evolving world of technology, staying ahead of the curve is crucial. We invest heavily in research and development to keep our software solutions at the forefront of the industry. Our focus on innovation ensures that our clients benefit from the latest advancements and features, providing them with a competitive edge in their respective markets.`,
+      title: "Championing Customer Success",
+      desc: `our vision is the success of our customers. We aim to be more than just a software provider; we want to be a trusted partner in our customers' journeys. Our success is measured by the success of those we serve, and we are dedicated to supporting them every step of the way.`,
       img: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=100",
     },
   ];
@@ -120,10 +120,10 @@ export default function Mission() {
         <div className="Mission-content">
           <p className="Mission-tag">Puresaas</p>
           <h2 className="Mission-title  wow animate__animated animate__fadeInUp">
-           Mission
+           Vision
           </h2>
           <div class="mt-15">
-            <a href="/">Home</a><span class="padding-rl-20">|</span><span class="main-color">Mission</span>
+            <a href="/">Home</a><span class="padding-rl-20">|</span><span class="main-color">Vision</span>
         </div>
         </div>
 
@@ -139,7 +139,7 @@ export default function Mission() {
          <div className="row">
         <div className="col-lg-6">
           <div>
-              <p className="mission-badge">Our Mission</p>
+              <p className="mission-badge">Our Vision</p>
         <h2 className="mission-heading wow animate__animated animate__fadeInUp">
          Driving Innovation, Empowering Growth, and Delivering Excellence in Every Solution.
         </h2>

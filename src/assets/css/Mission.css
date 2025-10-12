@@ -87,3 +87,205 @@
 /* ============================================================================
 =============================================================================== */
 
+.missionslide{
+  padding-bottom: 30px;
+}
+.missionslide .cards {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px 0;
+}
+
+.missionslide .card {
+  position: sticky;
+  top: 0;
+  border: 0px;
+}
+
+.missionslide .card__inner {
+  background: white;
+  border-radius: 14px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px hsla(265.3, 20%, 10%, 35%);
+  transform-origin: center top;
+  transition: transform 0.1s ease-out, filter 0.1s ease-out;
+}
+
+.missionslide .card__image-container {
+  display: flex;
+  width: 40%;
+  flex-shrink: 0;
+}
+
+.missionslide .card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.missionslide .card__content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  justify-content: center;
+}
+
+.missionslide .card__title {
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+  font-weight: 700;
+  color: #16263a;
+  margin-bottom: 20px;
+}
+.missionslide .mission-badge {
+  display: inline-block;
+  background: #f0ebff;
+  color: #7856ff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.missionslide .card__description {
+  line-height: 1.6;
+  font-size: 14px;
+  color: #333;
+}
+ .missionslide .mission-heading {
+  font-size: 30px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 60px;
+  line-height: 1.2;
+}
+.missionslide .space {
+  height: 90vh;
+}
+
+.missionslide .space--small {
+  height: 40vh;
+}
+
+@media (max-width: 600px) {
+  .missionslide .card__inner {
+    flex-direction: column;
+  }
+
+  .missionslide .card__image-container {
+    width: 100%;
+  }
+
+  .missionslide .card__image {
+    aspect-ratio: 16 / 9;
+  }
+
+  .missionslide .card__title {
+    font-size: 26px;
+  }
+
+  .missionslide .card__description {
+    font-size: 15px;
+  }
+
+  .missionslide .card__content {
+    padding: 25px 18px;
+  }
+}
+
+
+/* ==============================================================
+================================================================= */
+
+
+.missionprocess .process-section {
+  background: #f9fafa;
+  padding: 100px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.missionprocess .container {
+  /* width: 90%; */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.missionprocess .process-badge {
+  display: inline-block;
+  background: #f0ebff;
+  color: #7856ff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.missionprocess .process-heading {
+  font-size: 42px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 60px;
+  line-height: 1.2;
+}
+
+.missionprocess .process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.missionprocess .process-card {
+  background: #fff;
+  padding: 20px ;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.missionprocess .progress-line {
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, #a3e4f9, #66f);
+  transition: width 1.5s ease;
+}
+
+.missionprocess .progress-line.active {
+  width: 100%;
+}
+.missionprocess .step-id {
+  color: #7856ff;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 20px 0 5px;
+}
+
+.missionprocess .step-title {
+  font-size: 20px;
+  color: #111;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.missionprocess .step-desc {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .missionprocess .process-heading {
+    font-size: 32px;
+  }
+  .missionprocess .process-grid {
+    gap: 30px;
+  }
+}
