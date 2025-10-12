@@ -1,4 +1,4 @@
-/* BlogLayout.css */
+/* Blog.css */
 
 /* Base styles */
 .blogs-container {
@@ -58,6 +58,33 @@
   justify-content: space-between;
 }
 
+.blogs-category {
+  display: inline-block;
+  background-color: #e3f2fd;
+  color: #1976d2;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  align-self: flex-start;
+}
+
+.blogs-meta {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #666;
+}
+
+.blogs-date,
+.blogs-read-time {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
 .blogs-article-title {
   margin: 0 0 10px 0;
   font-size: 18px;
@@ -66,37 +93,48 @@
   flex: 1;
 }
 
-.blogs-article-date {
-  color: #666;
-  font-size: 14px;
-  margin: 0 0 10px 0;
-}
-
 .blogs-read-more-btn {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
+  background: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
   padding: 8px 16px;
   border-radius: 4px;
   cursor: pointer;
   align-self: flex-start;
+  font-size: 14px;
+  transition: all 0.3s ease;
 }
 
 .blogs-read-more-btn:hover {
-  background-color: #0056b3;
+  background-color: #007bff;
+  color: #fff;
 }
 
 /* Search styles */
 .blogs-search-section {
   margin-bottom: 20px;
+  position: relative;
+}
+
+.blogs-search-wrapper {
+  position: relative;
 }
 
 .blogs-search-input {
   width: 100%;
-  padding: 10px;
+  padding: 10px 40px 10px 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+.blogs-search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 16px;
 }
 
 /* Section styles */
@@ -104,6 +142,14 @@
   margin: 0 0 10px 0;
   font-size: 16px;
   color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blogs-total-count {
+  color: #999;
+  font-size: 14px;
 }
 
 /* Category styles */
@@ -124,6 +170,8 @@
   color: #666;
   text-decoration: none;
   font-size: 14px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .blogs-category-count {
@@ -147,16 +195,30 @@
   object-fit: cover;
   margin-right: 10px;
   border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.blogs-recent-content {
+  flex: 1;
 }
 
 .blogs-recent-text {
-  margin: 0;
+  margin: 0 0 4px 0;
   font-size: 14px;
   color: #666;
   line-height: 1.4;
 }
 
-/* Past issues styles */
+.blogs-recent-date {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Past records styles */
+.blogs-past-section {
+  margin-bottom: 20px;
+}
+
 .blogs-past-list {
   list-style: none;
   padding: 0;
@@ -170,6 +232,8 @@
   color: #666;
   text-decoration: none;
   font-size: 14px;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Responsive styles */
@@ -216,8 +280,8 @@
     font-size: 16px;
   }
 
-  .blogs-article-date {
-    font-size: 12px;
+  .blogs-meta {
+    font-size: 11px;
   }
 
   .blogs-read-more-btn {
@@ -230,7 +294,12 @@
   }
 
   .blogs-search-input {
-    padding: 8px;
+    padding: 8px 35px 8px 8px;
+  }
+
+  .blogs-search-icon {
+    right: 8px;
+    font-size: 14px;
   }
 
   .blogs-recent-img {
