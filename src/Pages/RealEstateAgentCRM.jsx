@@ -10,6 +10,10 @@ import {
   faUserCheck,
   faChartLine,
 } from "@fortawesome/free-solid-svg-icons";
+import BrandSlider from '../component/BrandSlider';
+import TestimonialsSlider from '../component/Testimonials';
+import RealEstateAgentCRMfaq from '../component/Realestatecrmfaq';
+import HomeFaq from '../component/HomeFaq';
 
 
 
@@ -177,37 +181,7 @@ export default function RealEstateAgentCRM() {
 {/* ============================= */}
 {/* Property Section */}
 {/* ============================= */}
-{/* <div className="property-section wow">
-  <div className="content">
-    <span className="tag">Features</span>
-    <h2 className='wow animate__animated animate__fadeInUp'>
-      Robust tools to enhance your property management business.
-    </h2>
-  </div>
-  <div className="container">
-    <div className="image-container" id="main-banner">
-      <img src="/Image/hero-banner.png" alt="Property" />
-    </div>
-    <div className="info-grid">
-      <div className="info-card">
-        <h3>Building age</h3>
-        <p>10Y</p>
-      </div>
-      <div className="info-card">
-        <h3>Daily visitors</h3>
-        <p>8950</p>
-      </div>
-      <div className="info-card">
-        <h3>Temperature</h3>
-        <p>34°F</p>
-      </div>
-      <div className="info-card">
-        <h3>Occupancy rate</h3>
-        <p>85%</p>
-      </div>
-    </div>
-  </div>
-</div> */}
+
 <div style={{background:'#f9f9f9'}}>
 <div className="opacity-100 filter-none rotate-0 scale-100 text-center">
   {/* Badge */}
@@ -218,13 +192,13 @@ export default function RealEstateAgentCRM() {
   </span>
 
   {/* Heading */}
-  <h2 style={{ fontSize: '2rem', opacity: 1, filter: 'blur(0px)' }}>
+  <h2 style={{ fontSize: '2rem', opacity: 1, filter: 'blur(0px)', marginBottom:'20', fontWeight:'700', color:'#2c3e50' }}>
     Robust tools to enhance your <br />property management business.
   </h2>
 </div>
 
 
-<section style={{marginTop:'60px', marginBottom:'90px'}}>
+<section style={{marginTop:'60px', paddingBottom:'100px'}}>
 <div class="parent">
     <div class="div1">
       <img src="/Image/hero-banner.png" alt="Building" />
@@ -303,7 +277,7 @@ export default function RealEstateAgentCRM() {
 
 
 
-<div className="opacity-100 filter-none rotate-0 scale-100 text-center">
+<div className="opacity-100 filter-none rotate-0 scale-100 text-center" style={{background:'#f9f9f9'}}>
   {/* Badge */}
   <span 
     className="badge text-dark mb-3" 
@@ -312,12 +286,12 @@ export default function RealEstateAgentCRM() {
   </span>
 
   {/* Heading */}
-  <h2 style={{ fontSize: '2rem', opacity: 1, filter: 'blur(0px)' }}>
+  <h2 style={{ fontSize: '2rem', opacity: 1, filter: 'blur(0px)', marginBottom:'0', fontWeight:'700', color:'#2c3e50'}}>
     Powerful features to elevate<br></br> your business
   </h2>
 </div>
 
-<div className="bus-card-container">
+<div className="bus-card-container" style={{background:'#f9f9f9'}}>
       {/* Top row - 3 cards */}
       <div className="bus-card-row">
         <div>
@@ -391,26 +365,137 @@ export default function RealEstateAgentCRM() {
 
 
 
-
-<div className="opacity-100 filter-none rotate-0 scale-100 text-center">
+<section style={{background:'#f9f9f9', paddingTop:'60px', paddingBottom:'90px'}}>
+<div className="opacity-100 filter-none rotate-0 scale-100 text-center" style={{marginTop:'60px'}}>
   {/* Badge */}
   <span 
     className="badge text-dark mb-3" 
-    style={{ backgroundColor: '#ffe16bff', fontSize: '1rem', padding: '0.5rem 1rem' }}>
+    style={{ backgroundColor: '#ffe16bff', fontSize: '1rem', padding: '0.5rem 1rem'}}>
     Features
   </span>
 
   {/* Heading */}
-  <h2 style={{ fontSize: '2rem', opacity: 1, filter: 'blur(0px)' }}>
+  <h2 style={{ fontSize: '2rem', opacity: 1, filter: 'blur(0px)', marginBottom:'20', fontWeight:'700', color:'#2c3e50' }}>
     Enhance your productivity effortlessly with <br></br>over 50 integrations.
   </h2>
   <span>Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin though it looks like nothing.</span>
+<div style={{marginTop:'40px'}}>
+<BrandSlider/>
+</div>
 
-  
+</div>
+</section>
+
+
+
+
+
+<section>
+  <div className="opacity-100 filter-none rotate-0 scale-100 text-center" style={{background:'#f9f9f9' , paddingBottom:'40px'}}>
+  {/* Badge */}
+  <span 
+    className="badge text-dark mb-3" 
+    style={{ backgroundColor: '#ffe16bff', fontSize: '1rem', padding: '0.5rem 1rem' }}>
+    Integration
+  </span>
+
+  {/* Heading */}
+  <h2 style={{ fontSize: '2rem', opacity: 1, filter: 'blur(0px)', marginBottom:'20', fontWeight:'700', color:'#2c3e50'}}>
+   Industries we serve
+  </h2>
+  <span>we deliver tailored solutions that meet the unique needs of each sector. Our cross- <br></br>industry expertise allows us to innovate, adapt, and drive results</span>
 </div>
 
 
+<div className="industry-card-container" style={{paddingBottom:'100px'}}>
+      <div className="industry-card">
+        <img src="/Image/industry.jpg" alt="Vacation rentals" className="industry-card-image" />
+        <div className="industry-card-overlay">
+          <h3>Vacation rentals</h3>
+          <p>Enjoy fully furnished spaces with amenities like full kitchens,</p>
+        </div>
+      </div>
+      <div className="industry-card">
+        <img src="/Image/industry.jpg" alt="Corporate housing" className="industry-card-image" />
+        <div className="industry-card-overlay">
+          <h3>Corporate housing</h3>
+          <p>Corporate housing offers a convenient and comfortable living solution for business,</p>
+        </div>
+      </div>
+      <div className="industry-card">
+        <img src="/Image/industry.jpg" alt="Hotels & resorts" className="industry-card-image" />
+        <div className="industry-card-overlay">
+          <h3>Hotels & resorts</h3>
+          <p>Discover a world where comfort meets elegance. Our curated collection of hotels,</p>
+        </div>
+      </div>
+    </div>
+</section>
 
+
+
+
+<section style={{background:'#f9f9f9'}}>
+  <div className="opacity-100 filter-none rotate-0 scale-100 text-center" style={{background:'#f9f9f9'}}>
+  {/* Badge */}
+  <span 
+    className="badge text-dark mb-3" 
+    style={{ backgroundColor: '#ffe16bff', fontSize: '1rem', padding: '0.5rem 1rem' }}>
+    Testimonials
+  </span>
+
+  {/* Heading */}
+  <h2 style={{ fontSize: '2rem', opacity: 1, filter: 'blur(0px)', marginBottom:'20', fontWeight:'700', color:'#2c3e50'}}>
+   Client words
+  </h2>
+</div>
+  <TestimonialsSlider/>
+</section>
+    
+
+
+
+
+
+<section style={{background:'#f9f9f9'}}>
+<RealEstateAgentCRMfaq/>
+</section>
+
+
+
+
+
+<section className="cta-section wow animate__animated animate__fadeInUp">
+            <div className="cta-content-left">
+                <span className="cta-tag">Finance</span>
+                <h1 className="cta-title">Ready to transform your business with PureSaas CRM</h1>
+                <p className="cta-description">
+                    Start your free trial today and see your ideas come to life easily and creatively.
+                </p>
+            </div>
+
+            <div className="cta-form-right">
+                <form className="cta-form">
+                    <input
+                        type="email"
+                        placeholder="Enter your email"
+                        required
+                        className="cta-email-input"
+                    />
+                    <button type="submit" className="cta-button">Get started!</button>
+                </form>
+                <div className="cta-features">
+                    <div className="feature-item">
+                        <i className="fa-solid fa-circle-check "></i>
+                        <span>No credit card required</span>
+                    </div>
+                    <div className="feature-item">
+                        <i className="fa-solid fa-circle-check "></i>
+                        <span>14-Day free trial</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
       <Footer />
     </div>

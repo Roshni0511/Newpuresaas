@@ -855,3 +855,390 @@
 }
 
 /* Business Section CSS Ends */
+
+
+
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+/* Stronger Fade effect on both sides */
+.fade-overlay {
+  position: absolute;
+  top: 0;
+  width: 160px; /* increased width for stronger fade */
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.fade-overlay.left {
+  left: 9;
+  background: #f9f9f9;
+}
+
+.fade-overlay.right {
+  right: 0;
+  background: #f9f9f9;
+}
+
+/* Infinite sliding track */
+.slider-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+.slide {
+  flex-shrink: 0;
+  margin: 0 2vw;
+  padding: 10px;
+  background: white;
+}
+
+.slide img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.slide img:hover {
+  transform: scale(1.1);
+}
+
+/* Infinite scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* 🌐 Responsive Design */
+@media (max-width: 1024px) {
+  .slide img {
+    width: 50px;
+    height: 50px;
+  }
+  .fade-overlay {
+    width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slide img {
+    width: 40px;
+    height: 40px;
+  }
+  .fade-overlay {
+    width: 90px;
+  }
+  .slider-track {
+    animation-duration: 30s; /* slower for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .slide img {
+    width: 35px;
+    height: 35px;
+  }
+  .fade-overlay {
+    width: 70px;
+  }
+  .slider-track {
+    animation-duration: 35s;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.industry-card-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.industry-card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.industry-card:hover .industry-card-image {
+  transform: scale(1.1); /* Scales the image to 110% on hover */
+}
+
+.industry-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Smooth transition for the image */
+}
+
+.industry-card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.industry-card-overlay h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.industry-card-overlay p {
+  margin: 10px 0 0;
+  font-size: 1em;
+}
+
+
+
+
+
+
+.testimonial-slider {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 50px;
+  background: #f9f9f9;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  max-width: 300px;
+  min-height: 300px; /* ensures all cards have equal height */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  flex-shrink: 0;
+}
+
+.testimonial-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  flex-shrink: 0;
+}
+
+.testimonial-card .designation {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 15px;
+  flex-shrink: 0;
+}
+
+.testimonial-card .message {
+  font-size: 1rem;
+  color: #555;
+  font-style: italic;
+  line-height: 1.4;
+  flex-grow: 1; 
+}
+/* Remove default Swiper hover/transition effects */
+.swiper-slide {
+  transition: none !important;
+}
+
+.swiper-slide:hover {
+  transform: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FAQ.css */
+.faq-section {
+    padding: 80px 20px;
+    background-color: #ffffff; /* White background as in the image */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-section .faq-header {
+    text-align: center;
+    margin-bottom: 60px;
+    max-width: 700px;
+}
+
+.faq-section .faq-tag {
+    display: inline-block;
+    background-color: #f0e6ff; /* Light purple */
+    color: #8a2be2; /* Darker purple */
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+
+.faq-section .faq-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.faq-section .faq-description {
+    font-size: 1.05rem;
+    color: #667085;
+    line-height: 1.6;
+}
+
+.faq-section .faq-accordion-container {
+    width: 100%;
+    max-width: 800px; /* Constrain width of accordion items */
+    border-top: 1px solid #eaecf0; /* Top border for the first item's illusion */
+}
+
+.faq-section .accordion-item {
+    border-bottom: 1px solid #eaecf0; /* Separator between items */
+    overflow: hidden; /* Crucial for height transition */
+}
+
+.faq-section .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 25px 0;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #344054;
+    transition: color 0.2s ease-in-out;
+}
+
+.faq-section .accordion-header:hover {
+    color: #1a202c;
+}
+
+.faq-section .accordion-question {
+    margin: 0;
+    font-size: inherit; /* Use button's font size */
+    flex-grow: 1; /* Allows question to take up available space */
+}
+
+.faq-section .accordion-icon {
+    display: flex; /* To center SVG */
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Rotate icon for open state if using CSS transform */
+.faq-section .accordion-item.open .accordion-icon {
+    /* If you prefer rotating one icon instead of swapping SVGs */
+    /* transform: rotate(180deg); */
+}
+
+
+.faq-section .accordion-content {
+    max-height: 0; /* Hidden by default */
+    transition: max-height 0.4s ease-out, padding-top 0.4s ease-out, padding-bottom 0.4s ease-out;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0; /* Start with no padding */
+    padding-bottom: 0; /* Start with no padding */
+}
+
+.faq-section .accordion-content.show {
+    max-height: 200px; /* Adjust to a value larger than content height */
+    padding-top: 5px; /* Add padding when open */
+    padding-bottom: 25px; /* Add padding when open */
+    transition: max-height 0.6s ease-in-out, padding-top 0.4s ease-in-out, padding-bottom 0.4s ease-in-out;
+}
+
+.faq-section .accordion-content p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #475467;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .faq-section {
+        padding: 60px 15px;
+    }
+    .faq-section .faq-title {
+        font-size: 2.2rem;
+    }
+    .faq-section .faq-description {
+        font-size: 0.95rem;
+    }
+    .faq-section .accordion-header {
+        font-size: 1.05rem;
+        padding: 20px 0;
+    }
+    .faq-section .accordion-content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-section .faq-title {
+        font-size: 1.8rem;
+    }
+    .faq-section .accordion-header {
+        font-size: 1rem;
+    }
+}
