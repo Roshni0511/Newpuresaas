@@ -402,3 +402,361 @@
     opacity: 1;
     visibility: visible;
 }
+
+
+/* ======================================================================
+========================================================================= */
+.wh-ap-btn {
+ outline: none;
+ width: 50px;
+ height: 50px;
+ border: 0;
+ background-color: #2ecc71;
+ padding: 0;
+ border-radius: 100%;
+ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+ cursor: pointer;
+ transition: opacity 0.3s, background 0.3s, box-shadow 0.3s;
+}
+
+.wh-ap-btn::after {
+ content: "";
+ background-image: url("//i.imgur.com/cAS6qqn.png");
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-size: 60%;
+ width: 100%;
+ height: 100%;
+ display: block;
+ opacity: 1;
+}
+
+.wh-ap-btn:hover {
+ opacity: 1;
+ background-color: #20bf6b;
+ box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.wh-api {
+ position: fixed;
+ bottom: 60px;
+ right: 12px;
+}
+
+.wh-fixed {
+ margin-right: 15px;
+ margin-bottom: 15px;
+ /* CRUCIAL: We need a relative container for the button's absolute pseudo-element. 
+    Since we cannot change the HTML, we set 'position: relative' on the 'a' tag.
+    The 'wh-fixed' is just a margin container.
+  */
+}
+
+.wh-fixed > a {
+ display: block;
+ text-decoration: none;
+ position: relative; /* ADDED: Makes the 'a' tag the reference for absolute positioning. */
+}
+
+/* FIXED STYLES for the "Chat with me" bubble 
+   The positioning is now relative to the 'a' tag, which holds the button.
+*/
+button.wh-ap-btn::before {
+ content: "Chat with me";
+ display: flex; /* CHANGED: Use flex to center the text vertically */
+ align-items: center; /* NEW: Center text vertically */
+ justify-content: center; /* NEW: Center text horizontally (after width is set) */
+ position: absolute;
+ 
+ /* --- FIX START --- */
+ /* Position the bubble to the left of the button and vertically centered */
+ right: 100%; /* Position the right edge of the bubble flush with the left edge of the button */
+ top: 50%; /* Start the top edge of the bubble at 50% down */
+ transform: translateY(-50%); /* Shift the bubble up by half its height for perfect vertical center */
+ margin-left: 0; /* REMOVED: Old hardcoded negative margin */
+ margin-top: 0; /* REMOVED: Old hardcoded margin */
+ margin-right: 10px; /* ADDED: Small space between button and bubble */
+ /* --- FIX END --- */
+
+ height: 40px; /* CHANGED: Increased height for better padding/vertical centering */
+ background: #49654e;
+ color: #ffffff; /* CHANGED: Set color to white for better contrast (was black in your provided code) */
+ font-weight: 400;
+ font-size: 15px;
+ border-radius: 3px;
+ width: 0;
+ opacity: 0;
+ padding: 0;
+ transition: opacity 0.4s, width 0.4s, padding 0.5s;
+ padding-top: 0; /* REMOVED: Unnecessary padding-top */
+ border-radius: 30px;
+ box-shadow: 0 1px 15px rgba(32, 33, 36, 0.28);
+  white-space: nowrap; /* ADDED: Prevents text wrap inside the bubble */
+}
+
+.wh-fixed > a:hover button.wh-ap-btn::before {
+ opacity: 1;
+ width: 120px; /* CHANGED: Fixed width for consistent animation */
+ padding-top: 0; /* REMOVED: Unnecessary padding-top */
+ padding-left: 15px; /* CHANGED: Adjusted padding */
+ padding-right: 15px; /* CHANGED: Adjusted padding */
+}
+
+/* animacion pulse */
+
+.whatsapp-pulse {
+ width: 50px;
+ height: 50px;
+ /* These properties were conflicting with .wh-api and .wh-fixed, setting them to fixed here 
+     is redundant if they are applied to .wh-api. We will keep them for the pulse effect 
+     but remove 'position: fixed' to avoid conflict, as it's already fixed via .wh-api. 
+     However, to maintain the pulse effect's size/positioning relative to the button, 
+     we'll add 'position: relative' and let .wh-fixed manage the final fixed position.
+  */
+ /* right: 10px; */
+ /* bottom: 65px; */
+ background: #10b418;
+ position: relative; /* CHANGED: Ensures pulse effect is relative to this element */
+ text-align: center;
+ color: #ffffff;
+ cursor: pointer;
+ border-radius: 50%;
+ z-index: 99;
+ display: inline-block;
+ line-height: 65px;
+}
+
+.whatsapp-pulse:before {
+ position: absolute;
+ content: " ";
+ z-index: -1;
+ bottom: -15px;
+ right: -15px;
+ background-color: #10b418;
+ width: 80px;
+ height: 80px;
+ border-radius: 100%;
+ animation-fill-mode: both;
+ -webkit-animation-fill-mode: both;
+ opacity: 0.6;
+ -webkit-animation: pulse 1.8s ease-out;
+ animation: pulse 1.8s ease-out;
+ -webkit-animation-iteration-count: infinite;
+ animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulse {
+ 0% {
+  -webkit-transform: scale(0);
+  opacity: 0;
+ }
+ 25% {
+  -webkit-transform: scale(0.3);
+  opacity: 1;
+ }
+ 50% {
+  -webkit-transform: scale(0.6);
+  opacity: 0.6;
+ }
+ 75% {
+ -webkit-transform: scale(0.9);
+ opacity: 0.3;
+ }
+ 100% {
+  -webkit-transform: scale(1);
+  opacity: 0;
+ }
+}
+
+@keyframes pulse {
+ 0% {
+  transform: scale(0);
+  opacity: 0;
+ }
+ 25% {
+  transform: scale(0.3);
+  opacity: 1;
+ }
+ 50% {
+  transform: scale(0.6);
+  opacity: 0.6;
+ }
+ 75% {
+  transform: scale(0.9);
+  opacity: 0.3;
+ }
+ 100% {
+  transform: scale(1);
+  opacity: 0;
+ }
+}
+
+
+/* ====================================================================== 
+=========================================================================*/
+/* ==========================================================
+   FLOATING ACTION BUTTONS (FAB) MENU STYLES
+   ========================================================== */
+
+/* Overlay remains the same */
+.fab-menu-container #overlay {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(220, 220, 220, 0.7);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+
+.fab-menu-container #overlay.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Floating hamburger button */
+.fab-menu-container #hamburger {
+  z-index: 10;
+  position: fixed;
+  bottom: 140px; /* Adjusted to be low on the screen */
+  right: 29px; /* Positioned to the left of the WhatsApp/BackToTop area */
+  background-color: #ff5722;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(10, 10, 10, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+.fab-menu-container #hamburger .icon-bar {
+  display: block;
+  background-color: #fff;
+  width: 22px;
+  height: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.fab-menu-container #hamburger .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+/* Floating action buttons base style */
+.fab-menu-container .nav {
+  z-index: 10;
+  position: fixed;
+  bottom: 130px; /* Start position close to the hamburger button */
+  right: 29px; /* Start position close to the hamburger button */
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.48);
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  text-decoration: none; /* Remove underline from <a> */
+  
+  /* CRUCIAL for hover label: */
+  position: fixed; /* Keep it fixed */
+}
+
+/* Material Icons styling remains the same */
+.fab-menu-container .material-icons {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.fab-menu-container .nav.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ==========================================================
+   POSITIONING FOR 5 BUTTONS
+   ========================================================== */
+/* The base position is bottom: 40px, right: 104px */
+/* Each button moves up by an increasing multiplier */
+.fab-menu-container .fab-pos-0.show { /* Download Brochure */
+  transform: translateY(-70px); 
+}
+.fab-menu-container .fab-pos-1.show { /* Sign Up */
+  transform: translateY(-130px);
+}
+.fab-menu-container .fab-pos-2.show { /* Schedule a Demo */
+  transform: translateY(-190px);
+}
+.fab-menu-container .fab-pos-3.show { /* Request a Price Quote */
+  transform: translateY(-250px);
+}
+.fab-menu-container .fab-pos-4.show { /* Request a Callback */
+  transform: translateY(-310px);
+}
+
+
+/* ==========================================================
+   NEW: HOVER LABEL (TEXT NEXT TO BUTTON)
+   ========================================================== */
+.fab-menu-container .fab-label {
+    /* Style the bubble */
+    position: absolute;
+    right: 100%; /* Position flush with the left edge of the button */
+    padding: 8px 12px;
+    background-color: #49654e; /* Dark background */
+    color: #ffffff; /* White text */
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 5px;
+    white-space: nowrap;
+    
+    /* Center it vertically */
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 15px; /* Space between the bubble and the button */
+
+    /* Hide by default */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    pointer-events: none; /* Crucial: ensures label doesn't block clicks */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Show the label on hover of the button container (.nav) */
+.fab-menu-container .nav:hover .fab-label {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Hamburger transformation when active remains the same */
+.fab-menu-container #hamburger.show {
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.48);
+}
+
+.fab-menu-container #hamburger.show #wrapper {
+  transform: rotateZ(90deg);
+  transition: transform 0.4s ease-in-out;
+}
+
+.fab-menu-container #hamburger.show #one {
+  transform: translateY(6px) rotateZ(45deg) scaleX(0.9);
+}
+
+.fab-menu-container #hamburger.show #thr {
+  transform: translateY(-6px) rotateZ(-45deg) scaleX(0.9);
+}
+
+.fab-menu-container #hamburger.show #two {
+  opacity: 0;
+}
