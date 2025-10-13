@@ -172,7 +172,7 @@ export default function Navbar() {
         </nav>
 
         <div className="header__cta-wrapper">
-          <a href="/SignIn" className="header__cta-btn">
+          <a href="/LogIn" className="header__cta-btn">
             Sign In
           </a>
         </div>
