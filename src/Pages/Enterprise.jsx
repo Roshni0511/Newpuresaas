@@ -120,12 +120,12 @@ export default function Enterprise() {
     <section className="It-section">
       <div className="It-content">
         <div className="It-badge">Integration</div>
-        <h2 className="It-title">
+        <h2 className="It-title wow animate__animated animate__fadeInUp">
          <span> Security and <br />
           IT management</span>
           
         </h2>
-        <p className="It-subtitle">
+        <p className="It-subtitle wow animate__animated animate__fadeInUp">
          Optimize IT and enterprise operations with a
 comprehensive toolkit,covering cloud access,
 endpoint security, and mobile device management.
@@ -133,10 +133,10 @@ endpoint security, and mobile device management.
         <button className="It-btn">See it in action</button>
       </div>
 
-      <div className="It-icons">
+      <div className="It-icons wow animate__animated animate__fadeInUp">
         {icons.map((icon, index) => (
           <div key={index} className={`icon-item icon-${index}`}>
-            <img src={icon} alt="brand icon" />
+            <img src={icon} alt="brand icon " />
           </div>
         ))}
       </div>

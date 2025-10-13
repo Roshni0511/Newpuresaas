@@ -157,7 +157,7 @@ export default function Navbar() {
            
 
             <li className="header__li ">
-              <a href="#" className="header__a ">
+              <a href="/Blog" className="header__a ">
                 Blogs 
               </a>
               
@@ -172,8 +172,8 @@ export default function Navbar() {
         </nav>
 
         <div className="header__cta-wrapper">
-          <a href="/ContactUs" className="header__cta-btn">
-            Get Started
+          <a href="/SignIn" className="header__cta-btn">
+            Sign In
           </a>
         </div>
       </header>
