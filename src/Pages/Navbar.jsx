@@ -96,7 +96,7 @@ export default function Navbar() {
                   {/* Column 2 */}
                   <ul className="services-dropdown__column">
                     <li>
-                      <a href="#"><span className="service__number">02.</span> B2B Textile ERP</a>
+                      <a href="/B2BTextileERP"><span className="service__number">02.</span> B2B Textile ERP</a>
                       <p>Simplify operations, manage inventory, and streamline production.</p>
                     </li>
                     <li>

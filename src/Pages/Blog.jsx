@@ -39,43 +39,24 @@ const Blog = () => {
               category: 'Banking',
               date: 'May 28, 2025',
               time: '6 min read',
-              title: 'Building Outstanding Customer Experience Strategies',
+              title: 'Secure and Reliable CRM Solutions',
+              
             },
             {
               img: '/Image/blog2.jpg',
               category: 'Finance',
               date: 'May 25, 2025',
               time: '5 min read',
-              title: 'Building Resilient Business Models',
+              title: 'Lead Capture and CRM Integration',
             },
             {
               img: '/Image/blog3.jpg',
               category: 'Technology',
               date: 'May 22, 2025',
               time: '8 min read',
-              title: 'Complete Guide to Digital Transformation in 2025',
+              title: 'Comprehensive Customer Management',
             },
-            {
-              img: '/Image/blog4.jpg',
-              category: 'Startups',
-              date: 'May 18, 2025',
-              time: '4 min read',
-              title: 'Decoding Consolidation: What It Means for Founders',
-            },
-            {
-              img: '/Image/blog5.jpg',
-              category: 'Finance',
-              date: 'May 15, 2025',
-              time: '7 min read',
-              title: 'Digital Making Place in Funds',
-            },
-            {
-              img: '/Image/blog6.jpg',
-              category: 'Banking',
-              date: 'May 12, 2025',
-              time: '5 min read',
-              title: 'Efficient Banking Operations',
-            },
+           
           ].map((blog, index) => (
             <div className="blogs-article" key={index}>
               <img
@@ -103,8 +84,8 @@ const Blog = () => {
         </div>
 
         {/* Sidebar */}
-        <div className="blogs-sidebar">
-          {/* Search */}
+        {/* <div className="blogs-sidebar">
+         
           <div className="blogs-search-section">
             <div className="blogs-search-wrapper">
               <input
@@ -116,7 +97,6 @@ const Blog = () => {
             </div>
           </div>
 
-          {/* Categories */}
           <div className="blogs-categories-section">
             <h4 className="blogs-section-title">Categories</h4>
             <ul className="blogs-category-list">
@@ -135,7 +115,6 @@ const Blog = () => {
             </ul>
           </div>
 
-          {/* Recent Articles */}
           <div className="blogs-recent-section">
             <h4 className="blogs-section-title">Recent articles</h4>
 
@@ -164,7 +143,6 @@ const Blog = () => {
             </div>
           </div>
 
-          {/* Past Records */}
           <div className="blogs-past-section">
             <h4 className="blogs-section-title">
               Past records <span className="blogs-total-count">(28)</span>
@@ -179,7 +157,77 @@ const Blog = () => {
               <li className="blogs-past-item"><a href="#" className="blogs-past-link">February 2025 <span className="blogs-category-count">(2)</span></a></li>
             </ul>
           </div>
-        </div>
+        </div> */}
+          <div className="col-lg-4 col-md-12 wow animate__animated animate__fadeInUp">
+                            <div className="sidebar">
+                                {/* ==== Search Box ==== */}
+                                <div className="sidebar-box search-box">
+                                    <input type="text" placeholder="Search..." />
+                                    <button>
+                                        <i className="fa fa-search"></i>
+                                    </button>
+                                </div>
+
+                                {/* ==== Category ==== */}
+                                <div className="sidebar-box category-box">
+                                    <h5>Category</h5>
+                                    <ul>
+                                        <li><a href="/RealEstateAgentCRM">Real Estate Agent CRM</a></li>
+                                        <li><a href="#">Real Estate CRM</a></li>
+                                        <li><a href="#">Sales CRM</a></li>
+                                        <li><a href="#">Service CRM</a></li>
+                                        <li><a href="#">B2B Textile ERP</a></li>
+                                         <li><a href="#">Telecaller  CRM</a></li>
+                                          <li><a href="#">ATS (Application Tracking System)</a></li>
+                                           <li><a href="#">Payroll System</a></li>
+                                             <li><a href="#">Office ERP</a></li>
+
+                                    </ul>
+                                </div>
+
+                                {/* ==== Recent Posts ==== */}
+                                <div className="sidebar-box recent-posts tags">
+                                    <h5>Latest Posts</h5>
+                                    <ul>
+                                        <li>
+                                            <img src="/Image/bdetail1.png" alt="post" />
+                                            <div>
+                                                <span>Web Design</span>
+                                                <h6 style={{marginTop:'10px'}}><a href="#">Advanced Analytics and Reporting</a></h6>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="/Image/bdetail2.png" alt="post" />
+                                            <div>
+                                                 <span>Web Design</span>
+                                                <h6  style={{marginTop:'10px'}}><a href="#">Automation and Workflow Efficiency</a></h6>
+                                        
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="/Image/bdetail3.png" alt="post" />
+                                            <div>
+                                                 <span>Web Design</span>
+                                                <h6  style={{marginTop:'10px'}}><a href="#">Customizable Solutions</a></h6>
+                                     
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                {/* ==== Popular Tags ==== */}
+                                <div className="sidebar-box tags-box">
+                                    <h5>Popular Tags</h5>
+                                    <div className="tags">
+                                        <span>Data Analytics</span>
+                                        <span>Data Security</span>
+                                        <span>ModUser-friendly CRMern</span>
+                                        <span>Workflow Optimization</span>
+                                     
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
       </div>
 
       <Footer />
