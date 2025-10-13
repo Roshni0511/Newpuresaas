@@ -149,6 +149,7 @@ export default function Navbar() {
                   <ul className="company-dropdown__column">
                     <li><a href="/Mission"> Mission</a>  </li>
                     <li><a href="/Vision">Vision</a></li>
+                    <li><a href="/Solutions">Solutions</a></li>
                   </ul>
                 </div>
               </div>
