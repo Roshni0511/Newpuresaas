@@ -21,6 +21,21 @@ const BrandSlider = () => {
   const duplicatedIcons = [...icons, ...icons];
 
   return (
+    <section style={{background:'#f9f9f9', paddingTop:'60px', paddingBottom:'90px'}} className=' wow animate__animated animate__fadeInUp'>
+<div className="opacity-100 filter-none rotate-0 scale-100 text-center" style={{marginTop:'60px'}}>
+  {/* Badge */}
+  <span 
+    className="badge text-dark mb-3" 
+    style={{ backgroundColor: '#ffe16bff', fontSize: '1rem', padding: '0.5rem 1rem'}}>
+    Features
+  </span>
+
+  {/* Heading */}
+  <h2 style={{ fontSize: '2rem', opacity: 1, filter: 'blur(0px)', marginBottom:'20', fontWeight:'700', color:'#2c3e50' }}>
+    Enhance your productivity effortlessly with <br></br>over 50 integrations.
+  </h2>
+  <span>Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin though it looks like nothing.</span>
+<div style={{marginTop:'40px'}}>
     <div className="slider-container">
       <div className="fade-overlay left"></div>
       <div className="fade-overlay right"></div>
@@ -35,6 +50,9 @@ const BrandSlider = () => {
 
       
     </div>
+    </div>
+    </div>
+</section>
   );
 };
 

@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import '../assets/css/Enterprise.css'
+import BrandSlider from '../component/BrandSlider';
 const icons = [
   "/Image/google-play.png",
   "/Image/snapchat.png",
@@ -142,6 +143,9 @@ endpoint security, and mobile device management.
       </div>
     </section>
     {/* IT management section end */}
+
+        <BrandSlider />
+    
       <Footer />
     </div>
   )

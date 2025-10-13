@@ -207,11 +207,11 @@ export default function RealEstateAgentCRM() {
     <div class="div2">
   <div class="property-card" style={{background:'#f9eb57'}}>
     <div class="profile-row">
-      <img src="path-to-profile1.jpg" alt="Profile 1" class="profile-img" />
-      <img src="path-to-profile2.jpg" alt="Profile 2" class="profile-img" />
-      <img src="path-to-profile3.jpg" alt="Profile 3" class="profile-img" />
-      <img src="path-to-profile4.jpg" alt="Profile 4" class="profile-img" />
-      <img src="path-to-profile5.jpg" alt="Profile 5" class="profile-img" />
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNhTZJTtkR6b-ADMhmzPvVwaLuLdz273wvQ&s" alt="Profile 1" class="profile-img" style={{width:'40px',borderRadius:'100%',marginRight:'5px'}}/>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNhTZJTtkR6b-ADMhmzPvVwaLuLdz273wvQ&s" alt="Profile 2" class="profile-img" style={{width:'40px',borderRadius:'100%',marginRight:'5px'}}/>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNhTZJTtkR6b-ADMhmzPvVwaLuLdz273wvQ&s" alt="Profile 3" class="profile-img" style={{width:'40px',borderRadius:'100%',marginRight:'5px'}}/>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNhTZJTtkR6b-ADMhmzPvVwaLuLdz273wvQ&s" alt="Profile 4" class="profile-img" style={{width:'40px',borderRadius:'100%',marginRight:'5px'}}/>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNhTZJTtkR6b-ADMhmzPvVwaLuLdz273wvQ&s" alt="Profile 5" class="profile-img" style={{width:'40px',borderRadius:'100%',marginRight:'5px'}}/>
       <div class="profile-plus">+20</div>
     </div>
     <h3>Tenants</h3>
@@ -266,6 +266,8 @@ export default function RealEstateAgentCRM() {
 </div>
 
 
+
+<div className=' wow animate__animated animate__fadeInUp'>
 
 
 
@@ -355,30 +357,10 @@ export default function RealEstateAgentCRM() {
       </div>
     </div>
 
+</div>
 
 
-<section style={{background:'#f9f9f9', paddingTop:'60px', paddingBottom:'90px'}} className=' wow animate__animated animate__fadeInUp'>
-<div className="opacity-100 filter-none rotate-0 scale-100 text-center" style={{marginTop:'60px'}}>
-  {/* Badge */}
-  <span 
-    className="badge text-dark mb-3" 
-    style={{ backgroundColor: '#ffe16bff', fontSize: '1rem', padding: '0.5rem 1rem'}}>
-    Features
-  </span>
-
-  {/* Heading */}
-  <h2 style={{ fontSize: '2rem', opacity: 1, filter: 'blur(0px)', marginBottom:'20', fontWeight:'700', color:'#2c3e50' }}>
-    Enhance your productivity effortlessly with <br></br>over 50 integrations.
-  </h2>
-  <span>Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin though it looks like nothing.</span>
-<div style={{marginTop:'40px'}}>
 <BrandSlider/>
-</div>
-
-</div>
-</section>
-
-
 
 
 

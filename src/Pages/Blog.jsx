@@ -30,7 +30,7 @@ const Blog = () => {
         </div>
       </div>
 
-      <div className="blogs-container">
+      <div className="blogs-container wow animate__animated animate__fadeInUp">
         {/* Main Content */}
         <div className="blogs-main">
           {[
@@ -96,7 +96,7 @@ const Blog = () => {
                   </span>
                 </div>
                 <h3 className="blogs-article-title">{blog.title}</h3>
-                <button className="blogs-read-more-btn">Read more</button>
+               <a href="/Blogdetails"> <button className="blogs-read-more-btn">Read more</button></a>
               </div>
             </div>
           ))}
