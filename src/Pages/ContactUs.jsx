@@ -103,9 +103,27 @@ const ContactUs = () => {
   return (
     <>
   <Navbar />
+       <div className="MissionHome wow animate__animated animate__fadeInUp">
+         <div className="container">
+         <section className="Mission-section">
+      <div className="Mission-overlay">
+        <div className="Mission-content">
+          <p className="Mission-tag">Puresaas</p>
+          <h2 className="Mission-title  wow animate__animated animate__fadeInUp">
+           Contact Us
+          </h2>
+          <div class="mt-15">
+            <a href="/">Home</a><span class="padding-rl-20">|</span><span class="main-color">Contact Us</span>
+        </div>
+        </div>
+
+      </div>
+    </section>
+       </div>
+            </div>
     <div className="contact">
 
-    <section className=" section-padding">
+    <section className=" section-padding wow animate__animated animate__fadeInUp">
   <div className="container">
    <h1 style={{color:'#3f3737'}}>Reach out to our support team for help.</h1>
    {/* <p style={{color:'#696666',width:"770px",textAlign:'center'}}>Whether you have a question, need technical assistance, or just want some guidance, our support team is here to help. We're available around the clock to provide quick and friendly support.
@@ -204,12 +222,17 @@ const ContactUs = () => {
     </div>
   </div>
 </section>
-   <div className="container"> 
+  <div className="container">
+  <div className="google-map wow animate__animated animate__fadeInUp">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14602.254272231177!2d90.3654215!3d23.7985508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1592852423971!5m2!1sen!2sbd"
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</div>
 
-  <div className="google-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14602.254272231177!2d90.3654215!3d23.7985508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1592852423971!5m2!1sen!2sbd" style={{width:'1200px',height:'410px'}}> </iframe>
-            </div>
-   </div>
    
    
    

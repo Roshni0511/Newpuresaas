@@ -18,6 +18,7 @@ import Faq from './Pages/Faq';
 import SignIn from './Pages/SignIn';
 import LogIn from './Pages/Login';
 import Solutions from './Pages/Solutions';
+import Blogdetails from './Pages/Blogdetails';
 
 const FabButton = ({ id, label, iconClass, link, show, positionClass }) => {
     return (
@@ -162,6 +163,7 @@ function App() {
     <Route path='/SignIn' element={<SignIn/>}/>
     <Route path='/Login' element={<LogIn/>}/>
     <Route path='/Solutions' element={<Solutions/>}/>
+     <Route path='/Blogdetails' element={<Blogdetails/>}/>
   </Routes>
   <BackToTopButton />
    <div class="wh-api">
