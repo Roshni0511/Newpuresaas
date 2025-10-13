@@ -111,31 +111,47 @@
 }
 
 /* Search styles */
+/* Search styles */
 .blogs-search-section {
-  margin-bottom: 20px;
-  position: relative;
+  margin-bottom: 25px;
 }
 
 .blogs-search-wrapper {
   position: relative;
+  width: 100%;
 }
 
 .blogs-search-input {
   width: 100%;
-  padding: 10px 40px 10px 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  box-sizing: border-box;
+  padding: 12px 45px 12px 18px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.blogs-search-input::placeholder {
+  color: #999;
+  font-size: 14px;
+}
+
+.blogs-search-input:focus {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .blogs-search-icon {
   position: absolute;
-  right: 10px;
+  right: 15px;
   top: 50%;
   transform: translateY(-50%);
-  color: #999;
-  font-size: 16px;
+  color: #888;
+  font-size: 18px;
+  pointer-events: none;
 }
+
 
 /* Section styles */
 .blogs-section-title {
