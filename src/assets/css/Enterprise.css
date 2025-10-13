@@ -1,0 +1,255 @@
+.enterprisesec li{
+    text-align: justify;
+}
+
+
+/* Base container for the whole section */
+.whyenterprise .section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+    background-color: #f0f0f0; /* Light background for contrast */
+}
+
+/* The main dark card */
+.whyenterprise .installation-manual-card {
+    max-width: 1200px;
+    width: 90%;
+    background-color: #1a1a1a; /* Dark background */
+    color: white;
+    padding: 60px 80px;
+    border-radius: 30px; /* Highly rounded corners */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); /* Subtle lift and shadow */
+    text-align: center;
+}
+
+/* Header/Title Styling */
+.whyenterprise .subtitle-text {
+    font-size: 14px;
+    color: #a58e0d;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.whyenterprise .title-text {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+/* Highlighted purple text */
+.whyenterprise .highlight-text {
+    color: #a060ff; /* Purple color for the highlight */
+}
+
+/* Features Grid Layout */
+.whyenterprise .features-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.whyenterprise .feature-item {
+    flex: 1;
+    max-width: 300px;
+}
+
+.whyenterprise .feature-item h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.whyenterprise .feature-item p {
+    font-size: 15px;
+    color: #ccc;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Icon Styling (to replicate the geometric shapes) */
+.whyenterprise i {
+    font-size: 30px;
+    color: white;
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #333; /* Border to define the shape area */
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a2a2a;
+    /* Optional: Slight color transition/gradient on icons */
+    box-shadow: 0 0 10px rgba(160, 96, 255, 0.2); 
+}
+
+/* Optional: Make it responsive for smaller screens */
+@media (max-width: 900px) {
+    .whyenterprise .section-container {
+
+    padding: 100px 0px;
+
+}
+    .whyenterprise .installation-manual-card {
+        padding: 20px;
+    }
+
+   .whyenterprise .title-text {
+        font-size: 32px;
+    }
+
+    .whyenterprise .features-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .whyenterprise .feature-item {
+        max-width: 100%;
+    }
+
+    .whyenterprise .feature-item h3, .whyenterprise .feature-item p, .whyenterprise .icon-placeholder {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+    }
+}
+
+
+
+/* ======================================================================================
+========================================================================================= */
+
+
+.It-section {
+  position: relative;
+  padding: 120px 0;
+  text-align: center;
+  background: #f9fbff;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.It-section .It-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.It-section .It-badge {
+  display: inline-block;
+  background: #e4f1ff;
+  color: #007bff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 18px;
+  border-radius: 9999px;
+  margin-bottom: 16px;
+}
+
+.It-section .It-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 16px;
+}
+
+.It-section .It-title span {
+  color: #007bff;
+}
+
+.It-section .It-subtitle {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.It-section .It-btn {
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 9999px;
+  padding: 12px 26px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.It-section .It-btn:hover {
+  background: #333;
+}
+
+.It-section .It-icons {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+/* === Floating icons === */
+.It-section .icon-item {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: float 5s ease-in-out infinite;
+}
+
+.It-section .icon-item img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* === Positioning each icon around the circle === */
+.It-section .icon-0 { top: 8%; left: 25%; animation-delay: 0s; }
+.It-section .icon-1 { top: 16%; left: 14%; animation-delay: 0.5s; }
+.It-section .icon-2 { top: 40%; left: 6%; animation-delay: 1s; }
+.It-section .icon-3 { top: 65%; left: 15%; animation-delay: 1.5s; }
+.It-section .icon-4 { top: 80%; left: 30%; animation-delay: 2s; }
+.It-section .icon-5 { bottom: 4%; left: 45%; animation-delay: 2.5s; }
+.It-section .icon-6 { bottom: 8%; left: 60%; animation-delay: 3s; }
+.It-section .icon-7 { bottom: 12%; right: 25%; animation-delay: 3.5s; }
+.It-section .icon-8 { bottom: 24%; right: 15%; animation-delay: 4s; }
+.It-section .icon-9 { top: 10%; right: 30%; animation-delay: 4.5s; }
+.It-section .icon-10 { top: 40%; right: 6%; animation-delay: 5s; }
+.It-section .icon-11 { top: 20%; right: 15%; animation-delay: 5.5s; }
+/* .It-section .icon-12 { top: 10%; right: 30%; animation-delay: 6s; } */
+
+@media (max-width: 768px) {
+  .It-section .It-section {
+    padding: 80px 0;
+  }
+  .It-section .icon-item {
+    width: 50px;
+    height: 50px;
+  }
+  .It-section .icon-item img {
+    width: 28px;
+    height: 28px;
+  }
+}
