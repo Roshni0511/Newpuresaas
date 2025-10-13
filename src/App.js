@@ -14,6 +14,7 @@ import Refundpolicy from './Pages/Refundpolicy';
 import Vision from './Pages/Vision';
 import Enterprise from './Pages/Enterprise';
 import Blog from './Pages/Blog';
+import Faq from './Pages/Faq';
 
 const FabButton = ({ id, label, iconClass, link, show, positionClass }) => {
     return (
@@ -154,6 +155,7 @@ function App() {
     <Route path='/Mission' element={<Mission/>}/>
     <Route path='/Vision' element={<Vision/>}/>
     <Route path='/Enterprise' element={<Enterprise/>}/>
+    <Route path='/Faq' element={<Faq/>}/>
   </Routes>
   <BackToTopButton />
    <div class="wh-api">
