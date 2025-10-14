@@ -7,7 +7,7 @@
   position: relative;
   overflow: hidden;
   padding: 100px 0;
-  z-index: 1;
+  z-index: 0;
 }
 
 /* Animated background shapes */
@@ -490,7 +490,7 @@
 .erp-benefits-flow {
   gap: 40px;
   position: relative;
-  z-index: 2;
+  z-index: 0;
 }
 
 .erp-flow-step {
@@ -662,4 +662,215 @@
   .erp-benefit-card { max-width: 100%; padding: 30px 25px; }
   .erp-flow-arrow { transform: rotate(90deg); gap: 10px; margin: 10px 0; }
   .erp-arrow-line { width: 50px; }
+}   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cta-section {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 100px 30px; /* Adjust padding as needed */
+    background-color: #f8f8fa; /* Light background color from image */
+    min-height: 450px; /* Ensure sufficient height */
+    gap: 80px; /* Space between the left and right columns */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.cta-section .cta-content-left {
+    flex: 1; /* Allow left content to grow */
+    max-width: 550px; /* Max width to control text length */
+    text-align: left;
+}
+
+.cta-section .cta-tag {
+    display: inline-block;
+    background-color: #e0e0ff; /* Light purple tag */
+    color: #6a0dad; /* Darker purple text */
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.cta-section .cta-title {
+    font-size: 40px; /* Large, bold title */
+    font-weight: 700;
+    color: #2c3e50;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.cta-section .cta-description {
+    font-size: 1.1rem;
+    color: #667085;
+    line-height: 1.6;
+    max-width: 450px; /* Constrain description width */
+}
+
+.cta-section .cta-form-right {
+    flex: 1; /* Allow right content to grow */
+    max-width: 450px; /* Max width for the form area */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left within this flex container */
+}
+
+.cta-section .cta-form {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    gap: 10px; /* Space between input and button */
+    flex-wrap: wrap; /* Allow input/button to wrap on very small screens */
+}
+
+.cta-section .cta-email-input {
+    flex-grow: 1; /* Allow input to take available space */
+    padding: 14px 20px;
+    border: 1px solid #d0d5dd;
+    border-radius: 30px;
+    font-size: 1rem;
+    color: #344054;
+    outline: none; /* Remove default outline */
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    min-width: 200px; /* Ensure input is not too small */
+}
+
+.cta-section .cta-email-input:focus {
+    border-color: #8a2be2; /* Purple border on focus */
+    box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.2); /* Light purple glow */
+}
+
+.cta-section .cta-button {
+    padding: 14px 25px;
+    background-color: #8a2be2; /* Purple button */
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+    white-space: nowrap; /* Prevent text wrap on button */
+}
+
+.cta-section .cta-button:hover {
+    background-color: #7a1ee0; /* Slightly darker purple on hover */
+    transform: translateY(-1px);
+}
+
+.cta-section .cta-button:active {
+    transform: translateY(0);
+}
+
+.cta-section .cta-features {
+    display: flex;
+    gap: 30px; /* Space between feature items */
+    flex-wrap: wrap; /* Allow features to wrap */
+}
+
+.cta-section .feature-item {
+    display: flex;
+    align-items: center;
+    color: #475467;
+    font-size: 1rem;
+}
+
+.cta-section .feature-item i {
+    margin-right: 8px;
+    stroke: #333; /* Color of the checkmark */
+    stroke-width: 2;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .cta-section .cta-section {
+        flex-direction: column; /* Stack columns vertically */
+        text-align: center;
+        padding: 80px 30px;
+        gap: 50px;
+    }
+
+    .cta-section .cta-content-left {
+        max-width: 100%; /* Take full width */
+        margin-bottom: 30px;
+    }
+
+    .cta-section .cta-title {
+        font-size: 2.8rem;
+    }
+
+    .cta-section .cta-description {
+        max-width: 80%; /* Keep description readable */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cta-section .cta-form-right {
+        max-width: 100%; /* Take full width */
+        align-items: center; /* Center form and features */
+    }
+
+    .cta-section .cta-form {
+        flex-direction: column; /* Stack input and button */
+        width: 80%; /* Constrain form width */
+        max-width: 400px;
+    }
+
+    .cta-section .cta-email-input,
+    .cta-section .cta-button {
+        width: 100%; /* Full width for stacked items */
+    }
+    
+    .cta-section .cta-features {
+        justify-content: center; /* Center feature items */
+    }
+}
+
+@media (max-width: 768px) {
+    .cta-section .cta-title {
+        font-size:30px;
+    }
+        .cta-section .cta-description {
+        font-size: 15px;
+        margin: 0;
+        max-width: 100%;
+    }
+    .cta-section .cta-section {
+        padding: 60px 20px;
+    }
+    .cta-section .cta-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+ 
+    .cta-section .cta-title {
+        font-size: 24px;
+    }
+    .cta-section .cta-tag {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+    .cta-section .feature-item {
+        font-size: 0.9rem;
+    }
+    .cta-section .cta-features {
+        flex-direction: column; /* Stack features vertically */
+        gap: 10px;
+    }
 }

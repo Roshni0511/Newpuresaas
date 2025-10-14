@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { FaTachometerAlt, FaLock, FaUsers } from "react-icons/fa";
 import '../assets/css/OfficeErp.css';
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';  
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import HomePricing from "../component/HomePricing";
+import OfficeErpFaq from "../component/Officeerpfaq";
 
 export default function OfficeErp() {
   const [showDemo, setShowDemo] = useState(false);
@@ -40,17 +44,21 @@ export default function OfficeErp() {
     // Cleanup
     return () => observer.disconnect();
   }, []);
+ const [email, setEmail] = useState('');
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Here you would typically handle the form submission,
+        // e.g., send the email to an API, log it, etc.
+        console.log('Email submitted:', email);
+        alert(`Starting your trial for: ${email}`);
+        setEmail(''); // Clear the input after submission
+    };
   return (
     <div>
       <Navbar />
 
       <section className="office-hero-section position-relative bg-light overflow-hidden py-5">
-        {/* Animated decorative shapes */}
-        <div className="office-hero-shape blue"></div>
-        <div className="office-hero-shape green"></div>
-        <div className="office-hero-shape purple"></div>
-
         <div className="container position-relative z-2">
           <div className="row align-items-center g-5">
             {/* Left Column */}
@@ -95,18 +103,6 @@ export default function OfficeErp() {
                   alt="ERP Dashboard"
                   className="img-fluid rounded office-hero-image"
                 />
-                {/* Floating animated elements around image */}
-                <div className="office-floating-elements">
-                  <div className="office-float-item item-1">
-                    <i className="bi bi-graph-up"></i>
-                  </div>
-                  <div className="office-float-item item-2">
-                    <i className="bi bi-people"></i>
-                  </div>
-                  <div className="office-float-item item-3">
-                    <i className="bi bi-gear"></i>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -137,6 +133,9 @@ export default function OfficeErp() {
           </div>
         )}
       </section>
+
+
+
 
       {/* Features Section */}
     <section className="office-features-section py-5">
@@ -170,7 +169,7 @@ export default function OfficeErp() {
           </div>
           <h5 className="office-feature-title">Financial Accounting</h5>
           <p className="office-feature-desc">
-            Real-time invoicing, expense tracking, and compliance reporting—integrated with QuickBooks and Xero.
+            Real-time invoicing, expense tracking, and compliance reporting.
           </p>
           <div className="office-feature-overlay">
             <span>Save 20+ hours per month</span>
@@ -260,7 +259,7 @@ export default function OfficeErp() {
           <div className="erp-flow-step">
             <div className="erp-benefit-card">
               <div className="erp-benefit-icon">
-                <i className="fas fa-tachometer-alt"></i> 
+                <FaTachometerAlt />
               </div>
               <h5 className="erp-benefit-title">Efficiency Boost</h5>
               <p className="erp-benefit-desc">
@@ -278,7 +277,7 @@ export default function OfficeErp() {
           <div className="erp-flow-step">
             <div className="erp-benefit-card">
               <div className="erp-benefit-icon">
-                 <i className="fas fa-cloud-lock"></i> 
+                 <FaLock /> 
               </div>
               <h5 className="erp-benefit-title">Scalability & Security</h5>
               <p className="erp-benefit-desc">
@@ -296,7 +295,7 @@ export default function OfficeErp() {
           <div className="erp-flow-step">
             <div className="erp-benefit-card">
               <div className="erp-benefit-icon">
-                <i className="fas fa-users"></i>
+                <FaUsers />
               </div>
               <h5 className="erp-benefit-title">User-Friendly</h5>
               <p className="erp-benefit-desc">
@@ -310,6 +309,50 @@ export default function OfficeErp() {
     </section>
 
 
+
+
+{/* Pricing Section Starts */}
+<HomePricing/>
+
+
+{/* Office erp faq */}
+<OfficeErpFaq/>
+
+
+{/* Email Section Starts */}
+<section className="cta-section wow animate__animated animate__fadeInUp">
+            <div className="cta-content-left">
+                <span className="cta-tag">Office ERP</span>
+                <h1 className="cta-title">Ready to transform your business with PureSaas CRM</h1>
+                <p className="cta-description">
+                    Start your free trial today and see your ideas come to life easily and creatively.
+                </p>
+            </div>
+
+            <div className="cta-form-right">
+                <form onSubmit={handleSubmit} className="cta-form">
+                    <input
+                        type="email"
+                        placeholder="Enter your email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                        className="cta-email-input"
+                    />
+                    <button type="submit" className="cta-button">Get started!</button>
+                </form>
+                <div className="cta-features">
+                    <div className="feature-item">
+                        <i className="fa-solid fa-circle-check "></i>
+                        <span>No credit card required</span>
+                    </div>
+                    <div className="feature-item">
+                        <i className="fa-solid fa-circle-check "></i>
+                        <span>14-Day free trial</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
       <Footer />
