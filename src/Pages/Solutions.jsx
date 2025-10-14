@@ -1,11 +1,31 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
-import Navbar from './Navbar'
-import Footer from './Footer'
-import '../assets/css/Solutions.css'
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import "../assets/css/Solutions.css";
+import "aos/dist/aos.css";
+const isMobile = window.innerWidth <= 768;
 export default function Solutions() {
-     useEffect(() => {
+  const [scrollProgress, setScrollProgress] = useState(0);
+
+  useEffect(() => {
     AOS.init({ duration: 1000, once: true });
+
+    const handleScroll = () => {
+      const section = document.querySelector(".process-section");
+      if (!section) return;
+
+      const rect = section.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      // Calculate scroll percentage
+      const progress =
+        1 - (rect.bottom - windowHeight) / (section.offsetHeight + windowHeight);
+      setScrollProgress(Math.min(Math.max(progress, 0), 1));
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const processSteps = [
@@ -40,34 +60,72 @@ export default function Solutions() {
       desc: "We continuously enhance our products and services, adapting to the ever-changing demands of the business landscape.",
     },
   ];
+
   return (
     <div>
       <Navbar />
-       <section className="process-section">
-      <h2 className="section-title">Seamless Solutions for Every Work Environment</h2>
 
-      <div className="timeline">
-        <div className="timeline-line"></div>
-        <div className="timeline-circle">NOW</div>
+                {/* main section start  */}
+            <div className="MissionHome wow animate__animated animate__fadeInUp">
+         <div className="container">
+         <section className="Mission-section">
+      <div className="Mission-overlay">
+        <div className="Mission-content">
+          <p className="Mission-tag">Puresaas</p>
+          <h2 className="Mission-title  wow animate__animated animate__fadeInUp">
+           Solution
+          </h2>
+          <div class="mt-15">
+            <a href="/">Home</a><span class="padding-rl-20">|</span><span class="main-color">Solution</span>
+        </div>
+        </div>
 
-        {processSteps.map((step, index) => (
-          <div
-            key={index}
-            className={`timeline-item ${step.side}`}
-            data-aos={step.side === "left" ? "fade-right" : "fade-left"}
-          >
-            <div className="timeline-box">
-              <div className="timeline-icon">
-                <i className="fa-solid fa-star"></i>
-              </div>
-              <h4>{step.title}</h4>
-              <p>{step.desc}</p>
-            </div>
-          </div>
-        ))}
       </div>
     </section>
+       </div>
+            </div>
+        {/* main section end  */}
+
+   <div className="solutionpage">
+       <section className="process-section">
+        <h2 className="section-title">
+          Seamless Solutions for Every Work Environment
+        </h2>
+
+        <div className="timeline">
+          {/* Static white line */}
+          <div className="timeline-line"></div>
+
+          {/* Scroll-based progress line */}
+          <div
+            className="timeline-progress"
+            style={{ height: `${scrollProgress * 100}%` }}
+          ></div>
+
+          {/* Top Circle */}
+          <div className="timeline-circle">NOW</div>
+
+          {/* Cards */}
+        {processSteps.map((step, index) => (
+  <div
+    key={index}
+    className={`timeline-item ${step.side}`}
+    data-aos={isMobile ? "fade-up" : step.side === "left" ? "fade-right" : "fade-left"}
+  >
+    <div className="timeline-box">
+      <div className="timeline-icon">
+        <i className="fa-solid fa-star"></i>
+      </div>
+      <h4>{step.title}</h4>
+      <p>{step.desc}</p>
+    </div>
+  </div>
+))}
+        </div>
+      </section>
+   </div>
+
       <Footer />
     </div>
-  )
+  );
 }

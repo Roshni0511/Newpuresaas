@@ -10,12 +10,28 @@ import {
   faTools,
   faUserCheck,
   faChartLine,
+   faHandshake, 
+  faLightbulb, 
+  faUsers, 
+  faLaptopCode, 
+  faMicrochip, 
+  faArrowRotateRight 
 } from "@fortawesome/free-solid-svg-icons";
 import HomePricing from '../component/HomePricing';
 import Review from '../component/Review';
 import HomeFaq from '../component/HomeFaq';
 // import bgImage from '../../public/Image/gradient-22.webp'; // your gradient background image
 // import iconsImage from '../../public/Image/intregration-img.webp';
+const FeatureBlock = ({ title, description, icon }) => (
+  <div className="feature-block">
+    <div className="icon-placeholder">
+      {/* Font Awesome Icon */}
+      <FontAwesomeIcon icon={icon} size="lg" /> 
+    </div>
+    <h3 className="feature-title">{title}</h3>
+    <p className="feature-description">{description}</p>
+  </div>
+);
 const Home = () => {
   const [progress, setProgress] = useState(0);
 
@@ -239,6 +255,69 @@ const features = [
 
       </div>
       {/* property section end */}
+
+      {/* functional component section start  */}
+      <div className="functionalcompo wow animate__animated animate__fadeInUp">
+       <div className="retail-system-container">
+    
+      {/* <div className="glow-background"></div> */}
+
+     
+      <div className="header-content">
+        <p className="subtitle">Seamless Solutions for Every Work Environment</p>
+        <h1 className="main-title">Work Environment</h1>
+      </div>
+
+      <div className="features-row top-row">
+        <FeatureBlock
+          title="Enduring Commitment"
+          description="With over 25 years of successful operation, we have a deep understanding"
+          // Mapped to a Font Awesome icon for commitment/partnership
+          icon={faHandshake} 
+        />
+        <FeatureBlock
+          title="Dedicated to Innovation"
+          description="At the heart of our business lies a relentless pursuit of excellence"
+          // Mapped to a Font Awesome icon for innovation/idea
+          icon={faLightbulb} 
+        />
+        <FeatureBlock
+          title="Client-Focused Strategy"
+          description="Our success is built on the trust and support of our customers. We prioritize"
+          // Mapped to a Font Awesome icon for clients/users
+          icon={faUsers} 
+        />
+      </div>
+      
+      <div className="features-row bottom-row">
+        <FeatureBlock
+          title="Complete Software Suite"
+          description="We offer a full range of software products designed to meet your"
+          // Mapped to a Font Awesome icon for software/products
+          icon={faLaptopCode} 
+        />
+        <FeatureBlock
+          title="Cutting-Edge Technology"
+          description="Our proprietary technology stack ensures you receive the most"
+          // Mapped to a Font Awesome icon for technology
+          icon={faMicrochip} 
+        />
+      </div>
+      
+      <div className="features-row bottom-row">
+        <FeatureBlock
+          title="Ongoing Evolution"
+          description="Our dedication to continuous improvement means we are always"
+          // Mapped to a Font Awesome icon for evolution/refresh
+          icon={faArrowRotateRight} 
+        />
+      </div>
+      <div>
+        <a href="/Solutions"><button className='featurebutton'>Read More</button></a>
+      </div>
+    </div>
+    </div>
+      {/* functional component section end  */}
 
       {/* Features section start */}
     <section className="features-section">

@@ -80,6 +80,7 @@ const TestimonialSlider = () => {
     };
 
     return (
+        <div className="reviewswc">
         <div className="testimonial-section wow animate__animated animate__fadeInUp">
             {/* ... (Header remains the same) ... */}
             <div className="testimonial-header">
@@ -129,6 +130,7 @@ const TestimonialSlider = () => {
                     ))}
                 </div>
             </div>
+        </div>
         </div>
     );
 };

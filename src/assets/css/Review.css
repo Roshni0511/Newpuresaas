@@ -1,15 +1,15 @@
-.testimonial-section {
+.reviewswc .testimonial-section {
     background-color: #f8f8fa; /* Light background as in your image */
     padding: 80px 0;
     overflow: hidden; /* Hide overflow of the slider track */
 }
 
-.testimonial-header {
+.reviewswc .testimonial-header {
     text-align: center;
     margin-bottom: 60px;
 }
 
-.reviews-tag {
+.reviewswc .reviews-tag {
     display: inline-block;
     background-color: #e0e0ff; /* Light purple tag */
     color: #6a0dad; /* Darker purple text */
@@ -20,7 +20,7 @@
     margin-bottom: 15px;
 }
 
-.main-title {
+.reviewswc .main-title {
     font-size: 2.8rem;
     font-weight: 700;
     color: #2c3e50;
@@ -29,7 +29,7 @@
     margin: 0 auto;
 }
 
-.testimonial-slider-container {
+.reviewswc .testimonial-slider-container {
     width: 100%;
     /* Max width to align with header content if needed, otherwise 100% */
     /* max-width: 1200px; */
@@ -39,13 +39,13 @@
     padding: 20px 0; /* Some vertical padding for cards */
 }
 
-.testimonial-slider-track {
+.reviewswc .testimonial-slider-track {
     display: flex;
     transition: transform 0.5s ease-in-out; 
     /* padding: 0 10%; */
 }
 
-.testimonial-card {
+.reviewswc .testimonial-card {
     flex: 0 0 calc(25% - 20px); /* 3 cards per view, account for gap */
     margin: 0 10px; /* Gap between cards */
     background-color: #fff;
@@ -62,12 +62,12 @@
     cursor: pointer;
 }
 
-.testimonial-card:hover {
+.reviewswc .testimonial-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
 }
 
-.testimonial-quote {
+.reviewswc .testimonial-quote {
     font-size: 1rem;
     color: #555;
     line-height: 1.6;
@@ -75,13 +75,13 @@
     flex-grow: 1; /* Allows quote to take up available space */
 }
 
-.testimonial-author-info {
+.reviewswc .testimonial-author-info {
     display: flex;
     align-items: center;
     margin-top: auto; /* Pushes author info to the bottom */
 }
 
-.author-avatar {
+.reviewswc .author-avatar {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -90,21 +90,21 @@
     border: 2px solid #eee;
 }
 
-.author-name {
+.reviewswc .author-name {
     font-weight: 600;
     color: #333;
     margin: 0;
     font-size: 1.1rem;
 }
 
-.author-title {
+.reviewswc .author-title {
     font-size: 0.9rem;
     color: #777;
     margin: 0;
 }
 
 /* Hover Overlay Styles */
-.hover-overlay {
+.reviewswc .hover-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -124,32 +124,32 @@
     pointer-events: none; /* Allows clicks to pass through to the card if desired */
 }
 
-.testimonial-card:hover .hover-overlay {
+.reviewswc .testimonial-card:hover .hover-overlay {
     opacity: 1; /* Show on hover */
     transform: scale(1); /* Expand to full size */
     pointer-events: all; /* Allow interaction with overlay content if any */
 }
 
-.rating-content {
+.reviewswc .rating-content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.rating-number {
+.reviewswc .rating-number {
     font-size: 3.5rem; /* Large rating number */
     font-weight: 700;
     color: #bfff00; /* Bright green as in image */
     margin-bottom: 10px;
 }
 
-.trustpilot-logo {
+.reviewswc .trustpilot-logo {
     font-size: 1.1rem;
     font-weight: 500;
     margin-bottom: 5px;
 }
 
-.trustpilot-logo .stars {
+.reviewswc .trustpilot-logo .stars {
     color: #00b67a; /* Trustpilot green for stars */
     font-size: 1.2rem;
     letter-spacing: 2px; /* Space out the stars */
@@ -157,34 +157,34 @@
 
 /* Responsive adjustments */
 @media (max-width: 992px) {
-    .testimonial-card {
+    .reviewswc .testimonial-card {
         flex: 0 0 calc(50% - 20px); /* 2 cards per view on medium screens */
     }
-    .testimonial-slider-track {
+    .reviewswc .testimonial-slider-track {
         padding: 0 5%;
     }
-    .main-title {
+    .reviewswc .main-title {
         font-size: 2.2rem;
     }
 }
 
 @media (max-width: 768px) {
-    .testimonial-card {
+    .reviewswc .testimonial-card {
         flex: 0 0 calc(100% - 20px); /* 1 card per view on small screens */
     }
-    .testimonial-slider-track {
+    .reviewswc .testimonial-slider-track {
         padding: 0 2%;
     }
-    .main-title {
+    .reviewswc .main-title {
         font-size: 1.8rem;
     }
-    .testimonial-quote {
+    .reviewswc .testimonial-quote {
         font-size: 0.95rem;
     }
-    .author-name {
+    .reviewswc .author-name {
         font-size: 1rem;
     }
-    .author-title {
+    .reviewswc .author-title {
         font-size: 0.85rem;
     }
 }

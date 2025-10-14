@@ -1,33 +1,4 @@
-/* Faq.css - Updated for Tabbed Accordion FAQ */
-.MissionHome .Mission-section {
-  background-color: #111; 
-  background-image: url('/public/Image/gradient-22.webp');
-  background-size: cover;
-  background-position: -277px -479px;
-  border-radius: 25px;
-  color: white;
-  text-align: center;
-  padding: 60px 20px ;
-  position: relative;
-  overflow: hidden;
-}
 
-.MissionHome .Mission-overlay {
-  position: relative;
-  z-index: 0;
-}
-
-.MissionHome .Mission-content {
-  max-width: 700px;
-  margin: 0 auto ;
-}
-
-.MissionHome .Mission-tag {
-  color: #a8ff60;
-  font-size: 0.9rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
 /* Tab Styles (Assuming original styles, enhanced for integration) */
 .faq-tabs-container {
   max-width: 800px;
