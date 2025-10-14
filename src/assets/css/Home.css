@@ -509,7 +509,7 @@
 
 .features-section {
   background: #fafafa;
-  padding: 0px 80px 40px;
+  padding:  80px 40px;
   text-align: center;
 }
 
@@ -1099,4 +1099,166 @@
         flex-direction: column; /* Stack features vertically */
         gap: 10px;
     }
+}
+
+
+
+/* ==============================================================================
+================================================================================= */
+
+.functionalcompo {
+  background-color: #f9f9f9;
+}
+.functionalcompo .featurebutton{
+      padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 10px;
+    border: 1px solid #fff;
+    background: #000;
+    color: #fff;
+}
+.functionalcompo .featurebutton:hover{
+      padding: 10px 20px;
+    border-radius: 25px;
+    border: 1px solid #000000;
+    background: #ffffff;
+    color: #000000;
+}
+.functionalcompo .retail-system-container {
+  background-color: #000000; /* Black background */
+   background-image: url('/public/Image/hero-bg.svg');
+  color: #ffffff; /* White text */
+  width: 1440px;
+  margin: auto;
+  border-radius: 25px;
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 30px;
+  position: relative; /* Needed for absolute positioning of the glow */
+  overflow: hidden; /* Keep the glow contained */
+}
+ 
+/* --- Blue Glow Effect Simulation --- */
+/* The original image uses a complex graphic for the blue glow. 
+   This CSS simulates a central glow using a radial gradient. */
+.functionalcompo .glow-background {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px; /* Limit the width of the glow */
+  height: 600px; /* Control the height of the glow */
+  background: radial-gradient(circle at center top, rgba(0, 150, 255, 0.4) 0%, rgba(0, 0, 0, 0) 60%);
+  z-index: 1; /* Place behind the content */
+  pointer-events: none; /* Ignore mouse events */
+}
+
+
+/* --- Header Content --- */
+.functionalcompo .header-content {
+  text-align: center;
+  margin-bottom: 60px;
+  z-index: 2; /* Bring content above the glow */
+}
+
+.functionalcompo .subtitle {
+  font-size: 14px;
+  color: #aaaaaa;
+  margin-bottom: 5px;
+}
+
+.functionalcompo .main-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.functionalcompo .caption {
+  font-size: 16px;
+  color: #cccccc;
+  margin-top: 10px;
+}
+
+/* --- Features Layout --- */
+.functionalcompo .features-row {
+  display: flex;
+  gap: 20px; /* Space between blocks */
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  justify-content: center;
+  z-index: 2; /* Bring content above the glow */
+}
+
+.functionalcompo .bottom-row {
+  /* For the two-block row, center them */
+  justify-content: center;
+  max-width: 800px; /* Adjust max width for the smaller row */
+}
+
+/* --- Feature Block Styling --- */
+.functionalcompo .feature-block {
+  background-color: rgba(255, 255, 255, 0.05); /* Slightly transparent background */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+  border-radius: 12px;
+  padding: 30px;
+  flex: 1; /* Allows blocks to grow and fill the space */
+  max-width: 380px; /* Max width for individual blocks */
+  backdrop-filter: blur(5px); /* Optional: Adds a subtle frosted glass effect */
+
+  /* Gradient/Shadow for the block itself, to match the image's luminescence */
+  box-shadow: 0 0 30px rgba(0, 150, 255, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.functionalcompo .feature-block:hover {
+    box-shadow: 0 0 45px rgba(0, 150, 255, 0.2);
+}
+
+.functionalcompo .feature-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.functionalcompo .feature-description {
+  font-size: 14px;
+  color: #cccccc;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* --- Icon Placeholders --- */
+/* You would replace these with actual SVG icons or use an icon library (like react-icons) */
+.functionalcompo .icon-placeholder {
+   font-size: 25px;
+    color: rgb(170, 167, 167);
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #333; /* Border to define the shape area */
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a2a2a;
+    /* Optional: Slight color transition/gradient on icons */
+    box-shadow: 0 0 10px rgba(160, 96, 255, 0.2); 
+}
+
+
+/* --- Media Query for Responsiveness --- */
+@media (max-width: 1024px) {
+  .functionalcompo .features-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .functionalcompo .feature-block {
+    max-width: 90%;
+    margin-bottom: 15px;
+  }
 }

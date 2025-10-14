@@ -17,6 +17,9 @@
     max-width: 1200px;
     width: 90%;
     background-color: #1a1a1a; /* Dark background */
+    background-image: url('/public/Image/hero-bg.svg');
+     position: relative; /* Needed for absolute positioning of the glow */
+     overflow: hidden;
     color: white;
     padding: 60px 80px;
     border-radius: 30px; /* Highly rounded corners */
