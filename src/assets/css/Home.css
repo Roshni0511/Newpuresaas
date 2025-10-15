@@ -1159,7 +1159,7 @@
 .functionalcompo .header-content {
   text-align: center;
   margin-bottom: 60px;
-  z-index: 2;
+  z-index: 0;
 }
 
 .functionalcompo .subtitle {

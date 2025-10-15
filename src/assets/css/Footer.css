@@ -71,7 +71,7 @@
 
        .Footerstyle .footer-column {
             position: relative;
-            z-index: 1;
+            z-index: 0;
         }
 
       .Footerstyle .footer-column h3 {
