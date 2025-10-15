@@ -20,6 +20,7 @@ export default function Navbar() {
     e.preventDefault();
     setIscompanyOpen(!iscompanyOpen);
   };
+  
 
   return (
     <div className="navbar-container">
@@ -83,11 +84,11 @@ export default function Navbar() {
                        <p>Quickly create, manage, and offload sites to clients with ease.</p>
                     </li>
                     <li>
-                      <a href="/Realestatecrm"><span className="service__number">04.</span> Real Estate CRM</a>
+                      <a href="/Realestatecrm"><span className="service__number">02.</span> Real Estate CRM</a>
                       <p>Early Create sites & offload them to clients</p>
                     </li>
                     <li>
-                      <a href="#"><span className="service__number">07.</span> ATS (Application Tracking System)</a>
+                      <a href="#"><span className="service__number">03.</span> ATS (Application Tracking System)</a>
                       <p>Simplify recruitment, track candidates, and streamline your hiring process.</p>
                     </li>
                     
@@ -96,7 +97,7 @@ export default function Navbar() {
                   {/* Column 2 */}
                   <ul className="services-dropdown__column">
                     <li>
-                      <a href="/B2BTextileERP"><span className="service__number">02.</span> B2B Textile ERP</a>
+                      <a href="/B2BTextileERP"><span className="service__number">04.</span> B2B Textile ERP</a>
                       <p>Simplify operations, manage inventory, and streamline production.</p>
                     </li>
                     <li>
@@ -104,7 +105,7 @@ export default function Navbar() {
                       <p>Boost productivity, manage calls, and track leads effortlessly.</p>
                     </li>
                     <li>
-                      <a href="#"><span className="service__number">08.</span> Service CRM</a>
+                      <a href="#"><span className="service__number">06.</span> Service CRM</a>
                       <p>Streamline support and boost customer satisfaction.</p>
                     </li>
                    
@@ -113,11 +114,11 @@ export default function Navbar() {
                   {/* Column 3 */}
                   <ul className="services-dropdown__column">
                    <li>
-                    <a href="/OfficeErp"><span className="service__number">03.</span> Office ERP</a>
+                    <a href="/OfficeErp"><span className="service__number">07.</span> Office ERP</a>
                     <p>Integrate business operations, streamline workflows, and boost productivity.</p>
                   </li>
                    <li>
-                    <a href="#"><span className="service__number">06.</span> Sales CRM</a>
+                    <a href="#"><span className="service__number">08.</span> Sales CRM</a>
                     <p>Streamline your sales process, manage leads, and close deals faster.</p>
                   </li>
                     <li>
