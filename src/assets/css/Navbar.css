@@ -189,7 +189,7 @@ position: relative;
   pointer-events: none;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   min-width: 170px;
-  padding: 10px;
+
   background-color: var(--bg-white);
   border-radius: 1rem;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
@@ -213,7 +213,7 @@ position: relative;
 
 .company-dropdown__inner {
   background-color: var(--bg-white);
-  padding: 1.5rem;
+  padding: 15px 20px;
   border-radius: 0.5rem;
   display: flex;
   gap: 40px;

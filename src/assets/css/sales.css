@@ -1,0 +1,235 @@
+
+.saleserp .hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background: radial-gradient(circle at center, #d1ffd6, #c2f3f7, #f5f8f9);
+  overflow: hidden;
+  top: -106px;
+}
+
+.saleserp .hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.saleserp .hero-subtext {
+  color: #666;
+  font-size: 0.95rem;
+  margin: 10px 0 20px;
+}
+
+.saleserp .hero-points {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.saleserp .get-started-btn {
+  margin-top: 20px;
+  background: #8c52ff;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.saleserp .get-started-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Floating Cards */
+.saleserp .floating-card {
+  position: absolute;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 18px 24px;
+  width: 200px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.saleserp .card-left {
+  top: 25%;
+  left: 10%;
+  transform: rotate(-8deg);
+}
+
+.saleserp .card-right {
+  top: 28%;
+  right: 10%;
+  transform: rotate(8deg);
+}
+
+.saleserp .card-bottom {
+  bottom: 1%;
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  width: 280px;
+}
+
+.saleserp .credit-box p {
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.saleserp .transfer-box {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  background: #111;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+
+.saleserp .balance-box p {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.saleserp .balance-box h4 {
+  margin: 5px 0;
+}
+
+.saleserp .mini-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.saleserp .income,
+.expense {
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+
+.saleserp .income {
+  background: #000;
+  color: #00ff7f;
+}
+
+.saleserp .expense {
+  background: #fff0f0;
+  color: #ff4d4f;
+}
+
+.saleserp .upload-box {
+  background: #f7f7f7;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.saleserp .upload-icon {
+  font-size: 2rem;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+}
+.saleserp .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 50px;
+
+}
+
+.saleserp .collector-card {
+  position: relative;
+  width: 280px;
+  border-radius: 16px;
+  padding-top: 60px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  padding-bottom: 30px;
+}
+
+.saleserp .collector-card:hover {
+  transform: translateY(-10px);
+}
+
+.saleserp .heart-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.saleserp .inner-card {
+  background: #fff;
+  border-radius: 16px;
+  margin: 0 16px;
+  padding: 24px;
+  text-align: left;
+}
+
+.saleserp .avatar {
+  font-size: 36px;
+  background: #fff6ee;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -45px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.saleserp .inner-card h3 {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+}
+
+.saleserp .title {
+  color: #777;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.saleserp .desc {
+  color: #444;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.saleserp .trade-btn {
+  display: block;
+  width: 100px;
+  margin: 10px auto 20px;
+  background: #444;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 0 #222;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.saleserp .trade-btn:hover {
+  background: #333;
+}

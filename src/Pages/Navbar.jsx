@@ -118,7 +118,7 @@ export default function Navbar() {
                     <p>Integrate business operations, streamline workflows, and boost productivity.</p>
                   </li>
                    <li>
-                    <a href="#"><span className="service__number">08.</span> Sales CRM</a>
+                    <a href="/Sales"><span className="service__number">08.</span> Sales CRM</a>
                     <p>Streamline your sales process, manage leads, and close deals faster.</p>
                   </li>
                     <li>
