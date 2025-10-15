@@ -36,7 +36,7 @@ const Footer = () => {
                 <li><a href="#">Telecaller CRM</a></li>
                 <li><a href="#">Service CRM</a></li>
                 <li><a href="#">Payroll System</a></li>
-                <li><a href="#">ATS (Application Tracking System)</a></li>
+                <li><a href="/ATS">ATS (Application Tracking System)</a></li>
                 <li><a href="/OfficeErp">Office ERP</a></li>
               </ul>
             </div>

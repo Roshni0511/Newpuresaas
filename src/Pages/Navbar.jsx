@@ -88,7 +88,7 @@ export default function Navbar() {
                       <p>Early Create sites & offload them to clients</p>
                     </li>
                     <li>
-                      <a href="#"><span className="service__number">03.</span> ATS (Application Tracking System)</a>
+                      <a href="/ATS"><span className="service__number">03.</span> ATS (Application Tracking System)</a>
                       <p>Simplify recruitment, track candidates, and streamline your hiring process.</p>
                     </li>
                     
