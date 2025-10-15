@@ -80,19 +80,6 @@ export default function OfficeErp() {
                   Get Started Free <i className="bi bi-arrow-right ms-2"></i>
                 </a>
               </div>
-
-              {/* Animated feature badges */}
-              <div className="d-flex flex-wrap align-items-center gap-4 mt-4 text-muted small office-compliance-badges">
-                <span className="office-compliance-item office-animate-delay-4">
-                  <i className="bi bi-check-circle me-2 text-success"></i>SOC 2 Certified
-                </span>
-                <span className="office-compliance-item office-animate-delay-5">
-                  <i className="bi bi-shield-lock me-2 text-primary"></i>GDPR Compliant
-                </span>
-                <span className="office-compliance-item office-animate-delay-6">
-                  <i className="bi bi-cloud-check me-2 text-info"></i>Cloud Secure
-                </span>
-              </div>
             </div>
 
             {/* Right Column */}
@@ -389,6 +376,16 @@ export default function OfficeErp() {
               <h6>Automation</h6>
               <p>Workflow Engine</p>
             </div>
+
+            <div className="why-card why-card-4">
+  <div className="why-card-icon">
+    <i className="fas fa-chart-pie"></i>
+  </div>
+  <h6>Analytics</h6>
+  <p>Business Insights</p>
+</div>
+
+
           </div>
           
           <div className="why-dashboard-preview">
