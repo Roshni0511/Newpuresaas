@@ -23,6 +23,20 @@ const testimonials = [
         title: "Tech Lead",
         avatar: "https://i.pravatar.cc/150?img=3"
     },
+    {
+        id: 4,
+        quote: "The platform's intuitive interface and powerful features have revolutionized our workflow. Customer support has been outstanding, always ready to help.",
+        author: "Sarah Johnson",
+        title: "Marketing Director",
+        avatar: "https://i.pravatar.cc/150?img=2"
+    },
+    {
+        id: 5,
+        quote: "As a small business owner, your service has been a lifesaver in managing cash flow and optimizing financial strategies. It has truly made a difference.",
+        author: "Michael Chen",
+        title: "Tech Lead",
+        avatar: "https://i.pravatar.cc/150?img=3"
+    },
     // ... add more testimonials if needed ...
 ];
 
