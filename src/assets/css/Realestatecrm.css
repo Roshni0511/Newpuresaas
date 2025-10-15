@@ -1,0 +1,713 @@
+/* Basic Reset and Variables */
+:root {
+  --primary-color: #3f51b5; /* Example blue */
+  --highlight-start: #a8ff78; /* Light green start for gradient */
+  --highlight-end: #78ffd6; /* Light cyan end for gradient */
+  --text-color-dark: #333;
+  --text-color-light: #fff;
+  --card-width: 250px;
+  --card-height: 350px;
+}
+
+/* -------------------- Main Layout -------------------- */
+.realproduct .landing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background-color: #3f51b508; /* White background */
+  position: relative;
+  padding: 50px 20px;
+  top: -106px;
+  z-index: 0;
+  overflow: hidden; /* Important for containing background animation */
+  text-align: center;
+}
+
+/* -------------------- Header Text -------------------- */
+.realproduct .header-text {
+  /* z-index: 10;  */
+  max-width: 800px;
+  margin-bottom: 50px;
+  margin-top: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+.realproduct .small-text {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.realproduct .main-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.realproduct .highlight {
+  /* Creating the green-yellow gradient text effect */
+  background: linear-gradient(90deg, #3f51b5, #26a77f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; /* Fallback for older browsers */
+}
+
+.realproduct .sub-text {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.realproduct .free-demo-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: background-color 0.3s;
+}
+
+.realproduct .free-demo-btn:hover {
+  background-color: #333;
+}
+
+/* -------------------- Background Lines Animation (Conceptual) -------------------- */
+/* This is a simple placeholder to mimic the *presence* of a dynamic element. */
+/* The actual complex animated lines require more advanced techniques. */
+.realproduct .animated-background-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Allows clicks on content underneath */
+  opacity: 0.15; /* Make the lines subtle */
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(168, 255, 120, 0.5),
+    rgba(168, 255, 120, 0.5) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  animation: backgroundScroll 60s linear infinite;
+  z-index: 1; /* Below text, above background */
+}
+
+@keyframes backgroundScroll {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1000px 1000px; /* Scroll the pattern diagonally */
+  }
+}
+
+/* -------------------- Image Cards Section -------------------- */
+.realproduct .image-cards-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Align the bottom of the cards */
+  position: relative;
+  z-index: 20; /* Ensure cards are above everything else */
+  margin-top: 50px; /* Adjust spacing from button */
+  /* This overflow is crucial to keep the tilted cards visible within the section */
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 50px;
+}
+
+.realproduct .card-wrapper {
+  width: var(--card-width);
+  height: var(--card-height);
+  position: absolute; /* Use absolute positioning for overlapping and precise control */
+  transform-origin: center;
+  /* Add a transition for smooth rotation/scaling */
+  transition: transform 0.5s ease-out;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2); /* Basic shadow for depth */
+  border-radius: 15px; /* Apply rounded corners */
+  overflow: hidden;
+}
+
+/* Card Positioning and Rotation */
+.realproduct .card-wrapper.center {
+  position: relative; /* Make the center card the anchor */
+  z-index: 3; /* Center card on top */
+  transform: translateY(0); /* No translation for the center card */
+}
+
+.realproduct .card-wrapper.left {
+  z-index: 2; /* Left card second layer */
+  /* Tilt slightly left and shift left/down */
+  transform: translateX(calc(-1 * var(--card-width) * 0.4)) rotateZ(-15deg) translateY(20px);
+}
+
+.realproduct .card-wrapper.right {
+  z-index: 2; /* Right card third layer */
+  /* Tilt slightly right and shift right/down */
+  transform: translateX(calc(1 * var(--card-width) * 0.4)) rotateZ(15deg) translateY(20px);
+}
+
+/* Optional: Add a subtle hover effect to the center card */
+.realproduct .card-wrapper.center:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+}
+
+
+.realproduct .image-card {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure image covers the card area */
+  display: block;
+}
+
+/* Important: Adjust the section to account for the absolute positioning of the cards
+   If you want the cards to visually "break out" of the container, you might need
+   to adjust the margin or padding of the elements above them.
+*/
+.realproduct .image-cards-section {
+    /* Set a height that contains the cards */
+    height: calc(var(--card-height) + 50px);
+    margin-bottom: 50px;
+    margin-top: 0px; /* Pull the section up closer to the button */
+}
+@media (max-width: 767px) {
+ .realproduct .main-title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.realproduct .sub-text{
+  font-size: 14px;
+}
+}
+
+/* ============================================================================
+=============================================================================== */
+
+.socialsec {
+  padding-bottom: 80px;
+}
+/* General Styling */
+.socialsec .social-selector-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center content vertically initially */
+  /* min-height: 100vh; */
+  background-color: #161626;
+    background-image: url('/public/Image/hero-bg.svg'); /* Dark background color */
+  color: #fff;
+  width: 1440px;
+  margin: auto;
+  border-radius: 30px;
+
+  position: relative;
+  overflow: hidden; /* Hide anything that goes outside */
+  padding: 40px 20px; /* Add some padding */
+  text-align: center;
+}
+
+.socialsec .content-wrapper {
+  z-index: 0; /* Ensure content is above the background glow */
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Text Elements */
+.socialsec .section-tag {
+    font-size: 0.9rem;
+    color: #0e0e0e;
+    background: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.socialsec .main-heading {
+  font-size: clamp(2rem, 4vw + 1rem, 3.5rem); /* Responsive font size */
+  font-weight: 700;
+  margin-bottom: 20px;
+  max-width: 600px;
+  line-height: 1.2;
+}
+
+.socialsec .sub-heading {
+  font-size: clamp(0.9rem, 1.5vw + 0.5rem, 1.1rem); /* Responsive font size */
+  color: #bbb;
+  max-width: 600px;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+/* Platforms Grid */
+.socialsec .platforms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  width: 100%;
+  max-width: 900px; /* Max width for the grid */
+  margin-bottom: 50px;
+}
+
+.socialsec .platform-card {
+  background-color: #1a1e2b; /* Darker card background */
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out, background-color 0.2s;
+  cursor: pointer;
+}
+
+.socialsec .platform-card:hover {
+  transform: translateY(-5px);
+  background-color: #2a2f40;
+}
+
+.socialsec .card-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.socialsec .platform-icon {
+  width: 40px;
+  height: 40px;
+  /* Add specific styling for icons if needed, e.g., background for specific brands */
+  /* For green Shopify arrow */
+  &.green .arrow-button {
+    background-color: #4CAF50; /* Example green */
+    color: white;
+  }
+}
+
+.socialsec .text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.socialsec .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.socialsec .card-subtitle {
+  font-size: 0.85rem;
+  color: #bbb;
+  text-align: justify;
+}
+
+.socialsec .arrow-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.socialsec .arrow-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  .socialsec .platforms-grid {
+    grid-template-columns: 1fr; /* Stack cards on smaller screens */
+    padding: 0 10px;
+  }
+
+  .socialsec .main-heading {
+    font-size: 2.5rem;
+  }
+
+  .socialsec .sub-heading {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .socialsec .platform-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .socialsec .arrow-button {
+    align-self: flex-end; /* Push arrow to bottom right on small screens */
+  }
+}@media (max-width: 768px) {
+  .socialsec .social-selector-container {
+      width: 100%; /* Ensure container is full width on small screens */
+      border-radius: 0; /* Optional: remove border-radius on full screen mobile view */
+  }
+  .socialsec .platforms-grid {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+  .socialsec .main-heading {
+    font-size: 2.5rem;
+  }
+  .socialsec .sub-heading {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .socialsec .platform-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .socialsec .arrow-button {
+    align-self: flex-end;
+  }
+}
+
+/* =========================================================================
+============================================================================ */
+
+/* General Styling for the section (no changes needed here) */
+.mortgage-solutions-section {
+  background-color: #f7f7f7;
+  padding: 80px 20px;
+  color: #333;
+}
+
+.mortgage-solutions-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header Content (no changes needed here) */
+.mortgage-solutions-section .header-content {
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 800px;
+}
+
+.mortgage-solutions-section .tag-line {
+  background-color: #e0e0e0;
+  color: #666;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.mortgage-solutions-section .main-heading {
+  font-size: clamp(2.2rem, 4.5vw + 1rem, 3.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.mortgage-solutions-section .sub-heading {
+  font-size: clamp(1rem, 1.8vw + 0.5rem, 1.15rem);
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Features and Image Grid (no changes needed here) */
+.mortgage-solutions-section .features-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr 1fr;
+  gap: 40px;
+  align-items: center;
+  width: 100%;
+}
+
+/* Feature Columns */
+.mortgage-solutions-section .features-column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mortgage-solutions-section .features-column.left {
+  text-align: left; 
+}
+
+.mortgage-solutions-section .features-column.right {
+  text-align: left;
+}
+
+.mortgage-solutions-section .feature-item {
+  /* This helps text wrap correctly around the floated icon */
+  overflow: hidden; 
+}
+
+/* --- ICON STYLING FIX --- */
+.mortgage-solutions-section .feature-icon {
+  /* Font Awesome Icon Base Styling */
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  line-height: 40px; /* Vertically centers the icon text/glyph */
+  text-align: center;
+  border-radius: 50%; /* Creates the circle background */
+  background-color: #161627; /* Primary color background (Example blue) */
+  color: #fff; /* White icon color */
+  
+  /* Positioning for Right Column (default) */
+  float: left; 
+  margin-right: 15px;
+}
+
+.mortgage-solutions-section .features-column.left .feature-icon {
+  /* Positioning for Left Column */
+  float: left; 
+  margin-right: 15px;
+  margin-left: 0;
+}
+/* ------------------------- */
+
+
+.mortgage-solutions-section .feature-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.mortgage-solutions-section .feature-description {
+  font-size: 0.95rem;
+  color: #777;
+  line-height: 1.5;
+}
+
+/* Central Image (no changes needed here) */
+.mortgage-solutions-section .central-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mortgage-solutions-section .phone-in-hand-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  /* box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); */
+  /* border-radius: 40px; */
+}
+
+/* Media Queries for Responsiveness (Slight adjustment to icon margin) */
+@media (max-width: 992px) {
+  .mortgage-solutions-section .features-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .mortgage-solutions-section .features-column {
+    text-align: center;
+    align-items: center;
+  }
+  
+  /* Reset icon floats for stacked layout */
+  .mortgage-solutions-section .feature-icon {
+    float: none;
+    margin: 0 0 10px 0; /* Center icon above text */
+  }
+  .mortgage-solutions-section .features-column.left .feature-icon {
+    float: none;
+    margin: 0 0 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .mortgage-solutions-section {
+    padding: 60px 15px;
+  }
+  .mortgage-solutions-section .header-content {
+    margin-bottom: 40px;
+  }
+  .mortgage-solutions-section .main-heading {
+    font-size: 2.5rem;
+  }
+  .mortgage-solutions-section .sub-heading {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .mortgage-solutions-section .main-heading {
+    font-size: 2rem;
+  }
+}
+
+
+/* ==============================================================================
+================================================================================= */
+
+.combined-page-wrapper {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+.combined-page-wrapper .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.combined-page-wrapper .testimonials-section {
+  background-color: #f8f8f8; /* Very light background for contrast */
+  padding: 80px 0;
+  text-align: center;
+}
+
+.combined-page-wrapper .section-tag {
+  background-color: #d8f8d8; /* Light green background for the tag */
+  color: #4CAF50; /* Green text color */
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.combined-page-wrapper .section-heading {
+  font-size: clamp(1.8rem, 4vw + 0.5rem, 2.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 60px;
+  color: #1a1a1a;
+}
+
+.combined-page-wrapper .reviews-grid {
+  display: grid;
+  /* 3 columns on large screens, responsive min size 300px */
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  gap: 20px;
+  padding-bottom: 40px;
+}
+
+.combined-page-wrapper .review-card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: left;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+.combined-page-wrapper .review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.combined-page-wrapper .user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-weight: 600;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.combined-page-wrapper .user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.combined-page-wrapper .user-name {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0;
+}
+
+
+.combined-page-wrapper .review-text {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .combined-page-wrapper .card-stack-img {
+    width: 250px;
+  }
+  .combined-page-wrapper .card-stack-container {
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .combined-page-wrapper .hero-section {
+    padding: 60px 0 0;
+  }
+  .combined-page-wrapper .hero-title {
+    font-size: 1.8rem;
+  }
+  .combined-page-wrapper .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  .combined-page-wrapper .card-stack-container {
+    height: 300px;
+  }
+  .combined-page-wrapper .testimonials-section {
+    padding: 60px 0;
+  }
+  .combined-page-wrapper .reviews-grid {
+        /* Allow cards to be smaller to fit 2 columns on tablets if possible */
+        grid-template-columns: repeat(auto-fit, minmax(272px, 1fr)); 
+    }
+}
+
+@media (max-width: 576px) {
+  .combined-page-wrapper .card-stack-img {
+    width: 180px;
+  }
+  .combined-page-wrapper .card-stack-img.left {
+    transform: translateX(-15%) rotate(-5deg);
+  }
+  .combined-page-wrapper .card-stack-img.right {
+    transform: translateX(15%) rotate(5deg);
+  }
+}
+
+
+/* ===========================================================================
+============================================================================== */
+

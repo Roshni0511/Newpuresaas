@@ -1105,63 +1105,61 @@
 
 /* ==============================================================================
 ================================================================================= */
-
 .functionalcompo {
   background-color: #f9f9f9;
 }
-.functionalcompo .featurebutton{
-      padding: 10px 20px;
-    border-radius: 25px;
-    margin-top: 10px;
-    border: 1px solid #fff;
-    background: #000;
-    color: #fff;
-}
-.functionalcompo .featurebutton:hover{
-      padding: 10px 20px;
-    border-radius: 25px;
-    border: 1px solid #000000;
-    background: #ffffff;
-    color: #000000;
-}
-.functionalcompo .retail-system-container {
-  background-color: #000000; /* Black background */
-   background-image: url('/public/Image/hero-bg.svg');
-  color: #ffffff; /* White text */
-  width: 1440px;
-  margin: auto;
+
+.functionalcompo .featurebutton {
+  padding: 10px 20px;
   border-radius: 25px;
-  min-height: 100vh; /* Full viewport height */
+  margin-top: 10px;
+  border: 1px solid #fff;
+  background: #000;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.functionalcompo .featurebutton:hover {
+  border: 1px solid #000;
+  background: #fff;
+  color: #000;
+}
+
+/* === Main Container === */
+.functionalcompo .retail-system-container {
+  background-color: #000;
+  background-image: url('/public/Image/hero-bg.svg');
+  color: #fff;
+  width: 100%;
+  max-width: 1440px;   /* ✅ limit width on large screens */
+  margin: 0 auto;       /* ✅ center horizontally */
+  border-radius: 25px;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 40px 30px;
-  position: relative; /* Needed for absolute positioning of the glow */
-  overflow: hidden; /* Keep the glow contained */
+  position: relative;
+  overflow: hidden;
 }
- 
-/* --- Blue Glow Effect Simulation --- */
-/* The original image uses a complex graphic for the blue glow. 
-   This CSS simulates a central glow using a radial gradient. */
+
 .functionalcompo .glow-background {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  max-width: 1200px; /* Limit the width of the glow */
-  height: 600px; /* Control the height of the glow */
+  max-width: 1200px;
+  height: 600px;
   background: radial-gradient(circle at center top, rgba(0, 150, 255, 0.4) 0%, rgba(0, 0, 0, 0) 60%);
-  z-index: 1; /* Place behind the content */
-  pointer-events: none; /* Ignore mouse events */
+  z-index: 1;
+  pointer-events: none;
 }
 
-
-/* --- Header Content --- */
 .functionalcompo .header-content {
   text-align: center;
   margin-bottom: 60px;
-  z-index: 2; /* Bring content above the glow */
+  z-index: 2;
 }
 
 .functionalcompo .subtitle {
@@ -1182,40 +1180,36 @@
   margin-top: 10px;
 }
 
-/* --- Features Layout --- */
 .functionalcompo .features-row {
   display: flex;
-  gap: 20px; /* Space between blocks */
+  gap: 20px;
   width: 100%;
   max-width: 1200px;
   margin-bottom: 20px;
   justify-content: center;
-  z-index: 2; /* Bring content above the glow */
+  z-index: 0;
+  flex-wrap: wrap;
 }
 
 .functionalcompo .bottom-row {
-  /* For the two-block row, center them */
   justify-content: center;
-  max-width: 800px; /* Adjust max width for the smaller row */
+  max-width: 800px;
 }
 
-/* --- Feature Block Styling --- */
 .functionalcompo .feature-block {
-  background-color: rgba(255, 255, 255, 0.05); /* Slightly transparent background */
-  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   padding: 30px;
-  flex: 1; /* Allows blocks to grow and fill the space */
-  max-width: 380px; /* Max width for individual blocks */
-  backdrop-filter: blur(5px); /* Optional: Adds a subtle frosted glass effect */
-
-  /* Gradient/Shadow for the block itself, to match the image's luminescence */
+  flex: 1;
+  max-width: 380px;
+  backdrop-filter: blur(5px);
   box-shadow: 0 0 30px rgba(0, 150, 255, 0.1);
   transition: box-shadow 0.3s ease-in-out;
 }
 
 .functionalcompo .feature-block:hover {
-    box-shadow: 0 0 45px rgba(0, 150, 255, 0.2);
+  box-shadow: 0 0 45px rgba(0, 150, 255, 0.2);
 }
 
 .functionalcompo .feature-title {
@@ -1232,33 +1226,92 @@
   text-align: justify;
 }
 
-/* --- Icon Placeholders --- */
-/* You would replace these with actual SVG icons or use an icon library (like react-icons) */
 .functionalcompo .icon-placeholder {
-   font-size: 25px;
-    color: rgb(170, 167, 167);
-    padding: 15px;
-    width: 60px;
-    height: 60px;
-    border: 1px solid #333; /* Border to define the shape area */
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #2a2a2a;
-    /* Optional: Slight color transition/gradient on icons */
-    box-shadow: 0 0 10px rgba(160, 96, 255, 0.2); 
+  font-size: 25px;
+  color: rgb(170, 167, 167);
+  padding: 15px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #333;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a2a2a;
+  box-shadow: 0 0 10px rgba(160, 96, 255, 0.2);
 }
 
+/* -------------------------- Responsive -------------------------- */
 
-/* --- Media Query for Responsiveness --- */
+/* Tablet (1024px and below) */
 @media (max-width: 1024px) {
+  .functionalcompo .main-title {
+    font-size: 36px;
+  }
+
   .functionalcompo .features-row {
     flex-direction: column;
     align-items: center;
   }
+
   .functionalcompo .feature-block {
     max-width: 90%;
     margin-bottom: 15px;
+  }
+}
+
+/* Mobile (768px and below) */
+@media (max-width: 768px) {
+  .functionalcompo .retail-system-container {
+    max-width: 100%; /* ✅ full width on mobile */
+    padding: 30px 15px;
+  }
+
+  .functionalcompo .main-title {
+    font-size: 30px;
+  }
+
+  .functionalcompo .caption {
+    font-size: 14px;
+  }
+
+  .functionalcompo .feature-block {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .functionalcompo .feature-title {
+    font-size: 18px;
+  }
+
+  .functionalcompo .feature-description {
+    font-size: 13px;
+  }
+}
+
+/* Small mobile (480px and below) */
+@media (max-width: 480px) {
+  .functionalcompo .main-title {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .functionalcompo .subtitle {
+    font-size: 13px;
+  }
+
+  .functionalcompo .caption {
+    font-size: 13px;
+  }
+
+  .functionalcompo .featurebutton {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .functionalcompo .icon-placeholder {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
   }
 }

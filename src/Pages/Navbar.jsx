@@ -83,7 +83,7 @@ export default function Navbar() {
                        <p>Quickly create, manage, and offload sites to clients with ease.</p>
                     </li>
                     <li>
-                      <a href="#"><span className="service__number">04.</span> Real Estate CRM</a>
+                      <a href="/Realestatecrm"><span className="service__number">04.</span> Real Estate CRM</a>
                       <p>Early Create sites & offload them to clients</p>
                     </li>
                     <li>

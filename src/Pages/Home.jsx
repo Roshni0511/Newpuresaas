@@ -257,7 +257,7 @@ const features = [
       {/* property section end */}
 
       {/* functional component section start  */}
-      <div className="functionalcompo wow animate__animated animate__fadeInUp">
+      <div className="functionalcompo ">
        <div className="retail-system-container">
     
       {/* <div className="glow-background"></div> */}
@@ -268,7 +268,7 @@ const features = [
         <h1 className="main-title">Work Environment</h1>
       </div>
 
-      <div className="features-row top-row">
+      <div className="features-row top-row wow animate__animated animate__fadeInUp">
         <FeatureBlock
           title="Enduring Commitment"
           description="With over 25 years of successful operation, we have a deep understanding"
@@ -289,7 +289,7 @@ const features = [
         />
       </div>
       
-      <div className="features-row bottom-row">
+      <div className="features-row bottom-row wow animate__animated animate__fadeInUp" >
         <FeatureBlock
           title="Complete Software Suite"
           description="We offer a full range of software products designed to meet your"
@@ -304,7 +304,7 @@ const features = [
         />
       </div>
       
-      <div className="features-row bottom-row">
+      <div className="features-row bottom-row wow animate__animated animate__fadeInUp">
         <FeatureBlock
           title="Ongoing Evolution"
           description="Our dedication to continuous improvement means we are always"
