@@ -131,7 +131,7 @@
   width: 100%;
   max-width: 400px;
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 .texttile .money-section {
   

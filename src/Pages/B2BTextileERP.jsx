@@ -153,7 +153,7 @@ PureSaaS CRMis your all-in-one, enterprise-ready real estate management solution
         </div>
         <div className="right-side wow animate__animated animate__fadeInUp">
           <div className="pattern-bg"></div>
-          <img src="https://puresaas.in/static/media/1687026404013.dc8c4c75dd00427e33e8.png" alt="Server" className="hero-img" />
+          <img src="https://puresaas.in/static/media/1687026404013.dc8c4c75dd00427e33e8.png" alt="Server" className="hero-img" style={{marginLeft:'160px'}} />
         </div>
       </div>
    <section className="money-section wow animate__animated animate__fadeInUp">
@@ -311,7 +311,7 @@ Explore powerful tools designed to streamline, automate, and elevate your real e
 
         <div className="missionslide wow animate__animated animate__fadeInUp">
   <div className="container">
-          <h2 className="mission-badge mission-heading wow animate__animated animate__fadeInUp" style={{fontSize:'50px',display:'flex',justifyContent:'center'}}>
+          <h2 className="mission-heading wow animate__animated animate__fadeInUp" style={{fontSize:'50px',display:'flex',justifyContent:'center'}}>
             Your Benefit
           </h2>
     <div className="row">
