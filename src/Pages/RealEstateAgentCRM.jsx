@@ -14,6 +14,7 @@ import BrandSlider from '../component/BrandSlider';
 import TestimonialsSlider from '../component/Testimonials';
 import RealEstateAgentCRMfaq from '../component/Realestatecrmfaq';
 import HomeFaq from '../component/HomeFaq';
+import ProductForm from '../component/ProductForm';
 
 
 
@@ -342,6 +343,13 @@ export default function RealEstateAgentCRM() {
 <BrandSlider/>
 
 
+{/* ============================= */}
+{/* Features Section */}
+{/* ============================= */}
+
+<ProductForm/>
+
+
 
 {/* ============================= */}
 {/* Industries Section */}
@@ -403,9 +411,9 @@ export default function RealEstateAgentCRM() {
   </span>
 
   {/* Heading */}
-  <h2 style={{ fontSize: '2rem', opacity: 1, filter: 'blur(0px)', marginBottom:'20', fontWeight:'700', color:'#2c3e50'}}>
+  <h3 style={{ fontSize: '2rem', opacity: 1, filter: 'blur(0px)', marginBottom:'20', fontWeight:'700', color:'#2c3e50'}}>
    Client words
-  </h2>
+  </h3>
 </div>
   <TestimonialsSlider/>
 </section>
