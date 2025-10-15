@@ -152,7 +152,7 @@ export default function ATS() {
 
     {/* Your Benefit section start  */}
    <div className="atsbenefit wow animate__animated animate__fadeInUp">
-    <div className="whytele-background">
+    <div className="whytele-background" style={{background:'#f8f9fc'}}>
         <div className="whytele-gradient-shape whytele-shape-1"></div>
       <div className="whytele-gradient-shape whytele-shape-2"></div>
       <div className="whytele-gradient-shape whytele-shape-3"></div>
