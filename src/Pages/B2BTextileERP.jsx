@@ -206,6 +206,9 @@ PureSaaS CRMis your all-in-one, enterprise-ready real estate management solution
       </div>
     </section>
     </section>
+      </div>
+ <div className='texttile'>
+
              <div className=" wow animate__animated animate__fadeInUp">
        <div className="section-container" >
       <div className="installation-manual-card">
@@ -281,10 +284,11 @@ Explore powerful tools designed to streamline, automate, and elevate your real e
       </div>
     </div>
     </div>
+      </div>
     <BrandSlider />
     <ProductForm />
       <HomePricing />
-
+ <div className='texttile'>
          <section className="faq-section wow animate__animated animate__fadeInUp">
             <div className="faq-header">
                 <span className="faq-tag">FAQ</span>
@@ -309,8 +313,8 @@ Explore powerful tools designed to streamline, automate, and elevate your real e
                 ))}
             </div>
         </section>
-
-
+  </div>
+ <div className='texttile'>
         <div className="missionslide wow animate__animated animate__fadeInUp">
   <div className="container">
           <h2 className="mission-heading wow animate__animated animate__fadeInUp" style={{fontSize:'50px',display:'flex',justifyContent:'center'}}>
@@ -345,8 +349,8 @@ Explore powerful tools designed to streamline, automate, and elevate your real e
   </div>
 </div>
 
-      <Footer />
           </div>
+      <Footer />
     </>
   )
 }
