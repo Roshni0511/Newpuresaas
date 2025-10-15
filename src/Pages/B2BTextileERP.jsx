@@ -4,6 +4,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import BrandSlider from '../component/BrandSlider'
 import "../assets/css/b2berp.css"
+import ProductForm from '../component/ProductForm'
 // import { UploadCloud, Trash2, FileSpreadsheet, Search, Users, BarChart2 } from "lucide-react";
 
 
@@ -281,6 +282,7 @@ Explore powerful tools designed to streamline, automate, and elevate your real e
     </div>
     </div>
     <BrandSlider />
+    <ProductForm />
       <HomePricing />
 
          <section className="faq-section wow animate__animated animate__fadeInUp">
