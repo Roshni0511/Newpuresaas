@@ -14,6 +14,7 @@ import BrandSlider from '../component/BrandSlider';
 import TestimonialsSlider from '../component/Testimonials';
 import RealEstateAgentCRMfaq from '../component/Realestatecrmfaq';
 import HomeFaq from '../component/HomeFaq';
+import ProductForm from '../component/ProductForm';
 
 
 
@@ -188,7 +189,7 @@ export default function RealEstateAgentCRM() {
   <span 
     className="badge text-dark mb-3" 
     style={{ backgroundColor: '#ffe16bff', fontSize: '1rem', padding: '0.5rem 1rem' }}>
-    Features
+    Tools
   </span>
 
   {/* Heading */}
@@ -198,7 +199,7 @@ export default function RealEstateAgentCRM() {
 </div>
 
 
-<section style={{marginTop:'60px', paddingBottom:'190px'}}>
+<section style={{marginTop:'60px', paddingBottom:'70px'}}>
 <div class="parent">
     <div class="div1">
       <img src="/Image/hero-banner.png" alt="Building" />
@@ -267,103 +268,92 @@ export default function RealEstateAgentCRM() {
 
 
 
-<div className=' wow animate__animated animate__fadeInUp'>
 
+{/* ============================= */}
+{/* Features Section */}
+{/* ============================= */}
+<div className="wow animate__animated animate__fadeInUp">
+  <div className="opacity-100 filter-none rotate-0 scale-100 text-center wow animate__animated animate__fadeInUp features-section">
+    {/* Badge */}
+    <span className="badge text-dark mb-3 features-badge">
+      Real Estate CRM
+    </span>
 
+    {/* Heading */}
+    <h2 className="features-heading">
+      Powerful tools to grow<br /> your real estate business
+    </h2>
+  </div>
 
-<div className="opacity-100 filter-none rotate-0 scale-100 text-center  wow animate__animated animate__fadeInUp" style={{background:'#f9f9f9'}}>
-  {/* Badge */}
-  <span 
-    className="badge text-dark mb-3" 
-    style={{ backgroundColor: '#ffe16bff', fontSize: '1rem', padding: '0.5rem 1rem' }}>
-    Features
-  </span>
-
-  {/* Heading */}
-  <h2 style={{ fontSize: '2rem', opacity: 1, filter: 'blur(0px)', marginBottom:'0', fontWeight:'700', color:'#2c3e50', paddingBottom:'50px'}}>
-    Powerful features to elevate<br></br> your business
-  </h2>
-</div>
-
-<div className="bus-card-container" style={{background:'#f9f9f9'}}>
-      {/* Top row - 3 cards */}
-      <div className="bus-card-row">
-        <div > 
+  <div className="bus-card-container">
+    {/* Top row - 3 cards */}
+    <div className="bus-card-row">
+      <div>
         <div className="bus-card">
-          <img
-            src="/Image/feature1.jpg"
-            alt="Card 1"
-            className="bus-card-image"
-          />
+          <img src="/Image/feature1.jpg" alt="Lead Management" className="bus-card-image" />
         </div>
-        <h4>Smart scheduling</h4>
-        <p>Auto-assign tasks & updates in real-time</p>
-        </div>
-
-        <div>
-        <div className="bus-card">
-          <img
-            src="/Image/feature2.jpg"
-            alt="Card 2"
-            className="bus-card-image"
-          />
-        </div>
-        <h4>Smart scheduling</h4>
-        <p>Auto-assign tasks & updates in real-time</p>
-        </div>
-
-
-        <div>
-        <div className="bus-card">
-          <img
-            src="/Image/feature3.jpg"
-            alt="Card 3"
-            className="bus-card-image"
-          />
-        </div>  
-        <h4>Smart scheduling</h4>
-        <p>Auto-assign tasks & updates in real-time</p>
-        </div>
+        <h4>Lead Management</h4>
+        <p>Capture, track, and convert leads faster.</p>
       </div>
 
-      {/* Bottom row - 2 cards */}
-      <div className="bus-card-row">
-
-        <div>
+      <div>
         <div className="bus-card">
-          <img
-            src="/Image/feature4.jpg"
-            alt="Card 4"
-            className="bus-card-image"
-          />
+          <img src="/Image/feature2.jpg" alt="Property Listings" className="bus-card-image" />
         </div>
-        <h4>Smart scheduling</h4>
-        <p>Auto-assign tasks & updates in real-time</p>
-        </div>
+        <h4>Property Listings</h4>
+        <p>Manage all your property data in one place.</p>
+      </div>
 
-        <div>
+      <div>
         <div className="bus-card">
-          <img
-            src="/Image/feature5.jpg"
-            alt="Card 5"
-            className="bus-card-image"
-          />
+          <img src="/Image/feature3.jpg" alt="Client Follow-ups" className="bus-card-image" />
         </div>
-        
-        <h4>Smart scheduling</h4>
-        <p>Auto-assign tasks & updates in real-time</p>
-        </div>
-
+        <h4>Client Follow-ups</h4>
+        <p>Never miss a deal with smart reminders.</p>
       </div>
     </div>
 
+    {/* Bottom row - 2 cards */}
+    <div className="bus-card-row">
+      <div>
+        <div className="bus-card">
+          <img src="/Image/feature4.jpg" alt="Sales Pipeline" className="bus-card-image" />
+        </div>
+        <h4>Sales Pipeline</h4>
+        <p>Track deals from inquiry to closing.</p>
+      </div>
+
+      <div>
+        <div className="bus-card">
+          <img src="/Image/feature5.jpg" alt="Performance Insights" className="bus-card-image" />
+        </div>
+        <h4>Performance Insights</h4>
+        <p>Analyze growth and boost your sales.</p>
+      </div>
+    </div>
+  </div>
 </div>
 
+
+
+{/* ============================= */}
+{/* Slider Section */}
+{/* ============================= */}
 
 <BrandSlider/>
 
 
+{/* ============================= */}
+{/* Features Section */}
+{/* ============================= */}
 
+<ProductForm/>
+
+
+
+{/* ============================= */}
+{/* Industries Section */}
+{/* ============================= */}
 <section className=' wow animate__animated animate__fadeInUp'> 
   <div className="opacity-100 filter-none rotate-0 scale-100 text-center" style={{background:'#f9f9f9' , paddingBottom:'40px', paddingTop:'60px'}}>
   {/* Badge */}
@@ -408,7 +398,9 @@ export default function RealEstateAgentCRM() {
 
 
 
-
+{/* ============================= */}
+{/* Testimonials Section */}
+{/* ============================= */}
 <section style={{background:'#f9f9f9'}} className=' wow animate__animated animate__fadeInUp'>
   <div className="opacity-100 filter-none rotate-0 scale-100 text-center" style={{background:'#f9f9f9', paddingTop:'120px'}}>
   {/* Badge */}
@@ -419,9 +411,9 @@ export default function RealEstateAgentCRM() {
   </span>
 
   {/* Heading */}
-  <h2 style={{ fontSize: '2rem', opacity: 1, filter: 'blur(0px)', marginBottom:'20', fontWeight:'700', color:'#2c3e50'}}>
+  <h3 style={{ fontSize: '2rem', opacity: 1, filter: 'blur(0px)', marginBottom:'20', fontWeight:'700', color:'#2c3e50'}}>
    Client words
-  </h2>
+  </h3>
 </div>
   <TestimonialsSlider/>
 </section>
@@ -430,7 +422,9 @@ export default function RealEstateAgentCRM() {
 
 
 
-
+{/* ============================= */}
+{/* Faq Section */}
+{/* ============================= */}
 <section style={{background:'#f9f9f9'}} className=' wow animate__animated animate__fadeInUp'>
 <RealEstateAgentCRMfaq/>
 </section>
@@ -438,7 +432,9 @@ export default function RealEstateAgentCRM() {
 
 
 
-
+{/* ============================= */}
+{/* Email Section */}
+{/* ============================= */}
 <section className="cta-section wow animate__animated animate__fadeInUp">
             <div className="cta-content-left">
                 <span className="cta-tag">Finance</span>

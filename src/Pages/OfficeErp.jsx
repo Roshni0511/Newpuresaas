@@ -8,6 +8,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import HomePricing from "../component/HomePricing";
 import OfficeErpFaq from "../component/Officeerpfaq";
+import ProductForm from "../component/ProductForm"
 
 export default function OfficeErp() {
   const [showDemo, setShowDemo] = useState(false);
@@ -428,14 +429,15 @@ export default function OfficeErp() {
 
 
 
-
+{/* Demo Form */}
+<ProductForm/>
 
 {/* Pricing Section Starts */}
 <HomePricing/>
 
-
 {/* Office erp faq */}
 <OfficeErpFaq/>
+
 
 
 {/* Email Section Starts */}
