@@ -226,7 +226,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 60px 13%;
+  padding: 19px 13%;
   background-color: #f9f9f9;
   gap: 40px;
 }
@@ -758,7 +758,7 @@
 .features-section {
   background: #f9f9f9;
   text-align: center;
-  padding-bottom: 150px;
+  padding-bottom: 40px;
 }
 
 /* Badge */

@@ -198,7 +198,7 @@ export default function RealEstateAgentCRM() {
 </div>
 
 
-<section style={{marginTop:'60px', paddingBottom:'190px'}}>
+<section style={{marginTop:'60px', paddingBottom:'70px'}}>
 <div class="parent">
     <div class="div1">
       <img src="/Image/hero-banner.png" alt="Building" />
