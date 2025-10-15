@@ -1,0 +1,294 @@
+/* ====== Container and Layout (Base Styling) ====== */
+.productform .office-erp-container {
+  width: 100%;
+  padding: 80px 10%;
+  background: #f7f9fc;
+}
+
+.productform .office-erp-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Two Columns (Old Section - can still be used elsewhere) */
+.productform .office-erp-col {
+  flex: 1 1 50%;
+  padding: 20px;
+}
+
+.productform .image-section img {
+  width: 100%;
+  max-height: 400px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.productform .content-section h2 {
+  color: #1e3a8a;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.productform .content-section p {
+  color: #555;
+  line-height: 1.7;
+  font-size: 16px;
+  text-align: justify;
+  margin-bottom: 25px;
+}
+
+/* ===== Fullscreen Hero Section ===== */
+.productform .hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  overflow: hidden;
+}
+
+.productform .hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(65%);
+}
+
+/* Overlay Content */
+.productform .hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+  max-width: 700px;
+}
+
+.productform .hero-overlay h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.productform .hero-overlay p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== Buttons ===== */
+.productform .open-modal-btn,
+.productform .hero-overlay .open-modal-btn {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.5);
+}
+
+.productform .open-modal-btn:hover,
+.productform .hero-overlay .open-modal-btn:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  transform: translateY(-3px);
+}
+
+/* ===== Modal Overlay ===== */
+.productform .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* ===== Modal Box ===== */
+.productform .modal-content {
+  background: #fff;
+  padding: 30px 35px;
+  border-radius: 14px;
+  width: 90%;
+  max-width: 420px;
+  position: relative;
+  animation: slideUp 0.4s ease;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.productform .modal-content h3 {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* ===== Close Button ===== */
+.productform .close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 24px;
+  color: #555;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.productform .close-btn:hover {
+  color: #1e3a8a;
+}
+
+/* ===== Form Styling ===== */
+.productform form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.productform label {
+  font-weight: 600;
+  color: #333;
+  font-size: 15px;
+}
+
+.productform input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.productform input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+}
+
+.productform .submit-btn {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 10px;
+}
+
+.productform .submit-btn:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  transform: scale(1.02);
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ===== Modal Animation Enhancements ===== */
+.modal-overlay.fade-in {
+  animation: overlayFadeIn 0.3s ease forwards;
+}
+
+.modal-overlay.fade-out {
+  animation: overlayFadeOut 0.3s ease forwards;
+}
+
+.modal-content.slide-up {
+  animation: modalSlideUp 0.35s ease forwards;
+}
+
+.modal-content.slide-down {
+  animation: modalSlideDown 0.35s ease forwards;
+}
+
+/* === Keyframes for Modal === */
+@keyframes overlayFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes overlayFadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes modalSlideUp {
+  from {
+    transform: translateY(50px) scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes modalSlideDown {
+  from {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(50px) scale(0.95);
+    opacity: 0;
+  }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .productform .hero-overlay h2 {
+    font-size: 30px;
+  }
+
+  .productform .hero-overlay p {
+    font-size: 16px;
+  }
+
+  .productform .modal-content {
+    padding: 25px;
+  }
+
+  .productform .submit-btn {
+    font-size: 15px;
+  }
+}

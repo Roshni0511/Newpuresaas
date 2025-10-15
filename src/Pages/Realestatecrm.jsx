@@ -4,6 +4,7 @@ import Footer from './Footer'
 import '../assets/css/Realestatecrm.css'
 import HomePricing from '../component/HomePricing';
 import HomeFaq from '../component/HomeFaq';
+import ProductForm from '../component/ProductForm';
 
 
 
@@ -77,9 +78,9 @@ const Benefit = [
   
  
 ];
-const [email, setEmail] = useState('');
 
-    const handleSubmit = (e) => {
+const [email, setEmail] = useState('');
+ const handleSubmit = (e) => {
         e.preventDefault();
         // Here you would typically handle the form submission,
         // e.g., send the email to an API, log it, etc.
@@ -168,7 +169,7 @@ const [email, setEmail] = useState('');
       {/* social section end  */}
         
       {/* service section start  */}
-<div className="mortgage-solutions-section">
+    <div className="mortgage-solutions-section">
       <div className="container">
         {/* Header Section */}
         <div className="header-content">
@@ -216,6 +217,9 @@ const [email, setEmail] = useState('');
     </div>
       {/* service section end  */}
 
+      {/* PRODUCT FORM START  */}
+          <ProductForm />
+    {/* product form end  */}
       <HomePricing />
 
       {/* features section start  */}
