@@ -30,7 +30,7 @@ const Footer = () => {
               <h3>Products</h3>
               <ul className="footer-links" >
                 <li><a href="/RealEstateAgentCRM">Real Estate Agent CRM</a></li>
-                <li><a href="#">Real Estate CRM</a></li>
+                <li><a href="/Realestatecrm">Real Estate CRM</a></li>
                 <li><a href="#">Sales CRM</a></li>
                 <li><a href="/B2BTextileERP">B2B Textile ERP</a></li>
                 <li><a href="#">Telecaller CRM</a></li>

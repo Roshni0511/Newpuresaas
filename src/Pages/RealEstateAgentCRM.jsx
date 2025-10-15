@@ -182,7 +182,7 @@ export default function RealEstateAgentCRM() {
 {/* Property Section */}
 {/* ============================= */}
 
-<div style={{background:'#f9f9f9'}} className=' wow animate__animated animate__fadeInUp'>
+<div style={{background:'#f9f9f9',paddingTop:'40px'}} className=' wow animate__animated animate__fadeInUp'>
 <div className="opacity-100 filter-none rotate-0 scale-100 text-center">
   {/* Badge */}
   <span 
@@ -192,7 +192,7 @@ export default function RealEstateAgentCRM() {
   </span>
 
   {/* Heading */}
-  <h2 style={{ fontSize: '2rem', opacity: 1, filter: 'blur(0px)', marginBottom:'20', fontWeight:'700', color:'#2c3e50' }}>
+  <h2 style={{ fontSize: '2rem', opacity: 1, filter: 'blur(0px)', marginBottom:'20', fontWeight:'700', color:'#2c3e50',padding:'10px' }}>
     Robust tools to enhance your <br />property management business.
   </h2>
 </div>
@@ -288,7 +288,7 @@ export default function RealEstateAgentCRM() {
 <div className="bus-card-container" style={{background:'#f9f9f9'}}>
       {/* Top row - 3 cards */}
       <div className="bus-card-row">
-        <div>
+        <div > 
         <div className="bus-card">
           <img
             src="/Image/feature1.jpg"
