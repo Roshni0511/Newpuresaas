@@ -1,51 +1,14 @@
-/* ====== Container and Layout (Base Styling) ====== */
-.productform .office-erp-container {
+/* ====== Base Container ====== */
+.productform {
   width: 100%;
-  padding: 80px 10%;
-  background: #f7f9fc;
+  overflow: hidden;
 }
 
-.productform .office-erp-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Two Columns (Old Section - can still be used elsewhere) */
-.productform .office-erp-col {
-  flex: 1 1 50%;
-  padding: 20px;
-}
-
-.productform .image-section img {
-  width: 100%;
-  max-height: 400px;
-  border-radius: 16px;
-  object-fit: cover;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-}
-
-.productform .content-section h2 {
-  color: #1e3a8a;
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.productform .content-section p {
-  color: #555;
-  line-height: 1.7;
-  font-size: 16px;
-  text-align: justify;
-  margin-bottom: 25px;
-}
-
-/* ===== Fullscreen Hero Section ===== */
+/* ===== Hero Section ===== */
 .productform .hero-section {
   position: relative;
   width: 100%;
-  height: 100vh; /* Full screen height */
+  height: 70vh; /* Reduced height */
   overflow: hidden;
 }
 
@@ -54,9 +17,12 @@
   height: 100%;
   object-fit: cover;
   filter: brightness(65%);
+  transition: 0.5s ease;
 }
-
-/* Overlay Content */
+.hero-overlay {
+    width: 100%;
+}
+/* ===== Overlay Content ===== */
 .productform .hero-overlay {
   position: absolute;
   top: 50%;
@@ -69,35 +35,33 @@
 }
 
 .productform .hero-overlay h2 {
-  font-size: 42px;
+  font-size: 38px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
 }
 
 .productform .hero-overlay p {
-  font-size: 18px;
-  line-height: 1.8;
-  margin-bottom: 30px;
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 28px;
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
 }
 
-/* ===== Buttons ===== */
-.productform .open-modal-btn,
-.productform .hero-overlay .open-modal-btn {
+/* ===== Button Style ===== */
+.productform .open-modal-btn {
   background: linear-gradient(135deg, #2563eb, #1d4ed8);
   color: #fff;
   border: none;
-  padding: 14px 32px;
+  padding: 12px 28px;
   border-radius: 30px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 16px;
   transition: 0.3s ease;
-  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.5);
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.4);
 }
 
-.productform .open-modal-btn:hover,
-.productform .hero-overlay .open-modal-btn:hover {
+.productform .open-modal-btn:hover {
   background: linear-gradient(135deg, #1d4ed8, #1e40af);
   transform: translateY(-3px);
 }
@@ -151,7 +115,7 @@
   color: #1e3a8a;
 }
 
-/* ===== Form Styling ===== */
+/* ===== Form ===== */
 .productform form {
   display: flex;
   flex-direction: column;
@@ -216,7 +180,6 @@
   }
 }
 
-/* ===== Modal Animation Enhancements ===== */
 .modal-overlay.fade-in {
   animation: overlayFadeIn 0.3s ease forwards;
 }
@@ -233,7 +196,6 @@
   animation: modalSlideDown 0.35s ease forwards;
 }
 
-/* === Keyframes for Modal === */
 @keyframes overlayFadeIn {
   from {
     opacity: 0;
@@ -274,21 +236,60 @@
   }
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
+/* ===== Responsive Design ===== */
+@media (max-width: 1024px) {
+  .productform .hero-section {
+    height: 60vh;
+  }
+
   .productform .hero-overlay h2 {
-    font-size: 30px;
+    font-size: 34px;
   }
 
   .productform .hero-overlay p {
     font-size: 16px;
   }
+}
 
-  .productform .modal-content {
-    padding: 25px;
+@media (max-width: 768px) {
+  .productform .hero-section {
+    height: 55vh;
   }
 
-  .productform .submit-btn {
+  .productform .hero-overlay {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .productform .hero-overlay h2 {
+    font-size: 28px;
+  }
+
+  .productform .hero-overlay p {
     font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .productform .open-modal-btn {
+    font-size: 15px;
+    padding: 10px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .productform .hero-section {
+    height: 50vh;
+  }
+
+  .productform .hero-overlay h2 {
+    font-size: 24px;
+  }
+
+  .productform .hero-overlay p {
+    font-size: 14px;
+  }
+
+  .productform .modal-content {
+    padding: 20px;
   }
 }
