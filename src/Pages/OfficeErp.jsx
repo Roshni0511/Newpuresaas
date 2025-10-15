@@ -310,6 +310,128 @@ export default function OfficeErp() {
 
 
 
+{/* WHY Office ERP CRM */}
+<section className="why-hero-section py-5">
+  <div className="why-container">
+    <div className="why-row align-items-center">
+      <div className="why-col-lg-6">
+        <div className="why-hero-content">
+          <div className="why-hero-badge">
+            <span className="why-badge-text">Office ERP CRM</span>
+            <div className="why-badge-glow"></div>
+          </div>
+          
+          <h1 className="why-hero-title">
+            <span className="why-hero-title-line">All-in-One</span>
+            <span className="why-hero-title-line why-gradient-text">Business Management</span>
+            <span className="why-hero-title-line">Solution</span>
+          </h1>
+          
+          <p className="why-hero-description">
+            WHY Office ERP CRM combines enterprise resource planning and customer relationship 
+            management into a single, powerful platform that drives efficiency and growth.
+          </p>
+
+          <div className="why-hero-features">
+            <div className="why-feature-item">
+              <div className="why-feature-icon">
+                <i className="fas fa-robot"></i>
+              </div>
+              <div className="why-feature-content">
+                <h6>Smart Automation & Workflow Optimization</h6>
+                <p>Eliminate repetitive tasks, speed up processes, and improve accuracy with intelligent automation.</p>
+              </div>
+            </div>
+            
+            <div className="why-feature-item">
+              <div className="why-feature-icon">
+                <i className="fas fa-chart-line"></i>
+              </div>
+              <div className="why-feature-content">
+                <h6>Customer-Centric Growth Strategy</h6>
+                <p>Understand customers better, track interactions, and personalize engagement for maximum growth.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="why-hero-actions">
+            <button className="why-btn why-btn-primary why-btn-lg">
+              <span>Start Free Trial</span>
+              <i className="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div className="why-col-lg-6">
+        <div className="why-hero-visual">
+          <div className="why-floating-cards">
+            <div className="why-card why-card-1">
+              <div className="why-card-icon">
+                <i className="fas fa-database"></i>
+              </div>
+              <h6>ERP System</h6>
+              <p>Resource Planning</p>
+            </div>
+            
+            <div className="why-card why-card-2">
+              <div className="why-card-icon">
+                <i className="fas fa-users"></i>
+              </div>
+              <h6>CRM Module</h6>
+              <p>Customer Relations</p>
+            </div>
+            
+            <div className="why-card why-card-3">
+              <div className="why-card-icon">
+                <i className="fas fa-cogs"></i>
+              </div>
+              <h6>Automation</h6>
+              <p>Workflow Engine</p>
+            </div>
+          </div>
+          
+          <div className="why-dashboard-preview">
+            <div className="why-dashboard-header">
+              <div className="why-window-controls">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div className="why-dashboard-content">
+              <div className="why-metric-grid">
+                <div className="why-metric why-metric-1">
+                  <span className="why-metric-value">+45%</span>
+                  <span className="why-metric-label">Efficiency</span>
+                </div>
+                <div className="why-metric why-metric-2">
+                  <span className="why-metric-value">+68%</span>
+                  <span className="why-metric-label">Customer Satisfaction</span>
+                </div>
+                <div className="why-metric why-metric-3">
+                  <span className="why-metric-value">-30%</span>
+                  <span className="why-metric-label">Operational Costs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div className="why-hero-background-elements">
+    <div className="why-bg-circle why-circle-1"></div>
+    <div className="why-bg-circle why-circle-2"></div>
+    <div className="why-bg-circle why-circle-3"></div>
+    <div className="why-bg-grid"></div>
+  </div>
+</section>
+
+
+
+
 
 {/* Pricing Section Starts */}
 <HomePricing/>
