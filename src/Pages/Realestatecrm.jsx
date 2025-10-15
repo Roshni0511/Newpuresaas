@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import '../assets/css/Realestatecrm.css'
@@ -77,6 +77,16 @@ const Benefit = [
   
  
 ];
+const [email, setEmail] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Here you would typically handle the form submission,
+        // e.g., send the email to an API, log it, etc.
+        console.log('Email submitted:', email);
+        alert(`Starting your trial for: ${email}`);
+        setEmail(''); // Clear the input after submission
+    };
   return (
     <div>
       <Navbar />
@@ -239,6 +249,42 @@ const Benefit = [
       {/* features section end  */}
       
       <HomeFaq />
+      {/* email section start  */}
+
+       <section className="cta-section wow animate__animated animate__fadeInUp">
+            <div className="cta-content-left">
+                <span className="cta-tag">Finance</span>
+                <h1 className="cta-title">Ready to transform your business with PureSaas CRM</h1>
+                <p className="cta-description">
+                    Start your free trial today and see your ideas come to life easily and creatively.
+                </p>
+            </div>
+
+            <div className="cta-form-right">
+                <form onSubmit={handleSubmit} className="cta-form">
+                    <input
+                        type="email"
+                        placeholder="Enter your email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                        className="cta-email-input"
+                    />
+                    <button type="submit" className="cta-button">Get started!</button>
+                </form>
+                <div className="cta-features">
+                    <div className="feature-item">
+                        <i className="fa-solid fa-circle-check "></i>
+                        <span>No credit card required</span>
+                    </div>
+                    <div className="feature-item">
+                        <i className="fa-solid fa-circle-check "></i>
+                        <span>14-Day free trial</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+      {/* email section end   */}
       <Footer />
     </div>
   )
