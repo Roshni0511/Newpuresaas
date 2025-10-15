@@ -126,7 +126,7 @@ const features = [
   return (
     <>
     <Navbar/>
-    <section className="tele-hero">
+    <section className="tele-hero wow animate__animated animate__fadeInUp">
       {/* Background Elements */}
       <div className="tele-bg-elements">
         <div className="tele-grid-lines"></div>
@@ -259,7 +259,7 @@ const features = [
           <div className="telefea-shape telefea-shape-4"></div>
         </div>
         
-        <header className="telefea-header">
+        <header className="telefea-header wow animate__animated animate__fadeInUp">
           <h1 className="telefea-title">
             <span className="telefea-title-main">Telecaller CRM</span>
             <span className="telefea-title-sub">Powerful Features</span>
@@ -269,7 +269,7 @@ const features = [
           </p>
         </header>
 
-        <div className="telefea-features">
+        <div className="telefea-features wow animate__animated animate__fadeInUp">
           {features.map((feature, index) => (
             <div 
               key={feature.id} 
@@ -307,7 +307,7 @@ const features = [
 {/* Why Section */}
 
 <section>
-  <div className="whytele-container">
+  <div className="whytele-container wow animate__animated animate__fadeInUp">
     {/* Animated Gradient Background */}
     <div className="whytele-background">
       <div className="whytele-gradient-shape whytele-shape-1"></div>

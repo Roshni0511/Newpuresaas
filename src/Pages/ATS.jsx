@@ -151,6 +151,10 @@ export default function ATS() {
 
     {/* Your Benefit section start  */}
    <div className="atsbenefit wow animate__animated animate__fadeInUp">
+    <div className="whytele-background">
+        <div className="whytele-gradient-shape whytele-shape-1"></div>
+      <div className="whytele-gradient-shape whytele-shape-2"></div>
+      <div className="whytele-gradient-shape whytele-shape-3"></div>
      <div className="finance-section">
       <div className="container">
         <h2>Finance and operation</h2>
@@ -173,6 +177,7 @@ export default function ATS() {
           ))}
         </div>
       </div>
+    </div>
     </div>
    </div>
     {/* Your Benefit section end  */}
