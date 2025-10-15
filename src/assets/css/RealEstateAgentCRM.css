@@ -1025,11 +1025,6 @@
   }
 }
 /* Justify h2 text on small screens only */
-@media (max-width: 768px) {
-  section h2 {
-    text-align: justify;
-  }
-}
 
 
 
