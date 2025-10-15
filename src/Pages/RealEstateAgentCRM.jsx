@@ -188,7 +188,7 @@ export default function RealEstateAgentCRM() {
   <span 
     className="badge text-dark mb-3" 
     style={{ backgroundColor: '#ffe16bff', fontSize: '1rem', padding: '0.5rem 1rem' }}>
-    Features
+    Tools
   </span>
 
   {/* Heading */}

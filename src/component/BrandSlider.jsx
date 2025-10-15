@@ -35,7 +35,7 @@ const BrandSlider = () => {
         </span>
 
         {/* Heading */}
-        <h2 style={{ fontSize: "2rem", opacity: 1, filter: "blur(0px)", marginBottom: "20px", fontWeight: "700", color: "#2c3e50", textAlign:"justify"}}>
+        <h2 style={{ fontSize: "2rem", opacity: 1, filter: "blur(0px)", marginBottom: "20px", fontWeight: "700", color: "#2c3e50"}}>
           Enhance your productivity effortlessly with <br />
           over 50 integrations.
         </h2>
