@@ -5,6 +5,7 @@ import '../assets/css/Realestatecrm.css'
 import HomePricing from '../component/HomePricing';
 import HomeFaq from '../component/HomeFaq';
 import ProductForm from '../component/ProductForm';
+import Realestatecrmfaq from '../component/Realestatercmfaq';
 
 
 
@@ -252,7 +253,8 @@ const [email, setEmail] = useState('');
       </div>
       {/* features section end  */}
       
-      <HomeFaq />
+      <Realestatecrmfaq/>
+
       {/* email section start  */}
 
        <section className="cta-section wow animate__animated animate__fadeInUp">

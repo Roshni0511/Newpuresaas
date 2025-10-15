@@ -5,6 +5,7 @@ import Footer from './Footer'
 import BrandSlider from '../component/BrandSlider'
 import "../assets/css/b2berp.css"
 import ProductForm from '../component/ProductForm'
+import B2btextilefaq from '../component/B2btextilefaq'
 // import { UploadCloud, Trash2, FileSpreadsheet, Search, Users, BarChart2 } from "lucide-react";
 
 
@@ -285,35 +286,15 @@ Explore powerful tools designed to streamline, automate, and elevate your real e
     </div>
     </div>
       </div>
+
+
+      
     <BrandSlider />
     <ProductForm />
-      <HomePricing />
- <div className='texttile'>
-         <section className="faq-section wow animate__animated animate__fadeInUp">
-            <div className="faq-header">
-                <span className="faq-tag">FAQ</span>
-                <h2 className="faq-title">Commonly Asked Questions</h2>
-                <p className="faq-description">
-                    Neque accumsan dolor nullam commodo. Odio massa nisi ullamcorper suspendisse
-                    amet amet. Aenean suspendisse eget est pulvinar. Fames eget eget nascetur ornare
-                </p>
-            </div>
+    <HomePricing />
+    <B2btextilefaq/>
 
-            <div className="faq-accordion-container">
-                {faqData.map((item) => (
-                    <AccordionItem
-                        key={item.id}
-                        id={item.id} // Pass the ID for toggling
-                        question={item.question}
-                        answer={item.answer}
-                        // Determine if this item is open by comparing its ID to the state
-                        isOpen={item.id === openItemId}
-                        toggleAccordion={handleToggle} // Pass the toggle function
-                    />
-                ))}
-            </div>
-        </section>
-  </div>
+
  <div className='texttile'>
         <div className="missionslide wow animate__animated animate__fadeInUp">
   <div className="container">
