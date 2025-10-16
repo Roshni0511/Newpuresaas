@@ -38,46 +38,52 @@ const AccordionItem = ({ id, question, answer, isOpen, toggleAccordion }) => {
 const faqData = [
     {
         id: 1,
-        question: "What is a Real Estate CRM and why do I need it?",
-        answer: "A Real Estate CRM (Customer Relationship Management) helps agents manage leads, clients, property listings, and communications efficiently. It streamlines operations, ensures timely follow-ups, and helps close deals faster."
+        question: "What is a Builder/Developer CRM and why do I need it?",
+        answer: "A Builder/Developer CRM helps manage clients, leads, construction projects, and payments efficiently. It streamlines communication, tracks project progress, and ensures timely follow-ups to close deals faster."
     },
     {
         id: 2,
         question: "How can a CRM improve my lead management?",
-        answer: "A CRM centralizes all leads in one place, tracks their source, status, and engagement history. This allows agents to prioritize high-potential leads, follow up promptly, and convert more prospects into clients."
+        answer: "A CRM centralizes all project inquiries and client leads in one platform. It tracks lead sources, status, and engagement history, allowing you to prioritize high-potential clients and convert them into buyers or investors."
     },
     {
         id: 3,
-        question: "Can a Real Estate CRM help with property management?",
-        answer: "Yes, most CRMs allow you to manage property listings, schedule viewings, track property status, and maintain detailed records. This makes it easier to match clients with the right properties quickly."
+        question: "Can a CRM help me track ongoing construction projects?",
+        answer: "Yes. Most builder CRMs allow you to manage project timelines, milestones, and budgets. You can monitor progress, assign tasks, and generate reports for each project, keeping your team and clients informed."
     },
     {
         id: 4,
-        question: "Does a CRM integrate with other tools I use?",
-        answer: "Modern CRMs integrate with email platforms, marketing tools, social media, accounting software, and calendar apps. This ensures seamless workflows and reduces manual data entry."
+        question: "Does the CRM manage payments and booking details?",
+        answer: "Absolutely. Builder CRMs track client payments, installment plans, booking confirmations, and payment schedules. This reduces errors and ensures smooth financial management for each project."
     },
     {
         id: 5,
-        question: "How can a CRM help me stay in touch with clients?",
-        answer: "CRMs provide automated follow-ups, reminders, email campaigns, and SMS notifications. This ensures no client is forgotten and strengthens long-term relationships for repeat business."
+        question: "Can the CRM integrate with other tools I use?",
+        answer: "Yes, modern CRMs integrate with accounting software, email platforms, marketing tools, and calendar apps. This ensures seamless workflows and reduces repetitive data entry."
     },
     {
         id: 6,
-        question: "Is it suitable for solo agents as well as large agencies?",
-        answer: "Absolutely. CRMs are scalable—solo agents can manage their personal leads efficiently, while larger agencies can coordinate teams, assign leads, and monitor performance across multiple agents."
+        question: "Can I assign leads and projects to my team?",
+        answer: "Yes, a Builder/Developer CRM allows you to assign leads, projects, and tasks to different team members. You can monitor performance, track follow-ups, and ensure accountability across your sales and operations teams."
     },
     {
         id: 7,
-        question: "Can I track my sales performance with a Real Estate CRM?",
-        answer: "Yes, CRMs offer dashboards and reports that show sales performance, lead conversion rates, agent activity, and revenue trends, helping you make informed decisions and improve strategies."
+        question: "Is this CRM suitable for small builders as well as large developers?",
+        answer: "Absolutely. The CRM is scalable—small builders can manage leads and projects efficiently, while large developers can coordinate multiple teams, projects, and clients seamlessly."
+    },
+    {
+        id: 8,
+        question: "Can I generate reports and analytics?",
+        answer: "Yes, the CRM provides dashboards and reports that show project progress, sales performance, lead conversion rates, payment collection status, and overall business insights to help make informed decisions."
     }
 ];
+
 
 
 // ==========================================================
 // 3. Main FAQ Section Component (Exported)
 // ==========================================================
-const RealEstateAgentCRMfaq = () => {
+const Builderfaq = () => {
     // State now holds the ID of the currently open item.
     // It is initialized with the ID of the item we want open by default (the first one).
     const [openItemId, setOpenItemId] = useState(faqData[0].id);
@@ -98,10 +104,14 @@ const RealEstateAgentCRMfaq = () => {
         <section className="faq-section wow animate__animated animate__fadeInUp">
   <div className="faq-header">
     <span className="faq-tag">FAQ</span>
-    <h2 className="faq-title">Common Questions About Our Real Estate CRM</h2>
-    <p className="faq-description">
-      Curious about how our CRM can help your real estate business? Here are the answers to the most commonly asked questions from agents and developers like you.
-    </p>
+    <h2 className="faq-title">
+  Builder/Developer CRM FAQs
+</h2>
+<p className="faq-description">
+  Answers to the most common questions about managing projects, clients, and payments efficiently.
+</p>
+
+
   </div>
 
   <div className="faq-accordion-container">
@@ -122,4 +132,4 @@ const RealEstateAgentCRMfaq = () => {
     );
 };
 
-export default RealEstateAgentCRMfaq;
+export default Builderfaq;

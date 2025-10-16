@@ -29,6 +29,7 @@ import SignIn from './Pages/SignIn';
 import RealEstateAgentDemo from './component/Realestateagentdemo';
 import BuilderCRM from './Pages/BuilderCRM';
 import AboutUs from './Pages/AboutUs';
+import Buildercrm from './Pages/BuilderCRM';
 
 const FabButton = ({ id, label, iconClass, link, show, positionClass }) => {
     return (
@@ -184,6 +185,7 @@ function App() {
      <Route path='/Realestateagentdemo' element={<RealEstateAgentDemo/>}/>
      <Route path='/BuilderCRM' element={<BuilderCRM/>}/>
      <Route path='/AboutUs' element={<AboutUs/>}/>
+     <Route path='/Buildercrm' element={<Buildercrm/>}/>
   </Routes>
   <BackToTopButton />
    <div class="wh-api">

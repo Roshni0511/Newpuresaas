@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import '../assets/css/Realestateagentdemo.css';
-import { Building2, CalendarDays, Mail, Phone, User } from "lucide-react";
+import { Building2, CalendarDays, Mail, Phone, User, Clock, CheckCircle, Users } from "lucide-react";
 
 const RealEstateAgentDemo = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +9,7 @@ const RealEstateAgentDemo = () => {
     email: "",
     phone: "",
     date: "",
+    time: "",
     message: ""
   });
 
@@ -43,6 +44,7 @@ const RealEstateAgentDemo = () => {
     if (!emailRegex.test(formData.email)) newErrors.email = "Enter a valid email.";
     if (!phoneRegex.test(formData.phone)) newErrors.phone = "Enter a 10-digit phone number.";
     if (!formData.date) newErrors.date = "Select a date.";
+    if (!formData.time) newErrors.time = "Select a time.";
     if (!formData.message) newErrors.message = "Message is required.";
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -62,6 +64,7 @@ const RealEstateAgentDemo = () => {
         email: "",
         phone: "",
         date: "",
+        time: "",
         message: ""
       });
       setErrors({});
@@ -147,6 +150,18 @@ const RealEstateAgentDemo = () => {
           {errors.date && <span className="relescrd-error">{errors.date}</span>}
 
           <div className="relescrd-input-group">
+            <Clock className="relescrd-input-icon" />
+            <input
+              type="time"
+              name="time"
+              value={formData.time}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          {errors.time && <span className="relescrd-error">{errors.time}</span>}
+
+          <div className="relescrd-input-group">
             <textarea
               rows="3"
               name="message"
@@ -165,21 +180,25 @@ const RealEstateAgentDemo = () => {
             whileTap={{ scale: 0.97 }}
             disabled={loading}
           >
-            {loading ? "Scheduling..." : "🚀 Schedule My Demo"}
+            {loading ? "Scheduling..." : <><Clock className="relescrd-button-icon" /> Schedule My Demo</>}
           </motion.button>
         </form>
 
         <div className="relescrd-trust-text">
-          <p>💼 Trusted by 500+ Real Estate Agencies across India.</p>
+          <Users className="relescrd-trust-icon" />
+          <span>Trusted by 500+ Real Estate Agencies across India.</span>
         </div>
       </motion.div>
 
       {success && (
         <div className="relescrd-popup-overlay">
           <div className="relescrd-popup-card">
-            <h2>🎉 Success!</h2>
+            <CheckCircle className="relescrd-popup-icon" />
+            <h2>Success!</h2>
             <p>Your Demo Scheduled Successfully.</p>
-            <button className="relescrd-cta-button" onClick={closePopup}>Close</button>
+            <button className="relescrd-cta-button" onClick={closePopup}>
+              Close
+            </button>
           </div>
         </div>
       )}
