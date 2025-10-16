@@ -1,16 +1,25 @@
 import React from 'react';
-import '../assets/css/login.css';
+import '../assets/css/Signup.css';
+
 import { Link } from 'react-router-dom'; // if using React Router
 
-const LogIn = () => {
+const Signup = () => {
   return (
     <div>
       <div className="signup-container">
         <div className="signup-card">
           {/* Left Form Section */}
           <div className="form-section">
-            <h2 className="form-title">Log In</h2>
+            <h2 className="form-title">Sign up</h2>
             <form className="signup-form">
+              <div className="form-group">
+                <label className="form-label">Username</label>
+                <input
+                  type="text"
+                  className="form-input"
+                  placeholder="Your unique identifier"
+                />
+              </div>
               <div className="form-group">
                 <label className="form-label">Your email</label>
                 <input
@@ -27,8 +36,16 @@ const LogIn = () => {
                   placeholder="At least 8 characters"
                 />
               </div>
+              <div className="form-group">
+                <label className="form-label">Confirm Password</label>
+                <input
+                  type="password"
+                  className="form-input"
+                  placeholder="Re-enter your password"
+                />
+              </div>
               <button type="submit" className="signup-button">
-                Login
+                Sign up
               </button>
             </form>
 
@@ -49,11 +66,11 @@ const LogIn = () => {
               </button>
             </div>
 
-            {/* Sign Up Link */}
-            <div className="signup-option" style={{ marginTop: '20px', textAlign: 'center' }}>
-              Don't have an account?{' '}
+            {/* Sign In Link */}
+            <div className="signin-option" style={{ marginTop: '20px', textAlign: 'center' }}>
+              Already have an account?{' '}
               <Link to="/SignIn" style={{ color: '#8b5cf6', fontWeight: 'bold', textDecoration: 'none' }}>
-                Sign Up
+                Sign In
               </Link>
             </div>
           </div>
@@ -69,4 +86,4 @@ const LogIn = () => {
   );
 };
 
-export default LogIn;
+export default Signup;

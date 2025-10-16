@@ -15,8 +15,6 @@ import Vision from './Pages/Vision';
 import Enterprise from './Pages/Enterprise';
 import Blog from './Pages/Blog';
 import Faq from './Pages/Faq';
-import SignIn from './Pages/SignIn';
-import LogIn from './Pages/Login';
 import Solutions from './Pages/Solutions';
 import Blogdetails from './Pages/Blogdetails';
 import B2BTextileERP from './Pages/B2BTextileERP';
@@ -26,6 +24,8 @@ import ATS from './Pages/ATS';
 import TelecallerCRM from './Pages/Telecallercrm';
 import Sales from './Pages/Sales';
 import ServiceCRM from './Pages/Serviceerp';
+import Signup from './Pages/Signup';
+import SignIn from './Pages/SignIn';
 
 const FabButton = ({ id, label, iconClass, link, show, positionClass }) => {
     return (
@@ -52,7 +52,7 @@ const FloatingActionMenu = () => {
     // Data for the 5 new buttons
     const buttonsData = [
         { id: 'brochure', label: 'Download Brochure', iconClass: 'file_download', link: '/puresaas.pdf' },
-        { id: 'signup', label: 'Sign Up', iconClass: 'person_add', link: '/Signin' },
+        { id: 'signup', label: 'Sign Up', iconClass: 'person_add', link: '/Signup' },
         { id: 'demo', label: 'Schedule a Demo', iconClass: 'event', link: '#' },
         { id: 'quote', label: 'Request a Price Quote', iconClass: 'paid', link: '#' },
         { id: 'callback', label: 'Request a Callback', iconClass: 'phone', link: '#' },
@@ -167,8 +167,8 @@ function App() {
     <Route path='/Vision' element={<Vision/>}/>
     <Route path='/Enterprise' element={<Enterprise/>}/>
     <Route path='/Faq' element={<Faq/>}/>
+    <Route path='/Signup' element={<Signup/>}/>
     <Route path='/SignIn' element={<SignIn/>}/>
-    <Route path='/Login' element={<LogIn/>}/>
     <Route path='/Solutions' element={<Solutions/>}/>
     <Route path='/Blogdetails' element={<Blogdetails/>}/>
     <Route path='/B2BTextileERP' element={<B2BTextileERP/>}/>
