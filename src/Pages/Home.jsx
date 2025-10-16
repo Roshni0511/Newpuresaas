@@ -116,7 +116,7 @@ const features = [
               
               {/* --- Heading Group --- */}
               <div className="heading-group wow animate__animated animate__fadeInUp">
-                <h1>AI-powered CRM for businesses</h1>
+                <h1>Automation Services for businesses</h1>
                 <p>Automate sales, streamline customer relationships, and scale your business—all in one intuitive platform.</p>
               </div>
             </div>
@@ -218,7 +218,7 @@ const features = [
       <div className="reasons-section wow">
         <div className="reasons-container container">
           <span className="reasons-badge">Reasons to select us</span>
-          <h1 className="reasons-title mt-5">Modern tools built for today’s property teams.</h1>
+          <h1 className="reasons-title mt-5">Modern tools built for  teams.</h1>
           <p className="reasons-subtitle pt-3">
             Streamline operations, reduce manual tasks, and maximize revenue.
           </p>
@@ -265,7 +265,7 @@ const features = [
      
       <div className="header-content">
         <p className="subtitle">Seamless Solutions for Every Work Environment</p>
-        <h1 className="main-title">Work Environment</h1>
+        <h1 className="main-title">Why We developed</h1>
       </div>
 
       <div className="features-row top-row wow animate__animated animate__fadeInUp">
@@ -324,7 +324,7 @@ const features = [
       <div className="features-container">
         <div className="features-header">
           <span className="features-badge">Features</span>
-          <h2 className='wow animate__animated animate__fadeInUp'>Key features of PureSaas CRM</h2>
+          <h2 className='wow animate__animated animate__fadeInUp'>Key features of PureSaas </h2>
           <p>
             PureSaas CRM is designed to simplify and supercharge your customer
             relationship management. With a clean, user-friendly interface and
@@ -359,9 +359,7 @@ const features = [
     </section>
       {/* Features section end */}
 
-      {/* pricing section start  */}
-      <HomePricing />
-      {/* pricing section end  */}
+      
 
       {/* Integration section start  */}
       <div className="IntegrationHome">
@@ -420,7 +418,7 @@ const features = [
           {/* === Right Side === */}
           <div className="col-6 right-section">
   <h1 className="who-title wow animate__animated animate__fadeInUp">
-    Who uses PureSaas CRM?
+    Who uses PureSaas ?
   </h1>
   <p className="who-desc">
     PureSaas CRM empowers professionals and organizations to manage customer 
@@ -456,7 +454,7 @@ const features = [
        <section className="cta-section wow animate__animated animate__fadeInUp">
             <div className="cta-content-left">
                 <span className="cta-tag">Finance</span>
-                <h1 className="cta-title">Ready to transform your business with PureSaas CRM</h1>
+                <h1 className="cta-title">Ready to transform your business with PureSaas </h1>
                 <p className="cta-description">
                     Start your free trial today and see your ideas come to life easily and creatively.
                 </p>
@@ -481,7 +479,7 @@ const features = [
                     </div>
                     <div className="feature-item">
                         <i className="fa-solid fa-circle-check "></i>
-                        <span>14-Day free trial</span>
+                        <span>7 Day free trial</span>
                     </div>
                 </div>
             </div>
