@@ -10,6 +10,7 @@ import HomePricing from "../component/HomePricing";
 import OfficeErpFaq from "../component/Officeerpfaq";
 import ProductForm from "../component/ProductForm"
 import ProductNavbar from "./ProductNavbar";
+import Bookdemoform from "../component/Bookdemoform";
 
 export default function OfficeErp() {
   const [showDemo, setShowDemo] = useState(false);
@@ -442,42 +443,7 @@ export default function OfficeErp() {
 
 
 {/* Email Section Starts */}
-<div className="ctamain">
-
-<section className="cta-section wow animate__animated animate__fadeInUp">
-            <div className="cta-content-left">
-                <span className="cta-tag">Office ERP</span>
-                <h1 className="cta-title">Ready to transform your business with PureSaas CRM</h1>
-                <p className="cta-description">
-                    Start your free trial today and see your ideas come to life easily and creatively.
-                </p>
-            </div>
-
-            <div className="cta-form-right">
-                <form onSubmit={handleSubmit} className="cta-form">
-                    <input
-                        type="email"
-                        placeholder="Enter your email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
-                        className="cta-email-input"
-                    />
-                    <button type="submit" className="cta-button">Get started!</button>
-                </form>
-                <div className="cta-features">
-                    <div className="feature-item">
-                        <i className="fa-solid fa-circle-check "></i>
-                        <span>No credit card required</span>
-                    </div>
-                    <div className="feature-item">
-                        <i className="fa-solid fa-circle-check "></i>
-                        <span>14-Day free trial</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-</div>
+<Bookdemoform />
 
 
       <Footer />

@@ -213,7 +213,7 @@ export default function ProductNavbar() {
      <div className="navbar-container">
       <header className="header">
         <div className="header__logo">
-          <a href="/RealEstateAgentCRM">
+          <a href="#">
             <svg
               viewBox="0 0 24 24"
               fill="currentColor"
@@ -241,7 +241,7 @@ export default function ProductNavbar() {
           <ul className="header__ul">
             <li className="header__li"><a href="/" className="header__a ">Home</a></li>
             <li className="header__li"><a href="#" className="header__a ">Features</a></li>
-            <li className="header__li"><a href="#" className="header__a ">Pricing</a></li>
+            <li className="header__li"><a href="/HomePricing" className="header__a ">Pricing</a></li>
             <li className="header__li signuphide "><a href="/SignIn" className="header__cta-btn m-2">Sign In</a></li>
             <li className="header__li signuphide "><a href="/Signup" className="header__cta-btn m-2">Sign Up</a></li>
             {/* <li className="header__li signinhide m-2"><a href="#" className="header__cta-btn "> </a></li> */}
