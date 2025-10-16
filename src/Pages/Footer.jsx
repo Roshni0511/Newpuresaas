@@ -60,15 +60,19 @@ const Footer = () => {
               <div className="contact-info">
                 <div className="contact-item">
                   <i className="fas fa-map-marker-alt"></i>
-                  <span>123 Rue du Bien-être<br />75000 Paris, France</span>
+                  <span>Surat, Gujarat</span>
                 </div>
                 <div className="contact-item">
                   <i className="fas fa-phone-alt"></i>
-                  <span>9638373601</span>
+                  <span><a href="tel:+919638373601">9638373601</a></span>
                 </div>
                 <div className="contact-item">
                   <i className="fas fa-envelope"></i>
-                  <span>info@puresaas.in</span>
+                  <span><a href="mailto:info@puresaas.in">info@puresaas.in</a></span>
+                </div>
+                <div className="contact-item">
+                  <i className="fas fa-envelope"></i>
+                  <span><a href="mailto:sales@puresaas.in">sales@puresaas.in</a></span>
                 </div>
               </div>
 

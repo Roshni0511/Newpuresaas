@@ -163,7 +163,10 @@
             font-size: 0.95rem;
             line-height: 1.5;
         }
-
+.Footerstyle .contact-item a{
+    color:var(--gray) ;
+    text-decoration: none;
+}
         /* Social Links */
        .Footerstyle .social-links {
             display: flex;
