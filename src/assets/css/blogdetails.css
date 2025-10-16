@@ -188,7 +188,7 @@ blockquote {
     text-align: justify;
 }
 .author-box {
-  display: flex;
+
   align-items: center;
   background: #eceef3;
   border-radius: 12px;
@@ -202,11 +202,12 @@ blockquote {
 }
 
 .author-img img {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border-radius: 8px;
   object-fit: cover;
   margin-right: 25px;
+  margin-bottom: 20px;
 }
 
 .author-info h5 {

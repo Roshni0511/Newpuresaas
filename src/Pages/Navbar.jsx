@@ -137,27 +137,14 @@ export default function Navbar() {
               </a>
             </li>
 
-            <li className="header__li dropdown">
-              <a href="#" className="header__a dropdown__link"  onClick={togglecompanyMenu}>
-                Company <FaAngleDown size={10} />
-              </a>
-              <div
-                className={`company-dropdown ${
-                  iscompanyOpen ? 'mobile-open-menu' : ''
-                }`}
-              >
-                <div className="company-dropdown__inner">
-                  {/* Column 1 */}
-                  <ul className="company-dropdown__column">
-                    <li><a href="/Mission"> Mission</a>  </li>
-                    <li><a href="/Vision">Vision</a></li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-
+        
            
-
+      <li className="header__li ">
+              <a href="/AboutUs" className="header__a ">
+                   About Us
+              </a>
+              
+            </li>
             <li className="header__li ">
               <a href="/Blog" className="header__a ">
                 Blogs 
