@@ -4,11 +4,16 @@ import { FaAngleDown, FaBars, FaTimes } from 'react-icons/fa';
 
 export default function ProductNavbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileMenuOpen1, setIsMobileMenuOpen1] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false); // for mobile dropdown
   const [iscompanyOpen, setIscompanyOpen] = useState(false); // for mobile dropdown
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const toggleMobileMenu1 = () => {
+    setIsMobileMenuOpen1(!isMobileMenuOpen1);
   };
 
   // Toggle the Services dropdown in mobile view
@@ -181,12 +186,16 @@ export default function ProductNavbar() {
         </div> */}
       </header>
     </div>
-   </div>
+   </div>   
+   
+   {/* ======================================================================
+   ========================================================================== */}
+
    <div className="productsecond">
      <div className="navbar-container">
       <header className="header">
         <div className="header__logo">
-          <a href="/">
+          <a href="/RealEstateAgentCRM">
             <svg
               viewBox="0 0 24 24"
               fill="currentColor"
@@ -203,19 +212,22 @@ export default function ProductNavbar() {
         {/* Mobile Toggle Button */}
         <button
           className="menu-toggle"
-          onClick={toggleMobileMenu}
-          aria-expanded={isMobileMenuOpen}
+          onClick={toggleMobileMenu1}
+          aria-expanded={isMobileMenuOpen1}
         >
-          {isMobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+          {isMobileMenuOpen1 ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
 
         {/* Navigation */}
-        <nav className={`header__nav ${isMobileMenuOpen ? 'open' : ''}`}>
+        <nav className={`header__nav ${isMobileMenuOpen1 ? 'open' : ''}`}>
           <ul className="header__ul">
             <li className="header__li"><a href="/" className="header__a ">Home</a></li>
             <li className="header__li"><a href="#" className="header__a ">Features</a></li>
             <li className="header__li"><a href="#" className="header__a ">Pricing</a></li>
             <li className="header__li"><a href="/SignIn" className="header__a ">Sign In</a></li>
+            <li className="header__li signuphide m-2"><a href="/Signup" className="header__cta-btn">Sign Up</a></li>
+            <li className="header__li signuphide m-2"><a href="#" className="header__cta-btn">Get Started</a></li>
+            {/* <li className="header__li signinhide m-2"><a href="#" className="header__cta-btn "> </a></li> */}
           </ul>
         </nav>
 

@@ -245,6 +245,10 @@ position: relative;
 }
 /*  */
 /* --- Mobile --- */
+.mainNavbar .signinhide,
+.mainNavbar .signuphide{
+    display: none;
+  }
 .mainNavbar .menu-toggle {
   display: none;
   background: none;
@@ -307,6 +311,10 @@ position: relative;
   }
 
   .mainNavbar .menu-toggle {
+    display: block;
+  }
+  .mainNavbar .signinhide,
+.mainNavbar .signuphide{
     display: block;
   }
 

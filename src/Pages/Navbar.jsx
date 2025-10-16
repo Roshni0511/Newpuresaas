@@ -170,6 +170,18 @@ export default function Navbar() {
                 Contact Us
               </a>
             </li>
+            <li className="header__li signinhide">
+              
+          <a href="/SignIn" className="header__cta-btn m-2">
+            Sign In
+          </a>
+     
+            </li>
+            <li className="header__li signuphide m-2"> 
+          <a href="/Signup" className="header__cta-btn">
+            Sign Up
+          </a>
+            </li>
           </ul>
         </nav>
 
