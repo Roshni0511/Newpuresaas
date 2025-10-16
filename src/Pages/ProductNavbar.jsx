@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../assets/css/ProductNavbar.css';
 import { FaAngleDown, FaBars, FaTimes } from 'react-icons/fa';
-
+import { useLocation } from "react-router-dom";
 export default function ProductNavbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMobileMenuOpen1, setIsMobileMenuOpen1] = useState(false);
@@ -26,7 +26,37 @@ export default function ProductNavbar() {
     setIscompanyOpen(!iscompanyOpen);
   };
   
+ const location = useLocation();
 
+  // Extract page name from URL
+  const currentPath = location.pathname.replace("/", "");
+
+  // Capitalize properly for display
+  const getPageName = () => {
+    if (!currentPath) return "PureSaasCRM";
+    switch (currentPath.toLowerCase()) {
+      case "realestateagentcrm":
+        return "Real Estate Agent CRM";
+      case "realestatecrm":
+        return "Real Estate CRM";
+      case "ats":
+        return "ATS CRM";
+      case "b2btextileerp":
+        return "B2B Textile ERP";
+      case "telecallercrm":
+        return "Telecaller CRM";
+      case "serviceerp":
+        return "Service CRM";
+      case "officeerp":
+        return "Office ERP";
+      case "sales":
+        return "Sales CRM";
+      case "buildercrm":
+        return "Builder / Developer CRM";
+      default:
+        return "PureSaas CRM";
+    }
+  };
   return (
     <>
    <div className="productnavbar">
@@ -143,23 +173,11 @@ export default function ProductNavbar() {
               </a>
             </li>
 
-            <li className="header__li dropdown">
-              <a href="#" className="header__a dropdown__link"  onClick={togglecompanyMenu}>
-                Company <FaAngleDown size={10} />
+             <li className="header__li ">
+              <a href="/AboutUs" className="header__a ">
+                   About Us
               </a>
-              <div
-                className={`company-dropdown ${
-                  iscompanyOpen ? 'mobile-open-menu' : ''
-                }`}
-              >
-                <div className="company-dropdown__inner">
-                  {/* Column 1 */}
-                  <ul className="company-dropdown__column">
-                    <li><a href="/Mission"> Mission</a>  </li>
-                    <li><a href="/Vision">Vision</a></li>
-                  </ul>
-                </div>
-              </div>
+              
             </li>
 
            
@@ -205,7 +223,7 @@ export default function ProductNavbar() {
             >
               <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-6h-2v6zm0-8h2V7h-2v2z" />
             </svg>
-            <span className="logo__text">RealEstateCRM</span>
+           <span className="logo__text">{getPageName()}</span>
           </a>
         </div>
 
@@ -224,19 +242,18 @@ export default function ProductNavbar() {
             <li className="header__li"><a href="/" className="header__a ">Home</a></li>
             <li className="header__li"><a href="#" className="header__a ">Features</a></li>
             <li className="header__li"><a href="#" className="header__a ">Pricing</a></li>
-            <li className="header__li"><a href="/SignIn" className="header__a ">Sign In</a></li>
-            <li className="header__li signuphide m-2"><a href="/Signup" className="header__cta-btn">Sign Up</a></li>
-            <li className="header__li signuphide m-2"><a href="#" className="header__cta-btn">Get Started</a></li>
+            <li className="header__li signuphide "><a href="/SignIn" className="header__cta-btn m-2">Sign In</a></li>
+            <li className="header__li signuphide "><a href="/Signup" className="header__cta-btn m-2">Sign Up</a></li>
             {/* <li className="header__li signinhide m-2"><a href="#" className="header__cta-btn "> </a></li> */}
           </ul>
         </nav>
-
+        <div className="header__cta-wrapper" style={{marginRight:'10px'}}>
+          <a href="/SignIn" className="header__cta-btn">Sign In</a>
+        </div>
         <div className="header__cta-wrapper" style={{marginRight:'10px'}}>
           <a href="/Signup" className="header__cta-btn">Sign Up</a>
         </div>
-        <div className="header__cta-wrapper">
-          <a href="#" className="header__cta-btn">Get Started</a>
-        </div>
+      
       </header>
     </div>
    </div>

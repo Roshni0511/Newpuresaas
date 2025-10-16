@@ -1,11 +1,12 @@
 import React, { useRef, useState } from 'react'
 import HomePricing from '../component/HomePricing'
-import Navbar from './Navbar'
+
 import Footer from './Footer'
 import BrandSlider from '../component/BrandSlider'
 import "../assets/css/b2berp.css"
 import ProductForm from '../component/ProductForm'
 import B2btextilefaq from '../component/B2btextilefaq'
+import ProductNavbar from './ProductNavbar'
 // import { UploadCloud, Trash2, FileSpreadsheet, Search, Users, BarChart2 } from "lucide-react";
 
 
@@ -118,7 +119,7 @@ const B2BTextileERP = () => {
      
   return (
     <>
-    <Navbar />
+    <ProductNavbar />
     <div className='texttile'>
 
       <section className="hero-section ">

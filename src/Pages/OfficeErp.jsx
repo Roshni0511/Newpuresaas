@@ -2,13 +2,14 @@ import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaTachometerAlt, FaLock, FaUsers } from "react-icons/fa";
 import '../assets/css/OfficeErp.css';
-import Navbar from "./Navbar";
+
 import Footer from "./Footer";
 import 'bootstrap-icons/font/bootstrap-icons.css';  
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import HomePricing from "../component/HomePricing";
 import OfficeErpFaq from "../component/Officeerpfaq";
 import ProductForm from "../component/ProductForm"
+import ProductNavbar from "./ProductNavbar";
 
 export default function OfficeErp() {
   const [showDemo, setShowDemo] = useState(false);
@@ -57,7 +58,7 @@ export default function OfficeErp() {
     };
   return (
     <div>
-      <Navbar />
+      <ProductNavbar />
 
       <section className="office-hero-section position-relative bg-light overflow-hidden py-5">
         <div className="container position-relative z-2">

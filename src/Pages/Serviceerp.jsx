@@ -8,6 +8,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ServicecrmFaq from '../component/Servicecrmfaq';
 import HomePricing from '../component/HomePricing';
+import ProductNavbar from './ProductNavbar';
 
 const features = [
   {
@@ -79,7 +80,7 @@ const ServiceCRM = () => {
 
   return (
     <>
-      <Navbar />
+      <ProductNavbar />
 
       {/* CRM Intro Section */}
       <section className="crm-section wow animate__animated animate__fadeInUp">

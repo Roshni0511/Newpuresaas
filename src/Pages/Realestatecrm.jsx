@@ -6,6 +6,7 @@ import HomePricing from '../component/HomePricing';
 import HomeFaq from '../component/HomeFaq';
 import ProductForm from '../component/ProductForm';
 import Realestatecrmfaq from '../component/Realestatercmfaq';
+import ProductNavbar from './ProductNavbar';
 
 
 
@@ -91,7 +92,7 @@ const [email, setEmail] = useState('');
     };
   return (
     <div>
-      <Navbar />
+      <ProductNavbar />
       {/* main section start  */}
     <div className="realproduct">
     <div className="landing-container">
