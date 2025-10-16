@@ -105,7 +105,7 @@ export default function Navbar() {
                       <p>Boost productivity, manage calls, and track leads effortlessly.</p>
                     </li>
                     <li>
-                      <a href="#"><span className="service__number">06.</span> Service CRM</a>
+                      <a href="/Serviceerp"><span className="service__number">06.</span> Service CRM</a>
                       <p>Streamline support and boost customer satisfaction.</p>
                     </li>
                    
