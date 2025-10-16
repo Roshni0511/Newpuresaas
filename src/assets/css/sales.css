@@ -233,3 +233,260 @@
 .saleserp .trade-btn:hover {
   background: #333;
 }
+.saleserp .smart-features-section {
+  background: #f9fafc;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.saleserp .features-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.saleserp .features-header .tag {
+  color: #0d9488;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.saleserp .features-header .heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.saleserp .features-header .description {
+  color: #555;
+  max-width: 600px;
+  margin: 10px auto 0;
+}
+
+.saleserp .features-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+}
+
+.saleserp .image-area {
+  position: relative;
+}
+
+.saleserp .floating-image {
+  width: 100%;
+  max-width: 400px;
+  z-index: 2;
+  position: relative;
+  animation: float 4s ease-in-out infinite;
+}
+
+.saleserp .blur-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(circle, #0d948833 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  filter: blur(40px);
+  z-index: 1;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.saleserp .features-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.saleserp .feature-card {
+  display: flex;
+  gap: 15px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.saleserp .feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.saleserp .icon-box {
+  font-size: 28px;
+  color: #0d9488;
+}
+
+.saleserp .text-box h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.saleserp .text-box p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+ .saleserp .features-layout {
+    grid-template-columns: 1fr;
+  }
+  .saleserp .features-cards {
+    grid-template-columns: 1fr;
+  }
+  .saleserp .image-area {
+    text-align: center;
+  }
+}
+.benefit-modern-section {
+  background: linear-gradient(145deg, #f4fff7 0%, #d6f5e3 100%);
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.benefit-modern-title {
+  text-align: center;
+  font-size: 54px;
+  font-weight: 800;
+  color: #145a32;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.benefit-modern-title::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #00c853, #64dd17);
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+  border-radius: 4px;
+}
+
+.benefit-modern-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* ===== Image Side ===== */
+.benefit-modern-image img {
+  width: 480px;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 200, 83, 0.3);
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+/* ===== Cards ===== */
+.benefit-modern-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.benefit-modern-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 25px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.benefit-modern-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  padding: 2px;
+  background: linear-gradient(135deg, #00c853, #aeea00);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  opacity: 0;
+}
+
+.benefit-modern-card:hover::before {
+  opacity: 1;
+}
+
+.benefit-modern-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 200, 83, 0.2);
+}
+
+.benefit-modern-icon {
+  width: 65px;
+  height: 65px;
+  background: linear-gradient(135deg, #00c853, #64dd17);
+  color: #fff;
+  font-size: 26px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 200, 83, 0.4);
+  transition: transform 0.4s ease;
+}
+
+.benefit-modern-card:hover .benefit-modern-icon {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.benefit-modern-content h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1b5e20;
+  margin-bottom: 6px;
+}
+
+.benefit-modern-content p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .benefit-modern-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+  .benefit-modern-image img {
+    width: 90%;
+  }
+}
+ 

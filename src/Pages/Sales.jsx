@@ -76,6 +76,79 @@ const collectors = [
     icon: "🏆",
   },
 ];
+const features = [
+  {
+    id: 1,
+    title: 'Lead Management',
+    description: 'Easily keep track of your leads and nurture them into happy clients.',
+    iconClass: 'fas fa-funnel-dollar', // Icon for tracking/converting leads
+  },
+  {
+    id: 2,
+    title: 'Cloud Access',
+    description: 'Access your CRM anytime, anywhere — from any device you like.',
+    iconClass: 'fas fa-cloud', // Standard cloud/access icon
+  },
+  {
+    id: 3,
+    title: 'Client Data Security',
+    description: 'Keep your clients’ information safe and sound with top-level encryption.',
+    iconClass: 'fas fa-shield-alt', // Shield/Security icon
+  },
+  {
+    id: 4,
+    title: 'Faster Deal Closures',
+    description: 'Speed up your sales process with smart automation working for you.',
+    iconClass: 'fas fa-rocket', // Rocket/Speed/Launch icon
+  },
+  {
+    id: 5,
+    title: 'Multi-Listing Support',
+    description: 'Manage all your listings across different regions and platforms with ease.',
+    iconClass: 'fas fa-building', // Building/Listing icon
+  },
+  {
+    id: 6,
+    title: 'Real-Time Alerts',
+    description: 'Get instant updates on leads and deals so you’re always in the loop.',
+    iconClass: 'fas fa-bell', // Bell/Alerts icon
+  },
+  {
+    id: 7,
+    title: 'Automated Follow-Ups',
+    description: 'Never let a lead slip away — automated emails and reminders do the work for you.',
+    iconClass: 'fas fa-robot', // Robot/Automation icon
+  },
+  {
+    id: 8,
+    title: 'Market Insights',
+    description: 'Stay ahead of the curve with data that helps you spot trends and opportunities.',
+    iconClass: 'fas fa-chart-line', // Line chart/Insights icon
+  },
+];
+
+ const data = [
+  {
+    title: "Accessibility",
+    icon: "fa-elevator", // 🚀 Accessibility
+    desc: `Get instant access to important info anytime, anywhere—giving you the freedom to work on the move. Real estate agents can easily manage leads, properties, and communications wherever they are.`,
+  },
+  {
+    title: "Improved Productivity",
+    icon: "fa-bolt", // ⚡ Productivity
+    desc: `Simplify your daily tasks with smooth workflows and efficient task management. Quick access to property details and client info helps you get more done, faster.`,
+  },
+  {
+    title: "Enhanced Communication",
+    icon: "fa-comments", // 💬 Communication
+    desc: `Chat directly with your team through in-app messaging for fast, clear communication. Push notifications keep you updated on appointments, deadlines, and important news.`,
+  },
+  {
+    title: "Client Engagement",
+    icon: "fa-handshake", // 🤝 Engagement
+    desc: `Clients can easily browse and search for properties right from their mobile devices. Stay connected with clients through alerts about new listings or updates on their deals.`,
+  },
+];
 
 const AccordionItem = ({ id, question, answer, isOpen, toggleAccordion }) => {
 
@@ -197,6 +270,49 @@ const Sales = () => {
     </div>
     </div>
     <BrandSlider />
+    <div className="saleserp">
+
+    <div className="smart-features-section">
+  <div className="container">
+    <div className="features-header">
+      <p className="tag">Features</p>
+      <h1 className="heading">Smart Features for Smarter Business</h1>
+      <p className="description">
+        Explore powerful tools crafted to make your textile business streamlined,
+        automated, and intelligent.
+      </p>
+    </div>
+
+    <div className="features-layout">
+      {/* Image side */}
+      <div className="image-area">
+        <img
+          src="/Image/hold-mobile.webp"
+          alt="Smart business mobile view"
+          className="floating-image"
+        />
+        <div className="blur-bg"></div>
+      </div>
+
+      {/* Features Cards */}
+      <div className="features-cards">
+        {features.map((feature) => (
+          <div key={feature.id} className="feature-card">
+            <div className="icon-box">
+              <i className={`fa ${feature.iconClass}`}></i>
+            </div>
+            <div className="text-box">
+              <h3>{feature.title}</h3>
+              <p>{feature.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+
     <ProductForm />
     <HomePricing />
 <div className="saleserp">
@@ -227,6 +343,38 @@ const Sales = () => {
         </section>
  
 </div>
+<div className="saleserp">
+<div className="benefit-modern-section">
+  <div className="container">
+    <h2 className="benefit-modern-title">Your Benefit</h2>
+
+    <div className="benefit-modern-layout">
+      {/* Left Image Section */}
+      <div className="benefit-modern-image">
+        <img src="/Image/mission.webp" alt="Mission" />
+      </div>
+
+      {/* Right Animated Cards */}
+      <div className="benefit-modern-cards">
+        {data.map((item, index) => (
+          <div className="benefit-modern-card" key={index}>
+            <div className="benefit-modern-icon">
+              <i className={`fa-solid ${item.icon}`}></i>
+            </div>
+            <div className="benefit-modern-content">
+              <h3>{item.title}</h3>
+              <p>{item.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+
        <Footer />
     </>
   )
