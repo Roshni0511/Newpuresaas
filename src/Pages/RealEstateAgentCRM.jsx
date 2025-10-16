@@ -108,7 +108,9 @@ export default function RealEstateAgentCRM() {
         Close deals faster.
       </h1>
       <p>Manage leads, track property listings, and automate follow-ups to grow your real estate business efficiently.</p>
+      <a href="/Realestateagentdemo" target="_blank" rel="noopener noreferrer">
       <button className="demo-btn">Get Started</button>
+      </a>
     </div>
   </div>
 </div>
@@ -124,7 +126,7 @@ export default function RealEstateAgentCRM() {
     </p>
     <div className="grid">
       <div className="item">
-        <div className="number">30+</div>
+        <div className="number">120+</div>
         <div className="label">Properties Managed</div>
       </div>
       <div className="item">
@@ -132,7 +134,7 @@ export default function RealEstateAgentCRM() {
         <div className="label">Happy Clients</div>
       </div>
       <div className="item">
-        <div className="number">120+</div>
+        <div className="number">100+</div>
         <div className="label">Deals Closed</div>
       </div>
     </div>
@@ -451,8 +453,11 @@ export default function RealEstateAgentCRM() {
 
     <div className="cta-form-right">
         <div className="cta-form">
-            <button type="button" className="cta-button">Get started!</button>
-        </div>
+  <a href="/Realestateagentdemo" target="_blank" rel="noopener noreferrer">
+    <button type="button" className="cta-button">Get started!</button>
+  </a>
+</div>
+
         <div className="cta-features">
             <div className="feature-item">
                 <i className="fa-solid fa-circle-check"></i>
