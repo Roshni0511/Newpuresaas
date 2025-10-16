@@ -6,6 +6,7 @@ import HomeFaq from '../component/HomeFaq';
 import HomePricing from '../component/HomePricing';
 import ProductForm from '../component/ProductForm';
 import Atsfaq from './Atsfaq';
+import ProductNavbar from './ProductNavbar';
 export default function ATS() {
     const [email, setEmail] = useState('');
      const handleSubmit = (e) => {
@@ -41,7 +42,7 @@ export default function ATS() {
 
   return (
     <div>
-      <Navbar />
+      <ProductNavbar />
        {/* main section start  */}
         <section className="crypto-hero wow animate__animated animate__fadeInUp">
      

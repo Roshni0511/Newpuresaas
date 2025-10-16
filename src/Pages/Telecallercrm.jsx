@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import ProductForm from '../component/ProductForm';
 import TelecallercrmFaq from '../component/Telecallercrmfaq';
+import ProductNavbar from './ProductNavbar';
 
 
 
@@ -125,7 +126,7 @@ const features = [
 
   return (
     <>
-    <Navbar/>
+    <ProductNavbar/>
     <section className="tele-hero wow animate__animated animate__fadeInUp">
       {/* Background Elements */}
       <div className="tele-bg-elements">
