@@ -82,7 +82,7 @@ const ServiceCRM = () => {
       <Navbar />
 
       {/* CRM Intro Section */}
-      <section className="crm-section">
+      <section className="crm-section wow animate__animated animate__fadeInUp">
         <div className="crm-container">
 
           {/* Background Floating Shapes */}
@@ -153,7 +153,7 @@ const ServiceCRM = () => {
       </section>
 
       {/* Service Features Section */}
-      <section className="serfea-section">
+      <section className="serfea-section wow animate__animated animate__fadeInUp">
         <div className="serfea-container">
           <div className="serfea-header">
             <h2 className="serfea-title">Service ERP Features</h2>
