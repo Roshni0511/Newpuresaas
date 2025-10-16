@@ -16,6 +16,7 @@ import HomeFaq from '../component/HomeFaq';
 import ProductForm from '../component/ProductForm';
 import Realestateagentcrmslider from '../component/Realestateagentcrmslider';
 import ProductNavbar from './ProductNavbar';
+import Bookdemoform from '../component/Bookdemoform';
 
 
 
@@ -442,7 +443,7 @@ export default function RealEstateAgentCRM() {
 {/* ============================= */}
 {/* Email Section */}
 {/* ============================= */}
-<section className="cta-section wow animate__animated animate__fadeInUp">
+{/* <section className="cta-section wow animate__animated animate__fadeInUp">
     <div className="cta-content-left">
         <span className="cta-tag">Finance</span>
         <h1 className="cta-title">Ready to transform your business with PureSaaS CRM</h1>
@@ -469,9 +470,9 @@ export default function RealEstateAgentCRM() {
             </div>
         </div>
     </div>
-</section>
+</section> */}
 
-
+ <Bookdemoform />
       <Footer />
     </div>
   );

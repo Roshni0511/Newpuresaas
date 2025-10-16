@@ -166,6 +166,8 @@
     .reviewswc .main-title {
         font-size: 2.2rem;
     }
+        .testimonial-card { flex: 0 0 calc(50% - 20px); } /* 2 cards */
+
 }
 
 @media (max-width: 768px) {
@@ -187,4 +189,6 @@
     .reviewswc .author-title {
         font-size: 0.85rem;
     }
+        .testimonial-card { flex: 0 0 calc(100% - 20px); } /* 1 card */
+
 }

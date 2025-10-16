@@ -441,6 +441,8 @@ export default function OfficeErp() {
 
 
 {/* Email Section Starts */}
+<div className="ctamain">
+
 <section className="cta-section wow animate__animated animate__fadeInUp">
             <div className="cta-content-left">
                 <span className="cta-tag">Office ERP</span>
@@ -474,6 +476,7 @@ export default function OfficeErp() {
                 </div>
             </div>
         </section>
+</div>
 
 
       <Footer />
