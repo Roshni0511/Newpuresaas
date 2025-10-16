@@ -24,19 +24,15 @@ const RealEstateAgentDemo = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    // Prevent extra characters in phone
     if (name === "phone") {
       if (/^\d*$/.test(value) && value.length <= 10) {
         setFormData({ ...formData, [name]: value });
       }
-    } 
-    // Prevent numbers and special chars in name
-    else if (name === "name") {
+    } else if (name === "name") {
       if (/^[A-Za-z\s]*$/.test(value)) {
         setFormData({ ...formData, [name]: value });
       }
-    } 
-    else {
+    } else {
       setFormData({ ...formData, [name]: value });
     }
   };
@@ -75,32 +71,32 @@ const RealEstateAgentDemo = () => {
   const closePopup = () => setSuccess(false);
 
   return (
-    <section className="demo-section">
-      <div className="gradient-blob top-left"></div>
-      <div className="gradient-blob bottom-right"></div>
+    <section className="relescrd-demo-section">
+      <div className="relescrd-gradient-blob relescrd-top-left"></div>
+      <div className="relescrd-gradient-blob relescrd-bottom-right"></div>
 
       <motion.div
         initial={{ opacity: 0, scale: 0.9, y: 30 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="demo-card"
+        className="relescrd-demo-card"
       >
-        <div className="demo-header">
-          <div className="demo-badge">
-            <Building2 className="icon" />
-            <span className="badge-text">PureSaas CRM</span>
+        <div className="relescrd-demo-header">
+          <div className="relescrd-demo-badge">
+            <Building2 className="relescrd-icon" />
+            <span className="relescrd-badge-text">PureSaas CRM</span>
           </div>
-          <h1 className="demo-title">
-            Book a Free <span className="highlight">CRM Demo</span>
+          <h1 className="relescrd-demo-title">
+            Book a Free <span className="relescrd-highlight">CRM Demo</span>
           </h1>
-          <p className="demo-subtitle">
+          <p className="relescrd-demo-subtitle">
             See how our Real Estate CRM can grow your sales and manage leads smarter.
           </p>
         </div>
 
-        <form className="demo-form" onSubmit={handleSubmit}>
-          <div className="input-group">
-            <User className="input-icon" />
+        <form className="relescrd-demo-form" onSubmit={handleSubmit}>
+          <div className="relescrd-input-group">
+            <User className="relescrd-input-icon" />
             <input
               type="text"
               name="name"
@@ -110,10 +106,10 @@ const RealEstateAgentDemo = () => {
               required
             />
           </div>
-          {errors.name && <span className="error">{errors.name}</span>}
+          {errors.name && <span className="relescrd-error">{errors.name}</span>}
 
-          <div className="input-group">
-            <Mail className="input-icon" />
+          <div className="relescrd-input-group">
+            <Mail className="relescrd-input-icon" />
             <input
               type="email"
               name="email"
@@ -123,10 +119,10 @@ const RealEstateAgentDemo = () => {
               required
             />
           </div>
-          {errors.email && <span className="error">{errors.email}</span>}
+          {errors.email && <span className="relescrd-error">{errors.email}</span>}
 
-          <div className="input-group">
-            <Phone className="input-icon" />
+          <div className="relescrd-input-group">
+            <Phone className="relescrd-input-icon" />
             <input
               type="tel"
               name="phone"
@@ -136,10 +132,10 @@ const RealEstateAgentDemo = () => {
               required
             />
           </div>
-          {errors.phone && <span className="error">{errors.phone}</span>}
+          {errors.phone && <span className="relescrd-error">{errors.phone}</span>}
 
-          <div className="input-group">
-            <CalendarDays className="input-icon" />
+          <div className="relescrd-input-group">
+            <CalendarDays className="relescrd-input-icon" />
             <input
               type="date"
               name="date"
@@ -148,9 +144,9 @@ const RealEstateAgentDemo = () => {
               required
             />
           </div>
-          {errors.date && <span className="error">{errors.date}</span>}
+          {errors.date && <span className="relescrd-error">{errors.date}</span>}
 
-          <div className="input-group">
+          <div className="relescrd-input-group">
             <textarea
               rows="3"
               name="message"
@@ -160,11 +156,11 @@ const RealEstateAgentDemo = () => {
               required
             ></textarea>
           </div>
-          {errors.message && <span className="error">{errors.message}</span>}
+          {errors.message && <span className="relescrd-error">{errors.message}</span>}
 
           <motion.button
             type="submit"
-            className="cta-button"
+            className="relescrd-cta-button"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
             disabled={loading}
@@ -173,18 +169,17 @@ const RealEstateAgentDemo = () => {
           </motion.button>
         </form>
 
-        <div className="trust-text">
+        <div className="relescrd-trust-text">
           <p>💼 Trusted by 500+ Real Estate Agencies across India.</p>
         </div>
       </motion.div>
 
-      {/* Success Popup */}
       {success && (
-        <div className="popup-overlay">
-          <div className="popup-card">
+        <div className="relescrd-popup-overlay">
+          <div className="relescrd-popup-card">
             <h2>🎉 Success!</h2>
             <p>Your Demo Scheduled Successfully.</p>
-            <button className="cta-button" onClick={closePopup}>Close</button>
+            <button className="relescrd-cta-button" onClick={closePopup}>Close</button>
           </div>
         </div>
       )}
