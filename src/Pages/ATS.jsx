@@ -160,10 +160,10 @@ export default function ATS() {
       <div className="container">
         <h2>Finance and operation</h2>
         <p className="subtitle">
-          NextSaaS is designed to serve a wide range of teams and industries.
-          Whether you're managing data, scaling operations, optimizing finances,
-          or streamlining customer experiences — NextSaaS is the platform that
-          grows with you.
+            PureSaas CRM empowers your finance and operations teams to work smarter and faster. 
+  From tracking revenue and managing client data to automating workflows and improving 
+  cross-department visibility — PureSaas helps you make data-driven decisions and 
+  streamline business performance effortlessly.
         </p>
 
         <div className="card-grid">

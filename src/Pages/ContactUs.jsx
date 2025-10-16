@@ -14,17 +14,17 @@ const ContactUs = () => {
     {
       icon: <FaHome />,
       title: "Our Address",
-      text: "2464 Royal Ln. Mesa, New Jersey 45463",
+      text: "Surat, Gujarat",
     },
     {
       icon: <FaEnvelope />,
       title: "Email Us",
-      text: "hello@nextsaaS.com",
+      text: "info@puresaas.in",
     },
     {
       icon: <FaPhone />,
       title: "Call Us",
-      text: "+391 (0)35 2568 4593",
+      text: "9638373601",
     },
   ];
 

@@ -36,32 +36,44 @@ const AccordionItem = ({ id, question, answer, isOpen, toggleAccordion }) => {
 // 2. Data
 // ==========================================================
 const faqData = [
-    {
-        id: 1,
-        question: "What is the primary role of a business agency?",
-        answer: "A business agency helps companies grow by offering strategic services like branding, digital marketing, business consulting, and customer experience optimization. Their goal is to improve performance and scalability."
-    },
-    {
-        id: 2,
-        question: "What kinds of services should I anticipate from a business agency?",
-        answer: "You can expect services such as market research, brand development, content creation, social media management, SEO, paid advertising, website design, and strategic planning, all tailored to meet your business objectives."
-    },
-    {
-        id: 3,
-        question: "How often should I consider updating my website?",
-        answer: "It's generally recommended to update your website every 2-3 years to ensure it remains modern, secure, and compatible with the latest web technologies and user experience trends. Minor content updates should be ongoing."
-    },
-    {
-        id: 4,
-        question: "Why is digital marketing essential for modern businesses?",
-        answer: "Digital marketing is crucial because it allows businesses to reach a wider audience, track campaign performance accurately, engage with customers directly, and compete effectively in an increasingly online marketplace."
-    },
-    {
-        id: 5,
-        question: "How long does it typically take to see results from digital marketing efforts?",
-        answer: "The timeframe for seeing results from digital marketing can vary widely based on the strategies employed, industry, competition, and budget. Some tactics like paid ads might show quicker results, while SEO and content marketing can take several months to yield significant impact."
-    }
+  {
+    id: 1,
+    question: "What is PureSaas CRM?",
+    answer:
+      "PureSaas CRM is an all-in-one customer relationship management platform designed to help businesses streamline sales, automate workflows, manage leads, and strengthen customer relationships through powerful, easy-to-use tools."
+  },
+  {
+    id: 2,
+    question: "Who can benefit from using PureSaas CRM?",
+    answer:
+      "PureSaas CRM is ideal for sales teams, marketing professionals, customer support departments, and small to medium-sized businesses that want to improve productivity, boost collaboration, and gain actionable insights from customer data."
+  },
+  {
+    id: 3,
+    question: "Does PureSaas CRM support automation?",
+    answer:
+      "Yes! PureSaas CRM includes intelligent automation features that reduce manual tasks — such as automated lead assignment, follow-up reminders, deal tracking, and email workflows — so your team can focus on closing more deals."
+  },
+  {
+    id: 4,
+    question: "Can PureSaas CRM integrate with other tools and platforms?",
+    answer:
+      "Absolutely. PureSaas CRM easily integrates with popular tools like Google Workspace, Microsoft Outlook, marketing platforms, and other third-party applications to ensure a seamless workflow across your business ecosystem."
+  },
+  {
+    id: 5,
+    question: "Is my data safe with PureSaas CRM?",
+    answer:
+      "Yes, data security is a top priority. PureSaas CRM uses industry-standard encryption, regular backups, and secure cloud infrastructure to protect your business information and ensure your data stays private and safe."
+  },
+  {
+    id: 6,
+    question: "How long does it take to get started with PureSaas CRM?",
+    answer:
+      "Getting started is quick and easy. Most businesses can set up their accounts, import customer data, and start managing leads within a few hours. Plus, our support team is always available to guide you through the setup process."
+  }
 ];
+
 
 // ==========================================================
 // 3. Main FAQ Section Component (Exported)
@@ -86,13 +98,14 @@ const HomeFaq = () => {
     return (
         <section className="faq-section wow animate__animated animate__fadeInUp">
             <div className="faq-header">
-                <span className="faq-tag">FAQ</span>
-                <h2 className="faq-title">Commonly Asked Questions</h2>
-                <p className="faq-description">
-                    Neque accumsan dolor nullam commodo. Odio massa nisi ullamcorper suspendisse
-                    amet amet. Aenean suspendisse eget est pulvinar. Fames eget eget nascetur ornare
-                </p>
-            </div>
+  <span className="faq-tag">FAQ</span>
+  <h2 className="faq-title">Commonly Asked Questions</h2>
+  <p className="faq-description">
+    Find quick answers to the most common questions about PureSaas CRM — from setup 
+    and automation to integrations and data security. Learn how our CRM helps your 
+    business streamline sales, boost productivity, and build lasting customer relationships.
+  </p>
+</div>
 
             <div className="faq-accordion-container">
                 {faqData.map((item) => (

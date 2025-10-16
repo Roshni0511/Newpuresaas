@@ -419,22 +419,24 @@ const features = [
 
           {/* === Right Side === */}
           <div className="col-6 right-section">
-            <h1 className="who-title wow animate__animated animate__fadeInUp">
-              Who uses PureSaas CRM?
-            </h1>
-            <p className="who-desc">
-              Take control of your finances with us and experience the confidence
-              that comes with smart money management. Whether you're looking to
-              budget better
-            </p>
-            <ul className="who-list">
-              <li><i className="fa-solid fa-circle-check"></i> Sales Teams</li>
-              <li><i className="fa-solid fa-circle-check"></i> Marketing Teams</li>
-              <li><i className="fa-solid fa-circle-check"></i> Customer Support Teams</li>
-              <li><i className="fa-solid fa-circle-check"></i> Small Businesses & Enterprises</li>
-            </ul>
-            <button className="who-btn">How it works</button>
-          </div>
+  <h1 className="who-title wow animate__animated animate__fadeInUp">
+    Who uses PureSaas CRM?
+  </h1>
+  <p className="who-desc">
+    PureSaas CRM empowers professionals and organizations to manage customer 
+    relationships efficiently. From startups to large-scale enterprises, it 
+    simplifies workflows, improves communication, and enhances overall productivity.
+  </p>
+  <ul className="who-list">
+    <li><i className="fa-solid fa-circle-check"></i> Real Estate Agents & Brokers</li>
+    <li><i className="fa-solid fa-circle-check"></i> Financial Advisors & Consultants</li>
+    <li><i className="fa-solid fa-circle-check"></i> E-commerce & Retail Businesses</li>
+    <li><i className="fa-solid fa-circle-check"></i> Healthcare & Service Providers</li>
+    <li><i className="fa-solid fa-circle-check"></i> Marketing & Sales Teams</li>
+  </ul>
+  <button className="who-btn">Explore Features</button>
+</div>
+
         </div>
       </div>
     </div>

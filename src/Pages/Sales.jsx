@@ -122,22 +122,22 @@ const Sales = () => {
   return (
     <>
        <Navbar />
-<div className="saleserp">
+<div className="saleserp wow animate__animated animate__fadeInUp">
 
         <section className="hero-section">
       <div className="hero-content">
         <h1>
-          Automate smarter. <br /> Grow faster.
+          Smart Sales CRM Solution
+        <br />Built for Sales Professionals
         </h1>
         <p className="hero-subtext">
-          Save time and elevate your business with intelligent workflow automation from NextSaaS.
+         PureSaaS CRM is a powerful, all-in-one sales management tool designed to help you accelerate your <br /> sales pipeline, stay organized, and grow your business effortlessly.
         </p>
-
-        <div className="hero-points">
-          <span>⚡ Boost your business with AI.</span>
-          <span>🌍 Trusted by leading industries worldwide.</span>
-          <span>🚀 Start your AI journey today.</span>
-        </div>
+<div className="hero-points">
+  <span>⚡ Streamline your sales process effortlessly.</span>
+  <span>🤝 Build stronger customer relationships with ease.</span>
+  <span>🚀 Empower your team to close deals faster.</span>
+</div>
 
         <button className="get-started-btn">Get started</button>
       </div>
@@ -175,7 +175,7 @@ const Sales = () => {
     </section>
 </div>
 
-<div className="saleserp">
+<div className="saleserp wow animate__animated animate__fadeInUp">
     
 
   <div className="card-container">
