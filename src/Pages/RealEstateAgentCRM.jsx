@@ -124,7 +124,7 @@ export default function RealEstateAgentCRM() {
     </p>
     <div className="grid">
       <div className="item">
-        <div className="number">30+</div>
+        <div className="number">120+</div>
         <div className="label">Properties Managed</div>
       </div>
       <div className="item">
@@ -132,7 +132,7 @@ export default function RealEstateAgentCRM() {
         <div className="label">Happy Clients</div>
       </div>
       <div className="item">
-        <div className="number">120+</div>
+        <div className="number">100+</div>
         <div className="label">Deals Closed</div>
       </div>
     </div>
