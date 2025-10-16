@@ -4,18 +4,72 @@ import '../assets/css/Realestateagentdemo.css';
 import { Building2, CalendarDays, Mail, Phone, User } from "lucide-react";
 
 const RealEstateAgentDemo = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    date: "",
+    message: ""
+  });
+
+  const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
+  // Regex patterns
+  const nameRegex = /^[A-Za-z\s]{2,50}$/;
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  const phoneRegex = /^\d{10}$/;
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    // Prevent extra characters in phone
+    if (name === "phone") {
+      if (/^\d*$/.test(value) && value.length <= 10) {
+        setFormData({ ...formData, [name]: value });
+      }
+    } 
+    // Prevent numbers and special chars in name
+    else if (name === "name") {
+      if (/^[A-Za-z\s]*$/.test(value)) {
+        setFormData({ ...formData, [name]: value });
+      }
+    } 
+    else {
+      setFormData({ ...formData, [name]: value });
+    }
+  };
+
+  const validate = () => {
+    const newErrors = {};
+    if (!nameRegex.test(formData.name)) newErrors.name = "Enter a valid name (letters only).";
+    if (!emailRegex.test(formData.email)) newErrors.email = "Enter a valid email.";
+    if (!phoneRegex.test(formData.phone)) newErrors.phone = "Enter a 10-digit phone number.";
+    if (!formData.date) newErrors.date = "Select a date.";
+    if (!formData.message) newErrors.message = "Message is required.";
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!validate()) return;
+
     setLoading(true);
 
-    // Simulate API call
     setTimeout(() => {
       setLoading(false);
       setSuccess(true);
-    }, 2000); // 2 seconds
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        date: "",
+        message: ""
+      });
+      setErrors({});
+    }, 2000);
   };
 
   const closePopup = () => setSuccess(false);
@@ -47,27 +101,66 @@ const RealEstateAgentDemo = () => {
         <form className="demo-form" onSubmit={handleSubmit}>
           <div className="input-group">
             <User className="input-icon" />
-            <input type="text" placeholder="Full Name" required />
+            <input
+              type="text"
+              name="name"
+              placeholder="Full Name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
           </div>
+          {errors.name && <span className="error">{errors.name}</span>}
 
           <div className="input-group">
             <Mail className="input-icon" />
-            <input type="email" placeholder="Email Address" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
           </div>
+          {errors.email && <span className="error">{errors.email}</span>}
 
           <div className="input-group">
             <Phone className="input-icon" />
-            <input type="tel" placeholder="Phone Number" required />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone Number"
+              value={formData.phone}
+              onChange={handleChange}
+              required
+            />
           </div>
+          {errors.phone && <span className="error">{errors.phone}</span>}
 
           <div className="input-group">
             <CalendarDays className="input-icon" />
-            <input type="date" required />
+            <input
+              type="date"
+              name="date"
+              value={formData.date}
+              onChange={handleChange}
+              required
+            />
           </div>
+          {errors.date && <span className="error">{errors.date}</span>}
 
           <div className="input-group">
-            <textarea rows="3" placeholder="Tell us about your business or team size..." required></textarea>
+            <textarea
+              rows="3"
+              name="message"
+              placeholder="Tell us about your business or team size..."
+              value={formData.message}
+              onChange={handleChange}
+              required
+            ></textarea>
           </div>
+          {errors.message && <span className="error">{errors.message}</span>}
 
           <motion.button
             type="submit"
