@@ -141,6 +141,50 @@
   0%, 100% { transform: translateY(0) rotate(0deg); }
   50% { transform: translateY(-10px) rotate(2deg); }
 }
+@media (max-width: 992px) {
+  .saleserp .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .saleserp .floating-card {
+    width: 180px;
+    padding: 15px 20px;
+  }
+  .saleserp .card-bottom {
+    width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .saleserp .hero-section {
+    height: auto;
+    padding: 50px 20px ;
+    top: -3px;
+    position: relative;
+  }
+  .saleserp .hero-content h1 {
+    font-size: 2rem;
+  }
+  .saleserp .hero-subtext {
+    font-size: 0.85rem;
+  }
+  .saleserp .floating-card {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: rotate(0deg);
+    margin: 20px auto;
+    width: 90%;
+    animation: none;
+  }
+  .saleserp .card-bottom {
+    width: 90%;
+    transform: none;
+  }
+  .saleserp .mini-cards {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
 .saleserp .card-container {
   display: flex;
   justify-content: center;
