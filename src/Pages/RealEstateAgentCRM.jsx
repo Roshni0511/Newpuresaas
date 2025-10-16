@@ -207,66 +207,66 @@ export default function RealEstateAgentCRM() {
 
 
 <section style={{marginTop:'60px', paddingBottom:'70px'}}>
-<div class="parent">
-    <div class="div1">
+<div className="parent">
+    <div className="div1">
       <img src="/Image/hero-banner.png" alt="Building" />
     </div>
 
-    <div class="div2">
-  <div class="property-card" style={{background:'#f9eb57'}}>
-    <div class="profile-row">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNhTZJTtkR6b-ADMhmzPvVwaLuLdz273wvQ&s" alt="Profile 1" class="profile-img" style={{width:'40px',borderRadius:'100%',marginRight:'5px'}}/>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNhTZJTtkR6b-ADMhmzPvVwaLuLdz273wvQ&s" alt="Profile 2" class="profile-img" style={{width:'40px',borderRadius:'100%',marginRight:'5px'}}/>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNhTZJTtkR6b-ADMhmzPvVwaLuLdz273wvQ&s" alt="Profile 3" class="profile-img" style={{width:'40px',borderRadius:'100%',marginRight:'5px'}}/>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNhTZJTtkR6b-ADMhmzPvVwaLuLdz273wvQ&s" alt="Profile 4" class="profile-img" style={{width:'40px',borderRadius:'100%',marginRight:'5px'}}/>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNhTZJTtkR6b-ADMhmzPvVwaLuLdz273wvQ&s" alt="Profile 5" class="profile-img" style={{width:'40px',borderRadius:'100%',marginRight:'5px'}}/>
-      <div class="profile-plus">+20</div>
+    <div className="div2">
+  <div className="property-card" style={{background:'#f9eb57'}}>
+    <div className="profile-row">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNhTZJTtkR6b-ADMhmzPvVwaLuLdz273wvQ&s" alt="Profile 1" className="profile-img" style={{width:'40px',borderRadius:'100%',marginRight:'5px'}}/>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNhTZJTtkR6b-ADMhmzPvVwaLuLdz273wvQ&s" alt="Profile 2" className="profile-img" style={{width:'40px',borderRadius:'100%',marginRight:'5px'}}/>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNhTZJTtkR6b-ADMhmzPvVwaLuLdz273wvQ&s" alt="Profile 3" className="profile-img" style={{width:'40px',borderRadius:'100%',marginRight:'5px'}}/>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNhTZJTtkR6b-ADMhmzPvVwaLuLdz273wvQ&s" alt="Profile 4" className="profile-img" style={{width:'40px',borderRadius:'100%',marginRight:'5px'}}/>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNhTZJTtkR6b-ADMhmzPvVwaLuLdz273wvQ&s" alt="Profile 5" className="profile-img" style={{width:'40px',borderRadius:'100%',marginRight:'5px'}}/>
+      <div className="profile-plus">+20</div>
     </div>
     <h3>Tenants</h3>
     <p>Discover the surroundings.</p>
   </div>
 </div>
 
-    <div class="property-div3">
-      <div class="property-card">
+    <div className="property-div3">
+      <div className="property-card">
         <h3>Tenants</h3>
         <p>Join over 800 active tenants enjoying the perks of being part of our vibrant community, where you can connect with neighbors.</p>
       </div>
     </div>
 
-<div class="div4 metric-card">
-    <i class="fas fa-building card-icon"></i>
+<div className="div4 metric-card">
+    <i className="fas fa-building card-icon"></i>
     <h3>Building Age</h3>
     <p>10Y</p>
 </div>
 
-<div class="div5 metric-card">
-    <i class="fas fa-users card-icon"></i>
+<div className="div5 metric-card">
+    <i className="fas fa-users card-icon"></i>
     <h3>Daily Visitors</h3>
     <p>8950</p>
 </div>
 
-<div class="div6 metric-card">
-    <i class="fas fa-thermometer-half card-icon"></i>
+<div className="div6 metric-card">
+    <i className="fas fa-thermometer-half card-icon"></i>
     <h3>Temperature</h3>
     <p>34°F</p>
 </div>
 
-<div class="div7 metric-card">
-    <i class="fas fa-home card-icon"></i>
+<div className="div7 metric-card">
+    <i className="fas fa-home card-icon"></i>
     <h3>Occupancy Rate</h3>
     <p>85%</p>
 </div>
 
 
-    <div class="div8">
-      <div class="progress-card">
+    <div className="div8">
+      <div className="progress-card">
         <h3>Active Users</h3>
-        <div class="progress-bar"></div>
+        <div className="progress-bar"></div>
       </div>
     </div>
 
-    <div class="div9">
+    <div className="div9">
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14602.254272231177!2d90.3654215!3d23.7985508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1592852423971!5m2!1sen!2sbd"></iframe>
     </div>
 </div>

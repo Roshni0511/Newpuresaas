@@ -122,8 +122,8 @@ export default function Vision() {
           <h2 className="Mission-title  wow animate__animated animate__fadeInUp">
            Vision
           </h2>
-          <div class="mt-15">
-            <a href="/">Home</a><span class="padding-rl-20">|</span><span class="main-color">Vision</span>
+          <div className="mt-15">
+            <a href="/">Home</a><span className="padding-rl-20">|</span><span className="main-color">Vision</span>
         </div>
         </div>
 
