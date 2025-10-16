@@ -122,7 +122,7 @@ export default function Enterprise() {
       <div className="It-content">
         <div className="It-badge">Integration</div>
         <h2 className="It-title wow animate__animated animate__fadeInUp">
-         <span> Security and <br />
+         <span>Data Security and <br />
           IT management</span>
           
         </h2>

@@ -57,8 +57,15 @@ const Blogdetails = () => {
                                     CRM systems streamline lead management, automate sales processes, and provide real-time insights into sales pipelines. This helps sales teams prioritize leads, forecast sales more accurately, and ultimately increase conversion rates.
                                 </p>
 
-                                    <div className="category-bar">
-      <div className="categories" style={{display:"flex"}}>
+                                 
+                              
+                            </div>
+                        </div>
+
+                        {/* ===== Right Sidebar ===== */}
+                        <div className="col-lg-4 col-md-12 wow animate__animated animate__fadeInUp">
+                               <div className="category-bar">
+      <div className="categories" style={{display:"flex",marginBottom:'15px'}}>
         <h5 style={{marginTop:'5px'}}>Tags :</h5>
  
         <button className="btn" style={{marginLeft:"10px"}}>Optimize</button>
@@ -67,15 +74,15 @@ const Blogdetails = () => {
       <div className="social-icons" style={{display:"flex"}}>
                <h5 style={{marginTop:'5px'}}>Share :</h5>
  
-        <a href="#" ><i className="fab fa-facebook-f facebook" style={{padding:'5px'}}></i></a>
+        <a href="#" ><i className="fab fa-facebook-f facebook" style={{padding:'5px',width:" var(--fa-width, -0.75em)"}}></i></a>
  
-        <a href="#"><i className="fab fa-instagram instagram" style={{padding:'5px'}}></i></a>
-        <a href="#"><i className="fab fa-youtube youtube" style={{padding:'5px'}}></i></a>
+        <a href="#"><i className="fab fa-instagram instagram" style={{padding:'5px',width:" var(--fa-width, -0.75em)"}}></i></a>
+        <a href="#"><i className="fab fa-youtube youtube" style={{padding:'5px',width:" var(--fa-width, -0.75em)"}}></i></a>
    
       </div>
     </div>
 
-                                <div className="author-box">
+                             <div className="author-box">
                                     <div className="author-img">
                                         <img src="/Image/bdetail1.png" alt="Author" />
                                     </div>
@@ -101,85 +108,12 @@ const Blogdetails = () => {
                                             <div className="col-12">
                                                 <textarea rows="4" placeholder="Comment"></textarea>
                                             </div>
-                                        </div>
+                                           </div>
                                         <button type="submit" className="btn-submit">
                                             Post Comment
                                         </button>
                                     </form>
                                 </div>
-                            </div>
-                        </div>
-
-                        {/* ===== Right Sidebar ===== */}
-                        <div className="col-lg-4 col-md-12 wow animate__animated animate__fadeInUp">
-                            <div className="sidebar">
-                                {/* ==== Search Box ==== */}
-                                <div className="sidebar-box search-box">
-                                    <input type="text" placeholder="Search..." />
-                                    <button>
-                                        <i className="fa fa-search"></i>
-                                    </button>
-                                </div>
-
-                                {/* ==== Category ==== */}
-                                <div className="sidebar-box category-box">
-                                    <h5>Category</h5>
-                                    <ul>
-                                        <li><a href="/RealEstateAgentCRM">Real Estate Agent CRM</a></li>
-                                        <li><a href="#">Real Estate CRM</a></li>
-                                        <li><a href="#">Sales CRM</a></li>
-                                        <li><a href="#">Service CRM</a></li>
-                                        <li><a href="#">B2B Textile ERP</a></li>
-                                         <li><a href="#">Telecaller  CRM</a></li>
-                                          <li><a href="#">ATS (Application Tracking System)</a></li>
-                                           <li><a href="#">Payroll System</a></li>
-                                             <li><a href="#">Office ERP</a></li>
-
-                                    </ul>
-                                </div>
-
-                                {/* ==== Recent Posts ==== */}
-                                <div className="sidebar-box recent-posts tags">
-                                    <h5>Latest Posts</h5>
-                                    <ul>
-                                        <li>
-                                            <img src="/Image/bdetail1.png" alt="post" />
-                                            <div>
-                                                <span>Web Design</span>
-                                                <h6 style={{marginTop:'10px'}}><a href="#">Advanced Analytics and Reporting</a></h6>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <img src="/Image/bdetail2.png" alt="post" />
-                                            <div>
-                                                 <span>Web Design</span>
-                                                <h6  style={{marginTop:'10px'}}><a href="#">Automation and Workflow Efficiency</a></h6>
-                                        
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <img src="/Image/bdetail3.png" alt="post" />
-                                            <div>
-                                                 <span>Web Design</span>
-                                                <h6  style={{marginTop:'10px'}}><a href="#">Customizable Solutions</a></h6>
-                                     
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                {/* ==== Popular Tags ==== */}
-                                <div className="sidebar-box tags-box">
-                                    <h5>Popular Tags</h5>
-                                    <div className="tags">
-                                        <span>Data Analytics</span>
-                                        <span>Data Security</span>
-                                        <span>ModUser-friendly CRMern</span>
-                                        <span>Workflow Optimization</span>
-                                     
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
