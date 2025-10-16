@@ -76,19 +76,7 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="newsletter">
-                <p>newsletter :</p>
-                <form className="newsletter-form" onSubmit={(e) => e.preventDefault()}>
-                  <input
-                    type="email"
-                    className="newsletter-input"
-                    placeholder=" email"
-                    aria-label="Votre adresse email"
-                    required
-                  />
-                  <button type="submit" className="newsletter-btn">Submit</button>
-                </form>
-              </div>
+ 
             </div>
           </div>
 

@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Navbar from './Navbar';
 import Footer from './Footer';
 import '../assets/css/RealEstateAgentCRM.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,6 +15,7 @@ import RealEstateAgentCRMfaq from '../component/Realestatecrmfaq';
 import HomeFaq from '../component/HomeFaq';
 import ProductForm from '../component/ProductForm';
 import Realestateagentcrmslider from '../component/Realestateagentcrmslider';
+import ProductNavbar from './ProductNavbar';
 
 
 
@@ -97,7 +97,7 @@ export default function RealEstateAgentCRM() {
 
   return (
     <div>
-      <Navbar />
+      <ProductNavbar />
       <div className="real-style wow animate__animated animate__fadeInUp">
   <div className="hero-banner">
     <img src="/Image/hero-banner.png" alt="Hero Banner" />
