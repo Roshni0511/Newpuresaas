@@ -46,6 +46,7 @@ export default function Navbar() {
           className="menu-toggle"
           onClick={toggleMobileMenu}
           aria-expanded={isMobileMenuOpen}
+           aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
         >
           {isMobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>

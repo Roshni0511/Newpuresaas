@@ -188,10 +188,10 @@ function App() {
      <Route path='/HomePricing' element={<HomePricing/>}/>
   </Routes>
   <BackToTopButton />
-   <div class="wh-api">
-	<div class="wh-fixed whatsapp-pulse">
-		<a href="https://api.whatsapp.com/send?phone=9638373601" target="_blank" >
-			<button class="wh-ap-btn"></button>
+   <div className="wh-api">
+	<div className="wh-fixed whatsapp-pulse">
+		<a href="https://api.whatsapp.com/send?phone=9638373601" target="_blank"  aria-label="Chat with us on WhatsApp">
+			<button className="wh-ap-btn"></button>
 		</a>
 	</div>
    </div>

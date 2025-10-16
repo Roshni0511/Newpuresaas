@@ -112,8 +112,8 @@ const ContactUs = () => {
           <h2 className="Mission-title  wow animate__animated animate__fadeInUp">
            Contact Us
           </h2>
-          <div class="mt-15">
-            <a href="/">Home</a><span class="padding-rl-20">|</span><span class="main-color">Contact Us</span>
+          <div className="mt-15">
+            <a href="/">Home</a><span className="padding-rl-20">|</span><span className="main-color">Contact Us</span>
         </div>
         </div>
 

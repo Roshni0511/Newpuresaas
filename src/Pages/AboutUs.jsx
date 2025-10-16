@@ -65,8 +65,8 @@ const AboutUs = () => {
           <h2 className="Mission-title  wow animate__animated animate__fadeInUp">
            About Us
           </h2>
-          <div class="mt-15">
-            <a href="/">Home</a><span class="padding-rl-20">|</span><span class="main-color">  About Us</span>
+          <div className="mt-15">
+            <a href="/">Home</a><span className="padding-rl-20">|</span><span className="main-color">  About Us</span>
         </div>
         </div>
 

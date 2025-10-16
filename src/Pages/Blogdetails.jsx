@@ -73,8 +73,8 @@ const Blogdetails = () => {
           <h2 className="Mission-title  wow animate__animated animate__fadeInUp">
      Blog Details
           </h2>
-          <div class="mt-15">
-            <a href="/">Home</a><span class="padding-rl-20">|</span><span class="main-color">Blog Details</span>
+          <div className="mt-15">
+            <a href="/">Home</a><span className="padding-rl-20">|</span><span className="main-color">Blog Details</span>
         </div>
         </div>
 
