@@ -26,6 +26,7 @@ import ATS from './Pages/ATS';
 import TelecallerCRM from './Pages/Telecallercrm';
 import Sales from './Pages/Sales';
 import ServiceCRM from './Pages/Serviceerp';
+import AboutUs from './Pages/AboutUs';
 
 const FabButton = ({ id, label, iconClass, link, show, positionClass }) => {
     return (
@@ -175,9 +176,10 @@ function App() {
     <Route path='/Realestatecrm' element={<Realestatecrm/>}/>
     <Route path='/OfficeErp' element={<OfficeErp/>}/>
     <Route path='/ATS' element={<ATS />}/>
-    <Route path='/Telecallercrm' element={<TelecallerCRM/>}/>
+    <Route path=' allercrm' element={<TelecallerCRM/>}/>
     <Route path='/Sales' element={<Sales/>}/>
      <Route path='/Serviceerp' element={<ServiceCRM/>}/>
+     <Route path='/AboutUs' element={<AboutUs/>}/>
   </Routes>
   <BackToTopButton />
    <div class="wh-api">

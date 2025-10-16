@@ -1,9 +1,66 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import "../assets/css/blogdetails.css"
 import Navbar from './Navbar'
 import Footer from './Footer'
 
 const Blogdetails = () => {
+      const canvasRef = useRef(null);
+  const [captchaCode, setCaptchaCode] = useState("");
+  const [inputValue, setInputValue] = useState("");
+
+  // Generate random number helper
+  const randomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+
+  // Generate CAPTCHA code and draw on canvas
+  const generateCaptcha = () => {
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext("2d");
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    let code = "";
+
+    for (let m = 0; m < 6; m++) {
+      const char = characters.charAt(Math.floor(Math.random() * characters.length));
+      code += char;
+
+      const fontSize = 20 + Math.random() * 10; // Random font size
+      const rotation = randomNumber(-45, 45); // Random rotation
+      const x = 20 + m * 30;
+      const y = canvas.height / 2;
+
+      ctx.save(); // Save current state
+      ctx.font = `${fontSize}px Arial`;
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillStyle = `rgb(${randomNumber(0,255)}, ${randomNumber(0,255)}, ${randomNumber(0,255)})`;
+      ctx.translate(x, y);
+      ctx.rotate((rotation * Math.PI) / 180);
+      ctx.fillText(char, 0, 0);
+      ctx.restore(); // Restore state
+    }
+
+    setCaptchaCode(code); // Save code in state
+  };
+
+  // Handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (inputValue === captchaCode) {
+      alert("Form submitted successfully!");
+      setInputValue("");
+      generateCaptcha();
+    } else {
+      alert("Invalid captcha code. Please try again.");
+      setInputValue("");
+      generateCaptcha();
+    }
+  };
+
+  useEffect(() => {
+    generateCaptcha(); // Generate CAPTCHA on component mount
+  }, []);
+
     return (
         <>
         <Navbar />
@@ -48,7 +105,7 @@ const Blogdetails = () => {
                                 </p>
 
                                 <img
-                                    src="/Image/mainblog.jpg"
+                                    src="https://t4.ftcdn.net/jpg/02/46/95/59/360_F_246955925_aagLKZevnHfWaAKqoX0l5yOpP6Dl54GW.jpg"
                                     alt="watch"
                                     className="blog-img"
                                 />
@@ -108,6 +165,54 @@ const Blogdetails = () => {
                                             <div className="col-12">
                                                 <textarea rows="4" placeholder="Comment"></textarea>
                                             </div>
+                                        
+        <div className="col-md-12">
+          <form onSubmit={handleSubmit}  style={{    transition: "transform 0.2s ease-in-out" }}>
+            <div className="mb-3 d-flex align-items-center">
+              <canvas
+                ref={canvasRef}
+                width={200}
+                height={80}
+                style={{
+                  borderRadius: "10px",
+                  border: "1px solid #dee2e6",
+                  background: "#f8f9fa",
+                  boxShadow: "inset 0 2px 6px rgba(0,0,0,0.05)",
+                  marginRight: "10px",
+                  maxWidth: "100%",
+                }}
+              />
+              <button
+                type="button"
+                className="btn btn-secondary"
+                onClick={generateCaptcha}
+                style={{
+                  borderRadius: "10px",
+                  padding: "12px 18px",
+                  boxShadow: "0 3px 6px rgba(0,0,0,0.1)",
+                  transition: "all 0.2s ease-in-out",
+                }}
+              >
+                <i className="fa fa-refresh"></i>
+              </button>
+            </div>
+
+            <div className="mb-3">
+              <label htmlFor="captcha-input" className="form-label">Enter Captcha</label>
+              <input
+                type="text"
+                id="captcha-input"
+                className="form-control"
+                value={inputValue}
+                onChange={(e) => setInputValue(e.target.value)}
+                required
+              />
+            </div>
+
+     
+          </form>
+     
+    </div>
                                            </div>
                                         <button type="submit" className="btn-submit">
                                             Post Comment
