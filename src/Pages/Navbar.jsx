@@ -88,7 +88,7 @@ export default function Navbar() {
                       <p>Early Create sites & offload them to clients</p>
                     </li>
                     <li>
-                      <a href="#"><span className="service__number">03.</span> ATS (Application Tracking System)</a>
+                      <a href="/ATS"><span className="service__number">03.</span> ATS (Application Tracking System)</a>
                       <p>Simplify recruitment, track candidates, and streamline your hiring process.</p>
                     </li>
                     
@@ -101,11 +101,11 @@ export default function Navbar() {
                       <p>Simplify operations, manage inventory, and streamline production.</p>
                     </li>
                     <li>
-                      <a href="#"><span className="service__number">05.</span> Telecaller CRM</a>
+                      <a href="/Telecallercrm"><span className="service__number">05.</span> Telecaller CRM</a>
                       <p>Boost productivity, manage calls, and track leads effortlessly.</p>
                     </li>
                     <li>
-                      <a href="#"><span className="service__number">06.</span> Service CRM</a>
+                      <a href="/Serviceerp"><span className="service__number">06.</span> Service CRM</a>
                       <p>Streamline support and boost customer satisfaction.</p>
                     </li>
                    
@@ -121,10 +121,10 @@ export default function Navbar() {
                     <a href="/Sales"><span className="service__number">08.</span> Sales CRM</a>
                     <p>Streamline your sales process, manage leads, and close deals faster.</p>
                   </li>
-                    <li>
+                    {/* <li>
                       <a href="#"><span className="service__number">09.</span> payroll System</a>
                       <p>Streamline payroll processing, ensure accuracy, and simplify compliance.</p>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>

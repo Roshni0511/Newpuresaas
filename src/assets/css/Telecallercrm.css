@@ -1,0 +1,1280 @@
+/* HERO BASE */
+.tele-hero {
+  background: linear-gradient(135deg, #f8f9ff, #eef2ff);
+  color: #2d3748;
+  padding: 80px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  top: -106px;
+}
+.tele-hero p{
+  text-align: justify;
+}
+/* BACKGROUND ELEMENTS */
+.tele-bg-elements {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.tele-grid-lines {
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(rgba(99, 102, 241, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99, 102, 241, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+.tele-pulse-dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #6366f1;
+  border-radius: 50%;
+  animation: tele-pulse 2s ease-in-out infinite;
+}
+.tele-dot-1 {
+  top: 20%;
+  left: 10%;
+}
+.tele-dot-2 {
+  top: 60%;
+  right: 15%;
+  animation-delay: 1s;
+}
+.tele-dot-3 {
+  bottom: 30%;
+  left: 20%;
+  animation-delay: 2s;
+}
+
+@keyframes tele-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.2;
+  }
+}
+
+/* FLOATING CIRCLES */
+.tele-floating-circle {
+  position: absolute;
+  border: 2px solid rgba(99, 102, 241, 0.1);
+  border-radius: 50%;
+  animation: tele-float 6s ease-in-out infinite;
+}
+.tele-circle-1 {
+  width: 120px;
+  height: 120px;
+  top: 10%;
+  right: 10%;
+}
+.tele-circle-2 {
+  width: 80px;
+  height: 80px;
+  bottom: 20%;
+  left: 8%;
+  animation-delay: 3s;
+}
+
+@keyframes tele-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* LAYOUT */
+.tele-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+}
+
+/* TEXT STYLES */
+.tele-badge {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 30px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 80px;
+}
+
+.tele-title-main {
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1f2937;
+  line-height: 1.2;
+}
+.tele-title-highlight {
+  background: linear-gradient(270deg, #6366f1, #8b5cf6, #4f46e5);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: tele-gradient 6s ease infinite;
+}
+@keyframes tele-gradient {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.tele-desc {
+  font-size: 1.2rem;
+  color: #4b5563;
+  margin-bottom: 15px;
+}
+.tele-subtitle {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+
+/* FEATURES */
+.tele-features {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.tele-feature {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  transition: 0.3s;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+.tele-feature:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.15);
+  border-color: #6366f1;
+}
+.tele-feature-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CTA */
+
+
+.tele-btn {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  border: none;
+  padding: 18px 40px;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
+  transition: 0.3s;
+}
+.tele-btn:hover {
+  transform: translateY(-3px);
+}
+.tele-btn-shine {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+.tele-btn:hover .tele-btn-shine {
+  left: 100%;
+}
+
+/* TRUST */
+.tele-trust {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-top: 10px;
+}
+.tele-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.tele-trust-icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* DASHBOARD - UPDATED STYLES */
+.tele-visual {
+  position: relative;
+  height: 500px;
+}
+.tele-dashboard {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.tele-dashboard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6, #4f46e5);
+}
+
+/* DASHBOARD HEADER - UPDATED */
+.tele-dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.tele-window-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.tele-control {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.tele-control.red {
+  background: #f87171;
+}
+.tele-control.red:hover {
+  background: #ef4444;
+  transform: scale(1.1);
+}
+
+.tele-control.yellow {
+  background: #fbbf24;
+}
+.tele-control.yellow:hover {
+  background: #f59e0b;
+  transform: scale(1.1);
+}
+
+.tele-control.green {
+  background: #34d399;
+}
+.tele-control.green:hover {
+  background: #10b981;
+  transform: scale(1.1);
+}
+
+.tele-dashboard-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 auto;
+  text-align: center;
+  flex: 1;
+}
+
+/* STATS SECTION - UPDATED */
+.tele-dashboard-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.tele-stat {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.tele-stat::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+}
+
+.tele-stat:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.15);
+  border-color: #6366f1;
+}
+
+.tele-stat-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.tele-stat-content {
+  flex: 1;
+}
+
+.tele-stat-value {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1f2937;
+  line-height: 1;
+  margin-bottom: 4px;
+  background: linear-gradient(135deg, #1f2937, #374151);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tele-stat-label {
+  font-size: 0.9rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* CALL ACTIVITY SECTION - UPDATED */
+.tele-call-activity {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.tele-call-activity h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tele-call-activity h4::before {
+  content: '📞';
+  font-size: 1rem;
+}
+
+.tele-activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tele-activity-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 16px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.tele-activity-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 0;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  border-radius: 0 2px 2px 0;
+  transition: height 0.3s ease;
+}
+
+.tele-activity-item:hover::before {
+  height: 60%;
+}
+
+.tele-activity-item:hover {
+  transform: translateX(5px);
+  border-color: #6366f1;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.1);
+}
+
+.tele-activity-item.active {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  border-color: #6366f1;
+  transform: translateX(5px);
+}
+
+.tele-activity-item.active::before {
+  height: 80%;
+  background: white;
+}
+
+.tele-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e5e7eb, #d1d5db);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.tele-activity-item.active .tele-avatar {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.tele-activity-item:hover .tele-avatar {
+  transform: scale(1.1);
+}
+
+.tele-caller-info {
+  flex: 1;
+}
+
+.tele-caller-name {
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 4px;
+  font-size: 0.95rem;
+}
+
+.tele-activity-item.active .tele-caller-name {
+  color: white;
+}
+
+.tele-call-time {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.tele-activity-item.active .tele-call-time {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.tele-call-status {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.tele-activity-item.active .tele-call-status {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.tele-call-status.completed {
+  background: #10b981;
+  color: white;
+}
+
+.tele-activity-item:hover .tele-call-status {
+  transform: scale(1.1);
+}
+
+/* FLOATING CARDS */
+.tele-floating-elements {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.tele-floating-card {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: tele-floatCard 4s ease-in-out infinite;
+}
+.tele-card-1 {
+  top: -20px;
+  right: -20px;
+}
+.tele-card-2 {
+  bottom: 40px;
+  left: -30px;
+}
+
+@keyframes tele-floatCard {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* RESPONSIVE BREAKPOINTS */
+
+/* Tablet (<=992px) */
+@media (max-width: 992px) {
+  .tele-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    text-align: center;
+  }
+  .tele-title-main {
+    font-size: 2.5rem;
+  }
+  .tele-desc {
+    font-size: 1.1rem;
+  }
+  .tele-visual {
+    height: auto;
+  }
+  .tele-dashboard-stats {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .tele-stat {
+    padding: 15px;
+  }
+  .tele-stat-value {
+    font-size: 1.7rem;
+  }
+}
+
+/* Mobile (<=576px) */
+@media (max-width: 576px) {
+  .tele-hero {
+    padding: 60px 0;
+  }
+  .tele-title-main {
+    font-size: 2rem;
+  }
+  .tele-desc {
+    font-size: 1rem;
+  }
+  .tele-subtitle {
+    font-size: 0.9rem;
+  }
+  .tele-feature {
+    flex-direction: column;
+    text-align: center;
+  }
+  .tele-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .tele-trust {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tele-dashboard {
+    padding: 15px;
+  }
+  .tele-dashboard-header {
+    margin-bottom: 20px;
+  }
+  .tele-dashboard-title {
+    font-size: 1.2rem;
+  }
+  .tele-stat {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+  .tele-call-activity {
+    padding: 15px;
+  }
+  .tele-activity-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  .tele-caller-info {
+    text-align: center;
+  }
+  .tele-container {
+    padding: 0 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Feature Section CSS */
+
+.telefea-container {
+  width: 100%;
+  min-height: 100vh;
+  background: white;
+  overflow-x: hidden;
+}
+
+.telefea-background {
+  position: relative;
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.telefea-floating-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.telefea-shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+  animation: telefea-float 20s infinite linear;
+}
+
+.telefea-shape-1 {
+  width: 200px;
+  height: 200px;
+  background: #3498db;
+  top: 10%;
+  left: 5%;
+  animation-delay: 0s;
+}
+
+.telefea-shape-2 {
+  width: 150px;
+  height: 150px;
+  background: #9b59b6;
+  top: 60%;
+  right: 10%;
+  animation-delay: -5s;
+}
+
+.telefea-shape-3 {
+  width: 100px;
+  height: 100px;
+  background: #2ecc71;
+  bottom: 20%;
+  left: 15%;
+  animation-delay: -10s;
+}
+
+.telefea-shape-4 {
+  width: 120px;
+  height: 120px;
+  background: #e74c3c;
+  top: 20%;
+  right: 20%;
+  animation-delay: -15s;
+}
+
+@keyframes telefea-float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-20px) rotate(90deg);
+  }
+  50% {
+    transform: translateY(0) rotate(180deg);
+  }
+  75% {
+    transform: translateY(20px) rotate(270deg);
+  }
+}
+
+.telefea-header {
+  text-align: center;
+  padding: 60px 20px 40px;
+  position: relative;
+  z-index: 0;
+  top: -100px;
+
+}
+
+.telefea-title {
+  margin-bottom: 20px;
+}
+
+.telefea-title-main {
+  display: block;
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #3498db, #2c3e50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.telefea-title-sub {
+  display: block;
+  font-size: 1.5rem;
+  color: #7f8c8d;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.telefea-intro {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: #5d6d7e;
+  line-height: 1.6;
+}
+
+.telefea-features {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 0;
+}
+
+.telefea-feature {
+  display: flex;
+  position: relative;
+}
+
+.telefea-feature-left {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.telefea-feature-right {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.telefea-feature-content {
+  max-width: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.telefea-feature-left .telefea-feature-content {
+  flex-direction: row;
+}
+
+.telefea-feature-right .telefea-feature-content {
+  flex-direction: row-reverse;
+}
+
+.telefea-feature-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  background-color: var(--icon-color);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+  position: relative;
+  z-index: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.telefea-feature-icon:hover {
+  transform: scale(1.1) rotate(10deg);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.telefea-feature-text {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.telefea-feature:hover .telefea-feature-text {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.telefea-feature-title {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.telefea-feature-description {
+  color: #5d6d7e;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.telefea-feature-connector {
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--icon-color), transparent);
+  top: 50%;
+  z-index: 0;
+}
+
+.telefea-feature-left .telefea-feature-connector {
+  right: -40px;
+}
+
+.telefea-feature-right .telefea-feature-connector {
+  left: -40px;
+  background: linear-gradient(90deg, transparent, var(--icon-color));
+}
+
+
+@keyframes telefea-pulse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.telefea-cta-content {
+  position: relative;
+  z-index: 0;
+}
+
+.telefea-cta-title {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.telefea-cta-text {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.telefea-cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.telefea-cta-button {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.telefea-cta-primary {
+  background: white;
+  color: #3498db;
+}
+
+.telefea-cta-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.telefea-cta-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.telefea-cta-secondary:hover {
+  background: white;
+  color: #3498db;
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .telefea-title-main {
+    font-size: 2.5rem;
+  }
+  
+  .telefea-title-sub {
+    font-size: 1.2rem;
+  }
+  
+  .telefea-intro {
+    font-size: 1.1rem;
+  }
+  
+  .telefea-feature {
+    justify-content: center !important;
+    margin-bottom: 60px;
+  }
+  
+  .telefea-feature-content {
+    flex-direction: column !important;
+    text-align: center;
+    max-width: 400px;
+  }
+  
+  .telefea-feature-connector {
+    display: none;
+  }
+  
+  .telefea-cta-title {
+    font-size: 2rem;
+  }
+  
+  .telefea-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .telefea-cta-button {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .telefea-title-main {
+    font-size: 2rem;
+  }
+  
+  .telefea-title-sub {
+    font-size: 1rem;
+  }
+  
+  .telefea-intro {
+    font-size: 1rem;
+  }
+  
+  .telefea-feature-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 1.7rem;
+  }
+  
+  .telefea-feature-text {
+    padding: 20px;
+  }
+  
+  .telefea-feature-title {
+    font-size: 1.2rem;
+  }
+
+  .telefea-cta-title {
+    font-size: 1.7rem;
+  }
+  
+  .telefea-cta-text {
+    font-size: 1.1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Why section css */
+.whytele-container {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  background: #f5f7fa;
+
+}
+
+.whytele-background {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 60px 20px;
+  overflow: hidden;
+}
+
+/* Floating Gradient Shapes */
+.whytele-gradient-shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.15;
+  animation: whytele-float 20s infinite ease-in-out alternate;
+}
+
+.whytele-shape-1 {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  top: 50px;
+  left: -50px;
+  animation-delay: 0s;
+}
+
+.whytele-shape-2 {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, #f093fb, #f5576c);
+  bottom: 20%;
+  right: -80px;
+  animation-delay: 5s;
+}
+
+.whytele-shape-3 {
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  top: 40%;
+  left: 20%;
+  animation-delay: 10s;
+}
+
+@keyframes whytele-float {
+  0% { transform: translateY(0) rotate(0deg) scale(1); }
+  50% { transform: translateY(-30px) rotate(180deg) scale(1.05); }
+  100% { transform: translateY(0) rotate(360deg) scale(1); }
+}
+
+.whytele-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.whytele-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  padding: 8px 25px;
+  border-radius: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 20px rgba(102,126,234,0.3);
+  transition: transform 0.3s ease;
+}
+
+.whytele-badge:hover {
+  transform: scale(1.1);
+}
+
+.whytele-main-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #2c3e50;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.whytele-highlight {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.whytele-subtitle {
+  font-size: 1.2rem;
+  color: #5d6d7e;
+  max-width: 600px;
+  margin: 0 auto 60px auto;
+  line-height: 1.6;
+}
+
+/* Benefits Grid */
+.whytele-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.whytele-benefit-card {
+  background: white;
+  border-radius: 25px;
+  padding: 35px 25px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  opacity: 0;
+  animation: fadeInUp 0.8s forwards;
+  animation-delay: var(--delay);
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.whytele-benefit-card:hover {
+  transform: translateY(-15px) rotate(-2deg);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+.whytele-benefit-icon-wrapper {
+  width: 90px;
+  height: 90px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease;
+}
+
+.whytele-benefit-card:hover .whytele-benefit-icon-wrapper {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.whytele-benefit-icon {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.whytele-benefit-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.whytele-benefit-description {
+  color: #5d6d7e;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Hover Glow Effect */
+.whytele-hover-glow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(102,126,234,0.2) 0%, transparent 70%);
+  transform: scale(0);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.whytele-benefit-card:hover .whytele-hover-glow {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .whytele-main-title { font-size: 2.4rem; }
+  .whytele-subtitle { font-size: 1.1rem; }
+}
+
+@media (max-width: 480px) {
+  .whytele-main-title { font-size: 1.8rem; }
+  .whytele-badge { padding: 6px 15px; font-size: 0.8rem; }
+  .whytele-benefit-icon-wrapper { width: 70px; height: 70px; }
+  .whytele-benefit-icon { font-size: 1.6rem; }
+}

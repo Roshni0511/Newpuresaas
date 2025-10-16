@@ -22,7 +22,10 @@ import Blogdetails from './Pages/Blogdetails';
 import B2BTextileERP from './Pages/B2BTextileERP';
 import Realestatecrm from './Pages/Realestatecrm';
 import OfficeErp from './Pages/OfficeErp';
+import ATS from './Pages/ATS';
+import TelecallerCRM from './Pages/Telecallercrm';
 import Sales from './Pages/Sales';
+import ServiceCRM from './Pages/Serviceerp';
 
 const FabButton = ({ id, label, iconClass, link, show, positionClass }) => {
     return (
@@ -48,8 +51,8 @@ const FloatingActionMenu = () => {
 
     // Data for the 5 new buttons
     const buttonsData = [
-        { id: 'brochure', label: 'Download Brochure', iconClass: 'file_download', link: '#' },
-        { id: 'signup', label: 'Sign Up', iconClass: 'person_add', link: '#' },
+        { id: 'brochure', label: 'Download Brochure', iconClass: 'file_download', link: '/puresaas.pdf' },
+        { id: 'signup', label: 'Sign Up', iconClass: 'person_add', link: '/Signin' },
         { id: 'demo', label: 'Schedule a Demo', iconClass: 'event', link: '#' },
         { id: 'quote', label: 'Request a Price Quote', iconClass: 'paid', link: '#' },
         { id: 'callback', label: 'Request a Callback', iconClass: 'phone', link: '#' },
@@ -171,16 +174,15 @@ function App() {
     <Route path='/B2BTextileERP' element={<B2BTextileERP/>}/>
     <Route path='/Realestatecrm' element={<Realestatecrm/>}/>
     <Route path='/OfficeErp' element={<OfficeErp/>}/>
-
-
-
-
+    <Route path='/ATS' element={<ATS />}/>
+    <Route path='/Telecallercrm' element={<TelecallerCRM/>}/>
     <Route path='/Sales' element={<Sales/>}/>
+     <Route path='/Serviceerp' element={<ServiceCRM/>}/>
   </Routes>
   <BackToTopButton />
    <div class="wh-api">
 	<div class="wh-fixed whatsapp-pulse">
-		<a href="https://api.whatsapp.com/send?phone=9099383095" target="_blank" >
+		<a href="https://api.whatsapp.com/send?phone=9638373601" target="_blank" >
 			<button class="wh-ap-btn"></button>
 		</a>
 	</div>

@@ -31,12 +31,12 @@ const Footer = () => {
               <ul className="footer-links" >
                 <li><a href="/RealEstateAgentCRM">Real Estate Agent CRM</a></li>
                 <li><a href="/Realestatecrm">Real Estate CRM</a></li>
-                <li><a href="#">Sales CRM</a></li>
+                <li><a href="/Sales">Sales CRM</a></li>
                 <li><a href="/B2BTextileERP">B2B Textile ERP</a></li>
-                <li><a href="#">Telecaller CRM</a></li>
-                <li><a href="#">Service CRM</a></li>
-                <li><a href="#">Payroll System</a></li>
-                <li><a href="#">ATS (Application Tracking System)</a></li>
+                <li><a href="/Telecallercrm">Telecaller CRM</a></li>
+                <li><a href="/Serviceerp">Service CRM</a></li>
+                {/* <li><a href="#">Payroll System</a></li> */}
+                <li><a href="/ATS">ATS (Application Tracking System)</a></li>
                 <li><a href="/OfficeErp">Office ERP</a></li>
               </ul>
             </div>
@@ -60,15 +60,19 @@ const Footer = () => {
               <div className="contact-info">
                 <div className="contact-item">
                   <i className="fas fa-map-marker-alt"></i>
-                  <span>123 Rue du Bien-être<br />75000 Paris, France</span>
+                  <span>Surat, Gujarat</span>
                 </div>
                 <div className="contact-item">
                   <i className="fas fa-phone-alt"></i>
-                  <span>9638373601</span>
+                  <span><a href="tel:+919638373601">9638373601</a></span>
                 </div>
                 <div className="contact-item">
                   <i className="fas fa-envelope"></i>
-                  <span>info@puresaas.in</span>
+                  <span><a href="mailto:info@puresaas.in">info@puresaas.in</a></span>
+                </div>
+                <div className="contact-item">
+                  <i className="fas fa-envelope"></i>
+                  <span><a href="mailto:sales@puresaas.in">sales@puresaas.in</a></span>
                 </div>
               </div>
 

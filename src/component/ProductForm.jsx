@@ -21,7 +21,7 @@ export default function ProductForm() {
       };
   return (
     <div>
-      <div className="productform wow animate__animated animate__fadeInUp">
+      <div className="productform ">
   <div className="hero-section">
     <img
       src="https://images.unsplash.com/photo-1522071820081-009f0129c71c"
