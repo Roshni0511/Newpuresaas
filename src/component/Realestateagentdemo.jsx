@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import '../assets/css/Realestateagentdemo.css';
 import { Building2, CalendarDays, Mail, Phone, User } from "lucide-react";
 
 const RealEstateAgentDemo = () => {
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    // Simulate API call
+    setTimeout(() => {
+      setLoading(false);
+      setSuccess(true);
+    }, 2000); // 2 seconds
+  };
+
+  const closePopup = () => setSuccess(false);
+
   return (
     <section className="demo-section">
       <div className="gradient-blob top-left"></div>
@@ -28,38 +44,39 @@ const RealEstateAgentDemo = () => {
           </p>
         </div>
 
-        <form className="demo-form">
+        <form className="demo-form" onSubmit={handleSubmit}>
           <div className="input-group">
             <User className="input-icon" />
-            <input type="text" placeholder="Full Name" />
+            <input type="text" placeholder="Full Name" required />
           </div>
 
           <div className="input-group">
             <Mail className="input-icon" />
-            <input type="email" placeholder="Email Address" />
+            <input type="email" placeholder="Email Address" required />
           </div>
 
           <div className="input-group">
             <Phone className="input-icon" />
-            <input type="tel" placeholder="Phone Number" />
+            <input type="tel" placeholder="Phone Number" required />
           </div>
 
           <div className="input-group">
             <CalendarDays className="input-icon" />
-            <input type="date" />
+            <input type="date" required />
           </div>
 
           <div className="input-group">
-            <textarea rows="3" placeholder="Tell us about your business or team size..."></textarea>
+            <textarea rows="3" placeholder="Tell us about your business or team size..." required></textarea>
           </div>
 
           <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.97 }}
             type="submit"
             className="cta-button"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.97 }}
+            disabled={loading}
           >
-            🚀 Schedule My Demo
+            {loading ? "Scheduling..." : "🚀 Schedule My Demo"}
           </motion.button>
         </form>
 
@@ -67,6 +84,17 @@ const RealEstateAgentDemo = () => {
           <p>💼 Trusted by 500+ Real Estate Agencies across India.</p>
         </div>
       </motion.div>
+
+      {/* Success Popup */}
+      {success && (
+        <div className="popup-overlay">
+          <div className="popup-card">
+            <h2>🎉 Success!</h2>
+            <p>Your Demo Scheduled Successfully.</p>
+            <button className="cta-button" onClick={closePopup}>Close</button>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
