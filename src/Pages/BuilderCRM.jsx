@@ -8,6 +8,7 @@ import { FaProjectDiagram, FaUsers, FaTasks, FaFileInvoiceDollar, FaBell } from 
 import HomePricing from "../component/HomePricing";
 import ProductForm from "../component/ProductForm";
 import Builderfaq from "../component/Builderfaq";
+import Bookdemoform from "../component/Bookdemoform";
 
 
 const Buildercrm = () => {
@@ -234,7 +235,7 @@ const features = [
 
     {/* Email Section */}
 
-    
+    <Bookdemoform/>
 
 
 
