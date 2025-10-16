@@ -7,6 +7,7 @@ import { FaTimes, FaClock, FaPhoneAlt, FaChartLine } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ServicecrmFaq from '../component/Servicecrmfaq';
+import HomePricing from '../component/HomePricing';
 
 const features = [
   {
@@ -181,6 +182,8 @@ const ServiceCRM = () => {
       {/* Demo Section */}
       <ProductForm/>
 
+      {/* Pricing Section */}
+      <HomePricing/>
 
 
       {/* Service Flow Section */}
