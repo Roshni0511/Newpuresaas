@@ -14,6 +14,7 @@ import TestimonialsSlider from '../component/Testimonials';
 import RealEstateAgentCRMfaq from '../component/Realestatecrmfaq';
 import HomeFaq from '../component/HomeFaq';
 import ProductForm from '../component/ProductForm';
+import Realestateagentcrmslider from '../component/Realestateagentcrmslider';
 import ProductNavbar from './ProductNavbar';
 
 
@@ -98,72 +99,75 @@ export default function RealEstateAgentCRM() {
     <div>
       <ProductNavbar />
       <div className="real-style wow animate__animated animate__fadeInUp">
-        <div className="hero-banner">
-          <img src="/Image/hero-banner.png" alt="Hero Banner" />
-          <div className="banner-content">
-            <div className="subtitle">Smart property management software</div>
-            <h1>
-              Simplify property management.<br />
-              Boost occupancy.
-            </h1>
-            <p>Manage your properties efficiently and increase revenue with ease.</p>
-            <button className="demo-btn">Get Started</button>
-          </div>
-        </div>
-      </div>
+  <div className="hero-banner">
+    <img src="/Image/hero-banner.png" alt="Hero Banner" />
+    <div className="banner-content">
+      <div className="subtitle">Smart Real Estate Agent CRM</div>
+      <h1>
+        Streamline client management.<br />
+        Close deals faster.
+      </h1>
+      <p>Manage leads, track property listings, and automate follow-ups to grow your real estate business efficiently.</p>
+      <button className="demo-btn">Get Started</button>
+    </div>
+  </div>
+</div>
+
 
       {/* ✅ Counter Section */} 	
       <section className="counter-section wow animate__animated animate__fadeInUp" ref={sectionRef}>
         <div className="container">
-          <div className="content">
-            <h2>Powering the most successful businesses</h2>
-            <p className="description">
-              Deliver fast, seamless interactions with our AI-powered messaging platform—instant support, automated responses, and reduced wait times for meaningful engagement.
-            </p>
-            <div className="grid">
-              <div className="item">
-                <div className="number">{counters.counties}</div>
-                <div className="label">Counties</div>
-              </div>
-              <div className="item">
-                <div className="number">{counters.peoples}</div>
-                <div className="label">Peoples</div>
-              </div>
-              <div className="item">
-                <div className="number">{counters.orders}</div>
-                <div className="label">Orders Processed</div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <div className="content">
+    <h2>Helping Real Estate Agents Thrive</h2>
+    <p className="description">
+      Stay on top of your business without the stress. Our CRM helps you keep track of clients, manage property listings, follow up effortlessly, and close deals faster—so you can focus on what you do best: building relationships and growing your business.
+    </p>
+    <div className="grid">
+      <div className="item">
+        <div className="number">30+</div>
+        <div className="label">Properties Managed</div>
+      </div>
+      <div className="item">
+        <div className="number">100+</div>
+        <div className="label">Happy Clients</div>
+      </div>
+      <div className="item">
+        <div className="number">120+</div>
+        <div className="label">Deals Closed</div>
+      </div>
+    </div>
+  </div>
+</div>
+
       </section>
 
 
        <div className="reasons-section wow">
               <div className="reasons-container container">
-                <span className="reasons-badge">Reasons to select us</span>
-                <h1 className="reasons-title mt-5">Modern tools built for today’s property teams.</h1>
-                <p className="reasons-subtitle pt-3">
-                  Streamline operations, reduce manual tasks, and maximize revenue.
-                </p>
-                <ul className="reasons-features wow animate__animated animate__fadeInUp">
-                  <li className="reasons-feature-item">
-                    <FontAwesomeIcon icon={faTachometerAlt} /> Unified dashboard for all properties
-                  </li>
-                  <li className="reasons-feature-item">
-                    <FontAwesomeIcon icon={faHandHoldingUsd} /> Automated rent collection & reminders
-                  </li>
-                  <li className="reasons-feature-item">
-                    <FontAwesomeIcon icon={faTools} /> Online maintenance requests & work orders
-                  </li>
-                  <li className="reasons-feature-item">
-                    <FontAwesomeIcon icon={faUserCheck} /> AI-powered tenant screening
-                  </li>
-                  <li className="reasons-feature-item">
-                    <FontAwesomeIcon icon={faChartLine} /> Real-time financial insights
-                  </li>
-                </ul>
-              </div>
+  <span className="reasons-badge">Why Choose Us</span>
+  <h1 className="reasons-title mt-5">Modern tools for today’s property professionals</h1>
+  <p className="reasons-subtitle pt-3">
+    Make property management effortless, save time, and grow your rental business.
+  </p>
+  <ul className="reasons-features wow animate__animated animate__fadeInUp">
+    <li className="reasons-feature-item">
+      <FontAwesomeIcon icon={faTachometerAlt} /> Keep all your properties organized in one dashboard
+    </li>
+    <li className="reasons-feature-item">
+      <FontAwesomeIcon icon={faHandHoldingUsd} /> Collect rent automatically and send reminders
+    </li>
+    <li className="reasons-feature-item">
+      <FontAwesomeIcon icon={faTools} /> Submit and track maintenance requests online
+    </li>
+    <li className="reasons-feature-item">
+      <FontAwesomeIcon icon={faUserCheck} /> Screen tenants quickly using AI-powered checks
+    </li>
+    <li className="reasons-feature-item">
+      <FontAwesomeIcon icon={faChartLine} /> Get real-time financial insights and reports
+    </li>
+  </ul>
+</div>
+
               
               {/* === IMAGE STRUCTURE WITH OVERLAYS === */}
               <div className="reasons-image-wrapper wow animate__animated animate__fadeInUp">
@@ -276,7 +280,7 @@ export default function RealEstateAgentCRM() {
   <div className="opacity-100 filter-none rotate-0 scale-100 text-center wow animate__animated animate__fadeInUp features-section">
     {/* Badge */}
     <span className="badge text-dark mb-3 features-badge">
-      Real Estate CRM
+      Real Estate Agent  CRM
     </span>
 
     {/* Heading */}
@@ -340,8 +344,7 @@ export default function RealEstateAgentCRM() {
 {/* Slider Section */}
 {/* ============================= */}
 
-<BrandSlider/>
-
+<Realestateagentcrmslider/>
 
 {/* ============================= */}
 {/* Features Section */}
@@ -354,47 +357,49 @@ export default function RealEstateAgentCRM() {
 {/* ============================= */}
 {/* Industries Section */}
 {/* ============================= */}
-<section className=' wow animate__animated animate__fadeInUp'> 
-  <div className="opacity-100 filter-none rotate-0 scale-100 text-center" style={{background:'#f9f9f9' , paddingBottom:'40px', paddingTop:'60px'}}>
-  {/* Badge */}
-  <span 
-    className="badge text-dark mb-3" 
-    style={{ backgroundColor: '#ffe16bff', fontSize: '1rem', padding: '0.5rem 1rem' }}>
-    Integration
-  </span>
+<section className='wow animate__animated animate__fadeInUp'> 
+  <div className="opacity-100 filter-none rotate-0 scale-100 text-center" style={{background:'#f9f9f9', paddingBottom:'40px', paddingTop:'60px'}}>
+    {/* Badge */}
+    <span 
+      className="badge text-dark mb-3" 
+      style={{ backgroundColor: '#ffe16bff', fontSize: '1rem', padding: '0.5rem 1rem' }}>
+      Integration
+    </span>
 
-  {/* Heading */}
-  <h2 style={{ fontSize: '2rem', opacity: 1, filter: 'blur(0px)', marginBottom:'20', fontWeight:'700', color:'#2c3e50', paddingTop:'20px'}}>
-   Industries we serve
-  </h2>
-  <span>we deliver tailored solutions that meet the unique needs of each sector. Our cross- <br></br>industry expertise allows us to innovate, adapt, and drive results</span>
-</div>
+    {/* Heading */}
+    <h2 style={{ fontSize: '2rem', opacity: 1, filter: 'blur(0px)', marginBottom:'20px', fontWeight:'700', color:'#2c3e50', paddingTop:'20px'}}>
+      Industries We Serve
+    </h2>
+    <span>
+      PureSaaS delivers tailored solutions for each industry. Our expertise helps you innovate, adapt, and achieve results.
+    </span>
+  </div>
 
-
-<div className="industry-card-container" style={{paddingBottom:'100px'}}>
-      <div className="industry-card">
-        <img src="/Image/industry.jpg" alt="Vacation rentals" className="industry-card-image" />
-        <div className="industry-card-overlay">
-          <h3>Vacation rentals</h3>
-          <p>Enjoy fully furnished spaces with amenities like full kitchens,</p>
-        </div>
-      </div>
-      <div className="industry-card">
-        <img src="/Image/industry.jpg" alt="Corporate housing" className="industry-card-image" />
-        <div className="industry-card-overlay">
-          <h3>Corporate housing</h3>
-          <p>Corporate housing offers a convenient and comfortable living solution for business,</p>
-        </div>
-      </div>
-      <div className="industry-card">
-        <img src="/Image/industry.jpg" alt="Hotels & resorts" className="industry-card-image" />
-        <div className="industry-card-overlay">
-          <h3>Hotels & resorts</h3>
-          <p>Discover a world where comfort meets elegance. Our curated collection of hotels,</p>
-        </div>
+  <div className="industry-card-container" style={{paddingBottom:'100px'}}>
+    <div className="industry-card">
+      <img src="/Image/industry.jpg" alt="Vacation rentals" className="industry-card-image" />
+      <div className="industry-card-overlay">
+        <h3>Vacation Rentals</h3>
+        <p>Fully furnished spaces with modern amenities for a seamless stay.</p>
       </div>
     </div>
+    <div className="industry-card">
+      <img src="/Image/industry.jpg" alt="Corporate housing" className="industry-card-image" />
+      <div className="industry-card-overlay">
+        <h3>Corporate Housing</h3>
+        <p>Comfortable, convenient living solutions for business professionals.</p>
+      </div>
+    </div>
+    <div className="industry-card">
+      <img src="/Image/industry.jpg" alt="Hotels & resorts" className="industry-card-image" />
+      <div className="industry-card-overlay">
+        <h3>Hotels & Resorts</h3>
+        <p>Experience a blend of comfort and elegance in our curated properties.</p>
+      </div>
+    </div>
+  </div>
 </section>
+
 
 
 
@@ -436,36 +441,31 @@ export default function RealEstateAgentCRM() {
 {/* Email Section */}
 {/* ============================= */}
 <section className="cta-section wow animate__animated animate__fadeInUp">
-            <div className="cta-content-left">
-                <span className="cta-tag">Finance</span>
-                <h1 className="cta-title">Ready to transform your business with PureSaas CRM</h1>
-                <p className="cta-description">
-                    Start your free trial today and see your ideas come to life easily and creatively.
-                </p>
-            </div>
+    <div className="cta-content-left">
+        <span className="cta-tag">Finance</span>
+        <h1 className="cta-title">Ready to transform your business with PureSaaS CRM</h1>
+        <p className="cta-description">
+            Start your free trial today and see your ideas come to life easily and creatively.
+        </p>
+    </div>
 
-            <div className="cta-form-right">
-                <form className="cta-form">
-                    <input
-                        type="email"
-                        placeholder="Enter your email"
-                        required
-                        className="cta-email-input"
-                    />
-                    <button type="submit" className="cta-button">Get started!</button>
-                </form>
-                <div className="cta-features">
-                    <div className="feature-item">
-                        <i className="fa-solid fa-circle-check "></i>
-                        <span>No credit card required</span>
-                    </div>
-                    <div className="feature-item">
-                        <i className="fa-solid fa-circle-check "></i>
-                        <span>14-Day free trial</span>
-                    </div>
-                </div>
+    <div className="cta-form-right">
+        <div className="cta-form">
+            <button type="button" className="cta-button">Get started!</button>
+        </div>
+        <div className="cta-features">
+            <div className="feature-item">
+                <i className="fa-solid fa-circle-check"></i>
+                <span>No credit card required</span>
             </div>
-        </section>
+            <div className="feature-item">
+                <i className="fa-solid fa-circle-check"></i>
+                <span>7-Day free trial</span>
+            </div>
+        </div>
+    </div>
+</section>
+
 
       <Footer />
     </div>
