@@ -24,6 +24,7 @@ import Realestatecrm from './Pages/Realestatecrm';
 import OfficeErp from './Pages/OfficeErp';
 import ATS from './Pages/ATS';
 import TelecallerCRM from './Pages/Telecallercrm';
+import ServiceCRM from './Pages/Serviceerp';
 
 const FabButton = ({ id, label, iconClass, link, show, positionClass }) => {
     return (
@@ -172,6 +173,7 @@ function App() {
     <Route path='/B2BTextileERP' element={<B2BTextileERP/>}/>
     <Route path='/Realestatecrm' element={<Realestatecrm/>}/>
     <Route path='/OfficeErp' element={<OfficeErp/>}/>
+    <Route path='/Serviceerp' element={<ServiceCRM/>}/>
 
     <Route path='/ATS' element={<ATS />}/>
       <Route path='/Telecallercrm' element={<TelecallerCRM/>}/>
