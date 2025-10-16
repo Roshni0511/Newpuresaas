@@ -4,6 +4,8 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import ProductForm from '../component/ProductForm';
 import TelecallercrmFaq from '../component/Telecallercrmfaq';
+import ProductNavbar from './ProductNavbar';
+import Bookdemoform from '../component/Bookdemoform';
 
 
 
@@ -125,7 +127,7 @@ const features = [
 
   return (
     <>
-    <Navbar/>
+    <ProductNavbar/>
     <section className="tele-hero wow animate__animated animate__fadeInUp">
       {/* Background Elements */}
       <div className="tele-bg-elements">
@@ -361,37 +363,7 @@ const features = [
 
 
 {/* Email Section */}
-<section className="cta-section wow animate__animated animate__fadeInUp">
-            <div className="cta-content-left">
-                <span className="cta-tag">Finance</span>
-                <h1 className="cta-title">Ready to transform your business with PureSaas CRM</h1>
-                <p className="cta-description">
-                    Start your free trial today and see your ideas come to life easily and creatively.
-                </p>
-            </div>
-
-            <div className="cta-form-right">
-                <form className="cta-form">
-                    <input
-                        type="email"
-                        placeholder="Enter your email"
-                        required
-                        className="cta-email-input"
-                    />
-                    <button type="submit" className="cta-button">Get started!</button>
-                </form>
-                <div className="cta-features">
-                    <div className="feature-item">
-                        <i className="fa-solid fa-circle-check "></i>
-                        <span>No credit card required</span>
-                    </div>
-                    <div className="feature-item">
-                        <i className="fa-solid fa-circle-check "></i>
-                        <span>14-Day free trial</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+<Bookdemoform />
 
 
     <Footer/>

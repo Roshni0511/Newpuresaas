@@ -1001,17 +1001,14 @@
     transform: translateY(0);
 }
 
-.cta-section .cta-features {
-    display: flex;
-    gap: 30px; /* Space between feature items */
-    flex-wrap: wrap; /* Allow features to wrap */
-}
+
 
 .cta-section .feature-item {
     display: flex;
     align-items: center;
     color: #475467;
     font-size: 1rem;
+    margin-bottom: 10px;
 }
 
 .cta-section .feature-item i {

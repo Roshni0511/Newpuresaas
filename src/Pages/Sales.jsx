@@ -6,6 +6,8 @@ import BrandSlider from '../component/BrandSlider'
 import ProductForm from '../component/ProductForm'
 import HomePricing from '../component/HomePricing'
 import { FaHeart } from "react-icons/fa";
+import ProductNavbar from './ProductNavbar'
+import Bookdemoform from '../component/Bookdemoform'
 
 
 const faqData = [
@@ -194,7 +196,7 @@ const Sales = () => {
           };
   return (
     <>
-       <Navbar />
+       <ProductNavbar />
 <div className="saleserp wow animate__animated animate__fadeInUp">
 
         <section className="hero-section">
@@ -374,7 +376,7 @@ const Sales = () => {
 
 
   </div>
-
+        <Bookdemoform />
        <Footer />
     </>
   )
