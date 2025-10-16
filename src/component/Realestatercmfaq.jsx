@@ -100,9 +100,9 @@ const Realestatecrmfaq = () => {
                 <span className="faq-tag">FAQ</span>
                 <h2 className="faq-title">Commonly Asked Questions</h2>
                 <p className="faq-description">
-                    Neque accumsan dolor nullam commodo. Odio massa nisi ullamcorper suspendisse
-                    amet amet. Aenean suspendisse eget est pulvinar. Fames eget eget nascetur ornare
-                </p>
+    Manage properties, leads, and client interactions effortlessly. Our Real Estate CRM streamlines sales, schedules viewings, and tracks every deal from start to finish.
+</p>
+
             </div>
 
             <div className="faq-accordion-container">
