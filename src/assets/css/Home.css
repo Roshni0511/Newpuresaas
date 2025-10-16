@@ -680,7 +680,7 @@
 
 .IntegrationHome .integration-overlay {
   position: relative;
-  z-index: 2;
+  z-index: 0;
 }
 
 .IntegrationHome .integration-content {
@@ -740,7 +740,7 @@
 /* responsive */
 @media (max-width: 768px) {
   .IntegrationHome .integration-title {
-    font-size: 2rem;
+    font-size: 22px;
   }
   .IntegrationHome .integration-icons {
     width: 90%;
