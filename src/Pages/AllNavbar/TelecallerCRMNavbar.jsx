@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
 import '../../assets/css/ProductNavbar.css';
 import {  FaBars, FaTimes } from 'react-icons/fa';
+import { FaAngleDown } from 'react-icons/fa';
 export default function TelecallerCRMNavbar() {
   const [isMobileMenuOpen1, setIsMobileMenuOpen1] = useState(false);
   const toggleMobileMenu1 = () => {
     setIsMobileMenuOpen1(!isMobileMenuOpen1);
   };
-
+ const [isfeatureOpen, setIsfeatureOpen] = useState(false); // for mobile dropdown
+    const togglefeatureMenu = (e) => {
+      e.preventDefault();
+      setIsfeatureOpen(!isfeatureOpen);
+    };
   return (
     <>
 
@@ -41,7 +46,52 @@ export default function TelecallerCRMNavbar() {
         <nav className={`header__nav ${isMobileMenuOpen1 ? 'open' : ''}`}>
           <ul className="header__ul">
             <li className="header__li"><a href="/" className="header__a ">Home</a></li>
-            <li className="header__li"><a href="#" className="header__a ">Features</a></li>
+          <li className={`header__li dropdown services-menu-item ${isfeatureOpen ? 'mobile-open' : ''}`}>
+  <a
+    href="#"
+    className="header__a dropdown__link"
+    onClick={togglefeatureMenu}
+  >
+    Features <FaAngleDown size={10} />
+  </a>
+
+  <div className={`feature-dropdown ${isfeatureOpen ? 'mobile-open-menu' : ''}`}>
+    <div className="feature-dropdown__inner">
+      
+      <ul className="feature-dropdown__column">
+        <li>
+          <a href="#"><span className="feature__number">01.</span>Lead Management</a>
+          <p>Capture, assign, and track leads efficiently across your calling team.</p>
+        </li>
+        <li>
+          <a href="#"><span className="feature__number">02.</span>Auto Dialer Integration</a>
+          <p>Integrate with auto-dialers to streamline outbound call operations.</p>
+        </li>
+        <li>
+          <a href="#"><span className="feature__number">03.</span>Call Recording & Logs</a>
+          <p>Access complete call history and recordings for quality checks and training.</p>
+        </li>
+      </ul>
+
+      <ul className="feature-dropdown__column">
+        <li>
+          <a href="#"><span className="feature__number">04.</span>Follow-Up Reminders</a>
+          <p>Set automated reminders and notifications for follow-up calls.</p>
+        </li>
+        <li>
+          <a href="#"><span className="feature__number">05.</span>Disposition Tracking</a>
+          <p>Tag call outcomes like interested, not interested, follow-up later, etc.</p>
+        </li>
+        <li>
+          <a href="#"><span className="feature__number">06.</span>Performance Analytics</a>
+          <p>Track individual telecaller performance metrics like calls/day, conversions, and talk time.</p>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</li>
+
             <li className="header__li"><a href="/HomePricing" className="header__a ">Pricing</a></li>
             <li className="header__li signuphide "><a href="/SignIn" className="header__cta-btn m-2">Sign In</a></li>
             <li className="header__li signuphide "><a href="/Signup" className="header__cta-btn m-2">Sign Up</a></li>

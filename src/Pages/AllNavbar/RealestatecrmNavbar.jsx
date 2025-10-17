@@ -6,11 +6,11 @@ import { FaAngleDown } from 'react-icons/fa';
 
 export default function RealestatecrmNavbar() {
   const [isMobileMenuOpen1, setIsMobileMenuOpen1] = useState(false);
-    const [isfeatureOpen, setIsfeatureOpen] = useState(false); // for mobile dropdown
+   
     const toggleMobileMenu1 = () => {
-      setIsMobileMenuOpen1(!isfeatureOpen);
+      setIsMobileMenuOpen1(!isMobileMenuOpen1);
     };
-  
+   const [isfeatureOpen, setIsfeatureOpen] = useState(false); // for mobile dropdown
     const togglefeatureMenu = (e) => {
       e.preventDefault();
       setIsfeatureOpen(!isfeatureOpen);
@@ -50,9 +50,7 @@ export default function RealestatecrmNavbar() {
         <nav className={`header__nav ${isMobileMenuOpen1 ? 'open' : ''}`}>
           <ul className="header__ul">
             <li className="header__li"><a href="/" className="header__a ">Home</a></li>
-           
-                      <li
-                                    className={`header__li dropdown services-menu-item ${
+            <li className={`header__li dropdown services-menu-item ${
                                       isfeatureOpen ? 'mobile-open' : ''
                                     }`}
                                   >
@@ -106,7 +104,7 @@ export default function RealestatecrmNavbar() {
                       
                                       </div>
                                     </div>
-                                  </li>
+            </li>
             <li className="header__li"><a href="/HomePricing" className="header__a ">Pricing</a></li>
             <li className="header__li signuphide "><a href="/SignIn" className="header__cta-btn m-2">Sign In</a></li>
             <li className="header__li signuphide "><a href="/Signup" className="header__cta-btn m-2">Sign Up</a></li>

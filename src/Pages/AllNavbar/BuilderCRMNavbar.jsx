@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
 import '../../assets/css/ProductNavbar.css';
 import {  FaBars, FaTimes } from 'react-icons/fa';
+import { FaAngleDown } from 'react-icons/fa';
 export default function BuilderCRMNavbar() {
   const [isMobileMenuOpen1, setIsMobileMenuOpen1] = useState(false);
   const toggleMobileMenu1 = () => {
     setIsMobileMenuOpen1(!isMobileMenuOpen1);
   };
-
+   const [isfeatureOpen, setIsfeatureOpen] = useState(false); // for mobile dropdown
+    const togglefeatureMenu = (e) => {
+      e.preventDefault();
+      setIsfeatureOpen(!isfeatureOpen);
+    };
   return (
     <>
 
@@ -41,7 +46,51 @@ export default function BuilderCRMNavbar() {
         <nav className={`header__nav ${isMobileMenuOpen1 ? 'open' : ''}`}>
           <ul className="header__ul">
             <li className="header__li"><a href="/" className="header__a ">Home</a></li>
-            <li className="header__li"><a href="#" className="header__a ">Features</a></li>
+          <li className={`header__li dropdown services-menu-item ${isfeatureOpen ? 'mobile-open' : ''}`}>
+  <a
+    href="#"
+    className="header__a dropdown__link"
+    onClick={togglefeatureMenu}
+  >
+    Features <FaAngleDown size={10} />
+  </a>
+
+  <div className={`feature-dropdown ${isfeatureOpen ? 'mobile-open-menu' : ''}`}>
+    <div className="feature-dropdown__inner">
+      
+      <ul className="feature-dropdown__column">
+        <li>
+          <a href="#"><span className="feature__number">01.</span>Project Management</a>
+          <p>Manage and monitor construction projects from planning to handover.</p>
+        </li>
+        <li>
+          <a href="#"><span className="feature__number">02.</span>Site Progress Tracking</a>
+          <p>Track real-time progress and update site activities with visual status reports.</p>
+        </li>
+        <li>
+          <a href="#"><span className="feature__number">03.</span>Inventory Management</a>
+          <p>Monitor stock levels, building materials, and on-site inventory usage.</p>
+        </li>
+      </ul>
+
+      <ul className="feature-dropdown__column">
+        <li>
+          <a href="#"><span className="feature__number">04.</span>Contractor & Vendor Management</a>
+          <p>Assign tasks, track performance, and manage payments to contractors.</p>
+        </li>
+        <li>
+          <a href="#"><span className="feature__number">05.</span>Payment & Installment Tracking</a>
+          <p>Manage buyer payment schedules and automatically track due installments.</p>
+        </li>
+        <li>
+          <a href="#"><span className="feature__number">06.</span>Customer Booking Portal</a>
+          <p>Allow customers to book units, upload documents, and check progress.</p>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+          </li>
             <li className="header__li"><a href="/HomePricing" className="header__a ">Pricing</a></li>
             <li className="header__li signuphide "><a href="/SignIn" className="header__cta-btn m-2">Sign In</a></li>
             <li className="header__li signuphide "><a href="/Signup" className="header__cta-btn m-2">Sign Up</a></li>

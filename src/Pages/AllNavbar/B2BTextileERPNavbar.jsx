@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
 import '../../assets/css/ProductNavbar.css';
 import {  FaBars, FaTimes } from 'react-icons/fa';
+import { FaAngleDown } from 'react-icons/fa';
 export default function B2BTextileERPNavbar() {
   const [isMobileMenuOpen1, setIsMobileMenuOpen1] = useState(false);
   const toggleMobileMenu1 = () => {
     setIsMobileMenuOpen1(!isMobileMenuOpen1);
   };
-
+ const [isfeatureOpen, setIsfeatureOpen] = useState(false); // for mobile dropdown
+    const togglefeatureMenu = (e) => {
+      e.preventDefault();
+      setIsfeatureOpen(!isfeatureOpen);
+    };
   return (
     <>
 
@@ -41,7 +46,52 @@ export default function B2BTextileERPNavbar() {
         <nav className={`header__nav ${isMobileMenuOpen1 ? 'open' : ''}`}>
           <ul className="header__ul">
             <li className="header__li"><a href="/" className="header__a ">Home</a></li>
-            <li className="header__li"><a href="#" className="header__a ">Features</a></li>
+            <li className={`header__li dropdown services-menu-item ${isfeatureOpen ? 'mobile-open' : ''}`}>
+  <a
+    href="#"
+    className="header__a dropdown__link"
+    onClick={togglefeatureMenu}
+  >
+    Features <FaAngleDown size={10} />
+  </a>
+
+  <div className={`feature-dropdown ${isfeatureOpen ? 'mobile-open-menu' : ''}`}>
+    <div className="feature-dropdown__inner">
+      
+      <ul className="feature-dropdown__column">
+        <li>
+          <a href="#"><span className="feature__number">01.</span>Order & Quotation Management</a>
+          <p>Create, manage, and track B2B orders and quotations with real-time status updates.</p>
+        </li>
+        <li>
+          <a href="#"><span className="feature__number">02.</span>Inventory & Stock Control</a>
+          <p>Track raw materials, finished goods, and fabric rolls across warehouses.</p>
+        </li>
+        <li>
+          <a href="#"><span className="feature__number">03.</span>Production Planning</a>
+          <p>Plan dyeing, weaving, stitching, and finishing operations efficiently.</p>
+        </li>
+      </ul>
+
+      <ul className="feature-dropdown__column">
+        <li>
+          <a href="#"><span className="feature__number">04.</span>Supplier & Vendor Management</a>
+          <p>Manage yarn/fabric suppliers, rate contracts, deliveries, and payments.</p>
+        </li>
+        <li>
+          <a href="#"><span className="feature__number">05.</span>Client & Channel Partner Portal</a>
+          <p>Allow buyers/distributors to place orders, track delivery, and download invoices.</p>
+        </li>
+        <li>
+          <a href="#"><span className="feature__number">06.</span>Reports & Compliance</a>
+          <p>Generate GST-compliant invoices, order reports, production logs, and audit trails.</p>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</li>
+
             <li className="header__li"><a href="/HomePricing" className="header__a ">Pricing</a></li>
             <li className="header__li signuphide "><a href="/SignIn" className="header__cta-btn m-2">Sign In</a></li>
             <li className="header__li signuphide "><a href="/Signup" className="header__cta-btn m-2">Sign Up</a></li>
