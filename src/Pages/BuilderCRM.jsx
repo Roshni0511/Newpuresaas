@@ -142,9 +142,6 @@ const features = [
       </div>
       </section>
 
-
-
-
           {/* Features Section */}
 
       <section class="builderfea-section">
