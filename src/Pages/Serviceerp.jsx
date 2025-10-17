@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../assets/css/Serviceerp.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -76,6 +76,14 @@ const features = [
 ];
 
 const ServiceCRM = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    // You can handle form submission here
+    alert('Demo booked successfully!');
+    setIsModalOpen(false);
+  };
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
   }, []);
@@ -133,7 +141,7 @@ const ServiceCRM = () => {
 
             {/* CTA Buttons */}
             <div className="crm-actions">
-              <button className="crm-btn crm-btn-primary">🚀 Start Free Trial</button>
+              <button className="crm-btn crm-btn-primary" onClick={() => setIsModalOpen(true)}>🚀 Start Free Trial</button>
             </div>
 
             {/* Trust Indicators */}
@@ -154,6 +162,29 @@ const ServiceCRM = () => {
           </div>
         </div>
       </section>
+
+      {isModalOpen && (
+        <div className="buildermod-overlay">
+          <div className="buildermod-container">
+            <button 
+              className="buildermod-close-btn" 
+              onClick={() => setIsModalOpen(false)}
+            >
+              &times;
+            </button>
+            <h2 className="buildermod-title">Book a Demo</h2>
+            <form className="buildermod-form" onSubmit={handleFormSubmit}>
+              <input type="text" placeholder="Name" required />
+              <input type="email" placeholder="Email" required />
+              <input type="tel" placeholder="Phone" required />
+              <input type="date" required />
+              <input type="time" required />
+              <textarea placeholder="Short Description" rows={3}></textarea>
+              <button type="submit" className="buildermod-submit-btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      )}
 
       {/* Service Features Section */}
       <section className="serfea-section wow animate__animated animate__fadeInUp">

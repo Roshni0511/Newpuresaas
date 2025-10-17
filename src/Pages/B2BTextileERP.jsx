@@ -104,6 +104,14 @@ const AccordionItem = ({ id, question, answer, isOpen, toggleAccordion }) => {
 };
 
 const B2BTextileERP = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    // You can handle form submission here
+    alert('Demo booked successfully!');
+    setIsModalOpen(false);
+  };
   const containerRef = useRef(null);
    const [openItemId, setOpenItemId] = useState(faqData[0].id);
   
@@ -142,7 +150,7 @@ PureSaas is your all-in-one, enterprise-ready real estate management solution
           </p>
           <div className="input-group">
          
-            <button className="btn-start">Request a Demo</button>
+            <button className="btn-start" onClick={() => setIsModalOpen(true)}>Request a Demo</button>
           </div>
           <div className="trust-section">
             <div className="avatars">
@@ -159,7 +167,7 @@ PureSaas is your all-in-one, enterprise-ready real estate management solution
         </div>
         <div className="right-side wow animate__animated animate__fadeInUp">
           <div className="pattern-bg"></div>
-          <img src="https://puresaas.in/static/media/1687026404013.dc8c4c75dd00427e33e8.png" alt="Server" className="hero-img" style={{marginLeft:'160px'}} />
+          <img src="/Image/b2b.png" alt="Server" className="hero-img" style={{marginLeft:'160px'}} />
         </div>
       </div>
    <section className="money-section wow animate__animated animate__fadeInUp">
@@ -211,6 +219,29 @@ PureSaas is your all-in-one, enterprise-ready real estate management solution
       </div>
     </section>
     </section>
+    {isModalOpen && (
+        <div className="buildermod-overlay">
+          <div className="buildermod-container">
+            <button 
+              className="buildermod-close-btn" 
+              onClick={() => setIsModalOpen(false)}
+            >
+              &times;
+            </button>
+            <h2 className="buildermod-title">Book a Demo</h2>
+            <form className="buildermod-form" onSubmit={handleFormSubmit}>
+              <input type="text" placeholder="Name" required />
+              <input type="email" placeholder="Email" required />
+              <input type="tel" placeholder="Phone" required />
+              <input type="date" required />
+              <input type="time" required />
+              <textarea placeholder="Short Description" rows={3}></textarea>
+              <button type="submit" className="buildermod-submit-btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      )}
+
       </div>
  <div className='texttile'>
 

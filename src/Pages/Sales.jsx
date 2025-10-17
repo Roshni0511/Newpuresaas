@@ -180,7 +180,14 @@ const AccordionItem = ({ id, question, answer, isOpen, toggleAccordion }) => {
     );
 };
 const Sales = () => {
+const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    // You can handle form submission here
+    alert('Demo booked successfully!');
+    setIsModalOpen(false);
+  };
     const containerRef = useRef(null);
        const [openItemId, setOpenItemId] = useState(faqData[0].id);
       
@@ -216,7 +223,7 @@ const Sales = () => {
   <span>🚀 Empower your team to close deals faster.</span>
 </div>
 
-        <button className="get-started-btn">Get started</button>
+        <button className="get-started-btn" onClick={() => setIsModalOpen(true)}>Get started</button>
       </div>
 
       {/* Floating Cards */}
@@ -250,6 +257,30 @@ const Sales = () => {
         </div>
       </div>
     </section>
+    {isModalOpen && (
+        <div className="buildermod-overlay">
+          <div className="buildermod-container">
+            <button 
+              className="buildermod-close-btn" 
+              onClick={() => setIsModalOpen(false)}
+            >
+              &times;
+            </button>
+            <h2 className="buildermod-title">Book a Demo</h2>
+            <form className="buildermod-form" onSubmit={handleFormSubmit}>
+              <input type="text" placeholder="Name" required />
+              <input type="email" placeholder="Email" required />
+              <input type="tel" placeholder="Phone" required />
+              <input type="date" required />
+              <input type="time" required />
+              <textarea placeholder="Short Description" rows={3}></textarea>
+              <button type="submit" className="buildermod-submit-btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      )}
+
+
 </div>
 
 <div className="saleserp wow animate__animated animate__fadeInUp">
