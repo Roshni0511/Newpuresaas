@@ -474,7 +474,7 @@ position: relative;
 .productsecond .feature-dropdown {
   position: absolute;
   top: 100%;
-  left: 60%;
+  left: 0%;
   transform: translateX(-50%);
   z-index: 1000;
   opacity: 0;
@@ -501,7 +501,7 @@ position: relative;
 }
 
 .productsecond .feature-dropdown__inner {
- background-image: linear-gradient(135deg, rgba(96, 91, 255, 0.9), rgb(229 229 229 / 86%)), url("https://t3.ftcdn.net/jpg/14/22/86/42/360_F_1422864278_x6C8DNIcl5uF4uN2VEFVnefAGjRFb81O.jpg");
+ background-image:linear-gradient(135deg, rgb(125 122 199 / 90%), rgb(189 180 180 / 86%)), url('/public/Image//graph.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -525,15 +525,16 @@ position: relative;
   display: flex;
   align-items: center;
   padding: 0.4rem 0;
-  color: var(--text-light);
+  color: #000;
   text-decoration: none;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .productsecond .feature-dropdown__column li p{
-  font-size: 12px;
+  font-size: 13px;
   margin-top: 0px;
-  color: #6a6a6a;
+  font-weight: 600;
+  color: #000000;
 }
 .productsecond .feature-dropdown__column li a:hover {
   color: var(--primary-color);

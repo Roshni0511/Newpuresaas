@@ -132,7 +132,24 @@ const [email, setEmail] = useState('');
       </header>
 
 
-      {isModalOpen && (
+    
+
+      {/* Image Cards Section */}
+      <section className="image-cards-section wow animate__animated animate__fadeInUp">
+        <div className="card-wrapper left">
+          <img src={cardImages.left} alt="Abstract Card 1" className="image-card" />
+        </div>
+        <div className="card-wrapper center">
+          <img src={cardImages.center} alt="Abstract Card 2" className="image-card" />
+        </div>
+        <div className="card-wrapper right">
+          <img src={cardImages.right} alt="Abstract Card 3" className="image-card" />
+        </div>
+      </section>
+    </div>
+    </div>
+          {/* main section end  */}
+        {isModalOpen && (
         <div className="buildermod-overlay">
           <div className="buildermod-container">
             <button 
@@ -154,23 +171,6 @@ const [email, setEmail] = useState('');
           </div>
         </div>
       )}
-
-      {/* Image Cards Section */}
-      <section className="image-cards-section wow animate__animated animate__fadeInUp">
-        <div className="card-wrapper left">
-          <img src={cardImages.left} alt="Abstract Card 1" className="image-card" />
-        </div>
-        <div className="card-wrapper center">
-          <img src={cardImages.center} alt="Abstract Card 2" className="image-card" />
-        </div>
-        <div className="card-wrapper right">
-          <img src={cardImages.right} alt="Abstract Card 3" className="image-card" />
-        </div>
-      </section>
-    </div>
-    </div>
-          {/* main section end  */}
-      
       {/* social section start */}
       <div className="socialsec wow animate__animated animate__fadeInUp ">
        <div className="social-selector-container">

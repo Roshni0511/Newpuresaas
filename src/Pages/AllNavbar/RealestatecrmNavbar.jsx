@@ -50,61 +50,7 @@ export default function RealestatecrmNavbar() {
         <nav className={`header__nav ${isMobileMenuOpen1 ? 'open' : ''}`}>
           <ul className="header__ul">
             <li className="header__li"><a href="/" className="header__a ">Home</a></li>
-              {/* <li
-                        className={`header__li dropdown services-menu-item ${
-                          isFeaturesOpen ? 'mobile-open' : ''
-                        }`}
-                      >
-                        <a
-                          href="#"
-                          className="header__a dropdown__link"
-                          onClick={togglefeaturesMenu}
-                        >
-                          Features <FaAngleDown size={10} />
-                        </a>
-          
-                         <div
-                          className={`services-dropdown ${
-                            isFeaturesOpen ? 'mobile-open-menu' : ''
-                          }`}
-                        >
-                    <div className="feature-mega-dropdown">
-  <div className="feature-menu__inner">
-  <ul className="feature-menu__column">
-    <li>
-      <a href="/BuilderCRM"><span className="feature-menu__number">01.</span> Property Management</a>
-      <p>Add, edit, and manage all property listings in one place.</p>
-    </li>
-    <li>
-      <a href="/Realestatecrm"><span className="feature-menu__number">02.</span> Lead Tracking</a>
-      <p>Capture, nurture, and convert leads from multiple sources easily.</p>
-    </li>
-    <li>
-      <a href="/Telecallercrm"><span className="feature-menu__number">03.</span> Sales Pipeline</a>
-      <p>Visualize your deals and track every stage of your sales process.</p>
-    </li>
-  </ul>
-
-  <ul className="feature-menu__column">
-    <li>
-      <a href="/Sales"><span className="feature-menu__number">04.</span> Reports & Analytics</a>
-      <p>Get detailed reports on leads, sales, and team performance.</p>
-    </li>
-    <li>
-      <a href="/Serviceerp"><span className="feature-menu__number">05.</span> User Roles & Permissions</a>
-      <p>Control access levels for agents, admins, and managers</p>
-    </li>
-    <li>
-      <a href="/ATS"><span className="feature-menu__number">06.</span> Team Collaboration</a>
-      <p>Share property details and client updates across your sales team.</p>
-    </li>
-  </ul>
-</div>
-
-</div>
-
-                        </div>
-                      </li> */}
+           
                       <li
                                     className={`header__li dropdown services-menu-item ${
                                       isfeatureOpen ? 'mobile-open' : ''
@@ -127,15 +73,15 @@ export default function RealestatecrmNavbar() {
                       
                                              <ul className="feature-dropdown__column">
                                           <li>
-                                            <a href="/BuilderCRM"><span className="feature__number">01.</span>Property Management</a>
+                                            <a href="#"><span className="feature__number">01.</span>Property Management</a>
                                             <p>Add, edit, and manage all property listings in one place.</p>
                                           </li>
                                             <li>
-                                            <a href="/Realestatecrm"><span className="feature__number">02.</span>Lead Tracking</a>
+                                            <a href="#"><span className="feature__number">02.</span>Lead Tracking</a>
                                             <p>Capture, nurture, and convert leads from multiple sources easily.</p>
                                           </li>
                                             <li>
-                                            <a href="/Telecallercrm"><span className="feature__number">03.</span> Sales Pipeline</a>
+                                            <a href="#"><span className="feature__number">03.</span> Sales Pipeline</a>
                                             <p>Visualize your deals and track every stage of your sales process.</p>
                                           </li>
                                        
@@ -144,15 +90,15 @@ export default function RealestatecrmNavbar() {
                                     
                                         <ul className="feature-dropdown__column">
                                             <li>
-                                          <a href="/Sales"><span className="feature__number">04.</span>Reports & Analytics</a>
+                                          <a href="#"><span className="feature__number">04.</span>Reports & Analytics</a>
                                           <p>Get detailed reports on leads, sales, and team performance.</p>
                                         </li>
                                          <li>
-                                            <a href="/Serviceerp"><span className="feature__number">05.</span> User Roles & Permissions</a>
+                                            <a href="#"><span className="feature__number">05.</span> User Roles & Permissions</a>
                                             <p>Control access levels for agents, admins, and managers</p>
                                           </li>
                                           <li>
-                                            <a href="/ATS"><span className="feature__number">06.</span> Team Collaboration</a>
+                                            <a href="#"><span className="feature__number">06.</span> Team Collaboration</a>
                                             <p>Share property details and client updates across your sales team.</p>
                                           </li>
                                         
