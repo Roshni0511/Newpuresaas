@@ -8,7 +8,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ServicecrmFaq from '../component/Servicecrmfaq';
 import HomePricing from '../component/HomePricing';
-import ProductNavbar from './ProductNavbar';
+import ProductNavbar from './AllNavbar/ProductNavbar';
 import Bookdemoform from '../component/Bookdemoform';
 
 const features = [

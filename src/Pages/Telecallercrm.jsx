@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import ProductForm from '../component/ProductForm';
 import TelecallercrmFaq from '../component/Telecallercrmfaq';
-import ProductNavbar from './ProductNavbar';
+import ProductNavbar from './AllNavbar/ProductNavbar';
 import Bookdemoform from '../component/Bookdemoform';
 
 

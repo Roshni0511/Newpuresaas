@@ -6,7 +6,7 @@ import BrandSlider from '../component/BrandSlider'
 import ProductForm from '../component/ProductForm'
 import HomePricing from '../component/HomePricing'
 import { FaHeart } from "react-icons/fa";
-import ProductNavbar from './ProductNavbar'
+import ProductNavbar from "./AllNavbar/ProductNavbar";
 import Bookdemoform from '../component/Bookdemoform'
 
 

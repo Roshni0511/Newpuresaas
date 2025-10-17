@@ -6,7 +6,7 @@ import HomeFaq from '../component/HomeFaq';
 import HomePricing from '../component/HomePricing';
 import ProductForm from '../component/ProductForm';
 import Atsfaq from './Atsfaq';
-import ProductNavbar from './ProductNavbar';
+import ProductNavbar from './AllNavbar/ProductNavbar';
 import Bookdemoform from '../component/Bookdemoform';
 export default function ATS() {
     const [email, setEmail] = useState('');

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../assets/css/ProductNavbar.css';
+import '../../assets/css/ProductNavbar.css';
 import { FaAngleDown, FaBars, FaTimes } from 'react-icons/fa';
 
 export default function ProductNavbar() {
@@ -65,61 +65,67 @@ export default function ProductNavbar() {
                 Product <FaAngleDown size={10} />
               </a>
 
-              <div
+               <div
                 className={`services-dropdown ${
                   isServicesOpen ? 'mobile-open-menu' : ''
                 }`}
               >
                 <div className="services-dropdown__inner">
-                  {/* Column 1 */}
-                  <ul className="services-dropdown__column">
+
+                       <ul className="services-dropdown__column">
                     <li>
+                      <a href="/BuilderCRM"><span className="service__number">01.</span> Builder / Developer CRM</a>
+                      <p>Streamline payroll processing, ensure accuracy, and simplify compliance.</p>
+                    </li>
+                      <li>
+                      <a href="/Realestatecrm"><span className="service__number">02.</span> Real Estate CRM</a>
+                      <p>Early Create professional sites & offload them to clients</p>
+                    </li>
+                      <li>
+                      <a href="/Telecallercrm"><span className="service__number">03.</span> Telecaller CRM</a>
+                      <p>Boost productivity, manage calls, and track leads effortlessly.</p>
+                    </li>
+                 
+                 
+                  </ul>
+              
+                  <ul className="services-dropdown__column">
+                      <li>
+                    <a href="/Sales"><span className="service__number">04.</span> Sales CRM</a>
+                    <p>Streamline your sales process, manage leads, and close deals faster.</p>
+                  </li>
+                   <li>
+                      <a href="/Serviceerp"><span className="service__number">05.</span> Service CRM</a>
+                      <p>Streamline support and boost customer satisfaction.</p>
+                    </li>
+                    <li>
+                      <a href="/ATS"><span className="service__number">06.</span> ATS (Application Tracking System)</a>
+                      <p>Simplify recruitment, track candidates, and streamline your hiring process.</p>
+                    </li>
+                    {/* <li>
                       <a href="/RealEstateAgentCRM"><span className="service__number">01.</span> Real Estate Agent CRM</a>
                        <p>Quickly create, manage, and offload sites to clients with ease.</p>
                     </li>
-                    <li>
-                      <a href="/Realestatecrm"><span className="service__number">02.</span> Real Estate CRM</a>
-                      <p>Early Create sites & offload them to clients</p>
-                    </li>
-                    <li>
-                      <a href="/ATS"><span className="service__number">03.</span> ATS (Application Tracking System)</a>
-                      <p>Simplify recruitment, track candidates, and streamline your hiring process.</p>
-                    </li>
+                   */}
                     
                   </ul>
 
-                  {/* Column 2 */}
+           
                   <ul className="services-dropdown__column">
                     <li>
-                      <a href="/B2BTextileERP"><span className="service__number">04.</span> B2B Textile ERP</a>
+                      <a href="/B2BTextileERP"><span className="service__number">07.</span> B2B Textile ERP</a>
                       <p>Simplify operations, manage inventory, and streamline production.</p>
                     </li>
                     <li>
-                      <a href="/Telecallercrm"><span className="service__number">05.</span> Telecaller CRM</a>
-                      <p>Boost productivity, manage calls, and track leads effortlessly.</p>
-                    </li>
-                    <li>
-                      <a href="/Serviceerp"><span className="service__number">06.</span> Service CRM</a>
-                      <p>Streamline support and boost customer satisfaction.</p>
-                    </li>
+                    <a href="/OfficeErp"><span className="service__number">08.</span> Office ERP</a>
+                    <p>Integrate business operations, streamline workflows, and boost productivity.</p>
+                  </li>
+                   
                    
                   </ul>
 
-                  {/* Column 3 */}
-                  <ul className="services-dropdown__column">
-                   <li>
-                    <a href="/OfficeErp"><span className="service__number">07.</span> Office ERP</a>
-                    <p>Integrate business operations, streamline workflows, and boost productivity.</p>
-                  </li>
-                   <li>
-                    <a href="/Sales"><span className="service__number">08.</span> Sales CRM</a>
-                    <p>Streamline your sales process, manage leads, and close deals faster.</p>
-                  </li>
-                    <li>
-                      <a href="/BuilderCRM"><span className="service__number">09.</span> Builder / Developer CRM</a>
-                      <p>Streamline payroll processing, ensure accuracy, and simplify compliance.</p>
-                    </li>
-                  </ul>
+          
+             
                 </div>
               </div>
             </li>

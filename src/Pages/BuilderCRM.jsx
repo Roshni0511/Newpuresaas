@@ -2,13 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Building2 } from "lucide-react";
 import '../assets/css/BuilderCRM.css';
-import ProductNavbar from "./ProductNavbar";
 import Footer from "./Footer";
 import { FaProjectDiagram, FaUsers, FaTasks, FaFileInvoiceDollar, FaBell } from "react-icons/fa";
 import HomePricing from "../component/HomePricing";
 import ProductForm from "../component/ProductForm";
 import Builderfaq from "../component/Builderfaq";
 import Bookdemoform from "../component/Bookdemoform";
+import BuilderCRMNavbar from "./AllNavbar/BuilderCRMNavbar";
+import ProductNavbar from "./AllNavbar/ProductNavbar";
 
 
 const Buildercrm = () => {
@@ -48,6 +49,7 @@ const features = [
   return (
     <>
       <ProductNavbar/>
+      <BuilderCRMNavbar />
       <section className="builder-hero-section">
 
         {/* Background Blobs */}

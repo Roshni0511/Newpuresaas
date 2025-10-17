@@ -9,7 +9,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import HomePricing from "../component/HomePricing";
 import OfficeErpFaq from "../component/Officeerpfaq";
 import ProductForm from "../component/ProductForm"
-import ProductNavbar from "./ProductNavbar";
+import ProductNavbar from "./AllNavbar/ProductNavbar";
 import Bookdemoform from "../component/Bookdemoform";
 
 export default function OfficeErp() {
