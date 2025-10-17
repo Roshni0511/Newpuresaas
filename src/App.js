@@ -114,12 +114,12 @@ const BackToTopButton = () => {
         });
     };
 
-    // useEffect(() => {
-    //     window.addEventListener('scroll', toggleVisibility);
-    //     return () => {
-    //         window.removeEventListener('scroll', toggleVisibility);
-    //     };
-    // }, []);
+    useEffect(() => {
+        window.addEventListener('scroll', toggleVisibility);
+        return () => {
+            window.removeEventListener('scroll', toggleVisibility);
+        };
+    }, []);
 //  useEffect(() => {
 //     const hamburger = document.getElementById("hamburger");
 //     const overlay = document.getElementById("overlay");

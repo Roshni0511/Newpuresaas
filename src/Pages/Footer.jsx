@@ -17,28 +17,39 @@ const Footer = () => {
               </p>
 
               <div className="social-links">
-                <a href="#" className="social-link" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
-                <a href="#" className="social-link" aria-label="Twitter"><i className="fab fa-twitter"></i></a>
-                <a href="#" className="social-link" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
-                <a href="#" className="social-link" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
-                <a href="#" className="social-link" aria-label="YouTube"><i className="fab fa-youtube"></i></a>
-              </div>
+  <a href="https://www.facebook.com" className="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+    <i className="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://twitter.com" className="social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+    <i className="fab fa-twitter"></i>
+  </a>
+  <a href="https://www.instagram.com" className="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+    <i className="fab fa-instagram"></i>
+  </a>
+  <a href="https://www.linkedin.com/in" className="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+    <i className="fab fa-linkedin-in"></i>
+  </a>
+  <a href="https://www.youtube.com/channel" className="social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+    <i className="fab fa-youtube"></i>
+  </a>
+</div>
+
             </div>
 
             {/* Column 2 - Navigation */}
             <div className="footer-column">
               <h3>Products</h3>
               <ul className="footer-links" >
-                <li><a href="/RealEstateAgentCRM">Real Estate Agent CRM</a></li>
-                <li><a href="/Realestatecrm">Real Estate CRM</a></li>
-                <li><a href="/Sales">Sales CRM</a></li>
-                <li><a href="/B2BTextileERP">B2B Textile ERP</a></li>
-                <li><a href="/Telecallercrm">Telecaller CRM</a></li>
-                <li><a href="/Serviceerp">Service CRM</a></li>
-                {/* <li><a href="#">Payroll System</a></li> */}
-                <li><a href="/ATS">ATS (Application Tracking System)</a></li>
-                <li><a href="/OfficeErp">Office ERP</a></li>
+                {/* <li><a href="/RealEstateAgentCRM">Real Estate Agent CRM</a></li> */}
                 <li><a href="/BuilderCRM">Builder / Developer CRM</a></li>
+                <li><a href="/Realestatecrm">Real Estate CRM</a></li>
+                <li><a href="/Telecallercrm">Telecaller CRM</a></li>
+                <li><a href="/Sales">Sales CRM</a></li>
+                <li><a href="/Serviceerp">Service CRM</a></li>
+                <li><a href="/ATS">ATS (Application Tracking System)</a></li>
+                <li><a href="/B2BTextileERP">B2B Textile ERP</a></li>
+                <li><a href="/OfficeErp">Office ERP</a></li>
+                {/* <li><a href="#">Payroll System</a></li> */}
               </ul>
             </div>
 
