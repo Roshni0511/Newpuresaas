@@ -105,7 +105,7 @@ export default function RealEstateAgentCRM() {
     <div className="banner-content">
       <div className="subtitle">Smart Real Estate Agent CRM</div>
       <h1>
-        Streamline client management.<br />
+        Streamline client management. <br />
         Close deals faster.
       </h1>
       <p>Manage leads, track property listings, and automate follow-ups to grow your real estate business efficiently.</p>
