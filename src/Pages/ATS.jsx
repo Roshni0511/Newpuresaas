@@ -41,7 +41,14 @@ export default function ATS() {
     desc: "Clients can easily browse and search for properties right from their mobile devices. Stay connected with clients through alerts about new listings or updates on their deals.",
   },
 ];
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    // You can handle form submission here
+    alert('Demo booked successfully!');
+    setIsModalOpen(false);
+  };
   return (
     <div>
       <ProductNavbar />
@@ -71,8 +78,8 @@ export default function ATS() {
   </p>
 
   <div className="buttons">
-    <button className="btn primary">Get started</button>
-    <button className="btn secondary">Free trial</button>
+    <button className="btn primary" onClick={() => setIsModalOpen(true)}>Get started</button>
+    {/* <button className="btn secondary"  >Free trial</button> */}
   </div>
 
   <div className="trusted">
@@ -101,7 +108,29 @@ export default function ATS() {
       </div>
     </section>
     {/* main section end  */}
-
+{/* Modal */}
+      {isModalOpen && (
+        <div className="buildermod-overlay">
+          <div className="buildermod-container">
+            <button 
+              className="buildermod-close-btn" 
+              onClick={() => setIsModalOpen(false)}
+            >
+              &times;
+            </button>
+            <h2 className="buildermod-title">Book a Demo</h2>
+            <form className="buildermod-form" onSubmit={handleFormSubmit}>
+              <input type="text" placeholder="Name" required />
+              <input type="email" placeholder="Email" required />
+              <input type="tel" placeholder="Phone" required />
+              <input type="date" required />
+              <input type="time" required />
+              <textarea placeholder="Short Description" rows={3}></textarea>
+              <button type="submit" className="buildermod-submit-btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      )}
     {/* why sales start  */}
        <div className="whyats wow animate__animated animate__fadeInUp">
         <section className="process-section">
