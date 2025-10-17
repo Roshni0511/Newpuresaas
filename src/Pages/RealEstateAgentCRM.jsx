@@ -15,8 +15,8 @@ import RealEstateAgentCRMfaq from '../component/Realestatecrmfaq';
 import HomeFaq from '../component/HomeFaq';
 import ProductForm from '../component/ProductForm';
 import Realestateagentcrmslider from '../component/Realestateagentcrmslider';
+import ProductNavbar from './ProductNavbar';
 import Bookdemoform from '../component/Bookdemoform';
-import ProductNavbar from './AllNavbar/ProductNavbar';
 
 
 
@@ -105,7 +105,7 @@ export default function RealEstateAgentCRM() {
     <div className="banner-content">
       <div className="subtitle">Smart Real Estate Agent CRM</div>
       <h1>
-        Streamline client management. <br />
+        Streamline client management.<br />
         Close deals faster.
       </h1>
       <p>Manage leads, track property listings, and automate follow-ups to grow your real estate business efficiently.</p>
@@ -446,7 +446,7 @@ export default function RealEstateAgentCRM() {
 {/* <section className="cta-section wow animate__animated animate__fadeInUp">
     <div className="cta-content-left">
         <span className="cta-tag">Finance</span>
-        <h1 className="cta-title">Ready to transform your business with PureSaas</h1>
+        <h1 className="cta-title">Ready to transform your business with PureSaaS CRM</h1>
         <p className="cta-description">
             Start your free trial today and see your ideas come to life easily and creatively.
         </p>
