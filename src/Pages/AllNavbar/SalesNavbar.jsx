@@ -1,11 +1,20 @@
 import React, { useState } from 'react';
 import '../../assets/css/ProductNavbar.css';
 import {  FaBars, FaTimes } from 'react-icons/fa';
+import { FaAngleDown } from 'react-icons/fa';
+
 export default function SalesNavbar() {
   const [isMobileMenuOpen1, setIsMobileMenuOpen1] = useState(false);
-  const toggleMobileMenu1 = () => {
-    setIsMobileMenuOpen1(!isMobileMenuOpen1);
-  };
+    const [issalesOpen, setIssalesOpen] = useState(false); // for mobile dropdown
+    const toggleMobileMenu1 = () => {
+      setIsMobileMenuOpen1(!isMobileMenuOpen1);
+    };
+  
+    const togglesalesMenu = (e) => {
+      e.preventDefault();
+      setIssalesOpen(!issalesOpen);
+    };
+
 
   return (
     <>
@@ -41,7 +50,62 @@ export default function SalesNavbar() {
         <nav className={`header__nav ${isMobileMenuOpen1 ? 'open' : ''}`}>
           <ul className="header__ul">
             <li className="header__li"><a href="/" className="header__a ">Home</a></li>
-            <li className="header__li"><a href="#" className="header__a ">Features</a></li>
+        <li
+                                           className={`header__li dropdown services-menu-item ${
+                                             issalesOpen ? 'mobile-open' : ''
+                                           }`}
+                                         >
+                                           <a
+                                             href="#"
+                                             className="header__a dropdown__link"
+                                             onClick={togglesalesMenu}
+                                           >
+                                             Features <FaAngleDown size={10} />
+                                           </a>
+                             
+                                            <div
+                                             className={`feature-dropdown ${
+                                               issalesOpen ? 'mobile-open-menu' : ''
+                                             }`}
+                                           >
+                                             <div className="feature-dropdown__inner">
+                             
+                                                    <ul className="feature-dropdown__column">
+                                                 <li>
+                                                   <a href="#"><span className="feature__number">01.</span>Lead Management</a>
+                                                   <p>Capture and organize leads in one place.</p>
+                                                 </li>
+                                                   <li>
+                                                   <a href="#"><span className="feature__number">02.</span>Sales Pipeline</a>
+                                                   <p>Track deals through every stage clearly.</p>
+                                                 </li>
+                                                   <li>
+                                                   <a href="#"><span className="feature__number">03.</span> Performance Analytics</a>
+                                                   <p>View real-time sales and team stats.</p>
+                                                 </li>
+                                              
+                                              
+                                               </ul>
+                                           
+                                               <ul className="feature-dropdown__column">
+                                                   <li>
+                                                 <a href="#"><span className="feature__number">04.</span>Team Roles & Access</a>
+                                                 <p>Control access for reps and managers.</p>
+                                               </li>
+                                                <li>
+                                                   <a href="#"><span className="feature__number">05.</span>Lead Scoring</a>
+                                                   <p>Focus on high-value leads first.</p>
+                                                 </li>
+                                                 <li>
+                                                   <a href="#"><span className="feature__number">06.</span> CRM Integration</a>
+                                                   <p>Sync data with your favorite CRM.</p>
+                                                 </li>
+                                               
+                                               </ul>
+                             
+                                             </div>
+                                           </div>
+                                         </li>
             <li className="header__li"><a href="/HomePricing" className="header__a ">Pricing</a></li>
             <li className="header__li signuphide "><a href="/SignIn" className="header__cta-btn m-2">Sign In</a></li>
             <li className="header__li signuphide "><a href="/Signup" className="header__cta-btn m-2">Sign Up</a></li>
