@@ -13,6 +13,15 @@ import RealestatecrmNavbar from './AllNavbar/RealestatecrmNavbar';
 
 
 export default function Realestatecrm() {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
+    const handleFormSubmit = (e) => {
+      e.preventDefault();
+      // You can handle form submission here
+      alert('Demo booked successfully!');
+      setIsModalOpen(false);
+    };
   const cardImages = {
     left: '/Image/hero-img-07.webp', // Replace with actual path or URL
     center: '/Image/hero-img-07.webp', // Replace with actual path or URL
@@ -117,10 +126,34 @@ const [email, setEmail] = useState('');
         <p className="sub-text">
          PureSaas is a powerful, all-in-one real estate management tool designed to help you close more deals, stay organized, and grow your business effortlessly.
         </p>
-        <button className="free-demo-btn">
+        <button className="free-demo-btn" onClick={() => setIsModalOpen(true)}>
           Get a free demo
         </button>
       </header>
+
+
+      {isModalOpen && (
+        <div className="buildermod-overlay">
+          <div className="buildermod-container">
+            <button 
+              className="buildermod-close-btn" 
+              onClick={() => setIsModalOpen(false)}
+            >
+              &times;
+            </button>
+            <h2 className="buildermod-title">Book a Demo</h2>
+            <form className="buildermod-form" onSubmit={handleFormSubmit}>
+              <input type="text" placeholder="Name" required />
+              <input type="email" placeholder="Email" required />
+              <input type="tel" placeholder="Phone" required />
+              <input type="date" required />
+              <input type="time" required />
+              <textarea placeholder="Short Description" rows={3}></textarea>
+              <button type="submit" className="buildermod-submit-btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      )}
 
       {/* Image Cards Section */}
       <section className="image-cards-section wow animate__animated animate__fadeInUp">

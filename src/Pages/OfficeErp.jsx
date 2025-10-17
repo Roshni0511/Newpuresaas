@@ -14,7 +14,13 @@ import Bookdemoform from "../component/Bookdemoform";
 import OfficeErpNavbar from "./AllNavbar/OfficeErpNavbar";
 
 export default function OfficeErp() {
-  const [showDemo, setShowDemo] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    // You can handle form submission here
+    alert('Demo booked successfully!');
+    setIsModalOpen(false);
+  };
 
   useEffect(() => {
     // Trigger entrance animations on load
@@ -80,7 +86,7 @@ export default function OfficeErp() {
               </p>
 
               <div className="d-flex flex-wrap gap-3 office-hero-btns">
-                <a href="#signup" className="btn btn-primary btn-lg px-4 office-hero-btn-primary office-hero-btn">
+                <a href="#signup" className="btn btn-primary btn-lg px-4 office-hero-btn-primary office-hero-btn" onClick={() => setIsModalOpen(true)}>
                   Get Started Free <i className="bi bi-arrow-right ms-2"></i>
                 </a>
               </div>
@@ -100,7 +106,7 @@ export default function OfficeErp() {
         </div>
 
         {/* Enhanced Demo Modal with animation */}
-        {showDemo && (
+        {/* {showDemo && (
           <div className="office-hero-modal d-flex align-items-center justify-content-center">
             <div className="office-hero-modal-content bg-white rounded shadow-lg p-4">
               <div className="d-flex justify-content-between align-items-center border-bottom pb-2 mb-3">
@@ -122,10 +128,31 @@ export default function OfficeErp() {
               </div>
             </div>
           </div>
-        )}
+        )} */}
       </section>
 
-
+{isModalOpen && (
+        <div className="buildermod-overlay">
+          <div className="buildermod-container">
+            <button 
+              className="buildermod-close-btn" 
+              onClick={() => setIsModalOpen(false)}
+            >
+              &times;
+            </button>
+            <h2 className="buildermod-title">Book a Demo</h2>
+            <form className="buildermod-form" onSubmit={handleFormSubmit}>
+              <input type="text" placeholder="Name" required />
+              <input type="email" placeholder="Email" required />
+              <input type="tel" placeholder="Phone" required />
+              <input type="date" required />
+              <input type="time" required />
+              <textarea placeholder="Short Description" rows={3}></textarea>
+              <button type="submit" className="buildermod-submit-btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      )}
 
 
       {/* Features Section */}
