@@ -46,12 +46,7 @@ export default function ProductNavbar() {
         {/* Navigation */}
         <nav className={`header__nav ${isMobileMenuOpen ? 'open' : ''}`}>
           <ul className="header__ul">
-            {/* <li className="header__li">
-              <a href="/" className="header__a ">
-                Home
-              </a>
-            </li> */}
-             {/* --- SERVICES DROPDOWN --- */}
+        
             <li
               className={`header__li dropdown services-menu-item ${
                 isServicesOpen ? 'mobile-open' : ''

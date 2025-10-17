@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../assets/css/Telecallercrm.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -12,9 +12,7 @@ import TelecallerCRMNavbar from './AllNavbar/TelecallerCRMNavbar';
 
 
 const TelecallerCRM = () => {
-  const handleRequestDemo = () => {
-    console.log('Demo requested');
-  };
+
 const features = [
     {
       id: 1,
@@ -125,7 +123,14 @@ const features = [
       gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'
     }
   ];
+const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    // You can handle form submission here
+    alert('Demo booked successfully!');
+    setIsModalOpen(false);
+  };
   return (
     <>
     <ProductNavbar/>
@@ -166,7 +171,7 @@ const features = [
           </p>
 
           <div className="tele-cta">
-            <button className="tele-btn" onClick={handleRequestDemo}>
+            <button className="tele-btn" onClick={() => setIsModalOpen(true)}>
               <span className="tele-btn-text">Request a Demo</span>
               <i className="fas fa-arrow-right tele-btn-arrow"></i>
               <div className="tele-btn-shine"></div>
@@ -251,7 +256,29 @@ const features = [
       </div>
     </section>
 
-
+{/* Modal */}
+      {isModalOpen && (
+        <div className="buildermod-overlay">
+          <div className="buildermod-container">
+            <button 
+              className="buildermod-close-btn" 
+              onClick={() => setIsModalOpen(false)}
+            >
+              &times;
+            </button>
+            <h2 className="buildermod-title">Book a Demo</h2>
+            <form className="buildermod-form" onSubmit={handleFormSubmit}>
+              <input type="text" placeholder="Name" required />
+              <input type="email" placeholder="Email" required />
+              <input type="tel" placeholder="Phone" required />
+              <input type="date" required />
+              <input type="time" required />
+              <textarea placeholder="Short Description" rows={3}></textarea>
+              <button type="submit" className="buildermod-submit-btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      )}
 
     <section>
       <div className="telefea-container">
