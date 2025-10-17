@@ -87,7 +87,7 @@ const RealEstateAgentDemo = () => {
         <div className="relescrd-demo-header">
           <div className="relescrd-demo-badge">
             <Building2 className="relescrd-icon" />
-            <span className="relescrd-badge-text">PureSaas CRM</span>
+            <span className="relescrd-badge-text">PureSaas</span>
           </div>
           <h1 className="relescrd-demo-title">
             Book a Free <span className="relescrd-highlight">CRM Demo</span>

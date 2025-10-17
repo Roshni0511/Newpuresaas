@@ -54,7 +54,7 @@ export default function ProductNavbar() {
       case "buildercrm":
         return "Builder / Developer CRM";
       default:
-        return "PureSaas CRM";
+        return "PureSaas";
     }
   };
   return (

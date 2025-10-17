@@ -162,7 +162,7 @@ export default function ATS() {
       <div className="container">
         <h2>Finance and operation</h2>
         <p className="subtitle">
-            PureSaas CRM empowers your finance and operations teams to work smarter and faster. 
+            PureSaas empowers your finance and operations teams to work smarter and faster. 
   From tracking revenue and managing client data to automating workflows and improving 
   cross-department visibility — PureSaas helps you make data-driven decisions and 
   streamline business performance effortlessly.

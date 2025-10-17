@@ -113,7 +113,7 @@ const [email, setEmail] = useState('');
           Smart <span className="highlight">Real Estate CRM Solution</span> Built for Property Professionals
         </h1>
         <p className="sub-text">
-         PureSaaS CRM is a powerful, all-in-one real estate management tool designed to help you close more deals, stay organized, and grow your business effortlessly.
+         PureSaas is a powerful, all-in-one real estate management tool designed to help you close more deals, stay organized, and grow your business effortlessly.
         </p>
         <button className="free-demo-btn">
           Get a free demo

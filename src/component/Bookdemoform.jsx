@@ -6,7 +6,7 @@ const Bookdemoform = () => {
       <section className="cta-section wow animate__animated animate__fadeInUp">
     <div className="cta-content-left">
         <span className="cta-tag">Finance</span>
-        <h1 className="cta-title">Ready to transform your business with PureSaaS CRM</h1>
+        <h1 className="cta-title">Ready to transform your business with PureSaas</h1>
         <p className="cta-description">
             Start your free trial today and see your ideas come to life easily and creatively.
         </p>

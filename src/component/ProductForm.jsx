@@ -31,7 +31,7 @@ export default function ProductForm() {
     <div className="hero-overlay">
       <h2>Book a Demo</h2>
       <p>
-        Thank you for your interest in Puresaas CRM. We're here to help.
+        Thank you for your interest in PureSaas. We're here to help.
         Just fill in the form below, and we'll have our best product expert
         reach out to you.
       </p>

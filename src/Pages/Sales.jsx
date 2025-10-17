@@ -206,7 +206,7 @@ const Sales = () => {
         <br />Built for Sales Professionals
         </h1>
         <p className="hero-subtext">
-         PureSaaS CRM is a powerful, all-in-one sales management tool designed to help you accelerate your <br /> sales pipeline, stay organized, and grow your business effortlessly.
+         PureSaas is a powerful, all-in-one sales management tool designed to help you accelerate your <br /> sales pipeline, stay organized, and grow your business effortlessly.
         </p>
 <div className="hero-points">
   <span>⚡ Streamline your sales process effortlessly.</span>

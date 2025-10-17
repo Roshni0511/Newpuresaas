@@ -117,7 +117,7 @@ const features = [
               
               {/* --- Heading Group --- */}
               <div className="heading-group wow animate__animated animate__fadeInUp">
-                <h1>Automation Services for businesses</h1>
+                <h1>Automation Services For Businesses</h1>
                 <p>Automate sales, streamline customer relationships, and scale your business—all in one intuitive platform.</p>
               </div>
             </div>
@@ -327,7 +327,7 @@ const features = [
           <span className="features-badge">Features</span>
           <h2 className='wow animate__animated animate__fadeInUp'>Key features of PureSaas </h2>
           <p>
-            PureSaas CRM is designed to simplify and supercharge your customer
+            PureSaas is designed to simplify and supercharge your customer
             relationship management. With a clean, user-friendly interface and
             powerful automation tools.
           </p>
@@ -422,7 +422,7 @@ const features = [
     Who uses PureSaas ?
   </h1>
   <p className="who-desc">
-    PureSaas CRM empowers professionals and organizations to manage customer 
+    PureSaas empowers professionals and organizations to manage customer 
     relationships efficiently. From startups to large-scale enterprises, it 
     simplifies workflows, improves communication, and enhances overall productivity.
   </p>

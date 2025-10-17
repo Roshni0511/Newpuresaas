@@ -133,7 +133,7 @@ Built for Real Estate Businesses & Teams
           </h2>
           <p className="hero-text">
          Are you a real estate firm, brokerage, or property management company looking to centralize operations, streamline lead management, and scale your business? PureSaaS has the solution!
-PureSaaS CRMis your all-in-one, enterprise-ready real estate management solution
+PureSaas is your all-in-one, enterprise-ready real estate management solution
           </p>
           <p className="hero-text">
           Built for B2B needs, it helps your team manage leads, track property listings, automate client follow-ups, and optimize your entire sales pipeline—from inquiry to close.

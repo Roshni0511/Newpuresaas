@@ -38,37 +38,37 @@ const AccordionItem = ({ id, question, answer, isOpen, toggleAccordion }) => {
 const faqData = [
   {
     id: 1,
-    question: "What is PureSaas CRM?",
+    question: "What is PureSaas?",
     answer:
-      "PureSaas CRM is an all-in-one customer relationship management platform designed to help businesses streamline sales, automate workflows, manage leads, and strengthen customer relationships through powerful, easy-to-use tools."
+      "PureSaas is an all-in-one customer relationship management platform designed to help businesses streamline sales, automate workflows, manage leads, and strengthen customer relationships through powerful, easy-to-use tools."
   },
   {
     id: 2,
-    question: "Who can benefit from using PureSaas CRM?",
+    question: "Who can benefit from using PureSaas?",
     answer:
-      "PureSaas CRM is ideal for sales teams, marketing professionals, customer support departments, and small to medium-sized businesses that want to improve productivity, boost collaboration, and gain actionable insights from customer data."
+      "PureSaas is ideal for sales teams, marketing professionals, customer support departments, and small to medium-sized businesses that want to improve productivity, boost collaboration, and gain actionable insights from customer data."
   },
   {
     id: 3,
-    question: "Does PureSaas CRM support automation?",
+    question: "Does PureSaas support automation?",
     answer:
-      "Yes! PureSaas CRM includes intelligent automation features that reduce manual tasks — such as automated lead assignment, follow-up reminders, deal tracking, and email workflows — so your team can focus on closing more deals."
+      "Yes! PureSaas includes intelligent automation features that reduce manual tasks — such as automated lead assignment, follow-up reminders, deal tracking, and email workflows — so your team can focus on closing more deals."
   },
   {
     id: 4,
-    question: "Can PureSaas CRM integrate with other tools and platforms?",
+    question: "Can PureSaas integrate with other tools and platforms?",
     answer:
-      "Absolutely. PureSaas CRM easily integrates with popular tools like Google Workspace, Microsoft Outlook, marketing platforms, and other third-party applications to ensure a seamless workflow across your business ecosystem."
+      "Absolutely. PureSaas easily integrates with popular tools like Google Workspace, Microsoft Outlook, marketing platforms, and other third-party applications to ensure a seamless workflow across your business ecosystem."
   },
   {
     id: 5,
-    question: "Is my data safe with PureSaas CRM?",
+    question: "Is my data safe with PureSaas?",
     answer:
-      "Yes, data security is a top priority. PureSaas CRM uses industry-standard encryption, regular backups, and secure cloud infrastructure to protect your business information and ensure your data stays private and safe."
+      "Yes, data security is a top priority. PureSaas uses industry-standard encryption, regular backups, and secure cloud infrastructure to protect your business information and ensure your data stays private and safe."
   },
   {
     id: 6,
-    question: "How long does it take to get started with PureSaas CRM?",
+    question: "How long does it take to get started with PureSaas?",
     answer:
       "Getting started is quick and easy. Most businesses can set up their accounts, import customer data, and start managing leads within a few hours. Plus, our support team is always available to guide you through the setup process."
   }
@@ -101,7 +101,7 @@ const HomeFaq = () => {
   <span className="faq-tag">FAQ</span>
   <h2 className="faq-title">Commonly Asked Questions</h2>
   <p className="faq-description">
-    Find quick answers to the most common questions about PureSaas CRM — from setup 
+    Find quick answers to the most common questions about PureSaas — from setup 
     and automation to integrations and data security. Learn how our CRM helps your 
     business streamline sales, boost productivity, and build lasting customer relationships.
   </p>
