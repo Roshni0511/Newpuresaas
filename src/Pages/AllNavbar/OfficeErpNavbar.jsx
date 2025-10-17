@@ -1,12 +1,19 @@
 import React, { useState } from 'react';
 import '../../assets/css/ProductNavbar.css';
 import {  FaBars, FaTimes } from 'react-icons/fa';
+
+import { FaAngleDown } from 'react-icons/fa';
 export default function OfficeErpNavbar() {
   const [isMobileMenuOpen1, setIsMobileMenuOpen1] = useState(false);
+     const [isofficeOpen, setIsofficeOpen] = useState(false); // for mobile dropdown
   const toggleMobileMenu1 = () => {
     setIsMobileMenuOpen1(!isMobileMenuOpen1);
   };
-
+  const toggleofficeMenu = (e) => {
+       e.preventDefault();
+       setIsMobileMenuOpen1(!isofficeOpen);
+     };
+ 
   return (
     <>
 
@@ -41,7 +48,60 @@ export default function OfficeErpNavbar() {
         <nav className={`header__nav ${isMobileMenuOpen1 ? 'open' : ''}`}>
           <ul className="header__ul">
             <li className="header__li"><a href="/" className="header__a ">Home</a></li>
-            <li className="header__li"><a href="#" className="header__a ">Features</a></li>
+             <li
+                                                              className={`header__li dropdown services-menu-item ${
+                                                                isofficeOpen ? 'mobile-open' : ''
+                                                              }`}
+                                                            >
+                                                              <a
+                                                                href="#"
+                                                                className="header__a dropdown__link"
+                                                                onClick={toggleofficeMenu}
+                                                              >
+                                                                Features <FaAngleDown size={10} />
+                                                              </a>
+                                                
+                                                               <div
+                                                                className={`feature-dropdown ${
+                                                                  isofficeOpen ? 'mobile-open-menu' : ''
+                                                                }`}
+                                                              >
+                                                         <div class="productsecond">
+  <div class="feature-dropdown__inner">
+    <ul class="feature-dropdown__column">
+      <li>
+        <a href="#">Employee Directory</a>
+        <p>View and manage employee information easily.</p>
+      </li>
+      <li>
+        <a href="#">Attendance Tracking</a>
+        <p>Track daily attendance and working hours.</p>
+      </li>
+      <li>
+        <a href="#">Leave Management</a>
+        <p>Approve and monitor leave requests quickly.</p>
+      </li>
+    </ul>
+    <ul class="feature-dropdown__column">
+      <li>
+        <a href="#">Task Assignment</a>
+        <p>Assign tasks to teams and track progress.</p>
+      </li>
+      <li>
+        <a href="#">Payroll Automation</a>
+        <p>Generate accurate payslips and salary reports.</p>
+      </li>
+      <li>
+        <a href="#">Document Sharing</a>
+        <p>Securely share files across departments.</p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+         
+                                                              </div>
+                                                            </li>
             <li className="header__li"><a href="/HomePricing" className="header__a ">Pricing</a></li>
             <li className="header__li signuphide "><a href="/SignIn" className="header__cta-btn m-2">Sign In</a></li>
             <li className="header__li signuphide "><a href="/Signup" className="header__cta-btn m-2">Sign Up</a></li>
