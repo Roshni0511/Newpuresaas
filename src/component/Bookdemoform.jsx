@@ -14,9 +14,7 @@ const Bookdemoform = () => {
 
     <div className="cta-form-right">
         <div className="cta-form">
-  <a href="/Realestateagentdemo" target="_blank" rel="noopener noreferrer">
     <button type="button" className="cta-button">Get started!</button>
-  </a>
 </div>
 
         <div className="cta-features">
