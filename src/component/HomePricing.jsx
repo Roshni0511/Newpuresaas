@@ -25,7 +25,7 @@ const plansData = [
       { text: 'Dedicated Account Manager', included: false }, 
       { text: 'Custom Development', included: false },
     ],
-    pricing: { monthly: 19, yearly: 136.8 },
+    pricing: { monthly: 190, yearly: 136.8 },
     highlight: false,
   },
   {
@@ -39,7 +39,7 @@ const plansData = [
       { text: 'Custom Integrations', included: true },
       { text: 'White Label Solution', included: true },
     ],
-    pricing: { monthly: 49, yearly: 352.8 },
+    pricing: { monthly: 300, yearly: 352.8 },
     highlight: true,
   },
   {
@@ -52,7 +52,7 @@ const plansData = [
       { text: 'Dedicated Account Manager', included: true },
       { text: 'Custom Development', included: true },
     ],
-    pricing: { monthly: 99, yearly: 712.8 },
+    pricing: { monthly: 400, yearly: 712.8 },
     highlight: false,
   },
 ];
@@ -71,12 +71,12 @@ const HomePricing = () => {
     return (
       <div>
         <div className="pricing-price-row">
-          <span style={{fontSize:"2.5rem", fontWeight:800}}>${price}</span>
+          <span style={{fontSize:"2.5rem", fontWeight:800}}>₹ {price}</span>
           <span className="highlight-period-text"> / {period}</span>
         </div>
         {billingCycle === 'yearly' && (
           <div className="text-sm italic opacity-75 highlight-period-text-sm">
-            (${monthlyEquivalent.toFixed(2)} effective / month)
+            (₹{monthlyEquivalent.toFixed(2)} effective / month)
           </div>
         )}
         <p className="highlight-per-month-text">{perText}</p>

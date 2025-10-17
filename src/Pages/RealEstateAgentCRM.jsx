@@ -17,6 +17,7 @@ import ProductForm from '../component/ProductForm';
 import Realestateagentcrmslider from '../component/Realestateagentcrmslider';
 import ProductNavbar from './ProductNavbar';
 import Bookdemoform from '../component/Bookdemoform';
+import RealestatecrmNavbar from './AllNavbar/RealestatecrmNavbar';
 
 
 
@@ -99,6 +100,7 @@ export default function RealEstateAgentCRM() {
   return (
     <div>
       <ProductNavbar />
+      <RealestatecrmNavbar />
       <div className="real-style wow animate__animated animate__fadeInUp">
   <div className="hero-banner">
     <img src="/Image/hero-banner.png" alt="Hero Banner" />

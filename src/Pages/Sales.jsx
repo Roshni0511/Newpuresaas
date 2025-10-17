@@ -221,7 +221,7 @@ const Sales = () => {
       <div className="floating-card card-left">
         <div className="credit-box">
           <p>Credit limit</p>
-          <h4>$80224</h4>
+          <h4>₹80224</h4>
         </div>
         <div className="transfer-box">
           <span className="icon">✅</span>
@@ -232,10 +232,10 @@ const Sales = () => {
       <div className="floating-card card-right">
         <div className="balance-box">
           <p>Total balance</p>
-          <h4>$45324</h4>
+          <h4>₹45324</h4>
           <div className="mini-cards">
-            <div className="income">Income <b>$48000</b></div>
-            <div className="expense">Expenses <b>$02321</b></div>
+            <div className="income">Income <b>₹48000</b></div>
+            <div className="expense">Expenses <b>₹02321</b></div>
           </div>
         </div>
       </div>

@@ -17,7 +17,6 @@ import {
   faMicrochip, 
   faArrowRotateRight 
 } from "@fortawesome/free-solid-svg-icons";
-import HomePricing from '../component/HomePricing';
 import Review from '../component/Review';
 import HomeFaq from '../component/HomeFaq';
 import Bookdemoform from '../component/Bookdemoform';
@@ -403,7 +402,7 @@ const features = [
               <div className="revenue-card">
                 <p className="revenue-title">Today's Revenue</p>
                 <div className="revenue-amount">
-                  <span>$ 53,224</span>
+                  <span>₹ 53,224</span>
                   <span className="revenue-percent">{progress}%</span>
                 </div>
                 <div className="revenue-bar">

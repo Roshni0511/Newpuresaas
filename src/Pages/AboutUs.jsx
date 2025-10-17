@@ -151,7 +151,7 @@ const AboutUs = () => {
               </span>
             </div>
             <p className="growth-sub">Business Growth</p>
-            <h2>$682.5</h2>
+            <h2>₹682.5</h2>
           </div>
         </div>
       </div>
