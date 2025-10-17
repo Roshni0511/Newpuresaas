@@ -10,6 +10,7 @@ import ServicecrmFaq from '../component/Servicecrmfaq';
 import HomePricing from '../component/HomePricing';
 import ProductNavbar from './AllNavbar/ProductNavbar';
 import Bookdemoform from '../component/Bookdemoform';
+import ServiceCRMNavbar from './AllNavbar/ServiceCRMNavbar';
 
 const features = [
   {
@@ -82,7 +83,7 @@ const ServiceCRM = () => {
   return (
     <>
       <ProductNavbar />
-
+      <ServiceCRMNavbar />
       {/* CRM Intro Section */}
       <section className="crm-section wow animate__animated animate__fadeInUp">
         <div className="crm-container">

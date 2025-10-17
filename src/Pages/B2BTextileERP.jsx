@@ -8,6 +8,7 @@ import ProductForm from '../component/ProductForm'
 import B2btextilefaq from '../component/B2btextilefaq'
 import ProductNavbar from "./AllNavbar/ProductNavbar";
 import Bookdemoform from '../component/Bookdemoform'
+import B2BTextileERPNavbar from './AllNavbar/B2BTextileERPNavbar'
 // import { UploadCloud, Trash2, FileSpreadsheet, Search, Users, BarChart2 } from "lucide-react";
 
 
@@ -121,6 +122,7 @@ const B2BTextileERP = () => {
   return (
     <>
     <ProductNavbar />
+    <B2BTextileERPNavbar />
     <div className='texttile'>
 
       <section className="hero-section ">
