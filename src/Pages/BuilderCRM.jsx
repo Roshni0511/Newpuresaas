@@ -9,7 +9,6 @@ import ProductForm from "../component/ProductForm";
 import Builderfaq from "../component/Builderfaq";
 import BuilderCRMNavbar from "./AllNavbar/BuilderCRMNavbar";
 import ProductNavbar from "./AllNavbar/ProductNavbar";
-import Bookdemoform from "../component/Bookdemoform";
 
 const Buildercrm = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -153,10 +152,62 @@ const Buildercrm = () => {
             <h2 className="builderfea-title">Key Features & Benefits</h2>
             <p className="builderfea-subtitle">Everything you need to manage your real estate business efficiently and grow your portfolio.</p>
           </div>
-
-          <div className="builderfea-grid">
-            {/* Existing feature cards */}
-          </div>
+              <div class="builderfea-grid">
+               
+                <div class="builderfea-card">
+                    <div class="builderfea-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="builderfea-card-title">Market Analytics</h3>
+                    <p class="builderfea-description">Access real-time market data and analytics to make informed investment decisions and identify emerging opportunities.</p>
+                    <div class="builderfea-highlight">Data-driven insights</div>
+                </div>
+                
+                <div class="builderfea-card">
+                    <div class="builderfea-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="builderfea-card-title">Property Management</h3>
+                    <p class="builderfea-description">Streamline property management with automated rent collection, maintenance requests, and tenant communication.</p>
+                    <div class="builderfea-highlight">Automated workflows</div>
+                </div>
+                
+                <div class="builderfea-card">
+                    <div class="builderfea-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3 class="builderfea-card-title">Digital Contracts</h3>
+                    <p class="builderfea-description">Create, sign, and manage contracts digitally with legally binding e-signatures and automated reminders.</p>
+                    <div class="builderfea-highlight">Paperless solutions</div>
+                </div>
+                
+                <div class="builderfea-card">
+                    <div class="builderfea-icon">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <h3 class="builderfea-card-title">Investment Analysis</h3>
+                    <p class="builderfea-description">Evaluate potential investments with comprehensive ROI calculators, cash flow projections, and risk assessment tools.</p>
+                    <div class="builderfea-highlight">Smart forecasting</div>
+                </div>
+                
+                <div class="builderfea-card">
+                    <div class="builderfea-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="builderfea-card-title">Client Portal</h3>
+                    <p class="builderfea-description">Provide clients with a personalized portal to view properties, track applications, and communicate securely.</p>
+                    <div class="builderfea-highlight">Enhanced engagement</div>
+                </div>
+                
+                <div class="builderfea-card">
+                    <div class="builderfea-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="builderfea-card-title">Mobile App</h3>
+                    <p class="builderfea-description">Manage your business on the go with our fully-featured mobile app available for iOS and Android devices.</p>
+                    <div class="builderfea-highlight">Anywhere access</div>
+                </div>
+            </div>
         </div>
       </section>
 
@@ -168,9 +219,6 @@ const Buildercrm = () => {
 
       {/* Faq Section */}
       <Builderfaq/>
-
-      {/* Demo Form */}
-      <Bookdemoform />
 
       <Footer/>
     </>
