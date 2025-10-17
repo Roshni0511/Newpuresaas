@@ -15,7 +15,7 @@ import RealEstateAgentCRMfaq from '../component/Realestatecrmfaq';
 import HomeFaq from '../component/HomeFaq';
 import ProductForm from '../component/ProductForm';
 import Realestateagentcrmslider from '../component/Realestateagentcrmslider';
-import ProductNavbar from './ProductNavbar';
+import ProductNavbar from '../../src/Pages/AllNavbar/ProductNavbar';
 import Bookdemoform from '../component/Bookdemoform';
 
 
