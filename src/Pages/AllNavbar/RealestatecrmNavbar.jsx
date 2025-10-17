@@ -6,16 +6,15 @@ import { FaAngleDown } from 'react-icons/fa';
 
 export default function RealestatecrmNavbar() {
   const [isMobileMenuOpen1, setIsMobileMenuOpen1] = useState(false);
-  const toggleMobileMenu1 = () => {
-    setIsMobileMenuOpen1(!isMobileMenuOpen1);
-  };
-    const [isFeaturesOpen, setFeaturesOpen ] = useState(false); // for mobile dropdown
-
-
-  const togglefeaturesMenu = (e) => {
-    e.preventDefault();
-    setFeaturesOpen(!isFeaturesOpen);
-  };
+    const [isfeatureOpen, setIsfeatureOpen] = useState(false); // for mobile dropdown
+    const toggleMobileMenu1 = () => {
+      setIsMobileMenuOpen1(!isfeatureOpen);
+    };
+  
+    const togglefeatureMenu = (e) => {
+      e.preventDefault();
+      setIsfeatureOpen(!isfeatureOpen);
+    };
 
   return (
     <>
@@ -51,7 +50,7 @@ export default function RealestatecrmNavbar() {
         <nav className={`header__nav ${isMobileMenuOpen1 ? 'open' : ''}`}>
           <ul className="header__ul">
             <li className="header__li"><a href="/" className="header__a ">Home</a></li>
-              <li
+              {/* <li
                         className={`header__li dropdown services-menu-item ${
                           isFeaturesOpen ? 'mobile-open' : ''
                         }`}
@@ -105,7 +104,63 @@ export default function RealestatecrmNavbar() {
 </div>
 
                         </div>
-                      </li>
+                      </li> */}
+                      <li
+                                    className={`header__li dropdown services-menu-item ${
+                                      isfeatureOpen ? 'mobile-open' : ''
+                                    }`}
+                                  >
+                                    <a
+                                      href="#"
+                                      className="header__a dropdown__link"
+                                      onClick={togglefeatureMenu}
+                                    >
+                                      Features <FaAngleDown size={10} />
+                                    </a>
+                      
+                                     <div
+                                      className={`feature-dropdown ${
+                                        isfeatureOpen ? 'mobile-open-menu' : ''
+                                      }`}
+                                    >
+                                      <div className="feature-dropdown__inner">
+                      
+                                             <ul className="feature-dropdown__column">
+                                          <li>
+                                            <a href="/BuilderCRM"><span className="feature__number">01.</span>Property Management</a>
+                                            <p>Add, edit, and manage all property listings in one place.</p>
+                                          </li>
+                                            <li>
+                                            <a href="/Realestatecrm"><span className="feature__number">02.</span>Lead Tracking</a>
+                                            <p>Capture, nurture, and convert leads from multiple sources easily.</p>
+                                          </li>
+                                            <li>
+                                            <a href="/Telecallercrm"><span className="feature__number">03.</span> Sales Pipeline</a>
+                                            <p>Visualize your deals and track every stage of your sales process.</p>
+                                          </li>
+                                       
+                                       
+                                        </ul>
+                                    
+                                        <ul className="feature-dropdown__column">
+                                            <li>
+                                          <a href="/Sales"><span className="feature__number">04.</span>Reports & Analytics</a>
+                                          <p>Get detailed reports on leads, sales, and team performance.</p>
+                                        </li>
+                                         <li>
+                                            <a href="/Serviceerp"><span className="feature__number">05.</span> User Roles & Permissions</a>
+                                            <p>Control access levels for agents, admins, and managers</p>
+                                          </li>
+                                          <li>
+                                            <a href="/ATS"><span className="feature__number">06.</span> Team Collaboration</a>
+                                            <p>Share property details and client updates across your sales team.</p>
+                                          </li>
+                                        
+                                        </ul>
+                      
+                                      </div>
+                                    </div>
+                                  </li>
             <li className="header__li"><a href="/HomePricing" className="header__a ">Pricing</a></li>
             <li className="header__li signuphide "><a href="/SignIn" className="header__cta-btn m-2">Sign In</a></li>
             <li className="header__li signuphide "><a href="/Signup" className="header__cta-btn m-2">Sign Up</a></li>
