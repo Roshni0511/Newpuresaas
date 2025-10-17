@@ -11,6 +11,7 @@ import OfficeErpFaq from "../component/Officeerpfaq";
 import ProductForm from "../component/ProductForm"
 import ProductNavbar from "./AllNavbar/ProductNavbar";
 import Bookdemoform from "../component/Bookdemoform";
+import OfficeErpNavbar from "./AllNavbar/OfficeErpNavbar";
 
 export default function OfficeErp() {
   const [showDemo, setShowDemo] = useState(false);
@@ -60,7 +61,7 @@ export default function OfficeErp() {
   return (
     <div>
       <ProductNavbar />
-
+    <OfficeErpNavbar />
       <section className="office-hero-section position-relative bg-light overflow-hidden py-5">
         <div className="container position-relative z-2">
           <div className="row align-items-center g-5">

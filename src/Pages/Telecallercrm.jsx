@@ -6,6 +6,7 @@ import ProductForm from '../component/ProductForm';
 import TelecallercrmFaq from '../component/Telecallercrmfaq';
 import ProductNavbar from './AllNavbar/ProductNavbar';
 import Bookdemoform from '../component/Bookdemoform';
+import TelecallerCRMNavbar from './AllNavbar/TelecallerCRMNavbar';
 
 
 
@@ -128,6 +129,7 @@ const features = [
   return (
     <>
     <ProductNavbar/>
+    <TelecallerCRMNavbar />
     <section className="tele-hero wow animate__animated animate__fadeInUp">
       {/* Background Elements */}
       <div className="tele-bg-elements">

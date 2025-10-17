@@ -8,6 +8,7 @@ import ProductForm from '../component/ProductForm';
 import Atsfaq from './Atsfaq';
 import ProductNavbar from './AllNavbar/ProductNavbar';
 import Bookdemoform from '../component/Bookdemoform';
+import ATSNavbar from './AllNavbar/ATSNavbar';
 export default function ATS() {
     const [email, setEmail] = useState('');
      const handleSubmit = (e) => {
@@ -44,6 +45,7 @@ export default function ATS() {
   return (
     <div>
       <ProductNavbar />
+      <ATSNavbar />
        {/* main section start  */}
         <section className="crypto-hero wow animate__animated animate__fadeInUp">
      
