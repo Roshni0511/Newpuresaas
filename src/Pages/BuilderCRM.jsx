@@ -9,6 +9,7 @@ import ProductForm from "../component/ProductForm";
 import Builderfaq from "../component/Builderfaq";
 import BuilderCRMNavbar from "./AllNavbar/BuilderCRMNavbar";
 import ProductNavbar from "./AllNavbar/ProductNavbar";
+import Bookdemoform from "../component/Bookdemoform";
 
 const Buildercrm = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -167,6 +168,7 @@ const Buildercrm = () => {
 
       {/* Faq Section */}
       <Builderfaq/>
+      <Bookdemoform />
 
       <Footer/>
     </>
