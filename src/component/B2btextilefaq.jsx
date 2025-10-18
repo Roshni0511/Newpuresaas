@@ -80,8 +80,6 @@ const faqData = [
 // 3. Main FAQ Section Component (Exported)
 // ==========================================================
 const B2btextilefaq = () => {
-    // State now holds the ID of the currently open item.
-    // It is initialized with the ID of the item we want open by default (the first one).
     const [openItemId, setOpenItemId] = useState(faqData[0].id);
 
     // Function to handle the opening/closing logic
