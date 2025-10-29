@@ -3,11 +3,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 68vh;
   background-color: #ffffff;
   padding: 20px;
   box-sizing: border-box;
   flex-wrap: wrap; /* allow wrapping on smaller screens */
+  margin-bottom: 30px;
 }
 
 .signup-card {

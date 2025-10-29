@@ -501,7 +501,7 @@ position: relative;
 }
 
 .productsecond .feature-dropdown__inner {
- background-image:linear-gradient(135deg, rgb(125 122 199 / 90%), rgb(189 180 180 / 86%)), url('/public/Image//graph.jpg');
+ background-image:url('https://t4.ftcdn.net/jpg/07/51/09/49/360_F_751094902_62JKhssEGRirKUFym18pfPmp31RPOMlL.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

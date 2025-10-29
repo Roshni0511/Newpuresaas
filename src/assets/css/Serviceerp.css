@@ -4,11 +4,12 @@
 .crm-section {
   background: #F7F9FC; /* soft off-white */
   min-height: 100vh;
-  padding: 5rem 2rem;
+  padding: 10rem 2rem 5rem 2rem;
   font-family: 'Inter', sans-serif;
   position: relative;
   overflow: hidden;
   color: #1F2937; /* primary dark text */
+  top: -106px;
 }
 
 /* Container */

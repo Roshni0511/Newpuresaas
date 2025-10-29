@@ -1,10 +1,13 @@
 import React from 'react';
 import '../assets/css/Signin.css';
 import { Link } from 'react-router-dom'; // if using React Router
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 const SignIn = () => {
   return (
     <div>
+      <Navbar />
       <div className="signup-container">
         <div className="signup-card">
           {/* Left Form Section */}
@@ -65,6 +68,7 @@ const SignIn = () => {
           ></div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
