@@ -20,9 +20,7 @@ const Footer = () => {
   <a href="https://www.facebook.com" className="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
     <i className="fab fa-facebook-f"></i>
   </a>
-  <a href="https://twitter.com" className="social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
-    <i className="fab fa-twitter"></i>
-  </a>
+
   <a href="https://www.instagram.com" className="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
     <i className="fab fa-instagram"></i>
   </a>
@@ -87,8 +85,6 @@ const Footer = () => {
                   <span><a href="mailto:sales@puresaas.in">sales@puresaas.in</a></span>
                 </div>
               </div>
-
- 
             </div>
           </div>
 
