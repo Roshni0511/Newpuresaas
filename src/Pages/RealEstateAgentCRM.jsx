@@ -2,13 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Footer from './Footer';
 import '../assets/css/RealEstateAgentCRM.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTachometerAlt,
-  faHandHoldingUsd,
-  faTools,
-  faUserCheck,
-  faChartLine,
-} from "@fortawesome/free-solid-svg-icons";
+import {faTachometerAlt,faHandHoldingUsd,faTools,faUserCheck,faChartLine,} from "@fortawesome/free-solid-svg-icons";
 import BrandSlider from '../component/BrandSlider';
 import TestimonialsSlider from '../component/Testimonials';
 import RealEstateAgentCRMfaq from '../component/Realestatecrmfaq';

@@ -4,19 +4,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import '../assets/css/Home.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTachometerAlt,
-  faHandHoldingUsd,
-  faTools,
-  faUserCheck,
-  faChartLine,
-   faHandshake, 
-  faLightbulb, 
-  faUsers, 
-  faLaptopCode, 
-  faMicrochip, 
-  faArrowRotateRight 
-} from "@fortawesome/free-solid-svg-icons";
+import {faTachometerAlt,faHandHoldingUsd,faTools,faUserCheck,faChartLine,faHandshake, faLightbulb, faUsers, faLaptopCode, faMicrochip, faArrowRotateRight } from "@fortawesome/free-solid-svg-icons";
 import Review from '../component/Review';
 import HomeFaq from '../component/HomeFaq';
 import Bookdemoform from '../component/Bookdemoform';
