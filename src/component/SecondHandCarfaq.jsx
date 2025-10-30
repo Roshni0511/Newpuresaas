@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../assets/css/HomeFaq.css'; 
+import '../assets/css/HomeFaq.css';
 
 const AccordionItem = ({ id, question, answer, isOpen, toggleAccordion }) => {
     return (
@@ -26,50 +26,50 @@ const AccordionItem = ({ id, question, answer, isOpen, toggleAccordion }) => {
 };
 
 // ==========================================================
-// Office ERP FAQ Data
+// Second Hand Car Management System FAQ Data
 // ==========================================================
 const faqData = [
     {
         id: 1,
-        question: "What is Office ERP and why should I use it?",
-        answer: "Office ERP is a comprehensive software that integrates HR, finance, inventory, and project management tools. It helps streamline office operations, reduce manual work, and improve overall productivity."
+        question: "What is the Second Hand Car Management System?",
+        answer: "It’s a digital platform that helps car dealers, resellers, and individuals manage the buying, selling, and inventory of pre-owned vehicles efficiently in one place."
     },
     {
         id: 2,
-        question: "Can I manage my HR tasks with Office ERP?",
-        answer: "Yes, you can automate employee onboarding, attendance, payroll, and performance management, all in one centralized system."
+        question: "How does it help car dealers?",
+        answer: "Dealers can manage their car listings, track customer inquiries, maintain sales records, and analyze performance — all through a centralized dashboard."
     },
     {
         id: 3,
-        question: "Does Office ERP handle financial accounting?",
-        answer: "Absolutely. You can manage invoicing, expenses, compliance reports, and integrate with popular accounting tools like QuickBooks and Xero."
+        question: "Can I upload vehicle photos and details?",
+        answer: "Yes, you can add multiple car images, set prices, upload RC details, and provide full vehicle specifications for buyers to view."
     },
     {
         id: 4,
-        question: "Can I track inventory and procurement?",
-        answer: "Office ERP lets you track stock levels, automate purchase orders, forecast demand, and reduce waste, ensuring efficient inventory management."
+        question: "Does it include customer and lead management?",
+        answer: "Absolutely. The system helps you capture leads from online and offline sources, follow up with potential buyers, and manage customer communications easily."
     },
     {
         id: 5,
-        question: "Is project management supported?",
-        answer: "Yes, you can plan tasks, timelines, and budgets, collaborate with your team, and use Gantt charts to monitor project progress."
+        question: "Can I track vehicle history and maintenance records?",
+        answer: "Yes, the system allows you to store service history, previous ownership details, and inspection reports to ensure transparency and build trust with buyers."
     },
     {
         id: 6,
-        question: "Can I generate analytics and reports?",
-        answer: "Office ERP provides real-time dashboards and AI-driven insights on KPIs, helping you make informed decisions and monitor office performance."
+        question: "Is there a reporting or analytics feature?",
+        answer: "Yes, real-time analytics show your top-selling models, active listings, sales trends, and profit margins to help improve your dealership’s performance."
     },
     {
         id: 7,
-        question: "Does it integrate with other tools?",
-        answer: "Yes, Office ERP seamlessly integrates with Google Workspace, Microsoft 365, Slack, and many other popular business apps."
+        question: "Can it integrate with my website or mobile app?",
+        answer: "Yes, the system supports integration with dealer websites and mobile apps, allowing automatic syncing of inventory and updates in real time."
     }
 ];
 
 // ==========================================================
 // Main Component
 // ==========================================================
-const OfficeErpFaq = () => {
+const SecondHandCarfaq = () => {
     const [openItemId, setOpenItemId] = useState(faqData[0].id);
 
     const handleToggle = (id) => {
@@ -80,9 +80,9 @@ const OfficeErpFaq = () => {
         <section className="faq-section wow animate__animated animate__fadeInUp">
             <div className="faq-header">
                 <span className="faq-tag">FAQ</span>
-                <h2 className="faq-title">Office ERP - Frequently Asked Questions</h2>
+                <h2 className="faq-title">Second Hand Car Management System - Frequently Asked Questions</h2>
                 <p className="faq-description">
-                    Find answers to the most common questions about Office ERP, its modules, and how it can improve your office operations.
+                    Find answers to common questions about the Second Hand Car Management System and how it simplifies buying, selling, and managing used cars.
                 </p>
             </div>
 
@@ -102,4 +102,4 @@ const OfficeErpFaq = () => {
     );
 };
 
-export default OfficeErpFaq;
+export default SecondHandCarfaq;

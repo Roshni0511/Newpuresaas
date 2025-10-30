@@ -72,15 +72,15 @@ export default function SalesNavbar() {
                              
                                                     <ul className="feature-dropdown__column">
                                                  <li>
-                                                   <a href="#"><span className="feature__number">01.</span>Lead Management</a>
+                                                   <a ><span className="feature__number">01.</span>Lead Management</a>
                                                    <p>Capture and organize leads in one place.</p>
                                                  </li>
                                                    <li>
-                                                   <a href="#"><span className="feature__number">02.</span>Sales Pipeline</a>
+                                                   <a><span className="feature__number">02.</span>Sales Pipeline</a>
                                                    <p>Track deals through every stage clearly.</p>
                                                  </li>
                                                    <li>
-                                                   <a href="#"><span className="feature__number">03.</span> Performance Analytics</a>
+                                                   <a ><span className="feature__number">03.</span> Performance Analytics</a>
                                                    <p>View real-time sales and team stats.</p>
                                                  </li>
                                               
@@ -89,15 +89,15 @@ export default function SalesNavbar() {
                                            
                                                <ul className="feature-dropdown__column">
                                                    <li>
-                                                 <a href="#"><span className="feature__number">04.</span>Team Roles & Access</a>
+                                                 <a ><span className="feature__number">04.</span>Team Roles & Access</a>
                                                  <p>Control access for reps and managers.</p>
                                                </li>
                                                 <li>
-                                                   <a href="#"><span className="feature__number">05.</span>Lead Scoring</a>
+                                                   <a ><span className="feature__number">05.</span>Lead Scoring</a>
                                                    <p>Focus on high-value leads first.</p>
                                                  </li>
                                                  <li>
-                                                   <a href="#"><span className="feature__number">06.</span> CRM Integration</a>
+                                                   <a ><span className="feature__number">06.</span> CRM Integration</a>
                                                    <p>Sync data with your favorite CRM.</p>
                                                  </li>
                                                

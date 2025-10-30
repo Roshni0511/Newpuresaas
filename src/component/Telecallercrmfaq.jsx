@@ -26,7 +26,7 @@ const AccordionItem = ({ id, question, answer, isOpen, toggleAccordion }) => {
 };
 
 // ==========================================================
-// Office ERP FAQ Data
+//  FAQ Data
 // ==========================================================
 const faqData = [
     {

@@ -12,7 +12,7 @@ export default function ServiceCRMNavbar() {
    
      const toggleservicesMenu = (e) => {
        e.preventDefault();
-       setIsMobileMenuOpen1(!isservicesOpen);
+       setIsservicesOpen(!isservicesOpen);
      };
  
  
@@ -73,30 +73,30 @@ export default function ServiceCRMNavbar() {
   <div class="feature-dropdown__inner">
     <ul class="feature-dropdown__column">
       <li>
-        <a href="#">Client Management</a>
+        <a >Client Management</a>
         <p>Keep all client details in one place.</p>
       </li>
       <li>
-        <a href="#">Service Scheduling</a>
+        <a >Service Scheduling</a>
         <p>Book and manage appointments easily.</p>
       </li>
       <li>
-        <a href="#">Custom Packages</a>
+        <a >Custom Packages</a>
         <p>Create tailored plans for each client.</p>
       </li>
    
     </ul>
     <ul class="feature-dropdown__column">
       <li>
-        <a href="#">Feedback Collection</a>
+        <a >Feedback Collection</a>
         <p>Get client feedback with simple forms.</p>
       </li>
       <li>
-        <a href="#">Invoice Generation</a>
+        <a >Invoice Generation</a>
         <p>Send branded invoices in seconds.</p>
       </li>
       <li>
-        <a href="#">Team Collaboration</a>
+        <a >Team Collaboration</a>
         <p>Work together with shared notes and files.</p>
       </li>
     

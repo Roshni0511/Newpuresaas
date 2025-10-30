@@ -180,7 +180,7 @@ const Blog = () => {
                                          <li><a href="#">Telecaller  CRM</a></li>
                                           <li><a href="#">ATS (Application Tracking System)</a></li>
                                            <li><a href="#">Payroll System</a></li>
-                                             <li><a href="#">Office ERP</a></li>
+                                             <li><a href="#">Second Hand Car Management System</a></li>
 
                                     </ul>
                                 </div>

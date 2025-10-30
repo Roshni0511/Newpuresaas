@@ -60,30 +60,30 @@ export default function ATSNavbar() {
       
       <ul className="feature-dropdown__column">
         <li>
-          <a href="#"><span className="feature__number">01.</span>Job Posting Management</a>
+          <a ><span className="feature__number">01.</span>Job Posting Management</a>
           <p>Create and publish job openings across multiple platforms from one dashboard.</p>
         </li>
         <li>
-          <a href="#"><span className="feature__number">02.</span>Resume Parsing</a>
+          <a ><span className="feature__number">02.</span>Resume Parsing</a>
           <p>Automatically extract key candidate data from resumes and attach to profiles.</p>
         </li>
         <li>
-          <a href="#"><span className="feature__number">03.</span>Applicant Pipeline</a>
+          <a ><span className="feature__number">03.</span>Applicant Pipeline</a>
           <p>Visualize and manage candidate progress through hiring stages (Applied → Hired).</p>
         </li>
       </ul>
 
       <ul className="feature-dropdown__column">
         <li>
-          <a href="#"><span className="feature__number">04.</span>Interview Scheduling</a>
+          <a ><span className="feature__number">04.</span>Interview Scheduling</a>
           <p>Coordinate interview times, send invites, and sync with calendars.</p>
         </li>
         <li>
-          <a href="#"><span className="feature__number">05.</span>Team Collaboration</a>
+          <a ><span className="feature__number">05.</span>Team Collaboration</a>
           <p>Share notes, feedback, and candidate ratings with your HR/recruitment team.</p>
         </li>
         <li>
-          <a href="#"><span className="feature__number">06.</span>Candidate Communication</a>
+          <a ><span className="feature__number">06.</span>Candidate Communication</a>
           <p>Send emails, updates, and reminders to applicants directly from the system.</p>
         </li>
       </ul>

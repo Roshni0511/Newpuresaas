@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 import '../../assets/css/ProductNavbar.css';
 import {  FaBars, FaTimes } from 'react-icons/fa';
+
 import { FaAngleDown } from 'react-icons/fa';
-export default function BuilderCRMNavbar() {
+export default function SecondHandCarNavbar() {
   const [isMobileMenuOpen1, setIsMobileMenuOpen1] = useState(false);
+     const [isofficeOpen, setIsofficeOpen] = useState(false); // for mobile dropdown
   const toggleMobileMenu1 = () => {
     setIsMobileMenuOpen1(!isMobileMenuOpen1);
   };
-   const [isfeatureOpen, setIsfeatureOpen] = useState(false); // for mobile dropdown
-    const togglefeatureMenu = (e) => {
-      e.preventDefault();
-      setIsfeatureOpen(!isfeatureOpen);
-    };
+  const toggleofficeMenu = (e) => {
+       e.preventDefault();
+       setIsofficeOpen(!isofficeOpen);
+     };
+ 
   return (
     <>
 
@@ -29,7 +31,7 @@ export default function BuilderCRMNavbar() {
             >
               <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-6h-2v6zm0-8h2V7h-2v2z" />
             </svg>
-           <span className="logo__text">Builder / Developer CRM</span>
+           <span className="logo__text">Second Hand Car Management System</span>
           </a>
         </div>
 
@@ -46,51 +48,60 @@ export default function BuilderCRMNavbar() {
         <nav className={`header__nav ${isMobileMenuOpen1 ? 'open' : ''}`}>
           <ul className="header__ul">
             <li className="header__li"><a href="/" className="header__a ">Home</a></li>
-          <li className={`header__li dropdown services-menu-item ${isfeatureOpen ? 'mobile-open' : ''}`}>
+            <li
+  className={`header__li dropdown services-menu-item ${
+    isofficeOpen ? 'mobile-open' : ''
+  }`}
+>
   <a
     href="#"
     className="header__a dropdown__link"
-    onClick={togglefeatureMenu}
+    onClick={toggleofficeMenu}
   >
     Features <FaAngleDown size={10} />
   </a>
 
-  <div className={`feature-dropdown ${isfeatureOpen ? 'mobile-open-menu' : ''}`}>
-    <div className="feature-dropdown__inner">
-      
-      <ul className="feature-dropdown__column">
-        <li>
-          <a ><span className="feature__number">01.</span>Project Management</a>
-          <p>Manage and monitor construction projects from planning to handover.</p>
-        </li>
-        <li>
-          <a><span className="feature__number">02.</span>Site Progress Tracking</a>
-          <p>Track real-time progress and update site activities with visual status reports.</p>
-        </li>
-        <li>
-          <a ><span className="feature__number">03.</span>Inventory Management</a>
-          <p>Monitor stock levels, building materials, and on-site inventory usage.</p>
-        </li>
-      </ul>
+  <div
+    className={`feature-dropdown ${
+      isofficeOpen ? 'mobile-open-menu' : ''
+    }`}
+  >
+    <div class="productsecond">
+      <div class="feature-dropdown__inner">
+        <ul class="feature-dropdown__column">
+          <li>
+            <a >Car Inventory Management</a>
+            <p>Organize and track available, sold, and upcoming vehicles in real time.</p>
+          </li>
+          <li>
+            <a>Customer & Lead Tracking</a>
+            <p>Manage buyer inquiries, test drives, and follow-ups efficiently.</p>
+          </li>
+          <li>
+            <a >Pricing & Negotiation Tools</a>
+            <p>Set prices, manage discounts, and track negotiation history.</p>
+          </li>
+        </ul>
 
-      <ul className="feature-dropdown__column">
-        <li>
-          <a ><span className="feature__number">04.</span>Contractor & Vendor Management</a>
-          <p>Assign tasks, track performance, and manage payments to contractors.</p>
-        </li>
-        <li>
-          <a ><span className="feature__number">05.</span>Payment & Installment Tracking</a>
-          <p>Manage buyer payment schedules and automatically track due installments.</p>
-        </li>
-        <li>
-          <a ><span className="feature__number">06.</span>Customer Booking Portal</a>
-          <p>Allow customers to book units, upload documents, and check progress.</p>
-        </li>
-      </ul>
-
+        <ul class="feature-dropdown__column">
+          <li>
+            <a>Sales & Billing</a>
+            <p>Generate instant invoices and maintain transaction records.</p>
+          </li>
+          <li>
+            <a >Dealer & Partner Management</a>
+            <p>Connect with multiple dealers and track commission-based sales.</p>
+          </li>
+          <li>
+            <a >Vehicle Reports & Analytics</a>
+            <p>Get insights on stock movement, sales trends, and performance metrics.</p>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
-          </li>
+</li>
+
             <li className="header__li"><a href="/HomePricing" className="header__a ">Pricing</a></li>
             <li className="header__li signuphide "><a href="/SignIn" className="header__cta-btn m-2">Sign In</a></li>
             <li className="header__li signuphide "><a href="/Signup" className="header__cta-btn m-2">Sign Up</a></li>

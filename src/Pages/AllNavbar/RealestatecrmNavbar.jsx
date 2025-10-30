@@ -71,15 +71,15 @@ export default function RealestatecrmNavbar() {
                       
                                              <ul className="feature-dropdown__column">
                                           <li>
-                                            <a href="#"><span className="feature__number">01.</span>Property Management</a>
+                                            <a ><span className="feature__number">01.</span>Property Management</a>
                                             <p>Add, edit, and manage all property listings in one place.</p>
                                           </li>
                                             <li>
-                                            <a href="#"><span className="feature__number">02.</span>Lead Tracking</a>
+                                            <a ><span className="feature__number">02.</span>Lead Tracking</a>
                                             <p>Capture, nurture, and convert leads from multiple sources easily.</p>
                                           </li>
                                             <li>
-                                            <a href="#"><span className="feature__number">03.</span> Sales Pipeline</a>
+                                            <a ><span className="feature__number">03.</span> Sales Pipeline</a>
                                             <p>Visualize your deals and track every stage of your sales process.</p>
                                           </li>
                                        
@@ -88,15 +88,15 @@ export default function RealestatecrmNavbar() {
                                     
                                         <ul className="feature-dropdown__column">
                                             <li>
-                                          <a href="#"><span className="feature__number">04.</span>Reports & Analytics</a>
+                                          <a ><span className="feature__number">04.</span>Reports & Analytics</a>
                                           <p>Get detailed reports on leads, sales, and team performance.</p>
                                         </li>
                                          <li>
-                                            <a href="#"><span className="feature__number">05.</span> User Roles & Permissions</a>
+                                            <a ><span className="feature__number">05.</span> User Roles & Permissions</a>
                                             <p>Control access levels for agents, admins, and managers</p>
                                           </li>
                                           <li>
-                                            <a href="#"><span className="feature__number">06.</span> Team Collaboration</a>
+                                            <a  ><span className="feature__number">06.</span> Team Collaboration</a>
                                             <p>Share property details and client updates across your sales team.</p>
                                           </li>
                                         
@@ -117,7 +117,7 @@ export default function RealestatecrmNavbar() {
         <div className="header__cta-wrapper" style={{marginRight:'10px'}}>
           <a href="/Signup" className="header__cta-btn">Sign Up</a>
         </div>
-      
+   
       </header>
     </div>
    </div>

@@ -19,7 +19,7 @@ import Solutions from './Pages/Solutions';
 import Blogdetails from './Pages/Blogdetails';
 import B2BTextileERP from './Pages/B2BTextileERP';
 import Realestatecrm from './Pages/Realestatecrm';
-import OfficeErp from './Pages/OfficeErp';
+import SecondHandCar from './Pages/SecondHandCar';
 import ATS from './Pages/ATS';
 import TelecallerCRM from './Pages/Telecallercrm';
 import Sales from './Pages/Sales';
@@ -177,7 +177,7 @@ function App() {
     <Route path='/Blogdetails' element={<Blogdetails/>}/>
     <Route path='/B2BTextileERP' element={<B2BTextileERP/>}/>
     <Route path='/Realestatecrm' element={<Realestatecrm/>}/>
-    <Route path='/OfficeErp' element={<OfficeErp/>}/>
+    <Route path='/SecondHandCar' element={<SecondHandCar/>}/>
     <Route path='/ATS' element={<ATS />}/>
     <Route path='/TelecallerCRM' element={<TelecallerCRM/>}/>
     <Route path='/Sales' element={<Sales/>}/>

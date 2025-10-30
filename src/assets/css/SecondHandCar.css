@@ -358,6 +358,7 @@
   padding: 35px 25px;
   text-align: center;
   position: relative;
+  height: -webkit-fill-available;
   overflow: hidden;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   cursor: pointer;

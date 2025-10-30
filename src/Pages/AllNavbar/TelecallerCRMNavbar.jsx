@@ -60,30 +60,30 @@ export default function TelecallerCRMNavbar() {
       
       <ul className="feature-dropdown__column">
         <li>
-          <a href="#"><span className="feature__number">01.</span>Lead Management</a>
+          <a ><span className="feature__number">01.</span>Lead Management</a>
           <p>Capture, assign, and track leads efficiently across your calling team.</p>
         </li>
         <li>
-          <a href="#"><span className="feature__number">02.</span>Auto Dialer Integration</a>
+          <a ><span className="feature__number">02.</span>Auto Dialer Integration</a>
           <p>Integrate with auto-dialers to streamline outbound call operations.</p>
         </li>
         <li>
-          <a href="#"><span className="feature__number">03.</span>Call Recording & Logs</a>
+          <a ><span className="feature__number">03.</span>Call Recording & Logs</a>
           <p>Access complete call history and recordings for quality checks and training.</p>
         </li>
       </ul>
 
       <ul className="feature-dropdown__column">
         <li>
-          <a href="#"><span className="feature__number">04.</span>Follow-Up Reminders</a>
+          <a ><span className="feature__number">04.</span>Follow-Up Reminders</a>
           <p>Set automated reminders and notifications for follow-up calls.</p>
         </li>
         <li>
-          <a href="#"><span className="feature__number">05.</span>Disposition Tracking</a>
+          <a ><span className="feature__number">05.</span>Disposition Tracking</a>
           <p>Tag call outcomes like interested, not interested, follow-up later, etc.</p>
         </li>
         <li>
-          <a href="#"><span className="feature__number">06.</span>Performance Analytics</a>
+          <a ><span className="feature__number">06.</span>Performance Analytics</a>
           <p>Track individual telecaller performance metrics like calls/day, conversions, and talk time.</p>
         </li>
       </ul>

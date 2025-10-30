@@ -24,10 +24,10 @@ const Footer = () => {
   <a href="https://www.instagram.com" className="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
     <i className="fab fa-instagram"></i>
   </a>
-  <a href="https://www.linkedin.com/in" className="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.linkedin.com" className="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
     <i className="fab fa-linkedin-in"></i>
   </a>
-  <a href="https://www.youtube.com/channel" className="social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.youtube.com" className="social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
     <i className="fab fa-youtube"></i>
   </a>
 </div>
@@ -46,7 +46,7 @@ const Footer = () => {
                 <li><a href="/Serviceerp">Service CRM</a></li>
                 <li><a href="/ATS">ATS (Application Tracking System)</a></li>
                 <li><a href="/B2BTextileERP">B2B Textile ERP</a></li>
-                <li><a href="/OfficeErp">Office ERP</a></li>
+                <li><a href="/SecondHandCar">Second Hand Car Management System</a></li>
                 {/* <li><a href="#">Payroll System</a></li> */}
               </ul>
             </div>

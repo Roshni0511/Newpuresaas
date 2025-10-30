@@ -60,30 +60,30 @@ export default function B2BTextileERPNavbar() {
       
       <ul className="feature-dropdown__column">
         <li>
-          <a href="#"><span className="feature__number">01.</span>Order & Quotation Management</a>
+          <a ><span className="feature__number">01.</span>Order & Quotation Management</a>
           <p>Create, manage, and track B2B orders and quotations with real-time status updates.</p>
         </li>
         <li>
-          <a href="#"><span className="feature__number">02.</span>Inventory & Stock Control</a>
+          <a><span className="feature__number">02.</span>Inventory & Stock Control</a>
           <p>Track raw materials, finished goods, and fabric rolls across warehouses.</p>
         </li>
         <li>
-          <a href="#"><span className="feature__number">03.</span>Production Planning</a>
+          <a ><span className="feature__number">03.</span>Production Planning</a>
           <p>Plan dyeing, weaving, stitching, and finishing operations efficiently.</p>
         </li>
       </ul>
 
       <ul className="feature-dropdown__column">
         <li>
-          <a href="#"><span className="feature__number">04.</span>Supplier & Vendor Management</a>
+          <a ><span className="feature__number">04.</span>Supplier & Vendor Management</a>
           <p>Manage yarn/fabric suppliers, rate contracts, deliveries, and payments.</p>
         </li>
         <li>
-          <a href="#"><span className="feature__number">05.</span>Client & Channel Partner Portal</a>
+          <a ><span className="feature__number">05.</span>Client & Channel Partner Portal</a>
           <p>Allow buyers/distributors to place orders, track delivery, and download invoices.</p>
         </li>
         <li>
-          <a href="#"><span className="feature__number">06.</span>Reports & Compliance</a>
+          <a ><span className="feature__number">06.</span>Reports & Compliance</a>
           <p>Generate GST-compliant invoices, order reports, production logs, and audit trails.</p>
         </li>
       </ul>

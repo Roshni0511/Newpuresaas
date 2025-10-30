@@ -1,19 +1,18 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaTachometerAlt, FaLock, FaUsers } from "react-icons/fa";
-import '../assets/css/OfficeErp.css';
-
+import '../assets/css/SecondHandCar.css';
 import Footer from "./Footer";
 import 'bootstrap-icons/font/bootstrap-icons.css';  
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import HomePricing from "../component/HomePricing";
-import OfficeErpFaq from "../component/Officeerpfaq";
+import SecondHandCarfaq from "../component/SecondHandCarfaq";
 import ProductForm from "../component/ProductForm"
 import ProductNavbar from "./AllNavbar/ProductNavbar";
 import Bookdemoform from "../component/Bookdemoform";
-import OfficeErpNavbar from "./AllNavbar/OfficeErpNavbar";
+import SecondHandCarNavbar from "./AllNavbar/SecondHandCarNavbar";
 
-export default function OfficeErp() {
+export default function SecondHandCar() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -67,30 +66,37 @@ export default function OfficeErp() {
   return (
     <div>
       <ProductNavbar />
-    <OfficeErpNavbar />
+    <SecondHandCarNavbar />
       <section className="office-hero-section position-relative bg-light overflow-hidden py-5">
         <div className="container position-relative z-2">
           <div className="row align-items-center g-5">
-            {/* Left Column */}
-            <div className="col-lg-6">
-              <div className="office-trust-badge mb-3 text-primary fw-semibold small office-animate-delay-1">
-                <i className="bi bi-shield-check me-2"></i> Trusted by 5,000+ Offices
-              </div>
+      {/* Left Column */}
+<div className="col-lg-6">
+  <div className="office-trust-badge mb-3 text-primary fw-semibold small office-animate-delay-1">
+    <i className="bi bi-shield-check me-2"></i> Trusted by 1,000+ Car Dealers Nationwide
+  </div>
 
-              <h1 className="display-5 fw-bold mb-3 office-hero-title office-animate-delay-2">
-                Streamline Your Office Operations with <span>ERP</span>
-              </h1>
+  <h1 className="display-5 fw-bold mb-3 office-hero-title office-animate-delay-2">
+    Simplify Your <span>Used Car Business</span> with Our Management System
+  </h1>
 
-              <p className="lead text-secondary mb-4 office-hero-text office-animate-delay-3">
-                Integrated tools for HR, finance, inventory, and projects — scalable for teams of 10 to 1,000+. Reduce admin time by up to <strong>40%</strong> with smart automation and real-time insights.
-              </p>
+  <p className="lead text-secondary mb-4 office-hero-text office-animate-delay-3">
+    From car listings to customer tracking, streamline every step of your dealership operations. 
+    Manage inventory, leads, and sales effortlessly—all from one powerful dashboard.
+  </p>
 
-              <div className="d-flex flex-wrap gap-3 office-hero-btns">
-                <a href="#signup" className="btn btn-primary btn-lg px-4 office-hero-btn-primary office-hero-btn" onClick={() => setIsModalOpen(true)}>
-                  Get Started Free <i className="bi bi-arrow-right ms-2"></i>
-                </a>
-              </div>
-            </div>
+  <div className="d-flex flex-wrap gap-3 office-hero-btns">
+    <a
+      href="#signup"
+      className="btn btn-primary btn-lg px-4 office-hero-btn-primary office-hero-btn"
+      onClick={() => setIsModalOpen(true)}
+    >
+      Get Free Demo <i className="bi bi-arrow-right ms-2"></i>
+    </a>
+   
+  </div>
+</div>
+
 
             {/* Right Column */}
             <div className="col-lg-6 text-center position-relative">
@@ -156,10 +162,10 @@ export default function OfficeErp() {
 
 
       {/* Features Section */}
-    <section className="office-features-section py-5">
+<section className="office-features-section py-5">
   <div className="container">
     <h2 className="office-section-title text-center mb-5">
-      Core Modules of <span className="office-gradient-text">Our ERP</span>
+      Core Modules of <span className="office-gradient-text">Our Car Management System</span>
     </h2>
 
     <div className="row g-4">
@@ -167,14 +173,14 @@ export default function OfficeErp() {
       <div className="col-md-6 col-lg-4">
         <div className="office-feature-card office-animate-in">
           <div className="office-feature-icon floating-icon">
-            <i className="bi bi-person-badge"></i>
+            <i className="bi bi-car-front"></i>
           </div>
-          <h5 className="office-feature-title">HR Management</h5>
+          <h5 className="office-feature-title">Vehicle Management</h5>
           <p className="office-feature-desc">
-            Automate onboarding, payroll, and performance tracking with customizable workflows.
+            Manage all car listings with complete details, pricing, images, and availability status in one place.
           </p>
           <div className="office-feature-overlay">
-            <span>Boost productivity by 35%</span>
+            <span>Manage 100+ cars effortlessly</span>
           </div>
         </div>
       </div>
@@ -183,14 +189,14 @@ export default function OfficeErp() {
       <div className="col-md-6 col-lg-4">
         <div className="office-feature-card office-animate-in">
           <div className="office-feature-icon floating-icon">
-            <i className="bi bi-currency-dollar"></i>
+            <i className="bi bi-people"></i>
           </div>
-          <h5 className="office-feature-title">Financial Accounting</h5>
+          <h5 className="office-feature-title">Customer & Lead Tracking</h5>
           <p className="office-feature-desc">
-            Real-time invoicing, expense tracking, and compliance reporting.
+            Capture buyer inquiries, follow up on leads, and track customer history for better conversions.
           </p>
           <div className="office-feature-overlay">
-            <span>Save 20+ hours per month</span>
+            <span>Boost sales by 40%</span>
           </div>
         </div>
       </div>
@@ -199,14 +205,14 @@ export default function OfficeErp() {
       <div className="col-md-6 col-lg-4">
         <div className="office-feature-card office-animate-in">
           <div className="office-feature-icon floating-icon">
-            <i className="bi bi-box-seam"></i>
+            <i className="bi bi-wallet2"></i>
           </div>
-          <h5 className="office-feature-title">Inventory & Procurement</h5>
+          <h5 className="office-feature-title">Sales & Payments</h5>
           <p className="office-feature-desc">
-            Track stock levels, automate reorders, and forecast demand to cut waste by 30%.
+            Generate invoices, track payments, and record every transaction securely with digital receipts.
           </p>
           <div className="office-feature-overlay">
-            <span>Reduce waste by 30%</span>
+            <span>Track every sale in real-time</span>
           </div>
         </div>
       </div>
@@ -215,14 +221,14 @@ export default function OfficeErp() {
       <div className="col-md-6 col-lg-4">
         <div className="office-feature-card office-animate-in">
           <div className="office-feature-icon floating-icon">
-            <i className="bi bi-kanban"></i>
+            <i className="bi bi-gear"></i>
           </div>
-          <h5 className="office-feature-title">Project Management</h5>
+          <h5 className="office-feature-title">Service & Maintenance</h5>
           <p className="office-feature-desc">
-            Collaborate on tasks, timelines, and budgets with Gantt charts and team notifications.
+            Maintain service history, inspection reports, and vehicle condition records for buyer transparency.
           </p>
           <div className="office-feature-overlay">
-            <span>Deliver projects 25% faster</span>
+            <span>Ensure trust with service logs</span>
           </div>
         </div>
       </div>
@@ -231,14 +237,14 @@ export default function OfficeErp() {
       <div className="col-md-6 col-lg-4">
         <div className="office-feature-card office-animate-in">
           <div className="office-feature-icon floating-icon">
-            <i className="bi bi-bar-chart-line"></i>
+            <i className="bi bi-graph-up"></i>
           </div>
           <h5 className="office-feature-title">Analytics Dashboard</h5>
           <p className="office-feature-desc">
-            AI-driven insights on KPIs, with customizable reports and mobile alerts.
+            View performance metrics, top-selling cars, and profit trends through intuitive reports.
           </p>
           <div className="office-feature-overlay">
-            <span>Get real-time insights</span>
+            <span>Monitor performance in real-time</span>
           </div>
         </div>
       </div>
@@ -247,14 +253,14 @@ export default function OfficeErp() {
       <div className="col-md-6 col-lg-4">
         <div className="office-feature-card office-animate-in">
           <div className="office-feature-icon floating-icon">
-            <i className="bi bi-puzzle"></i>
+            <i className="bi bi-link-45deg"></i>
           </div>
           <h5 className="office-feature-title">Integrations</h5>
           <p className="office-feature-desc">
-            Seamless connections to Google Workspace, Microsoft 365, Slack, and 50+ apps.
+            Connect with dealer websites, CRM tools, and online marketplaces to sync inventory automatically.
           </p>
           <div className="office-feature-overlay">
-            <span>Connect 50+ tools instantly</span>
+            <span>Connect across platforms easily</span>
           </div>
         </div>
       </div>
@@ -263,118 +269,121 @@ export default function OfficeErp() {
 </section>
 
 
+              
 
 {/* Benefits Section Starts */}
 <section className="erp-benefits-section py-5">
-      <div className="container">
-        <h2 className="erp-section-title text-center mb-5">
-          How <span className="erp-gradient-text">Our ERP Works</span>
-        </h2>
+  <div className="container">
+    <h2 className="erp-section-title text-center mb-5">
+      How <span className="erp-gradient-text">Our Car Management System Works</span>
+    </h2>
 
-        <div className="erp-benefits-flow d-flex justify-content-center align-items-center flex-wrap">
-          
-          {/* Step 1 */}
-          <div className="erp-flow-step">
-            <div className="erp-benefit-card">
-              <div className="erp-benefit-icon">
-                <FaTachometerAlt />
-              </div>
-              <h5 className="erp-benefit-title">Efficiency Boost</h5>
-              <p className="erp-benefit-desc">
-                Centralize data to eliminate silos—reduce paperwork by 70% and free your team for high-value work.
-              </p>
-              <div className="erp-card-glow"></div>
-            </div>
-            <div className="erp-flow-arrow">
-              <div className="erp-arrow-line"></div>
-              <div className="erp-arrow-head"></div>
-            </div>
+    <div className="erp-benefits-flow d-flex justify-content-center align-items-center flex-wrap">
+      
+      {/* Step 1 */}
+      <div className="erp-flow-step">
+        <div className="erp-benefit-card">
+          <div className="erp-benefit-icon">
+            <FaTachometerAlt />
           </div>
-
-          {/* Step 2 */}
-          <div className="erp-flow-step">
-            <div className="erp-benefit-card">
-              <div className="erp-benefit-icon">
-                 <FaLock /> 
-              </div>
-              <h5 className="erp-benefit-title">Scalability & Security</h5>
-              <p className="erp-benefit-desc">
-                Cloud-based for easy growth; enterprise-grade encryption protects sensitive office data.
-              </p>
-              <div className="erp-card-glow"></div>
-            </div>
-            <div className="erp-flow-arrow">
-              <div className="erp-arrow-line"></div>
-              <div className="erp-arrow-head"></div>
-            </div>
-          </div>
-
-          {/* Step 3 */}
-          <div className="erp-flow-step">
-            <div className="erp-benefit-card">
-              <div className="erp-benefit-icon">
-                <FaUsers />
-              </div>
-              <h5 className="erp-benefit-title">User-Friendly</h5>
-              <p className="erp-benefit-desc">
-                Intuitive interface with role-based access—no IT team required. Onboard in under an hour.
-              </p>
-              <div className="erp-card-glow"></div>
-            </div>
-          </div>
+          <h5 className="erp-benefit-title">Streamlined Inventory</h5>
+          <p className="erp-benefit-desc">
+            Easily add, update, and track all used car listings—organize details, pricing, and availability in one place.
+          </p>
+          <div className="erp-card-glow"></div>
+        </div>
+        <div className="erp-flow-arrow">
+          <div className="erp-arrow-line"></div>
+          <div className="erp-arrow-head"></div>
         </div>
       </div>
-    </section>
+
+      {/* Step 2 */}
+      <div className="erp-flow-step">
+        <div className="erp-benefit-card">
+          <div className="erp-benefit-icon">
+             <FaLock /> 
+          </div>
+          <h5 className="erp-benefit-title">Secure Data & Transactions</h5>
+          <p className="erp-benefit-desc">
+            Keep buyer, seller, and vehicle data safe with encrypted storage and verified transaction records.
+          </p>
+          <div className="erp-card-glow"></div>
+        </div>
+        <div className="erp-flow-arrow">
+          <div className="erp-arrow-line"></div>
+          <div className="erp-arrow-head"></div>
+        </div>
+      </div>
+
+      {/* Step 3 */}
+      <div className="erp-flow-step">
+        <div className="erp-benefit-card">
+          <div className="erp-benefit-icon">
+            <FaUsers />
+          </div>
+          <h5 className="erp-benefit-title">Dealer & Customer Friendly</h5>
+          <p className="erp-benefit-desc">
+            Simple dashboard for dealers and buyers—manage leads, inquiries, and sales seamlessly from any device.
+          </p>
+          <div className="erp-card-glow"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
-{/* WHY Office ERP CRM */}
+
+{/* WHY SecondHandCar CRM */}
 <section className="why-hero-section py-5">
   <div className="why-container">
     <div className="why-row align-items-center">
       <div className="why-col-lg-6">
         <div className="why-hero-content">
           <div className="why-hero-badge">
-            <span className="why-badge-text">Office ERP CRM</span>
+            <span className="why-badge-text">Second Hand Car Management System</span>
             <div className="why-badge-glow"></div>
           </div>
           
           <h1 className="why-hero-title">
-            <span className="why-hero-title-line">All-in-One</span>
-            <span className="why-hero-title-line why-gradient-text">Business Management</span>
-            <span className="why-hero-title-line">Solution</span>
+            <span className="why-hero-title-line">Smart & Secure</span>
+            <span className="why-hero-title-line why-gradient-text">Used Car Management</span>
+            <span className="why-hero-title-line">Platform</span>
           </h1>
           
           <p className="why-hero-description">
-            WHY Office ERP CRM combines enterprise resource planning and customer relationship 
-            management into a single, powerful platform that drives efficiency and growth.
+            Our Second Hand Car Management System helps car dealers, resellers, and individuals 
+            manage listings, leads, and sales with ease — bringing transparency and efficiency 
+            to the pre-owned vehicle market.
           </p>
 
           <div className="why-hero-features">
             <div className="why-feature-item">
               <div className="why-feature-icon">
-                <i className="fas fa-robot"></i>
+                <i className="fas fa-car"></i>
               </div>
               <div className="why-feature-content">
-                <h6>Smart Automation & Workflow Optimization</h6>
-                <p>Eliminate repetitive tasks, speed up processes, and improve accuracy with intelligent automation.</p>
+                <h6>Complete Vehicle Management</h6>
+                <p>Upload car details, track inventory, and maintain vehicle history from one simple dashboard.</p>
               </div>
             </div>
             
             <div className="why-feature-item">
               <div className="why-feature-icon">
-                <i className="fas fa-chart-line"></i>
+                <i className="fas fa-user-tie"></i>
               </div>
               <div className="why-feature-content">
-                <h6>Customer-Centric Growth Strategy</h6>
-                <p>Understand customers better, track interactions, and personalize engagement for maximum growth.</p>
+                <h6>Lead & Customer Tracking</h6>
+                <p>Convert inquiries into sales by managing customer interactions, negotiations, and follow-ups efficiently.</p>
               </div>
             </div>
           </div>
 
           <div className="why-hero-actions">
             <button className="why-btn why-btn-primary why-btn-lg">
-              <span>Start Free Trial</span>
+              <span>Get Started Now</span>
               <i className="fas fa-arrow-right"></i>
             </button>
           </div>
@@ -386,37 +395,35 @@ export default function OfficeErp() {
           <div className="why-floating-cards">
             <div className="why-card why-card-1">
               <div className="why-card-icon">
-                <i className="fas fa-database"></i>
+                <i className="fas fa-warehouse"></i>
               </div>
-              <h6>ERP System</h6>
-              <p>Resource Planning</p>
+              <h6>Inventory</h6>
+              <p>Vehicle Listings</p>
             </div>
             
             <div className="why-card why-card-2">
               <div className="why-card-icon">
                 <i className="fas fa-users"></i>
               </div>
-              <h6>CRM Module</h6>
-              <p>Customer Relations</p>
+              <h6>Customers</h6>
+              <p>Lead Management</p>
             </div>
             
             <div className="why-card why-card-3">
               <div className="why-card-icon">
-                <i className="fas fa-cogs"></i>
+                <i className="fas fa-tools"></i>
               </div>
-              <h6>Automation</h6>
-              <p>Workflow Engine</p>
+              <h6>Maintenance</h6>
+              <p>Service History</p>
             </div>
 
             <div className="why-card why-card-4">
-  <div className="why-card-icon">
-    <i className="fas fa-chart-pie"></i>
-  </div>
-  <h6>Analytics</h6>
-  <p>Business Insights</p>
-</div>
-
-
+              <div className="why-card-icon">
+                <i className="fas fa-chart-line"></i>
+              </div>
+              <h6>Reports</h6>
+              <p>Sales Insights</p>
+            </div>
           </div>
           
           <div className="why-dashboard-preview">
@@ -430,16 +437,16 @@ export default function OfficeErp() {
             <div className="why-dashboard-content">
               <div className="why-metric-grid">
                 <div className="why-metric why-metric-1">
-                  <span className="why-metric-value">+45%</span>
-                  <span className="why-metric-label">Efficiency</span>
+                  <span className="why-metric-value">+60%</span>
+                  <span className="why-metric-label">Faster Sales</span>
                 </div>
                 <div className="why-metric why-metric-2">
-                  <span className="why-metric-value">+68%</span>
-                  <span className="why-metric-label">Customer Satisfaction</span>
+                  <span className="why-metric-value">+75%</span>
+                  <span className="why-metric-label">Customer Retention</span>
                 </div>
                 <div className="why-metric why-metric-3">
-                  <span className="why-metric-value">-30%</span>
-                  <span className="why-metric-label">Operational Costs</span>
+                  <span className="why-metric-value">-40%</span>
+                  <span className="why-metric-label">Manual Workload</span>
                 </div>
               </div>
             </div>
@@ -459,14 +466,15 @@ export default function OfficeErp() {
 
 
 
+
 {/* Demo Form */}
 <ProductForm/>
 
 {/* Pricing Section Starts */}
 <HomePricing/>
 
-{/* Office erp faq */}
-<OfficeErpFaq/>
+{/* SecondHandCar faq */}
+<SecondHandCarfaq/>
 
 
 

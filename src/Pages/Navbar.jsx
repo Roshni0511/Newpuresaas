@@ -125,8 +125,8 @@ export default function Navbar() {
                       <p>Simplify operations, manage inventory, and streamline production.</p>
                     </li>
                     <li>
-                    <a href="/OfficeErp"><span className="service__number">08.</span> Office ERP</a>
-                    <p>Integrate business operations, streamline workflows, and boost productivity.</p>
+                    <a href="/SecondHandCar"><span className="service__number">08.</span> Second Hand Car Management System</a>
+                    <p>Efficient Platform for Managing Used Car Sales</p>
                   </li>
                    
                    
