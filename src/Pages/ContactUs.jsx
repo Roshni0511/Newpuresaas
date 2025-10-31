@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2"; // Import SweetAlert2
-import { MdSubject } from "react-icons/md";
 import "../assets/css/Contact.css"
-import { MdOutlineDriveFileRenameOutline, MdPhone } from "react-icons/md";
-import { MdOutlineMail, MdOutlineMessage  } from "react-icons/md";
 import { FaHome, FaEnvelope, FaPhone } from "react-icons/fa";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -164,7 +161,7 @@ const ContactUs = () => {
               />
             </div>
                 <div className="col-md-6">
-                     <label style={{color:'#000',marginBottom:'8px'}}>Your Number</label>
+                <label style={{color:'#000',marginBottom:'8px'}}>Your Number</label>
               <input
                 type="text"
                 name=""
@@ -176,7 +173,7 @@ const ContactUs = () => {
               />
             </div>
             <div className="col-md-12">
-                      <label style={{color:'#000',marginBottom:'8px'}}>Email Address</label>
+              <label style={{color:'#000',marginBottom:'8px'}}>Email Address</label>
               <input
                 type="email"
                 name="email"
@@ -188,7 +185,7 @@ const ContactUs = () => {
               />
             </div>
             <div className="col-12">
-                   <label style={{color:'#000',marginBottom:'8px'}}>Subject</label>
+              <label style={{color:'#000',marginBottom:'8px'}}>Subject</label>
               <input
                 type="text"
                 name="subject"
@@ -224,18 +221,16 @@ const ContactUs = () => {
 </section>
   <div className="container">
   <div className="google-map wow animate__animated animate__fadeInUp">
+  
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14602.254272231177!2d90.3654215!3d23.7985508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1592852423971!5m2!1sen!2sbd"
-      allowFullScreen=""
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-    ></iframe>
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.641215908696!2d72.8310598750438!3d21.170240582138787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e594c024e7b%3A0x1c30c23aab40e6b5!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1730407350000!5m2!1sen!2sin"
+  allowFullScreen=""
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+/>
+
   </div>
 </div>
-
-   
-   
-   
        </div>
 
 <Footer />

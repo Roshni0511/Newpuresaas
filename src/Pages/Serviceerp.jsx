@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import '../assets/css/Serviceerp.css';
-import Navbar from './Navbar';
 import Footer from './Footer';
 import ProductForm from '../component/ProductForm';
 import { FaTimes, FaClock, FaPhoneAlt, FaChartLine } from 'react-icons/fa';

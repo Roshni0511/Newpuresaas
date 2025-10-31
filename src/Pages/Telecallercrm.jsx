@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../assets/css/Telecallercrm.css';
-import Navbar from './Navbar';
 import Footer from './Footer';
 import ProductForm from '../component/ProductForm';
 import TelecallercrmFaq from '../component/Telecallercrmfaq';

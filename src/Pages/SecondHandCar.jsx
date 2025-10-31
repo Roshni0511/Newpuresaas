@@ -53,20 +53,10 @@ export default function SecondHandCar() {
     // Cleanup
     return () => observer.disconnect();
   }, []);
- const [email, setEmail] = useState('');
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Here you would typically handle the form submission,
-        // e.g., send the email to an API, log it, etc.
-        console.log('Email submitted:', email);
-        alert(`Starting your trial for: ${email}`);
-        setEmail(''); // Clear the input after submission
-    };
   return (
     <div>
       <ProductNavbar />
-    <SecondHandCarNavbar />
+      <SecondHandCarNavbar />
       <section className="office-hero-section position-relative bg-light overflow-hidden py-5">
         <div className="container position-relative z-2">
           <div className="row align-items-center g-5">
@@ -159,7 +149,6 @@ export default function SecondHandCar() {
           </div>
         </div>
       )}
-
 
       {/* Features Section */}
 <section className="office-features-section py-5">
@@ -268,9 +257,6 @@ export default function SecondHandCar() {
   </div>
 </section>
 
-
-              
-
 {/* Benefits Section Starts */}
 <section className="erp-benefits-section py-5">
   <div className="container">
@@ -332,9 +318,6 @@ export default function SecondHandCar() {
     </div>
   </div>
 </section>
-
-
-
 
 {/* WHY SecondHandCar CRM */}
 <section className="why-hero-section py-5">
@@ -464,25 +447,11 @@ export default function SecondHandCar() {
   </div>
 </section>
 
-
-
-
-{/* Demo Form */}
 <ProductForm/>
-
-{/* Pricing Section Starts */}
 <HomePricing/>
-
-{/* SecondHandCar faq */}
 <SecondHandCarfaq/>
-
-
-
-{/* Email Section Starts */}
 <Bookdemoform />
-
-
-      <Footer />
+<Footer />
     </div>
   );
 }

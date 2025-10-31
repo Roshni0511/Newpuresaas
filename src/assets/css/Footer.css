@@ -118,7 +118,7 @@
             display: inline-block;
             transition: var(--transition);
             position: relative;
-            padding-left: 1rem;
+            /* padding-left: 1rem; */
         }
 
        .Footerstyle .footer-links a::before {

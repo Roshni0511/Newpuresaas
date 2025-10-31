@@ -1,5 +1,4 @@
-import React, { useRef, useState } from 'react'
-import Navbar from './Navbar'
+import React, {  useState } from 'react'
 import Footer from './Footer'
 import "../assets/css/sales.css"
 import BrandSlider from '../component/BrandSlider'
@@ -188,7 +187,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
     alert('Demo booked successfully!');
     setIsModalOpen(false);
   };
-    const containerRef = useRef(null);
+   
        const [openItemId, setOpenItemId] = useState(faqData[0].id);
       
           // Function to handle the opening/closing logic

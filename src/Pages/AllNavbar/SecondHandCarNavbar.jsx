@@ -66,9 +66,9 @@ export default function SecondHandCarNavbar() {
       isofficeOpen ? 'mobile-open-menu' : ''
     }`}
   >
-    <div class="productsecond">
-      <div class="feature-dropdown__inner">
-        <ul class="feature-dropdown__column">
+    <div className="productsecond">
+      <div className="feature-dropdown__inner">
+        <ul className="feature-dropdown__column">
           <li>
             <a >Car Inventory Management</a>
             <p>Organize and track available, sold, and upcoming vehicles in real time.</p>
@@ -83,7 +83,7 @@ export default function SecondHandCarNavbar() {
           </li>
         </ul>
 
-        <ul class="feature-dropdown__column">
+        <ul className="feature-dropdown__column">
           <li>
             <a>Sales & Billing</a>
             <p>Generate instant invoices and maintain transaction records.</p>

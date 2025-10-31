@@ -1,24 +1,15 @@
 import React, { useState } from 'react'
-import Navbar from './Navbar'
 import Footer from './Footer'
 import '../assets/css/ATS.css'
-import HomeFaq from '../component/HomeFaq';
 import HomePricing from '../component/HomePricing';
 import ProductForm from '../component/ProductForm';
-import Atsfaq from './Atsfaq';
+
 import ProductNavbar from './AllNavbar/ProductNavbar';
 import Bookdemoform from '../component/Bookdemoform';
 import ATSNavbar from './AllNavbar/ATSNavbar';
+import Atsfaq from '../component/Atsfaq';
 export default function ATS() {
-    const [email, setEmail] = useState('');
-     const handleSubmit = (e) => {
-            e.preventDefault();
-            // Here you would typically handle the form submission,
-            // e.g., send the email to an API, log it, etc.
-            console.log('Email submitted:', email);
-            alert(`Starting your trial for: ${email}`);
-            setEmail(''); // Clear the input after submission
-        };
+  
     const data = [
   {
     icon: "fa-solid fa-universal-access", // Font Awesome icon class

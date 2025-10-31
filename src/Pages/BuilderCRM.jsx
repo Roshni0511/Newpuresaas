@@ -152,60 +152,60 @@ const Buildercrm = () => {
             <h2 className="builderfea-title">Key Features & Benefits</h2>
             <p className="builderfea-subtitle">Everything you need to manage your real estate business efficiently and grow your portfolio.</p>
           </div>
-              <div class="builderfea-grid">
+              <div className="builderfea-grid">
                
-                <div class="builderfea-card">
-                    <div class="builderfea-icon">
-                        <i class="fas fa-chart-line"></i>
+                <div className="builderfea-card">
+                    <div className="builderfea-icon">
+                        <i className="fas fa-chart-line"></i>
                     </div>
-                    <h3 class="builderfea-card-title">Market Analytics</h3>
-                    <p class="builderfea-description">Access real-time market data and analytics to make informed investment decisions and identify emerging opportunities.</p>
-                    <div class="builderfea-highlight">Data-driven insights</div>
+                    <h3 className="builderfea-card-title">Market Analytics</h3>
+                    <p className="builderfea-description">Access real-time market data and analytics to make informed investment decisions and identify emerging opportunities.</p>
+                    <div className="builderfea-highlight">Data-driven insights</div>
                 </div>
                 
-                <div class="builderfea-card">
-                    <div class="builderfea-icon">
-                        <i class="fas fa-home"></i>
+                <div className="builderfea-card">
+                    <div className="builderfea-icon">
+                        <i className="fas fa-home"></i>
                     </div>
-                    <h3 class="builderfea-card-title">Property Management</h3>
-                    <p class="builderfea-description">Streamline property management with automated rent collection, maintenance requests, and tenant communication.</p>
-                    <div class="builderfea-highlight">Automated workflows</div>
+                    <h3 className="builderfea-card-title">Property Management</h3>
+                    <p className="builderfea-description">Streamline property management with automated rent collection, maintenance requests, and tenant communication.</p>
+                    <div className="builderfea-highlight">Automated workflows</div>
                 </div>
                 
-                <div class="builderfea-card">
-                    <div class="builderfea-icon">
-                        <i class="fas fa-file-contract"></i>
+                <div className="builderfea-card">
+                    <div className="builderfea-icon">
+                        <i className="fas fa-file-contract"></i>
                     </div>
-                    <h3 class="builderfea-card-title">Digital Contracts</h3>
-                    <p class="builderfea-description">Create, sign, and manage contracts digitally with legally binding e-signatures and automated reminders.</p>
-                    <div class="builderfea-highlight">Paperless solutions</div>
+                    <h3 className="builderfea-card-title">Digital Contracts</h3>
+                    <p className="builderfea-description">Create, sign, and manage contracts digitally with legally binding e-signatures and automated reminders.</p>
+                    <div className="builderfea-highlight">Paperless solutions</div>
                 </div>
                 
-                <div class="builderfea-card">
-                    <div class="builderfea-icon">
-                        <i class="fas fa-search-dollar"></i>
+                <div className="builderfea-card">
+                    <div className="builderfea-icon">
+                        <i className="fas fa-search-dollar"></i>
                     </div>
-                    <h3 class="builderfea-card-title">Investment Analysis</h3>
-                    <p class="builderfea-description">Evaluate potential investments with comprehensive ROI calculators, cash flow projections, and risk assessment tools.</p>
-                    <div class="builderfea-highlight">Smart forecasting</div>
+                    <h3 className="builderfea-card-title">Investment Analysis</h3>
+                    <p className="builderfea-description">Evaluate potential investments with comprehensive ROI calculators, cash flow projections, and risk assessment tools.</p>
+                    <div className="builderfea-highlight">Smart forecasting</div>
                 </div>
                 
-                <div class="builderfea-card">
-                    <div class="builderfea-icon">
-                        <i class="fas fa-users"></i>
+                <div className="builderfea-card">
+                    <div className="builderfea-icon">
+                        <i className="fas fa-users"></i>
                     </div>
-                    <h3 class="builderfea-card-title">Client Portal</h3>
-                    <p class="builderfea-description">Provide clients with a personalized portal to view properties, track applications, and communicate securely.</p>
-                    <div class="builderfea-highlight">Enhanced engagement</div>
+                    <h3 className="builderfea-card-title">Client Portal</h3>
+                    <p className="builderfea-description">Provide clients with a personalized portal to view properties, track applications, and communicate securely.</p>
+                    <div className="builderfea-highlight">Enhanced engagement</div>
                 </div>
                 
-                <div class="builderfea-card">
-                    <div class="builderfea-icon">
-                        <i class="fas fa-mobile-alt"></i>
+                <div className="builderfea-card">
+                    <div className="builderfea-icon">
+                        <i className="fas fa-mobile-alt"></i>
                     </div>
-                    <h3 class="builderfea-card-title">Mobile App</h3>
-                    <p class="builderfea-description">Manage your business on the go with our fully-featured mobile app available for iOS and Android devices.</p>
-                    <div class="builderfea-highlight">Anywhere access</div>
+                    <h3 className="builderfea-card-title">Mobile App</h3>
+                    <p className="builderfea-description">Manage your business on the go with our fully-featured mobile app available for iOS and Android devices.</p>
+                    <div className="builderfea-highlight">Anywhere access</div>
                 </div>
             </div>
         </div>

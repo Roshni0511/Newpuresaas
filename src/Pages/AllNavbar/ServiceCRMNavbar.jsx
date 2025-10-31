@@ -69,9 +69,9 @@ export default function ServiceCRMNavbar() {
                                                          isservicesOpen ? 'mobile-open-menu' : ''
                                                        }`}
                                                      >
-                                                   <div class="productsecond">
-  <div class="feature-dropdown__inner">
-    <ul class="feature-dropdown__column">
+                                                   <div className="productsecond">
+  <div className="feature-dropdown__inner">
+    <ul className="feature-dropdown__column">
       <li>
         <a >Client Management</a>
         <p>Keep all client details in one place.</p>
@@ -86,7 +86,7 @@ export default function ServiceCRMNavbar() {
       </li>
    
     </ul>
-    <ul class="feature-dropdown__column">
+    <ul className="feature-dropdown__column">
       <li>
         <a >Feedback Collection</a>
         <p>Get client feedback with simple forms.</p>
