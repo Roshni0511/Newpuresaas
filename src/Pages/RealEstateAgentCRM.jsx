@@ -180,9 +180,8 @@ export default function RealEstateAgentCRM() {
       
             </div>
 
-{/* ============================= */}
 {/* Property Section */}
-{/* ============================= */}
+
 
 <div style={{background:'#f9f9f9',paddingTop:'40px'}} className=' wow animate__animated animate__fadeInUp'>
 <div className="opacity-100 filter-none rotate-0 scale-100 text-center">
@@ -267,12 +266,7 @@ export default function RealEstateAgentCRM() {
 </section>        
 </div>
 
-
-
-
-{/* ============================= */}
 {/* Features Section */}
-{/* ============================= */}
 <div className="wow animate__animated animate__fadeInUp">
   <div className="opacity-100 filter-none rotate-0 scale-100 text-center wow animate__animated animate__fadeInUp features-section">
     {/* Badge */}
@@ -335,25 +329,12 @@ export default function RealEstateAgentCRM() {
   </div>
 </div>
 
-
-
-{/* ============================= */}
-{/* Slider Section */}
-{/* ============================= */}
-
 <Realestateagentcrmslider/>
-
-{/* ============================= */}
-{/* Features Section */}
-{/* ============================= */}
-
 <ProductForm/>
 
 
-
-{/* ============================= */}
 {/* Industries Section */}
-{/* ============================= */}
+
 <section className='wow animate__animated animate__fadeInUp'> 
   <div className="opacity-100 filter-none rotate-0 scale-100 text-center" style={{background:'#f9f9f9', paddingBottom:'40px', paddingTop:'60px'}}>
     {/* Badge */}
@@ -397,12 +378,8 @@ export default function RealEstateAgentCRM() {
   </div>
 </section>
 
-
-
-
-{/* ============================= */}
 {/* Testimonials Section */}
-{/* ============================= */}
+
 <section style={{background:'#f9f9f9'}} className=' wow animate__animated animate__fadeInUp'>
   <div className="opacity-100 filter-none rotate-0 scale-100 text-center" style={{background:'#f9f9f9', paddingTop:'120px'}}>
   {/* Badge */}
@@ -419,52 +396,11 @@ export default function RealEstateAgentCRM() {
 </div>
   <TestimonialsSlider/>
 </section>
-    
 
-
-
-
-{/* ============================= */}
 {/* Faq Section */}
-{/* ============================= */}
 <section style={{background:'#f9f9f9'}} className=' wow animate__animated animate__fadeInUp'>
 <RealEstateAgentCRMfaq/>
 </section>
-
-
-
-
-{/* ============================= */}
-{/* Email Section */}
-{/* ============================= */}
-{/* <section className="cta-section wow animate__animated animate__fadeInUp">
-    <div className="cta-content-left">
-        <span className="cta-tag">Finance</span>
-        <h1 className="cta-title">Ready to transform your business with PureSaaS CRM</h1>
-        <p className="cta-description">
-            Start your free trial today and see your ideas come to life easily and creatively.
-        </p>
-    </div>
-
-    <div className="cta-form-right">
-        <div className="cta-form">
-  <a href="/Realestateagentdemo" target="_blank" rel="noopener noreferrer">
-    <button type="button" className="cta-button">Get started!</button>
-  </a>
-</div>
-
-        <div className="cta-features">
-            <div className="feature-item">
-                <i className="fa-solid fa-circle-check"></i>
-                <span>No credit card required</span>
-            </div>
-            <div className="feature-item">
-                <i className="fa-solid fa-circle-check"></i>
-                <span>7-Day free trial</span>
-            </div>
-        </div>
-    </div>
-</section> */}
 
  <Bookdemoform />
       <Footer />

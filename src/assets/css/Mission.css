@@ -328,6 +328,7 @@
   color: #666;
   font-size: 17px;
   line-height: 1.6;
+  text-align: justify;
 }
 
 /* Right Side */
@@ -630,6 +631,7 @@
   font-size: 17px;
   line-height: 1.6;
   margin-bottom: 10px;
+  text-align: justify;
 }
 
 /* Responsive */

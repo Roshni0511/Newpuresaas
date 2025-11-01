@@ -384,6 +384,7 @@
 .saleserp .text-box p {
   font-size: 0.9rem;
   color: #666;
+  text-align: justify;
 }
 
 @media (max-width: 768px) {

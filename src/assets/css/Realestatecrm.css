@@ -338,7 +338,12 @@
 }
 
 
-
+@media (max-width: 1024px) {
+  .socialsec .social-selector-container {
+      width: 98%; /* Ensure container is full width on small screens */
+   
+  }
+}
 /* Media Queries for smaller screens */
 @media (max-width: 768px) {
   .socialsec .platforms-grid {
@@ -558,6 +563,7 @@
   }
   .mortgage-solutions-section .sub-heading {
     font-size: 1rem;
+    text-align: justify;
   }
 }
 
@@ -661,6 +667,7 @@
   font-size: 0.95rem;
   color: #555;
   line-height: 1.6;
+  text-align: justify;
 }
 
 @media (max-width: 992px) {

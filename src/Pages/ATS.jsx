@@ -3,7 +3,6 @@ import Footer from './Footer'
 import '../assets/css/ATS.css'
 import HomePricing from '../component/HomePricing';
 import ProductForm from '../component/ProductForm';
-
 import ProductNavbar from './AllNavbar/ProductNavbar';
 import Bookdemoform from '../component/Bookdemoform';
 import ATSNavbar from './AllNavbar/ATSNavbar';
@@ -210,10 +209,7 @@ export default function ATS() {
     <ProductForm/>
     <HomePricing />
     <Atsfaq/>
-    
-    {/* email section start  */}
       <Bookdemoform />
-      {/* email section end   */}
       <Footer />
     </div>
   )

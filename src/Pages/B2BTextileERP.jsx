@@ -167,7 +167,7 @@ PureSaas is your all-in-one, enterprise-ready real estate management solution
         </div>
         <div className="right-side wow animate__animated animate__fadeInUp">
           <div className="pattern-bg"></div>
-          <img src="/Image/b2b.png" alt="Server" className="hero-img" style={{marginLeft:'160px'}} />
+          <img src="/Image/b2b.png" alt="Server" className="hero-img"  />
         </div>
       </div>
    <section className="money-section wow animate__animated animate__fadeInUp">

@@ -382,7 +382,12 @@
 }
 
 
-
+@media (max-width: 1024px) {
+  .socialsec .social-selector-container {
+      width: 98%; /* Ensure container is full width on small screens */
+   
+  }
+}
 /* Media Queries for smaller screens */
 @media (max-width: 768px) {
   .socialsec .platforms-grid {
@@ -408,7 +413,8 @@
   .socialsec .arrow-button {
     align-self: flex-end; /* Push arrow to bottom right on small screens */
   }
-}@media (max-width: 768px) {
+}
+@media (max-width: 768px) {
   .socialsec .social-selector-container {
       width: 100%; /* Ensure container is full width on small screens */
       border-radius: 0; /* Optional: remove border-radius on full screen mobile view */
@@ -564,7 +570,7 @@
 
         .builderfea-description {
             color: #64748b;
-            text-align: center;
+            text-align: justify;
             line-height: 1.7;
         }
 

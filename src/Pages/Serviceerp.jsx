@@ -209,16 +209,8 @@ const ServiceCRM = () => {
           </div>
         </div>
       </section>
-
-
-          
-      {/* Demo Section */}
       <ProductForm/>
-
-      {/* Pricing Section */}
       <HomePricing/>
-
-
       {/* Service Flow Section */}
       <section className="serflo-section">
         <div className="serflo-inner">
@@ -276,15 +268,7 @@ const ServiceCRM = () => {
           </div>
         </div>
       </section>
-
-
-
-      {/* Faq Section */}
       <ServicecrmFaq/>
-
-
-
-      {/* Email Section */}
      <Bookdemoform />
       <Footer />
     </>

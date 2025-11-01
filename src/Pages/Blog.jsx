@@ -172,15 +172,14 @@ const Blog = () => {
                                 <div className="sidebar-box category-box">
                                     <h5>Category</h5>
                                     <ul>
-                                        <li><a href="/RealEstateAgentCRM">Real Estate Agent CRM</a></li>
-                                        <li><a href="#">Real Estate CRM</a></li>
-                                        <li><a href="#">Sales CRM</a></li>
-                                        <li><a href="#">Service CRM</a></li>
-                                        <li><a href="#">B2B Textile ERP</a></li>
-                                         <li><a href="#">Telecaller  CRM</a></li>
-                                          <li><a href="#">ATS (Application Tracking System)</a></li>
-                                           <li><a href="#">Payroll System</a></li>
-                                             <li><a href="#">Second Hand Car Management System</a></li>
+                                        <li><a href="/BuilderCRM">Builder / Developer CRM</a></li>
+                                        <li><a href="/Realestatecrm">Real Estate CRM</a></li>
+                                        <li><a href="/Telecallercrm">Telecaller  CRM</a></li>
+                                        <li><a href="/Sales">Sales CRM</a></li>
+                                        <li><a href="/Serviceerp">Service CRM</a></li>
+                                        <li><a href="/ATS">ATS (Application Tracking System)</a></li>
+                                        <li><a href="/B2BTextileERP">B2B Textile ERP</a></li>
+                                        <li><a href="/SecondHandCar">Second Hand Car Management System</a></li>
 
                                     </ul>
                                 </div>

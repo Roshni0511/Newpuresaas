@@ -407,7 +407,7 @@
 
 /* Title & Description */
 .office-feature-title { font-weight: 600; font-size: 1.3rem; margin-bottom: 10px; z-index:1; position:relative; }
-.office-feature-desc { font-size: 1rem; color: #6c757d; position:relative; z-index:1; }
+.office-feature-desc { font-size: 1rem; color: #6c757d; position:relative; z-index:1;text-align: justify; }
 
 /* Overlay with quick stats */
 .office-feature-overlay {
@@ -575,6 +575,7 @@
   line-height: 1.6;
   position: relative;
   z-index: 2;
+  text-align: justify;
 }
 
 .erp-card-glow {

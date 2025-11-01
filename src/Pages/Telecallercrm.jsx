@@ -325,14 +325,9 @@ const [isModalOpen, setIsModalOpen] = useState(false);
     </div>
     </section>
 
-
-
-{/* Demo Form */}
     <section>
       <ProductForm/>
     </section>
-
-
 
 {/* Why Section */}
 
@@ -388,9 +383,6 @@ const [isModalOpen, setIsModalOpen] = useState(false);
 <section>
   <TelecallercrmFaq/>
 </section>
-
-
-{/* Email Section */}
 <Bookdemoform />
 
 

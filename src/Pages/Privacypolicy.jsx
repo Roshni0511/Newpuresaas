@@ -66,7 +66,7 @@ const Privacypolicy = () => {
             </div>
 
             <div className="serviceInfoContainer">
-              <p className="serviceDetails">1.2. We may use the information to improve our products and services</p>
+              <p className="serviceDetails">2. We may use the information to improve our products and services</p>
               <div className="secionLine lineColorPurple"></div>
             </div>
 
